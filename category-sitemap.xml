@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>//ganl.io</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/PHP/%E4%B8%9A%E4%BD%99Demo/</loc>
+        <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/JAVA/%E4%B8%9A%E4%BD%99Demo/</loc>
+        <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/JAVA/%E4%B8%9A%E4%BD%99Demo/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/</loc>
+        <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/JAVA/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/</loc>
+        <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/PHP/Web%E5%BC%80%E5%8F%91/</loc>
+        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/JAVA/</loc>
+        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/</loc>
+        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/</loc>
+        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/C-net/</loc>
+        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/html-css/</loc>
+        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/C-C/</loc>
+        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/Web%E5%BC%80%E5%8F%91/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/Web%E5%BC%80%E5%8F%91/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/IOS/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/JavaScript/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/Application/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/Python/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/Application/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+        <lastmod>2017-10-07T01:34:31.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/PHP/</loc>
+        <lastmod>2017-10-07T01:34:31.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/PHP/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+        <lastmod>2017-10-07T01:34:31.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/</loc>
+        <lastmod>2017-10-07T01:44:35.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->

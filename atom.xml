@@ -1,0 +1,2874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ganlei的个人博客-搭上末班车</title>
+  <icon>https://www.gravatar.com/avatar/e15d73f3013a9eba7d6a3792d4055a10</icon>
+  <subtitle>记录成长的地方</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="//ganl.io/"/>
+  <updated>2017-10-07T01:33:00.151Z</updated>
+  <id>//ganl.io/</id>
+  
+  <author>
+    <name>gan lei</name>
+    <email>austgl@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="//ganl.io/2017/10/07/hello-world/"/>
+    <id>//ganl.io/2017/10/07/hello-world/</id>
+    <published>2017-10-07T01:33:00.151Z</published>
+    <updated>2017-10-07T01:33:00.151Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>phpstorm代码自动补全， CodeIgniter3 &amp; HMVC</title>
+    <link href="//ganl.io/2017/10/02/phpstorm-e4-bb-a3-e7-a0-81-e8-87-aa-e5-8a-a8-e8-a1-a5-e5-85-a8-ef-bc-8c-codeigniter3-hmvc/"/>
+    <id>//ganl.io/2017/10/02/phpstorm-e4-bb-a3-e7-a0-81-e8-87-aa-e5-8a-a8-e8-a1-a5-e5-85-a8-ef-bc-8c-codeigniter3-hmvc/</id>
+    <published>2017-10-01T17:41:11.000Z</published>
+    <updated>2017-10-07T01:34:31.499Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://github.com/ganl/PhpStorm-CI&quot; title=&quot;PhpStorm-CI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PhpStorm-CI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HMVC: &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Laravel 开发环境-Homestead &amp; 安装 Laravel 应用</title>
+    <link href="//ganl.io/2017/05/01/laravel-e5-bc-80-e5-8f-91-e7-8e-af-e5-a2-83-homestead-e5-ae-89-e8-a3-85-laravel-e5-ba-94-e7-94-a8/"/>
+    <id>//ganl.io/2017/05/01/laravel-e5-bc-80-e5-8f-91-e7-8e-af-e5-a2-83-homestead-e5-ae-89-e8-a3-85-laravel-e5-ba-94-e7-94-a8/</id>
+    <published>2017-05-01T14:42:30.000Z</published>
+    <updated>2017-10-07T01:34:31.499Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本想使用 Laravel Valet，但本机上有较低版本的PHP，决定采用全平台支持的Homestead。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://laravelacademy.org/tags/laravel&quot; title=&quot;View all posts in
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/PHP/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Homestead" scheme="//ganl.io/tags/Homestead/"/>
+    
+      <category term="laravel" scheme="//ganl.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python2.6升级到2.7</title>
+    <link href="//ganl.io/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/"/>
+    <id>//ganl.io/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/</id>
+    <published>2017-03-29T04:27:07.000Z</published>
+    <updated>2017-10-07T01:34:31.499Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]#&lt;br&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]# python -V&lt;br&gt;Python 2.6.6&lt;br&gt;[root@iZu18qlblzrZ
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>StartSSL 切换到 Let&#39;s Encrypt</title>
+    <link href="//ganl.io/2016/12/23/startssl-e5-88-87-e6-8d-a2-e5-88-b0-lets-encrypt/"/>
+    <id>//ganl.io/2016/12/23/startssl-e5-88-87-e6-8d-a2-e5-88-b0-lets-encrypt/</id>
+    <published>2016-12-23T10:16:27.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="certbot" scheme="//ganl.io/tags/certbot/"/>
+    
+      <category term="https" scheme="//ganl.io/tags/https/"/>
+    
+      <category term="Let&#39;s Encrypt" scheme="//ganl.io/tags/Let-s-Encrypt/"/>
+    
+      <category term="StartSSL" scheme="//ganl.io/tags/StartSSL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 16.04.1 安装gitlab  8.10.7-ce.0</title>
+    <link href="//ganl.io/2016/08/21/ubuntu-16-04-1-e5-ae-89-e8-a3-85gitlab-8-10-7-ce-0/"/>
+    <id>//ganl.io/2016/08/21/ubuntu-16-04-1-e5-ae-89-e8-a3-85gitlab-8-10-7-ce-0/</id>
+    <published>2016-08-21T02:32:33.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="gitlab" scheme="//ganl.io/tags/gitlab/"/>
+    
+      <category term="gitlab 8.10.7-ce.0" scheme="//ganl.io/tags/gitlab-8-10-7-ce-0/"/>
+    
+      <category term="gitlab8.10.7" scheme="//ganl.io/tags/gitlab8-10-7/"/>
+    
+      <category term="Ubuntu 16.04.1" scheme="//ganl.io/tags/Ubuntu-16-04-1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows top</title>
+    <link href="//ganl.io/2016/07/06/windows-top/"/>
+    <id>//ganl.io/2016/07/06/windows-top/</id>
+    <published>2016-07-06T03:39:40.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Windows PowerShell中执行：&lt;/p&gt;
+&lt;p&gt;&lt;pre&gt;while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Application" scheme="//ganl.io/categories/Application/"/>
+    
+    
+      <category term="linux" scheme="//ganl.io/tags/linux/"/>
+    
+      <category term="top" scheme="//ganl.io/tags/top/"/>
+    
+      <category term="Windows" scheme="//ganl.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>__trashed</title>
+    <link href="//ganl.io/2016/07/06/trashed/"/>
+    <id>//ganl.io/2016/07/06/trashed/</id>
+    <published>2016-07-06T03:07:41.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[youku]视频ID[/youku]&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>coding.net制作CocoaPods国内镜像源</title>
+    <link href="//ganl.io/2016/06/25/coding-net-e5-88-b6-e4-bd-9ccocoapods-e5-9b-bd-e5-86-85-e9-95-9c-e5-83-8f-e6-ba-90/"/>
+    <id>//ganl.io/2016/06/25/coding-net-e5-88-b6-e4-bd-9ccocoapods-e5-9b-bd-e5-86-85-e9-95-9c-e5-83-8f-e6-ba-90/</id>
+    <published>2016-06-24T17:50:01.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;github CocoaPods速度太慢，不搭梯子的情况下，使用起来非常不爽。&lt;br&gt;网上搜索到的一个国内源：&lt;a href=&quot;https://gitcafe.com/lloydsheng/Specs.git&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="CocoaPods" scheme="//ganl.io/tags/CocoaPods/"/>
+    
+      <category term="coding.net" scheme="//ganl.io/tags/coding-net/"/>
+    
+      <category term="国内镜像" scheme="//ganl.io/tags/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/"/>
+    
+      <category term="阿里云Code" scheme="//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>\u5	ENQ 询问字符,json decode failed (控制字符)</title>
+    <link href="//ganl.io/2016/06/01/u5enq-e8-af-a2-e9-97-ae-e5-ad-97-e7-ac-a6json-decode-failed-e6-8e-a7-e5-88-b6-e5-ad-97-e7-ac-a6/"/>
+    <id>//ganl.io/2016/06/01/u5enq-e8-af-a2-e9-97-ae-e5-ad-97-e7-ac-a6json-decode-failed-e6-8e-a7-e5-88-b6-e5-ad-97-e7-ac-a6/</id>
+    <published>2016-06-01T06:05:42.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+      <category term="ASCII" scheme="//ganl.io/tags/ASCII/"/>
+    
+      <category term="control characters" scheme="//ganl.io/tags/control-characters/"/>
+    
+      <category term="json decode" scheme="//ganl.io/tags/json-decode/"/>
+    
+      <category term="控制字符" scheme="//ganl.io/tags/%E6%8E%A7%E5%88%B6%E5%AD%97%E7%AC%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>svn repo 迁移到git(gitlab)</title>
+    <link href="//ganl.io/2016/03/08/svn-repo-e8-bf-81-e7-a7-bb-e5-88-b0gitgitlab/"/>
+    <id>//ganl.io/2016/03/08/svn-repo-e8-bf-81-e7-a7-bb-e5-88-b0gitgitlab/</id>
+    <published>2016-03-08T14:02:51.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="git" scheme="//ganl.io/tags/git/"/>
+    
+      <category term="git svn clone" scheme="//ganl.io/tags/git-svn-clone/"/>
+    
+      <category term="gitlab" scheme="//ganl.io/tags/gitlab/"/>
+    
+      <category term="svn" scheme="//ganl.io/tags/svn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科学上网利器（三）SoftEther VPN ,阿 *里*云，ali*yun ecs CentOS6.5 搭建VPN</title>
+    <link href="//ganl.io/2016/02/16/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-89-ef-bc-89softether-vpn-e9-98-bf-e9-87-8c-e4-ba-91-ef-bc-8caliyun-ecs-centos6-5-e6-90-ad-e5-bb-bavpn/"/>
+    <id>//ganl.io/2016/02/16/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-89-ef-bc-89softether-vpn-e9-98-bf-e9-87-8c-e4-ba-91-ef-bc-8caliyun-ecs-centos6-5-e6-90-ad-e5-bb-bavpn/</id>
+    <published>2016-02-16T13:11:26.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;先参考安装一下SS：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/657.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;科学上网利器（一）Shadowsocks
+        
+      
+    
+    </summary>
+    
+      <category term="Application" scheme="//ganl.io/categories/Application/"/>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/Application/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="aliyun" scheme="//ganl.io/tags/aliyun/"/>
+    
+      <category term="SoftEther" scheme="//ganl.io/tags/SoftEther/"/>
+    
+      <category term="VPN" scheme="//ganl.io/tags/VPN/"/>
+    
+      <category term="阿里云" scheme="//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome 谷歌浏览器 默认百度搜索时，会跳转到tn=&amp;?tn=90855269_hao_pg</title>
+    <link href="//ganl.io/2016/02/14/chrome-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-e9-bb-98-e8-ae-a4-e7-99-be-e5-ba-a6-e6-90-9c-e7-b4-a2-e6-97-b6-ef-bc-8c-e4-bc-9a-e8-b7-b3-e8-bd-ac-e5-88-b0tntn90855269-hao-pg/"/>
+    <id>//ganl.io/2016/02/14/chrome-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-e9-bb-98-e8-ae-a4-e7-99-be-e5-ba-a6-e6-90-9c-e7-b4-a2-e6-97-b6-ef-bc-8c-e4-bc-9a-e8-b7-b3-e8-bd-ac-e5-88-b0tntn90855269-hao-pg/</id>
+    <published>2016-02-14T12:40:15.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在家几天发现，用chrome地址栏直接搜索东西会跳转一次，很烦&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2016/02/tn.gif&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>科学上网利器（二）CentOS安装PPTP VPN、IPSec/L2TP VPN</title>
+    <link href="//ganl.io/2016/02/04/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-ba-8c-ef-bc-89centos-e5-ae-89-e8-a3-85pptp-vpn-e3-80-81ipsecl2tp-vpn/"/>
+    <id>//ganl.io/2016/02/04/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-ba-8c-ef-bc-89centos-e5-ae-89-e8-a3-85pptp-vpn-e3-80-81ipsecl2tp-vpn/</id>
+    <published>2016-02-04T10:51:49.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一、安装PPTP&lt;br&gt;1.测试是否支持,返回“ok”说明测试通过&lt;/p&gt;
+&lt;pre&gt;modprobe ppp-compress-18 &amp;amp;&amp;amp; echo ok
+cat /dev/ppp&lt;/pre&gt;
+如果提示&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>wordpress后台 插件开启强制ssl登录，由于混合内容无法登录的解决方法</title>
+    <link href="//ganl.io/2016/01/06/wordpress-e5-90-8e-e5-8f-b0-e6-8f-92-e4-bb-b6-e5-bc-80-e5-90-af-e5-bc-ba-e5-88-b6ssl-e7-99-bb-e5-bd-95-ef-bc-8c-e7-94-b1-e4-ba-8e-e6-b7-b7-e5-90-88-e5-86-85-e5-ae-b9-e6-97-a0-e6-b3-95-e7-99-bb/"/>
+    <id>//ganl.io/2016/01/06/wordpress-e5-90-8e-e5-8f-b0-e6-8f-92-e4-bb-b6-e5-bc-80-e5-90-af-e5-bc-ba-e5-88-b6ssl-e7-99-bb-e5-bd-95-ef-bc-8c-e7-94-b1-e4-ba-8e-e6-b7-b7-e5-90-88-e5-86-85-e5-ae-b9-e6-97-a0-e6-b3-95-e7-99-bb/</id>
+    <published>2016-01-06T15:00:32.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="https" scheme="//ganl.io/tags/https/"/>
+    
+      <category term="ssl" scheme="//ganl.io/tags/ssl/"/>
+    
+      <category term="wordpress" scheme="//ganl.io/tags/wordpress/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>shadowsocks, 500 internal privoxy error</title>
+    <link href="//ganl.io/2016/01/06/shadowsocks-500-internal-privoxy-error/"/>
+    <id>//ganl.io/2016/01/06/shadowsocks-500-internal-privoxy-error/</id>
+    <published>2016-01-06T06:40:59.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。&lt;br&gt;客户端的日志显示time out：&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Shadowsocks" scheme="//ganl.io/tags/Shadowsocks/"/>
+    
+      <category term="500 internal privoxy error" scheme="//ganl.io/tags/500-internal-privoxy-error/"/>
+    
+      <category term="privoxy" scheme="//ganl.io/tags/privoxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pycharm,  ValueError: Unable to configure filter &#39;require_debug_false&#39;: &#39;DictConfigurator&#39; object has no attribute &#39;startswith&#39;</title>
+    <link href="//ganl.io/2015/12/17/pycharm-valueerror-unable-to-configure-filter-require-debug-false-dictconfigurator-object-has-no-attribute-startswith/"/>
+    <id>//ganl.io/2015/12/17/pycharm-valueerror-unable-to-configure-filter-require-debug-false-dictconfigurator-object-has-no-attribute-startswith/</id>
+    <published>2015-12-17T15:56:32.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;File “/usr/lib/python2.7/logging/config.py”, line 562, in configure&lt;br&gt;‘filter %r: %s’ % (name, e))&lt;br&gt;ValueError: Unable to configure
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="//ganl.io/categories/Python/"/>
+    
+    
+      <category term="debugger" scheme="//ganl.io/tags/debugger/"/>
+    
+      <category term="pycharm" scheme="//ganl.io/tags/pycharm/"/>
+    
+      <category term="pydev" scheme="//ganl.io/tags/pydev/"/>
+    
+      <category term="python" scheme="//ganl.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>grub rescue&gt; 终端模式修复方法</title>
+    <link href="//ganl.io/2015/12/13/grub-rescue-e7-bb-88-e7-ab-af-e6-a8-a1-e5-bc-8f-e4-bf-ae-e5-a4-8d-e6-96-b9-e6-b3-95/"/>
+    <id>//ganl.io/2015/12/13/grub-rescue-e7-bb-88-e7-ab-af-e6-a8-a1-e5-bc-8f-e4-bf-ae-e5-a4-8d-e6-96-b9-e6-b3-95/</id>
+    <published>2015-12-13T08:06:55.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;导入virtualbox vdi文件，启动后出现error：file not found&lt;/p&gt;
+&lt;p&gt;grub rescue &amp;gt;&lt;/p&gt;
+&lt;p&gt;找到系统所在分区：&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
+    
+    
+      <category term="grub" scheme="//ganl.io/tags/grub/"/>
+    
+      <category term="rescue" scheme="//ganl.io/tags/rescue/"/>
+    
+      <category term="Ubuntu" scheme="//ganl.io/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SCRIPT1028: 缺少标识符、字符串或数字</title>
+    <link href="//ganl.io/2015/11/06/script1028-e7-bc-ba-e5-b0-91-e6-a0-87-e8-af-86-e7-ac-a6-e3-80-81-e5-ad-97-e7-ac-a6-e4-b8-b2-e6-88-96-e6-95-b0-e5-ad-97/"/>
+    <id>//ganl.io/2015/11/06/script1028-e7-bc-ba-e5-b0-91-e6-a0-87-e8-af-86-e7-ac-a6-e3-80-81-e5-ad-97-e7-ac-a6-e4-b8-b2-e6-88-96-e6-95-b0-e5-ad-97/</id>
+    <published>2015-11-06T02:41:41.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;360极速浏览器，既然用chrome的Blink内核，为什么还整个IE11极速和兼容模式；&lt;/p&gt;
+&lt;p&gt;搞得一不注意页面js就报错：SCRIPT1028: 缺少标识符、字符串或数字&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="json" scheme="//ganl.io/tags/json/"/>
+    
+      <category term="SCRIPT1028" scheme="//ganl.io/tags/SCRIPT1028/"/>
+    
+      <category term="逗号" scheme="//ganl.io/tags/%E9%80%97%E5%8F%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>php 导出excel，中文乱码问题</title>
+    <link href="//ganl.io/2015/11/05/php-e5-af-bc-e5-87-baexcel-ef-bc-8c-e4-b8-ad-e6-96-87-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/"/>
+    <id>//ganl.io/2015/11/05/php-e5-af-bc-e5-87-baexcel-ef-bc-8c-e4-b8-ad-e6-96-87-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/</id>
+    <published>2015-11-04T16:15:57.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;有时候会遇到把日志或者其他信息导出来，最开始用的csv到没发现存在乱码的问题；&lt;/p&gt;
+&lt;p&gt;今天导license换成excel，发现里面的中文都乱码了，&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+      <category term="php" scheme="//ganl.io/tags/php/"/>
+    
+      <category term="excel" scheme="//ganl.io/tags/excel/"/>
+    
+      <category term="GBK" scheme="//ganl.io/tags/GBK/"/>
+    
+      <category term="UTF8" scheme="//ganl.io/tags/UTF8/"/>
+    
+      <category term="中文乱码" scheme="//ganl.io/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu12.04安装gitlab社区版(Install a GitLab CE Omnibus package on ubuntu12.04)</title>
+    <link href="//ganl.io/2015/11/04/ubuntu12-04-e5-ae-89-e8-a3-85gitlab-e7-a4-be-e5-8c-ba-e7-89-88install-a-gitlab-ce-omnibus-package-on-ubuntu12-04/"/>
+    <id>//ganl.io/2015/11/04/ubuntu12-04-e5-ae-89-e8-a3-85gitlab-e7-a4-be-e5-8c-ba-e7-89-88install-a-gitlab-ce-omnibus-package-on-ubuntu12-04/</id>
+    <published>2015-11-04T04:44:44.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/977.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ubuntu 16.04.1 安装gitlab
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="github" scheme="//ganl.io/tags/github/"/>
+    
+      <category term="gitlab" scheme="//ganl.io/tags/gitlab/"/>
+    
+      <category term="12.04" scheme="//ganl.io/tags/12-04/"/>
+    
+      <category term="14.04" scheme="//ganl.io/tags/14-04/"/>
+    
+      <category term="离线下载" scheme="//ganl.io/tags/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/"/>
+    
+      <category term="网盘" scheme="//ganl.io/tags/%E7%BD%91%E7%9B%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tool box在Mac下安装Docker（用Boot2Docker来使用Docker）</title>
+    <link href="//ganl.io/2015/09/22/tool-box-e5-9c-a8mac-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-88-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-89/"/>
+    <id>//ganl.io/2015/09/22/tool-box-e5-9c-a8mac-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-88-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-89/</id>
+    <published>2015-09-22T11:59:11.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Windows下安装Docker，参见：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/798.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Boot2Docker" scheme="//ganl.io/tags/Boot2Docker/"/>
+    
+      <category term="Docker" scheme="//ganl.io/tags/Docker/"/>
+    
+      <category term="Mac" scheme="//ganl.io/tags/Mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Boot2Docker来使用Docker（toolbox在Windows下安装Docker）</title>
+    <link href="//ganl.io/2015/09/22/e4-bd-bf-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-88toolbox-e5-9c-a8windows-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-89/"/>
+    <id>//ganl.io/2015/09/22/e4-bd-bf-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-88toolbox-e5-9c-a8windows-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-89/</id>
+    <published>2015-09-21T18:06:06.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;安装之前先了解下关键概念：&quot;&gt;&lt;a href=&quot;#安装之前先了解下关键概念：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Boot2Docker" scheme="//ganl.io/tags/Boot2Docker/"/>
+    
+      <category term="Docker" scheme="//ganl.io/tags/Docker/"/>
+    
+      <category term="Docker Quickstart" scheme="//ganl.io/tags/Docker-Quickstart/"/>
+    
+      <category term="toolbox" scheme="//ganl.io/tags/toolbox/"/>
+    
+      <category term="VMware" scheme="//ganl.io/tags/VMware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Xcode7 (IOS9) 网络请求报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.</title>
+    <link href="//ganl.io/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/"/>
+    <id>//ganl.io/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/</id>
+    <published>2015-09-18T16:27:44.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的；&lt;/p&gt;
+&lt;p&gt;Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport
+        
+      
+    
+    </summary>
+    
+      <category term="IOS" scheme="//ganl.io/categories/IOS/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>github Contributions Calendar不记录的</title>
+    <link href="//ganl.io/2015/09/18/github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84/"/>
+    <id>//ganl.io/2015/09/18/github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84/</id>
+    <published>2015-09-18T14:47:23.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近两天发现github Contributions Calendar不记录：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918223813.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Contributions Calendar" scheme="//ganl.io/tags/Contributions-Calendar/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OAuth2.0 授权类型</title>
+    <link href="//ganl.io/2015/09/18/oauth2-0-e6-8e-88-e6-9d-83-e7-b1-bb-e5-9e-8b/"/>
+    <id>//ganl.io/2015/09/18/oauth2-0-e6-8e-88-e6-9d-83-e7-b1-bb-e5-9e-8b/</id>
+    <published>2015-09-18T10:13:33.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;上一篇说了下自己的困惑：&lt;a href=&quot;http://www.iganlei.cn/web/778.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OAuth 2.0（开放授权）与 REST
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>OAuth 2.0（开放授权）与 REST API</title>
+    <link href="//ganl.io/2015/09/18/oauth-2-0-ef-bc-88-e5-bc-80-e6-94-be-e6-8e-88-e6-9d-83-ef-bc-89-e4-b8-8e-rest-api/"/>
+    <id>//ganl.io/2015/09/18/oauth-2-0-ef-bc-88-e5-bc-80-e6-94-be-e6-8e-88-e6-9d-83-ef-bc-89-e4-b8-8e-rest-api/</id>
+    <published>2015-09-18T06:55:01.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;虽然接触过些OAuth和RESTful，但是一直有比较模糊，很多平台都提供RESTful API,多数都有获取access_token这一步：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="OAuth 2.0" scheme="//ganl.io/tags/OAuth-2-0/"/>
+    
+      <category term="REST API" scheme="//ganl.io/tags/REST-API/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wordpress 升级4.3后，后台发表出现：admin-ajax.php 500</title>
+    <link href="//ganl.io/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/"/>
+    <id>//ganl.io/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/</id>
+    <published>2015-09-13T12:42:08.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;编辑上一篇文章时：&lt;a href=&quot;http://www.iganlei.cn/web/js/755.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iganlei.cn/web/js/755.html&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Js的条件判断的bug, false 居然通过了 if ?真是这样？</title>
+    <link href="//ganl.io/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/"/>
+    <id>//ganl.io/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/</id>
+    <published>2015-09-13T12:12:19.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的：&lt;/p&gt;
+&lt;p&gt;他想实现就是限制：北京，上海，重庆 跳转；&lt;/p&gt;
+&lt;p&gt;很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter
+        
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
+    
+    
+      <category term="JS" scheme="//ganl.io/tags/JS/"/>
+    
+      <category term="&amp;amp;&amp;amp;" scheme="//ganl.io/tags/amp-amp/"/>
+    
+      <category term="||" scheme="//ganl.io/tags//"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VMware Workstation …… vmwareworkstation.msi …… Failed解决方法</title>
+    <link href="//ganl.io/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
+    <id>//ganl.io/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
+    <published>2015-08-16T06:50:41.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；&lt;br&gt;不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="VMware" scheme="//ganl.io/tags/VMware/"/>
+    
+      <category term="VMware Workstation" scheme="//ganl.io/tags/VMware-Workstation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA要设置的环境变量（记录）JAVA_HOME、CLASSPATH、PATH</title>
+    <link href="//ganl.io/2015/08/13/java-e8-a6-81-e8-ae-be-e7-bd-ae-e7-9a-84-e7-8e-af-e5-a2-83-e5-8f-98-e9-87-8f-ef-bc-88-e8-ae-b0-e5-bd-95-ef-bc-89java-home-e3-80-81classpath-e3-80-81path/"/>
+    <id>//ganl.io/2015/08/13/java-e8-a6-81-e8-ae-be-e7-bd-ae-e7-9a-84-e7-8e-af-e5-a2-83-e5-8f-98-e9-87-8f-ef-bc-88-e8-ae-b0-e5-bd-95-ef-bc-89java-home-e3-80-81classpath-e3-80-81path/</id>
+    <published>2015-08-13T02:52:54.000Z</published>
+    <updated>2017-10-07T01:34:31.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;JAVA_HOME、&lt;br&gt; JAVA_HOME 指向的是JDK的安装路径：&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/08/java_home.png&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="CLASSPATH" scheme="//ganl.io/tags/CLASSPATH/"/>
+    
+      <category term="Java" scheme="//ganl.io/tags/Java/"/>
+    
+      <category term="JAVA_HOME" scheme="//ganl.io/tags/JAVA-HOME/"/>
+    
+      <category term="PATH" scheme="//ganl.io/tags/PATH/"/>
+    
+      <category term="环境变量" scheme="//ganl.io/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Esxi(vSphere) 5.5 开发（一）vSphere 5.5 环境搭建</title>
+    <link href="//ganl.io/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/"/>
+    <id>//ganl.io/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/</id>
+    <published>2015-08-07T13:14:02.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.到官方网站下载ESXi5.5，然后刻成光盘（用UltraISO烧到U盘应该也是可以的）。&lt;br&gt;找一台干净机器，开机后从光驱启动，进行引导安装，直接选择第一项“标准安装”回车继续，&lt;br&gt;引导程序会加载VMkernel以及相关模块到内存中，同时ESXi
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Esxi" scheme="//ganl.io/tags/Esxi/"/>
+    
+      <category term="vSphere" scheme="//ganl.io/tags/vSphere/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>svn: Can&#39;t convert string from &#39;UTF-8&#39; to native encoding:</title>
+    <link href="//ganl.io/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/"/>
+    <id>//ganl.io/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/</id>
+    <published>2015-07-30T08:11:58.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>linux 下mysql没有开机自启动</title>
+    <link href="//ganl.io/2015/07/30/linux-e4-b8-8bmysql-e6-b2-a1-e6-9c-89-e5-bc-80-e6-9c-ba-e8-87-aa-e5-90-af-e5-8a-a8/"/>
+    <id>//ganl.io/2015/07/30/linux-e4-b8-8bmysql-e6-b2-a1-e6-9c-89-e5-bc-80-e6-9c-ba-e8-87-aa-e5-90-af-e5-8a-a8/</id>
+    <published>2015-07-30T07:56:31.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;有点怪，/etc/init.d/mysqld 这样不应该会自启动吗？&lt;/p&gt;
+&lt;p&gt;chkconfig |grep mysql&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;chkconfig mysqld on&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>科学上网利器（一）Shadowsocks （Install Shadowsocks Server on Windows/Linux）附带windows和Android/iOS客户端配置</title>
+    <link href="//ganl.io/2015/07/27/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-80-ef-bc-89shadowsocks-ef-bc-88install-shadowsocks-server-on-windows-ef-bc-89/"/>
+    <id>//ganl.io/2015/07/27/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-80-ef-bc-89shadowsocks-ef-bc-88install-shadowsocks-server-on-windows-ef-bc-89/</id>
+    <published>2015-07-27T10:19:28.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;除了&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/650.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="android" scheme="//ganl.io/tags/android/"/>
+    
+      <category term="MAC OSX" scheme="//ganl.io/tags/MAC-OSX/"/>
+    
+      <category term="Shadowsocks" scheme="//ganl.io/tags/Shadowsocks/"/>
+    
+      <category term="科学上网" scheme="//ganl.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[2016.08.04 更新]修改Host文件，让你的Google跑起来 2016 Google hosts持续更新</title>
+    <link href="//ganl.io/2015/07/17/2015-7-17-e4-bf-ae-e6-94-b9host-e6-96-87-e4-bb-b6-ef-bc-8c-e8-ae-a9-e4-bd-a0-e7-9a-84google-e8-b7-91-e8-b5-b7-e6-9d-a5-2015-google-hosts/"/>
+    <id>//ganl.io/2015/07/17/2015-7-17-e4-bf-ae-e6-94-b9host-e6-96-87-e4-bb-b6-ef-bc-8c-e8-ae-a9-e4-bd-a0-e7-9a-84google-e8-b7-91-e8-b5-b7-e6-9d-a5-2015-google-hosts/</id>
+    <published>2015-07-17T06:10:05.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;效果：&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/google28.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Google" scheme="//ganl.io/tags/Google/"/>
+    
+      <category term="Google hosts" scheme="//ganl.io/tags/Google-hosts/"/>
+    
+      <category term="hosts" scheme="//ganl.io/tags/hosts/"/>
+    
+      <category term="youtube" scheme="//ganl.io/tags/youtube/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx出现413 Request Entity Too Large错误解决方法</title>
+    <link href="//ganl.io/2015/07/11/nginx-e5-87-ba-e7-8e-b0413-request-entity-too-large-e9-94-99-e8-af-af-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
+    <id>//ganl.io/2015/07/11/nginx-e5-87-ba-e7-8e-b0413-request-entity-too-large-e9-94-99-e8-af-af-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
+    <published>2015-07-11T09:31:28.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在PhpMyAdmin里上传一个30M左右的sql.zip就提示 413&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/100004173.png&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="nginx" scheme="//ganl.io/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Got a packet bigger than &#39;max_allowed_packet&#39; bytes</title>
+    <link href="//ganl.io/2015/07/11/got-a-packet-bigger-than-max-allowed-packet-bytes/"/>
+    <id>//ganl.io/2015/07/11/got-a-packet-bigger-than-max-allowed-packet-bytes/</id>
+    <published>2015-07-11T09:27:04.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天把mysql数据库重新初始化后，用phpMyAdmin导入之前备份的数据库遇到错误：&lt;br&gt;Got a packet bigger than ‘max_allowed_packet’ bytes&lt;/p&gt;
+&lt;p&gt;修改/etc/my.cnf
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="max_allowed_packet" scheme="//ganl.io/tags/max-allowed-packet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VS2008 频繁崩溃,打开提示已停止</title>
+    <link href="//ganl.io/2015/07/08/vs2008-e9-a2-91-e7-b9-81-e5-b4-a9-e6-ba-83-e6-89-93-e5-bc-80-e6-8f-90-e7-a4-ba-e5-b7-b2-e5-81-9c-e6-ad-a2/"/>
+    <id>//ganl.io/2015/07/08/vs2008-e9-a2-91-e7-b9-81-e5-b4-a9-e6-ba-83-e6-89-93-e5-bc-80-e6-8f-90-e7-a4-ba-e5-b7-b2-e5-81-9c-e6-ad-a2/</id>
+    <published>2015-07-08T05:32:53.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;查看事件日志：&lt;br&gt;devenv.exe 错误模块路径: C:\Windows\SysWOW64\ntdll.dll&lt;/p&gt;
+&lt;p&gt;度娘提供的解决方案：&lt;/p&gt;
+&lt;p&gt;打开开始菜单》所有程序》Microsoft Visual Studio》Visual
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>将 SVN 仓库转换为 Git 仓库</title>
+    <link href="//ganl.io/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/"/>
+    <id>//ganl.io/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/</id>
+    <published>2015-07-07T09:10:57.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1) 将远程SVN仓库搬到本地（见：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/628.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>将远程SVN版本库搬到本地</title>
+    <link href="//ganl.io/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/"/>
+    <id>//ganl.io/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/</id>
+    <published>2015-07-07T05:26:59.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行&lt;/p&gt;
+&lt;p&gt;1）在本地建立一个新的版本库：&lt;br&gt;    svnadmin create
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云DNS</title>
+    <link href="//ganl.io/2015/07/07/e9-98-bf-e9-87-8c-e4-ba-91dns/"/>
+    <id>//ganl.io/2015/07/07/e9-98-bf-e9-87-8c-e4-ba-91dns/</id>
+    <published>2015-07-07T02:16:23.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;233.5.5.5&lt;br&gt;233.6.6.6&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="dns" scheme="//ganl.io/tags/dns/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ios8案例大全目录</title>
+    <link href="//ganl.io/2015/07/06/ios8-e6-a1-88-e4-be-8b-e5-a4-a7-e5-85-a8-e7-9b-ae-e5-bd-95/"/>
+    <id>//ganl.io/2015/07/06/ios8-e6-a1-88-e4-be-8b-e5-a4-a7-e5-85-a8-e7-9b-ae-e5-bd-95/</id>
+    <published>2015-07-06T15:45:36.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;第1章 搭建开发环境实战    1&lt;br&gt;实例001 下载并安装Xcode    1&lt;br&gt;实例002 改变Xcode工程的公司名称    4&lt;br&gt;实例003 通过搜索框缩小文件范围并格式化代码    5&lt;br&gt;实例004 代码缩进和提示处理    6&lt;br&gt;实例005
+        
+      
+    
+    </summary>
+    
+      <category term="IOS" scheme="//ganl.io/categories/IOS/"/>
+    
+    
+      <category term="ios" scheme="//ganl.io/tags/ios/"/>
+    
+      <category term="ios8" scheme="//ganl.io/tags/ios8/"/>
+    
+      <category term="oc" scheme="//ganl.io/tags/oc/"/>
+    
+      <category term="swift" scheme="//ganl.io/tags/swift/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站压力测试工具 Webbench</title>
+    <link href="//ganl.io/2015/07/03/e7-bd-91-e7-ab-99-e5-8e-8b-e5-8a-9b-e6-b5-8b-e8-af-95-e5-b7-a5-e5-85-b7-webbench/"/>
+    <id>//ganl.io/2015/07/03/e7-bd-91-e7-ab-99-e5-8e-8b-e5-8a-9b-e6-b5-8b-e8-af-95-e5-b7-a5-e5-85-b7-webbench/</id>
+    <published>2015-07-03T06:22:04.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;webbench编译安装包备份链接: &lt;a href=&quot;http://pan.baidu.com/s/1mg26wT6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mg26wT6&lt;/a&gt; 密码:
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Webbench" scheme="//ganl.io/tags/Webbench/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Webtatic.com提供的源升级PHP5.4.42</title>
+    <link href="//ganl.io/2015/07/03/e7-94-a8webtatic-com-e6-8f-90-e4-be-9b-e7-9a-84-e6-ba-90-e5-8d-87-e7-ba-a7php5-4-42/"/>
+    <id>//ganl.io/2015/07/03/e7-94-a8webtatic-com-e6-8f-90-e4-be-9b-e7-9a-84-e6-ba-90-e5-8d-87-e7-ba-a7php5-4-42/</id>
+    <published>2015-07-03T03:28:21.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;To install, first you must add the Webtatic EL yum repository information corresponding to your CentOS/RHEL version to
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>wxp/wnet/wlh/win7|wxp、wnet、wlh、xp、wlh、win8、win7、vista</title>
+    <link href="//ganl.io/2015/06/17/wxpwnetwlhwin7wxp-e3-80-81wnet-e3-80-81wlh-e3-80-81xp-e3-80-81wlh-e3-80-81win8-e3-80-81win7-e3-80-81vista/"/>
+    <id>//ganl.io/2015/06/17/wxpwnetwlhwin7wxp-e3-80-81wnet-e3-80-81wlh-e3-80-81xp-e3-80-81wlh-e3-80-81win8-e3-80-81win7-e3-80-81vista/</id>
+    <published>2015-06-17T09:03:45.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;wxp/wnet/wlh/win7&lt;br&gt;wxp - Windows XP&lt;br&gt;wnet - Windows Server 2003&lt;br&gt;wlh - Windows Vista and Windows Server 2008&lt;br&gt;win7 - Windows 7
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css 渐变兼容写法 ie chrome firefox</title>
+    <link href="//ganl.io/2015/06/09/css-e6-b8-90-e5-8f-98-e5-85-bc-e5-ae-b9-e5-86-99-e6-b3-95-ie-chrome-firefox/"/>
+    <id>//ganl.io/2015/06/09/css-e6-b8-90-e5-8f-98-e5-85-bc-e5-ae-b9-e5-86-99-e6-b3-95-ie-chrome-firefox/</id>
+    <published>2015-06-09T03:47:04.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;css 渐变兼容写法 ie chrome firefox&lt;br&gt; background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#33bbee), to(#00a0e9));&lt;br&gt;  background:
+        
+      
+    
+    </summary>
+    
+      <category term="html/css" scheme="//ganl.io/categories/html-css/"/>
+    
+    
+      <category term="gradient" scheme="//ganl.io/tags/gradient/"/>
+    
+      <category term="ie11" scheme="//ganl.io/tags/ie11/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql5.6 无故退出 InnoDB: mmap(137363456 bytes) failed; errno 12</title>
+    <link href="//ganl.io/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/"/>
+    <id>//ganl.io/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/</id>
+    <published>2015-06-07T01:42:00.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;百度了一下，貌似阿里云很多用户都遇到过这个问题，主机内存2G的。&lt;br&gt;在一堆日志中看了一句：&lt;br&gt;InnoDB: mmap(137363456 bytes) failed; errno 12&lt;br&gt;度娘说：修改my.cnf
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="InnoDB" scheme="//ganl.io/tags/InnoDB/"/>
+    
+      <category term="mysql5.6" scheme="//ganl.io/tags/mysql5-6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Warning: Attempt to present   on  which is already presenting </title>
+    <link href="//ganl.io/2015/06/04/warning-attempt-to-present-on-which-is-already-presenting/"/>
+    <id>//ganl.io/2015/06/04/warning-attempt-to-present-on-which-is-already-presenting/</id>
+    <published>2015-06-03T16:18:42.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在iOS 7模拟器上测试没问题。iOS 8.3上报了如下警告：&lt;br&gt;Warning: Attempt to present &lt;uinavigationcontroller: 0x7caa83c0=&quot;&quot;&gt;  on
+        
+      
+    
+    </summary>
+    
+      <category term="IOS" scheme="//ganl.io/categories/IOS/"/>
+    
+    
+      <category term="UIAlertController" scheme="//ganl.io/tags/UIAlertController/"/>
+    
+      <category term="UINavigationController" scheme="//ganl.io/tags/UINavigationController/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vc2008编译报LINK : fatal error LNK1000: Internal error during IncrBuildImage</title>
+    <link href="//ganl.io/2015/06/03/vc2008-e7-bc-96-e8-af-91-e6-8a-a5link-fatal-error-lnk1000-internal-error-during-incrbuildimage/"/>
+    <id>//ganl.io/2015/06/03/vc2008-e7-bc-96-e8-af-91-e6-8a-a5link-fatal-error-lnk1000-internal-error-during-incrbuildimage/</id>
+    <published>2015-06-03T08:02:46.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;LINK : fatal error LNK1000: Internal error during IncrBuildImage&lt;br&gt;[caption id=”attachment_597” align=”aligncenter” width=”300”]&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="C/C++" scheme="//ganl.io/categories/C-C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>编译安装Apache（2.2.29）和PHP（php-5.4.41）</title>
+    <link href="//ganl.io/2015/05/21/e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85apache-ef-bc-882-2-29-ef-bc-89-e5-92-8cphp-ef-bc-88php-5-4-41-ef-bc-89/"/>
+    <id>//ganl.io/2015/05/21/e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85apache-ef-bc-882-2-29-ef-bc-89-e5-92-8cphp-ef-bc-88php-5-4-41-ef-bc-89/</id>
+    <published>2015-05-21T09:37:37.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;下载Apache并解压：&lt;br&gt; 6  wget &lt;a href=&quot;http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="apache" scheme="//ganl.io/tags/apache/"/>
+    
+      <category term="php" scheme="//ganl.io/tags/php/"/>
+    
+      <category term="编译" scheme="//ganl.io/tags/%E7%BC%96%E8%AF%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RHEL6.5更改为阿里云(aliyun)CentOS6的yum源</title>
+    <link href="//ganl.io/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/"/>
+    <id>//ganl.io/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/</id>
+    <published>2015-05-21T06:17:47.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;删除原有的yum包&lt;br&gt;  45  rpm -qa | grep yum|xargs rpm -e –nodeps&lt;br&gt;安装yum包&lt;br&gt;   46  rpm -ivh &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="aliyun" scheme="//ganl.io/tags/aliyun/"/>
+    
+      <category term="阿里云" scheme="//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+      <category term="mirrors" scheme="//ganl.io/tags/mirrors/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python cannot find dateutil.relativedelta</title>
+    <link href="//ganl.io/2015/05/18/python-cannot-find-dateutil-relativedelta/"/>
+    <id>//ganl.io/2015/05/18/python-cannot-find-dateutil-relativedelta/</id>
+    <published>2015-05-18T02:11:32.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;:ImportError&lt;br&gt;Exception Value: No module named dateutil.relativedelta&lt;/p&gt;
+&lt;p&gt;So if you have this issue, try the
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="//ganl.io/categories/Python/"/>
+    
+    
+      <category term="python" scheme="//ganl.io/tags/python/"/>
+    
+      <category term="dateutil" scheme="//ganl.io/tags/dateutil/"/>
+    
+      <category term="relativedelta" scheme="//ganl.io/tags/relativedelta/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wamp下127.0.0.1访问正常，域名解析后访问403的解决办法</title>
+    <link href="//ganl.io/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/"/>
+    <id>//ganl.io/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</id>
+    <published>2015-05-13T14:27:20.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;域名解析到ip后，访问出现下图情况&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/05/8.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="apache" scheme="//ganl.io/tags/apache/"/>
+    
+      <category term="php" scheme="//ganl.io/tags/php/"/>
+    
+      <category term="msyql" scheme="//ganl.io/tags/msyql/"/>
+    
+      <category term="wamp" scheme="//ganl.io/tags/wamp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用s3fs挂载天翼OOS到服务器</title>
+    <link href="//ganl.io/2015/04/24/e7-94-a8s3fs-e6-8c-82-e8-bd-bd-e5-a4-a9-e7-bf-bcoos-e5-88-b0-e6-9c-8d-e5-8a-a1-e5-99-a8/"/>
+    <id>//ganl.io/2015/04/24/e7-94-a8s3fs-e6-8c-82-e8-bd-bd-e5-a4-a9-e7-bf-bcoos-e5-88-b0-e6-9c-8d-e5-8a-a1-e5-99-a8/</id>
+    <published>2015-04-24T10:44:35.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;s3fs是把Amazon S3存储服务挂载到本地硬盘或者服务器上的程序，天翼云存储OOS和S3兼容，只需要修改s3fs一行代码，它就能挂载天翼OSS到服务器上。&lt;br&gt;github地址：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="FUSE" scheme="//ganl.io/tags/FUSE/"/>
+    
+      <category term="OOS" scheme="//ganl.io/tags/OOS/"/>
+    
+      <category term="s3fs" scheme="//ganl.io/tags/s3fs/"/>
+    
+      <category term="s3fs-fuse" scheme="//ganl.io/tags/s3fs-fuse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下libevent安装</title>
+    <link href="//ganl.io/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/"/>
+    <id>//ganl.io/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/</id>
+    <published>2015-04-24T06:54:18.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;code&gt;[root@localhost ~]# wget
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="linux" scheme="//ganl.io/tags/linux/"/>
+    
+      <category term="libevent" scheme="//ganl.io/tags/libevent/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>zend studio配置调试(Xdebug方式)</title>
+    <link href="//ganl.io/2015/04/14/zend-studio-e9-85-8d-e7-bd-ae-e8-b0-83-e8-af-95xdebug-e6-96-b9-e5-bc-8f/"/>
+    <id>//ganl.io/2015/04/14/zend-studio-e9-85-8d-e7-bd-ae-e8-b0-83-e8-af-95xdebug-e6-96-b9-e5-bc-8f/</id>
+    <published>2015-04-14T02:18:52.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;ins datetime=&quot;2015-04-14T01:56:33+00:00&quot;&gt;zend studio配置调试(Xdebug方式)&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;1.下载xdebug&lt;/p&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="xdebug" scheme="//ganl.io/tags/xdebug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github在线创建文件夹(目录)</title>
+    <link href="//ganl.io/2015/04/12/github-e5-9c-a8-e7-ba-bf-e5-88-9b-e5-bb-ba-e6-96-87-e4-bb-b6-e5-a4-b9-e7-9b-ae-e5-bd-95/"/>
+    <id>//ganl.io/2015/04/12/github-e5-9c-a8-e7-ba-bf-e5-88-9b-e5-bb-ba-e6-96-87-e4-bb-b6-e5-a4-b9-e7-9b-ae-e5-bd-95/</id>
+    <published>2015-04-12T12:53:56.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;github页面上的加号点击后是创建一个文件，&lt;br&gt;没有明显的按钮创建目录，&lt;br&gt;发现直接在创建文件时键入 “/”
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux LVM 扩容</title>
+    <link href="//ganl.io/2015/04/08/linux-lvm-e6-89-a9-e5-ae-b9/"/>
+    <id>//ganl.io/2015/04/08/linux-lvm-e6-89-a9-e5-ae-b9/</id>
+    <published>2015-04-08T05:27:51.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;安装软件提示存储不足：&lt;br&gt;&lt;code&gt;[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm 
+Preparing...               
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="linux" scheme="//ganl.io/tags/linux/"/>
+    
+      <category term="lvm" scheme="//ganl.io/tags/lvm/"/>
+    
+      <category term="pv" scheme="//ganl.io/tags/pv/"/>
+    
+      <category term="vg" scheme="//ganl.io/tags/vg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js实现表格根据字段排序</title>
+    <link href="//ganl.io/2015/04/02/js-e5-ae-9e-e7-8e-b0-e8-a1-a8-e6-a0-bc-e6-a0-b9-e6-8d-ae-e5-ad-97-e6-ae-b5-e6-8e-92-e5-ba-8f/"/>
+    <id>//ganl.io/2015/04/02/js-e5-ae-9e-e7-8e-b0-e8-a1-a8-e6-a0-bc-e6-a0-b9-e6-8d-ae-e5-ad-97-e6-ae-b5-e6-8e-92-e5-ba-8f/</id>
+    <published>2015-04-02T13:14:26.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;定义和用法&lt;br&gt;sort() 方法用于对数组的元素进行排序。&lt;br&gt;语法&lt;br&gt;arrayObject.sort(sortby)&lt;br&gt;参数    描述&lt;br&gt;sortby   
+        
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
+    
+    
+      <category term="JS" scheme="//ganl.io/tags/JS/"/>
+    
+      <category term="sort()" scheme="//ganl.io/tags/sort/"/>
+    
+      <category term="排序" scheme="//ganl.io/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+      <category term="表格" scheme="//ganl.io/tags/%E8%A1%A8%E6%A0%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云linux一键安装web环境 升级</title>
+    <link href="//ganl.io/2015/03/30/e9-98-bf-e9-87-8c-e4-ba-91linux-e4-b8-80-e9-94-ae-e5-ae-89-e8-a3-85web-e7-8e-af-e5-a2-83-e5-8d-87-e7-ba-a7/"/>
+    <id>//ganl.io/2015/03/30/e9-98-bf-e9-87-8c-e4-ba-91linux-e4-b8-80-e9-94-ae-e5-ae-89-e8-a3-85web-e7-8e-af-e5-a2-83-e5-8d-87-e7-ba-a7/</id>
+    <published>2015-03-29T18:03:47.000Z</published>
+    <updated>2017-10-07T01:34:31.497Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;说是升级，实际是重装了，&lt;br&gt;先&lt;br&gt;&lt;code&gt;mv www /home/www
+  mv rewrite /home/rewrite/
+  mv vhosts /home/vhosts
+  mv mysql/var
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="升级" scheme="//ganl.io/tags/%E5%8D%87%E7%BA%A7/"/>
+    
+      <category term="阿里云linux一键安装web环境" scheme="//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91linux%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85web%E7%8E%AF%E5%A2%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The method getString(int) is undefined for the type myException</title>
+    <link href="//ganl.io/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/"/>
+    <id>//ganl.io/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/</id>
+    <published>2015-03-26T13:22:48.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;android里在一个普通的类中：getString(R.string.the_license_expired)&lt;br&gt;eclipse 提示：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The method getString(int) is undefined for
+        
+      
+    
+    </summary>
+    
+      <category term="JAVA" scheme="//ganl.io/categories/JAVA/"/>
+    
+    
+      <category term="android" scheme="//ganl.io/tags/android/"/>
+    
+      <category term="Exception" scheme="//ganl.io/tags/Exception/"/>
+    
+      <category term="getString" scheme="//ganl.io/tags/getString/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决django生成po文件,翻译失效的问题</title>
+    <link href="//ganl.io/2015/03/25/e8-a7-a3-e5-86-b3django-e7-94-9f-e6-88-90po-e6-96-87-e4-bb-b6-e7-bf-bb-e8-af-91-e5-a4-b1-e6-95-88-e7-9a-84-e9-97-ae-e9-a2-98/"/>
+    <id>//ganl.io/2015/03/25/e8-a7-a3-e5-86-b3django-e7-94-9f-e6-88-90po-e6-96-87-e4-bb-b6-e7-bf-bb-e8-af-91-e5-a4-b1-e6-95-88-e7-9a-84-e9-97-ae-e9-a2-98/</id>
+    <published>2015-03-25T01:21:33.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;用django-admin.py makemessages -a 更新po文件后 ，对需要翻译的字符串进行相应翻译后&lt;br&gt;再用django-admin.py compilemessages编译，发现有些英文能正常翻译，有些还是英文，&lt;br&gt;检查了下字串上方标注了
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="//ganl.io/categories/Python/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JQuery采用append添加的元素事件无效</title>
+    <link href="//ganl.io/2015/03/19/jquery-e9-87-87-e7-94-a8append-e6-b7-bb-e5-8a-a0-e7-9a-84-e5-85-83-e7-b4-a0-e4-ba-8b-e4-bb-b6-e6-97-a0-e6-95-88/"/>
+    <id>//ganl.io/2015/03/19/jquery-e9-87-87-e7-94-a8append-e6-b7-bb-e5-8a-a0-e7-9a-84-e5-85-83-e7-b4-a0-e4-ba-8b-e4-bb-b6-e6-97-a0-e6-95-88/</id>
+    <published>2015-03-19T10:03:38.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;使用jQuery动态加载html元素，但是元素上面又绑定了Click等事件，针对新添加的元素这些事件是无效的&lt;br&gt;部分代码如下：&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
+    
+    
+      <category term="append()" scheme="//ganl.io/tags/append/"/>
+    
+      <category term="live()" scheme="//ganl.io/tags/live/"/>
+    
+      <category term="on()" scheme="//ganl.io/tags/on/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>apache遇到的两个问题 Disabled use of AcceptEx() WinSock2 API错误 [warn] (OS 64)指定的网络名不再可用。  : winnt_accept: Asynchronous AcceptEx failed.</title>
+    <link href="//ganl.io/2015/03/18/apache-e9-81-87-e5-88-b0-e7-9a-84-e4-b8-a4-e4-b8-aa-e9-97-ae-e9-a2-98-disabled-use-of-acceptex-winsock2-api-e9-94-99-e8-af-af-warn-os-64-e6-8c-87-e5-ae-9a-e7-9a-84-e7-bd-91-e7-bb-9c-e5-90-8d/"/>
+    <id>//ganl.io/2015/03/18/apache-e9-81-87-e5-88-b0-e7-9a-84-e4-b8-a4-e4-b8-aa-e9-97-ae-e9-a2-98-disabled-use-of-acceptex-winsock2-api-e9-94-99-e8-af-af-warn-os-64-e6-8c-87-e5-ae-9a-e7-9a-84-e7-bd-91-e7-bb-9c-e5-90-8d/</id>
+    <published>2015-03-18T09:39:38.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;突然网站就不动了，看了下日志：&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="apache" scheme="//ganl.io/tags/apache/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP 将秒转成距离当前多少天日分秒 (秒格式为天/小时/分钟/秒)</title>
+    <link href="//ganl.io/2015/03/16/php-e5-b0-86-e7-a7-92-e8-bd-ac-e6-88-90-e8-b7-9d-e7-a6-bb-e5-bd-93-e5-89-8d-e5-a4-9a-e5-b0-91-e5-a4-a9-e6-97-a5-e5-88-86-e7-a7-92-e7-a7-92-e6-a0-bc-e5-bc-8f-e4-b8-ba-e5-a4-a9-e5-b0-8f-e6-97-b6/"/>
+    <id>//ganl.io/2015/03/16/php-e5-b0-86-e7-a7-92-e8-bd-ac-e6-88-90-e8-b7-9d-e7-a6-bb-e5-bd-93-e5-89-8d-e5-a4-9a-e5-b0-91-e5-a4-a9-e6-97-a5-e5-88-86-e7-a7-92-e7-a7-92-e6-a0-bc-e5-bc-8f-e4-b8-ba-e5-a4-a9-e5-b0-8f-e6-97-b6/</id>
+    <published>2015-03-16T06:27:53.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;有时需要统计服务器的uptime，得到一般是秒或这毫秒的数据，需要转化成天&lt;br&gt;方法一：&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+      <category term="秒格式为天/小时/分钟/秒" scheme="//ganl.io/tags/%E7%A7%92%E6%A0%BC%E5%BC%8F%E4%B8%BA%E5%A4%A9-%E5%B0%8F%E6%97%B6-%E5%88%86%E9%92%9F-%E7%A7%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wordpress“建立数据库连接时出错”解决方案</title>
+    <link href="//ganl.io/2015/03/13/wordpress-e5-bb-ba-e7-ab-8b-e6-95-b0-e6-8d-ae-e5-ba-93-e8-bf-9e-e6-8e-a5-e6-97-b6-e5-87-ba-e9-94-99-e8-a7-a3-e5-86-b3-e6-96-b9-e6-a1-88/"/>
+    <id>//ganl.io/2015/03/13/wordpress-e5-bb-ba-e7-ab-8b-e6-95-b0-e6-8d-ae-e5-ba-93-e8-bf-9e-e6-8e-a5-e6-97-b6-e5-87-ba-e9-94-99-e8-a7-a3-e5-86-b3-e6-96-b9-e6-a1-88/</id>
+    <published>2015-03-13T13:18:09.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;网上有很多种说法：&lt;br&gt;1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）&lt;br&gt;2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）&lt;br&gt;3、最重要的一个原因，wp_options表需要修复。wordp
+        
+      
+    
+    </summary>
+    
+    
+      <category term="秒格式为天/小时/分钟/秒" scheme="//ganl.io/tags/%E7%A7%92%E6%A0%BC%E5%BC%8F%E4%B8%BA%E5%A4%A9-%E5%B0%8F%E6%97%B6-%E5%88%86%E9%92%9F-%E7%A7%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>postgresql 9.3的时区设置(相差8小时)</title>
+    <link href="//ganl.io/2015/03/12/postgresql-9-3-e7-9a-84-e6-97-b6-e5-8c-ba-e8-ae-be-e7-bd-ae-e7-9b-b8-e5-b7-ae8-e5-b0-8f-e6-97-b6/"/>
+    <id>//ganl.io/2015/03/12/postgresql-9-3-e7-9a-84-e6-97-b6-e5-8c-ba-e8-ae-be-e7-bd-ae-e7-9b-b8-e5-b7-ae8-e5-b0-8f-e6-97-b6/</id>
+    <published>2015-03-12T03:19:41.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本来在8.3下正常运行的，升级到9.3后，发现PHP显示的时间比系统时间少了8小时。&lt;br&gt;PHP设置的时区是从数据库取得的：date_default_timezone_set($timezone);&lt;/p&gt;
+&lt;p&gt;#show
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows Server 2008 R2 配置AD(Active Directory)域控制器</title>
+    <link href="//ganl.io/2015/03/11/windows-server-2008-r2-e9-85-8d-e7-bd-aeadactive-directory-e5-9f-9f-e6-8e-a7-e5-88-b6-e5-99-a8/"/>
+    <id>//ganl.io/2015/03/11/windows-server-2008-r2-e9-85-8d-e7-bd-aeadactive-directory-e5-9f-9f-e6-8e-a7-e5-88-b6-e5-99-a8/</id>
+    <published>2015-03-11T09:49:08.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;参考原文：&lt;a href=&quot;http://www.cnblogs.com/zhongweiv/archive/2012/12/14/win2008_addomain_configuration.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="Windows AD域用户配置" scheme="//ganl.io/tags/Windows-AD%E5%9F%9F%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>/bin/sh^M:bad interpreter: No such file or directory</title>
+    <link href="//ganl.io/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/"/>
+    <id>//ganl.io/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/</id>
+    <published>2015-01-26T03:10:42.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="IOS" scheme="//ganl.io/categories/IOS/"/>
+    
+    
+      <category term="genapp" scheme="//ganl.io/tags/genapp/"/>
+    
+      <category term="ios" scheme="//ganl.io/tags/ios/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zend Studio 启动JAVA报错：Java was started but returned exit code=13</title>
+    <link href="//ganl.io/2015/01/20/zend-studio-e5-90-af-e5-8a-a8java-e6-8a-a5-e9-94-99-ef-bc-9ajava-was-started-but-returned-exit-code13/"/>
+    <id>//ganl.io/2015/01/20/zend-studio-e5-90-af-e5-8a-a8java-e6-8a-a5-e9-94-99-ef-bc-9ajava-was-started-but-returned-exit-code13/</id>
+    <published>2015-01-20T02:13:47.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;重启Zend Studio时，报了个错：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/01/QQ截图20150115142834.jpg&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+      <category term="Java" scheme="//ganl.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TypeError: &#39;stepUp&#39; called on an object that does not implement interface HTMLInputElement in jquery</title>
+    <link href="//ganl.io/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/"/>
+    <id>//ganl.io/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/</id>
+    <published>2015-01-20T02:02:57.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span&gt;&lt;span&gt;$.post(requestUrl,&amp;nbsp;{&lt;/span&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
+    
+    
+      <category term="JS" scheme="//ganl.io/tags/JS/"/>
+    
+      <category term="JQ" scheme="//ganl.io/tags/JQ/"/>
+    
+      <category term="Jquery" scheme="//ganl.io/tags/Jquery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“You must use the Role Management Tool to install or configure Microsoft .NET”</title>
+    <link href="//ganl.io/2015/01/12/you-must-use-the-role-management-tool-to-install-or-configure-microsoft-net/"/>
+    <id>//ganl.io/2015/01/12/you-must-use-the-role-management-tool-to-install-or-configure-microsoft-net/</id>
+    <published>2015-01-12T05:58:26.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在Windows Server 2008 下安装VS 2008时，碰到如下错误：&lt;br&gt;You must use the Role Management Tool to install or configure Microsoft .NET……&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="C#.net" scheme="//ganl.io/categories/C-net/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VCRedist from VS 2008 or VC++ runtime library installs temporary files in root directory</title>
+    <link href="//ganl.io/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/"/>
+    <id>//ganl.io/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/</id>
+    <published>2014-12-31T05:51:35.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如&lt;/p&gt;
+&lt;p&gt;9个文本文件 名字分别为&lt;br&gt;eula.1028.txt ，&lt;br&gt;eula.1031.txt
+        
+      
+    
+    </summary>
+    
+      <category term="C#.net" scheme="//ganl.io/categories/C-net/"/>
+    
+    
+      <category term="VC runtime library" scheme="//ganl.io/tags/VC-runtime-library/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【mark】linux top命令VIRT,RES,SHR,DATA的含义</title>
+    <link href="//ganl.io/2014/12/30/e3-80-90mark-e3-80-91linux-top-e5-91-bd-e4-bb-a4virtresshrdata-e7-9a-84-e5-90-ab-e4-b9-89/"/>
+    <id>//ganl.io/2014/12/30/e3-80-90mark-e3-80-91linux-top-e5-91-bd-e4-bb-a4virtresshrdata-e7-9a-84-e5-90-ab-e4-b9-89/</id>
+    <published>2014-12-30T04:39:10.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;VIRT：virtual memory usage 虚拟内存&lt;br&gt;1、进程“需要的”虚拟内存大小，包括进程使用的库、代码、数据等&lt;br&gt;2、假如进程申请100m的内存，但实际只使用了10m，那么它会增长100m，而不是实际的使用量&lt;br&gt;RES：resident
+        
+      
+    
+    </summary>
+    
+      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
+    
+    
+      <category term="linux" scheme="//ganl.io/tags/linux/"/>
+    
+      <category term="top" scheme="//ganl.io/tags/top/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>This function or variable may be unsafe.如何使用_CRT_SECURE_NO_WARNINGS</title>
+    <link href="//ganl.io/2014/12/29/this-function-or-variable-may-be-unsafe-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8-crt-secure-no-warnings/"/>
+    <id>//ganl.io/2014/12/29/this-function-or-variable-may-be-unsafe-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8-crt-secure-no-warnings/</id>
+    <published>2014-12-29T15:22:28.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Error    3    error C4996: ‘strcpy’: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation,
+        
+      
+    
+    </summary>
+    
+      <category term="C/C++" scheme="//ganl.io/categories/C-C/"/>
+    
+    
+      <category term="_CRT_SECURE_NO_WARNINGS" scheme="//ganl.io/tags/CRT-SECURE-NO-WARNINGS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Visual Studio 2013 编译 multi-byte character set MFC程序出现 MSB8031 错误的解决办法</title>
+    <link href="//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/"/>
+    <id>//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</id>
+    <published>2014-12-28T11:12:35.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Error    1    error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property
+        
+      
+    
+    </summary>
+    
+      <category term="C/C++" scheme="//ganl.io/categories/C-C/"/>
+    
+    
+      <category term="MFC" scheme="//ganl.io/tags/MFC/"/>
+    
+      <category term="MSB8031" scheme="//ganl.io/tags/MSB8031/"/>
+    
+      <category term="Visual Studio 2013" scheme="//ganl.io/tags/Visual-Studio-2013/"/>
+    
+      <category term="VS2013" scheme="//ganl.io/tags/VS2013/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>curl/types.h: No such file or directory问题的解决</title>
+    <link href="//ganl.io/2014/12/24/curltypes-h-no-such-file-or-directory-e9-97-ae-e9-a2-98-e7-9a-84-e8-a7-a3-e5-86-b3/"/>
+    <id>//ganl.io/2014/12/24/curltypes-h-no-such-file-or-directory-e9-97-ae-e9-a2-98-e7-9a-84-e8-a7-a3-e5-86-b3/</id>
+    <published>2014-12-24T05:06:48.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;编译xmlRPC报错，xmlrpc-c用到了libcurl：&lt;br&gt;lib/curl_transport/curlmulti.c:22:24: fatal error: curl/types.h:No such file or directory&lt;/p&gt;
+&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="C/C++" scheme="//ganl.io/categories/C-C/"/>
+    
+    
+      <category term="types.h" scheme="//ganl.io/tags/types-h/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>thinkphp 验证码 无法显示 的解决方法</title>
+    <link href="//ganl.io/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
+    <id>//ganl.io/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
+    <published>2014-12-15T13:37:58.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801.jpg&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>502 Bad Gateway错误可能原因及解决方法</title>
+    <link href="//ganl.io/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
+    <id>//ganl.io/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
+    <published>2014-11-19T13:28:31.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;早上起来看到阿里云的邮件说http.responsetime报警，，&lt;br&gt;登录到服务器上看了半天没找到原因，nginx
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="disk" scheme="//ganl.io/tags/disk/"/>
+    
+      <category term="log" scheme="//ganl.io/tags/log/"/>
+    
+      <category term="nginx" scheme="//ganl.io/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later</title>
+    <link href="//ganl.io/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/"/>
+    <id>//ganl.io/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/</id>
+    <published>2014-11-01T07:27:26.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;升级了xcode到6后，xcode5（ios7）中的工程在build后，调试output提示：registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later&lt;/p&gt;
+&lt;p&gt;iOS 8
+        
+      
+    
+    </summary>
+    
+      <category term="IOS" scheme="//ganl.io/categories/IOS/"/>
+    
+    
+      <category term="xcode6" scheme="//ganl.io/tags/xcode6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>xcode6 使用MJRefresh，Too many arguments to function call, expected 0, have *</title>
+    <link href="//ganl.io/2014/11/01/xcode6-e4-bd-bf-e7-94-a8mjrefresh-ef-bc-8ctoo-many-arguments-to-function-call-expected-0-have/"/>
+    <id>//ganl.io/2014/11/01/xcode6-e4-bd-bf-e7-94-a8mjrefresh-ef-bc-8ctoo-many-arguments-to-function-call-expected-0-have/</id>
+    <published>2014-11-01T07:18:35.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;将XCode升级到6后，报Too many arguments to function call, expected 0, have
+        
+      
+    
+    </summary>
+    
+      <category term="IOS" scheme="//ganl.io/categories/IOS/"/>
+    
+    
+      <category term="ios" scheme="//ganl.io/tags/ios/"/>
+    
+      <category term="xcode6" scheme="//ganl.io/tags/xcode6/"/>
+    
+      <category term="code" scheme="//ganl.io/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>fiddler无法抓取chrome，IE正常抓取，解决方法  </title>
+    <link href="//ganl.io/2014/09/04/fiddler-chrome/"/>
+    <id>//ganl.io/2014/09/04/fiddler-chrome/</id>
+    <published>2014-09-04T13:14:21.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;前端开发中，不可避免的要和服务器端进行联调，少了fiddler这个利器可不行。&lt;/p&gt;
+&lt;p&gt;由于无线开发需要配置UA，我使用chrome进行访问，但是今儿一早过来，发现fiddler无法抓取chrome的请求了。&lt;/p&gt;
+&lt;p&gt;想想昨天对chro
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="抓包" scheme="//ganl.io/tags/%E6%8A%93%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ZTEV967S 开机停在voo，线刷官方修改版两三个星期左右再次不能进入系统，决定刷miui</title>
+    <link href="//ganl.io/2014/08/30/ztev967s-e5-bc-80-e6-9c-ba-e5-81-9c-e5-9c-a8voo-ef-bc-8c-e7-ba-bf-e5-88-b7-e5-ae-98-e6-96-b9-e4-bf-ae-e6-94-b9-e7-89-88-e4-b8-a4-e4-b8-89-e4-b8-aa-e6-98-9f-e6-9c-9f-e5-b7-a6-e5-8f-b3-e5-86-8d/"/>
+    <id>//ganl.io/2014/08/30/ztev967s-e5-bc-80-e6-9c-ba-e5-81-9c-e5-9c-a8voo-ef-bc-8c-e7-ba-bf-e5-88-b7-e5-ae-98-e6-96-b9-e4-bf-ae-e6-94-b9-e7-89-88-e4-b8-a4-e4-b8-89-e4-b8-aa-e6-98-9f-e6-9c-9f-e5-b7-a6-e5-8f-b3-e5-86-8d/</id>
+    <published>2014-08-30T13:22:20.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;ZTEV967S 开机停在voo，线刷官方修改版两三个星期左右再次不能进入系统，决定刷miui。&lt;br&gt;在小米官网有两个版本的miui，都下载了放到sd卡，均出现installation
+        
+      
+    
+    </summary>
+    
+      <category term="手机应用" scheme="//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
+    
+    
+      <category term="ROM" scheme="//ganl.io/tags/ROM/"/>
+    
+      <category term="ZTE" scheme="//ganl.io/tags/ZTE/"/>
+    
+      <category term="线刷" scheme="//ganl.io/tags/%E7%BA%BF%E5%88%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软或将发布可无间断监控心率的智能手表</title>
+    <link href="//ganl.io/2014/06/11/e5-be-ae-e8-bd-af-e6-88-96-e5-b0-86-e5-8f-91-e5-b8-83-e5-8f-af-e6-97-a0-e9-97-b4-e6-96-ad-e7-9b-91-e6-8e-a7-e5-bf-83-e7-8e-87-e7-9a-84-e6-99-ba-e8-83-bd-e6-89-8b-e8-a1-a8/"/>
+    <id>//ganl.io/2014/06/11/e5-be-ae-e8-bd-af-e6-88-96-e5-b0-86-e5-8f-91-e5-b8-83-e5-8f-af-e6-97-a0-e9-97-b4-e6-96-ad-e7-9b-91-e6-8e-a7-e5-bf-83-e7-8e-87-e7-9a-84-e6-99-ba-e8-83-bd-e6-89-8b-e8-a1-a8/</id>
+    <published>2014-06-10T18:08:09.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;《福布斯》杂志报道称，当前微软正在研发一款智能手表，其可与苹果iPhone、Android和Windows Phone设备配合使用，主要用于测量用户的心率。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; [caption id=”attachment_429”
+        
+      
+    
+    </summary>
+    
+      <category term="科技前沿" scheme="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
+    
+    
+      <category term="智能手表" scheme="//ganl.io/tags/%E6%99%BA%E8%83%BD%E6%89%8B%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷歌或借卫星扩大互联网接入服务</title>
+    <link href="//ganl.io/2014/06/11/e8-b0-b7-e6-ad-8c-e6-88-96-e5-80-9f-e5-8d-ab-e6-98-9f-e6-89-a9-e5-a4-a7-e4-ba-92-e8-81-94-e7-bd-91-e6-8e-a5-e5-85-a5-e6-9c-8d-e5-8a-a1/"/>
+    <id>//ganl.io/2014/06/11/e8-b0-b7-e6-ad-8c-e6-88-96-e5-80-9f-e5-8d-ab-e6-98-9f-e6-89-a9-e5-a4-a7-e4-ba-92-e8-81-94-e7-bd-91-e6-8e-a5-e5-85-a5-e6-9c-8d-e5-8a-a1/</id>
+    <published>2014-06-10T18:03:17.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;现在的互联网市场似乎已经处于饱和的状态，所以谷歌开始新的一轮计划。谷歌计划投资逾10亿美元，利用多颗卫星将互联网服务扩大到全球无网络覆盖的地区，并希望克服阻碍此前类似努力的资金和[专利技术](http://www.wtoip.com/jishu/)难题。具体
+        
+      
+    
+    </summary>
+    
+      <category term="科技前沿" scheme="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
+    
+    
+      <category term="互联网接入" scheme="//ganl.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A5%E5%85%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微视酷炫版更新引爆8秒“震撼视效”</title>
+    <link href="//ganl.io/2014/06/11/e5-be-ae-e8-a7-86-e9-85-b7-e7-82-ab-e7-89-88-e6-9b-b4-e6-96-b0-e5-bc-95-e7-88-868-e7-a7-92-e9-9c-87-e6-92-bc-e8-a7-86-e6-95-88/"/>
+    <id>//ganl.io/2014/06/11/e5-be-ae-e8-a7-86-e9-85-b7-e7-82-ab-e7-89-88-e6-9b-b4-e6-96-b0-e5-bc-95-e7-88-868-e7-a7-92-e9-9c-87-e6-92-bc-e8-a7-86-e6-95-88/</id>
+    <published>2014-06-10T17:58:00.000Z</published>
+    <updated>2017-10-07T01:34:31.496Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;微视是以一种瞬间的速度进入了人们的视线，让人们爱上这一种可以视频的社交网络。随着4G网络环境的改善，以及人们对视频影像的分享需求，越来越多的社交、视频、图像等移动应用都新添加了短视频功能或插件，短视频逐渐成为未来网络社交的新趋势。尤其是已经聚集众多明星、机构
+        
+      
+    
+    </summary>
+    
+      <category term="科技前沿" scheme="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
+    
+    
+      <category term="微视" scheme="//ganl.io/tags/%E5%BE%AE%E8%A7%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>传谷歌6月推出可模拟人眼视觉的7寸新平板</title>
+    <link href="//ganl.io/2014/06/11/e4-bc-a0-e8-b0-b7-e6-ad-8c6-e6-9c-88-e6-8e-a8-e5-87-ba-e5-8f-af-e6-a8-a1-e6-8b-9f-e4-ba-ba-e7-9c-bc-e8-a7-86-e8-a7-89-e7-9a-847-e5-af-b8-e6-96-b0-e5-b9-b3-e6-9d-bf/"/>
+    <id>//ganl.io/2014/06/11/e4-bc-a0-e8-b0-b7-e6-ad-8c6-e6-9c-88-e6-8e-a8-e5-87-ba-e5-8f-af-e6-a8-a1-e6-8b-9f-e4-ba-ba-e7-9c-bc-e8-a7-86-e8-a7-89-e7-9a-847-e5-af-b8-e6-96-b0-e5-b9-b3-e6-9d-bf/</id>
+    <published>2014-06-10T17:51:12.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;5月26日消息，援引华尔街日报最新报道，谷歌预计将于Google I/O 2014发布应用Project
+        
+      
+    
+    </summary>
+    
+      <category term="科技前沿" scheme="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
+    
+    
+      <category term="谷歌" scheme="//ganl.io/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>苹果可能在开发者会上公布更多iBeacons细节</title>
+    <link href="//ganl.io/2014/06/11/e8-8b-b9-e6-9e-9c-e5-8f-af-e8-83-bd-e5-9c-a8-e5-bc-80-e5-8f-91-e8-80-85-e4-bc-9a-e4-b8-8a-e5-85-ac-e5-b8-83-e6-9b-b4-e5-a4-9aibeacons-e7-bb-86-e8-8a-82/"/>
+    <id>//ganl.io/2014/06/11/e8-8b-b9-e6-9e-9c-e5-8f-af-e8-83-bd-e5-9c-a8-e5-bc-80-e5-8f-91-e8-80-85-e4-bc-9a-e4-b8-8a-e5-85-ac-e5-b8-83-e6-9b-b4-e5-a4-9aibeacons-e7-bb-86-e8-8a-82/</id>
+    <published>2014-06-10T17:45:22.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;苹果公司近期获得了关于无线传输系统的专利，这款命名为iBeacons的[无线通信系统专利](http://www.wtoip.com/jishu/list-188-0a0-0-0-0--1o0.html
+        
+      
+    
+    </summary>
+    
+      <category term="科技前沿" scheme="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
+    
+    
+      <category term="iBeacons" scheme="//ganl.io/tags/iBeacons/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>class.phpmailer.php 使用phpmailer发送邮件 附件 图片 html </title>
+    <link href="//ganl.io/2014/04/19/class-phpmailer-php-e4-bd-bf-e7-94-a8phpmailer-e5-8f-91-e9-80-81-e9-82-ae-e4-bb-b6-e9-99-84-e4-bb-b6-e5-9b-be-e7-89-87-html/"/>
+    <id>//ganl.io/2014/04/19/class-phpmailer-php-e4-bd-bf-e7-94-a8phpmailer-e5-8f-91-e9-80-81-e9-82-ae-e4-bb-b6-e9-99-84-e4-bb-b6-e5-9b-be-e7-89-87-html/</id>
+    <published>2014-04-18T17:04:51.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;A开头： &lt;/p&gt;
+&lt;p&gt;$AltBody–属性&lt;br&gt;出自：PHPMailer::$AltBody&lt;br&gt;文件：class.phpmailer.php&lt;br&gt;说明：该属性的设置是在邮件正文不支持HTML的备用显示
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+      <category term="mail" scheme="//ganl.io/tags/mail/"/>
+    
+      <category term="phpmailer" scheme="//ganl.io/tags/phpmailer/"/>
+    
+      <category term="附件" scheme="//ganl.io/tags/%E9%99%84%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>优酷视频真实地址(分段以及整段mp4地址)</title>
+    <link href="//ganl.io/2014/03/05/youkuaddress/"/>
+    <id>//ganl.io/2014/03/05/youkuaddress/</id>
+    <published>2014-03-05T13:01:12.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;看到一篇博客&lt;br&gt;&lt;a href=&quot;http://blog.163.com/zjq_123/blog/static/408997932012101715653556/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/PHP/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="php" scheme="//ganl.io/tags/php/"/>
+    
+      <category term="video" scheme="//ganl.io/tags/video/"/>
+    
+      <category term="youku" scheme="//ganl.io/tags/youku/"/>
+    
+      <category term="地址" scheme="//ganl.io/tags/%E5%9C%B0%E5%9D%80/"/>
+    
+      <category term="视频" scheme="//ganl.io/tags/%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx日志文件的切割 &amp; /bin/bash^M: bad interpreter: No such file or directory</title>
+    <link href="//ganl.io/2014/03/02/nginx-e6-97-a5-e5-bf-97-e6-96-87-e4-bb-b6-e7-9a-84-e5-88-87-e5-89-b2-binbashm-bad-interpreter-no-such-file-or-directory/"/>
+    <id>//ganl.io/2014/03/02/nginx-e6-97-a5-e5-bf-97-e6-96-87-e4-bb-b6-e7-9a-84-e5-88-87-e5-89-b2-binbashm-bad-interpreter-no-such-file-or-directory/</id>
+    <published>2014-03-02T07:00:24.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;时常收到阿里的提示，登录上服务器看看日志吧，发现文件好大，读取都要半天。。。。&lt;br&gt;百度了一下怎么按日期存储。。。。&lt;br&gt;记录下过程：&lt;br&gt;编写移动log文件shell&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Sqlite3.8.1移植到TQ2416(在ARM-Linux平台上移植SQLite)</title>
+    <link href="//ganl.io/2013/12/04/sqlite3-8-1-e7-a7-bb-e6-a4-8d-e5-88-b0tq2416-e5-9c-a8arm-linux-e5-b9-b3-e5-8f-b0-e4-b8-8a-e7-a7-bb-e6-a4-8dsqlite/"/>
+    <id>//ganl.io/2013/12/04/sqlite3-8-1-e7-a7-bb-e6-a4-8d-e5-88-b0tq2416-e5-9c-a8arm-linux-e5-b9-b3-e5-8f-b0-e4-b8-8a-e7-a7-bb-e6-a4-8dsqlite/</id>
+    <published>2013-12-03T17:23:20.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在ARM-Linux平台上移植SQLite,Port SQLite to ARM-Linux Platform.&lt;br&gt;一，交叉编译器：&lt;br&gt;arm-linux-gcc-4.4.1  &lt;/p&gt;
+&lt;p&gt;二、移植步骤&lt;br&gt;下载源码&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
+    
+    
+      <category term="sqlite" scheme="//ganl.io/tags/sqlite/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>嵌入式CGI c语言 获取form表单的数据（注册登录程序）</title>
+    <link href="//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/"/>
+    <id>//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/</id>
+    <published>2013-12-03T01:50:12.000Z</published>
+    <updated>2017-10-07T01:34:31.490Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;继&lt;a href=&quot;http://www.iganlei.cn/embed/304.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iganlei.cn/embed/304.htm&lt;/a&gt;&lt;br&gt;嵌入式CGI c语言
+        
+      
+    
+    </summary>
+    
+      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
+    
+    
+      <category term="CGI" scheme="//ganl.io/tags/CGI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wordpress文章（整合）插入自定义视频播放器 CKplayer CMP letv youku</title>
+    <link href="//ganl.io/2013/11/29/e5-9c-a8wordpress-e4-b8-ad-ef-bc-88-e6-95-b4-e5-90-88-ef-bc-89-e6-8f-92-e5-85-a5-e8-87-aa-e5-ae-9a-e4-b9-89-e8-a7-86-e9-a2-91-e6-92-ad-e6-94-be-e5-99-a8/"/>
+    <id>//ganl.io/2013/11/29/e5-9c-a8wordpress-e4-b8-ad-ef-bc-88-e6-95-b4-e5-90-88-ef-bc-89-e6-8f-92-e5-85-a5-e8-87-aa-e5-ae-9a-e4-b9-89-e8-a7-86-e9-a2-91-e6-92-ad-e6-94-be-e5-99-a8/</id>
+    <published>2013-11-29T15:58:12.000Z</published>
+    <updated>2017-10-07T01:34:31.495Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;2016年08月13日更新ckplayer，兼容手机播放;之前的调用仅支持pc播放。&lt;/p&gt;
+&lt;p&gt;[cplayer]&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/PHP/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="ck" scheme="//ganl.io/tags/ck/"/>
+    
+      <category term="cmp" scheme="//ganl.io/tags/cmp/"/>
+    
+      <category term="播放器" scheme="//ganl.io/tags/%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ZTE V967s 精简ROM包</title>
+    <link href="//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/"/>
+    <id>//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/</id>
+    <published>2013-11-26T16:55:35.000Z</published>
+    <updated>2017-10-07T01:34:31.490Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;V967s 精简ROM包&lt;br&gt;下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1d47qk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1d47qk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;按照
+        
+      
+    
+    </summary>
+    
+      <category term="手机应用" scheme="//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
+    
+    
+      <category term="ROM" scheme="//ganl.io/tags/ROM/"/>
+    
+      <category term="V967s" scheme="//ganl.io/tags/V967s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Eclipse/php/Xdebug 搭建PHP 开发/调试环境 notepad++ with light explorer</title>
+    <link href="//ganl.io/2013/11/21/eclipsephpxdebug-e6-90-ad-e5-bb-baphp-e5-bc-80-e5-8f-91-e8-b0-83-e8-af-95-e7-8e-af-e5-a2-83-notepad-with-light-explorer/"/>
+    <id>//ganl.io/2013/11/21/eclipsephpxdebug-e6-90-ad-e5-bb-baphp-e5-bc-80-e5-8f-91-e8-b0-83-e8-af-95-e7-8e-af-e5-a2-83-notepad-with-light-explorer/</id>
+    <published>2013-11-20T17:01:28.000Z</published>
+    <updated>2017-10-07T01:34:31.490Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一直使用notepad++的，但是他没有文件类似EditPlus的资源管理器，可以装一个light explorer（或者是 explorer） 方便多了……&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+      <category term="Web开发" scheme="//ganl.io/categories/PHP/Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="php" scheme="//ganl.io/tags/php/"/>
+    
+      <category term="eclipse" scheme="//ganl.io/tags/eclipse/"/>
+    
+      <category term="light" scheme="//ganl.io/tags/light/"/>
+    
+      <category term="xdebug" scheme="//ganl.io/tags/xdebug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QQ导航上的天气接口hao.qq.com get_weather.php</title>
+    <link href="//ganl.io/2013/11/20/qq-e5-af-bc-e8-88-aa-e4-b8-8a-e7-9a-84-e5-a4-a9-e6-b0-94-e6-8e-a5-e5-8f-a3hao-qq-com-get-weather-php/"/>
+    <id>//ganl.io/2013/11/20/qq-e5-af-bc-e8-88-aa-e4-b8-8a-e7-9a-84-e5-a4-a9-e6-b0-94-e6-8e-a5-e5-8f-a3hao-qq-com-get-weather-php/</id>
+    <published>2013-11-19T16:29:20.000Z</published>
+    <updated>2017-10-07T01:34:31.490Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;实时温度 有问题呀 开始没用循环 程序代码有点……&lt;br&gt; &lt;a href=&quot;http://sou.qq.com/online/get_weather.php&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="//ganl.io/categories/PHP/"/>
+    
+    
+      <category term="接口" scheme="//ganl.io/tags/%E6%8E%A5%E5%8F%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html5 audio 给博客 网页加背景音乐 自动播放</title>
+    <link href="//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/"/>
+    <id>//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/</id>
+    <published>2013-11-13T14:52:25.000Z</published>
+    <updated>2017-10-07T01:34:31.489Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;html5 audio 给博客 网页加背景音乐  可以加上个按钮或者链接 让其可停止或暂停&lt;/p&gt;
+&lt;p&gt;下面代码只是暂停 可以弄成暂停 播放两种状态切换。。&lt;/p&gt;
+&lt;p&gt;可以考虑换成a标签&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
+        
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>嵌入式web服务器lighttpd的移植及配置（for arm-linux TQ2416）  Fedora 18</title>
+    <link href="//ganl.io/2013/11/02/e5-b5-8c-e5-85-a5-e5-bc-8fweb-e6-9c-8d-e5-8a-a1-e5-99-a8lighttpd-e7-9a-84-e7-a7-bb-e6-a4-8d-e5-8f-8a-e9-85-8d-e7-bd-ae-ef-bc-88for-arm-linux-tq2416-ef-bc-89/"/>
+    <id>//ganl.io/2013/11/02/e5-b5-8c-e5-85-a5-e5-bc-8fweb-e6-9c-8d-e5-8a-a1-e5-99-a8lighttpd-e7-9a-84-e7-a7-bb-e6-a4-8d-e5-8f-8a-e9-85-8d-e7-bd-ae-ef-bc-88for-arm-linux-tq2416-ef-bc-89/</id>
+    <published>2013-11-02T04:47:07.000Z</published>
+    <updated>2017-10-07T01:44:35.735Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;TQ2416 出厂给的zImage 已经移植好了web服务器，，&lt;/strong&gt;&lt;br&gt;如何自己移植，百度加google。记录一下过程吧。&lt;br&gt;&lt;strong&gt;cgi 测试页面如下：&lt;/strong&gt;&lt;br&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
+    
+    
+  </entry>
+  
+</feed>
