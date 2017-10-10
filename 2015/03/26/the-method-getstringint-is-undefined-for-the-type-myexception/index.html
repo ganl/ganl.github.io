@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ganl.io/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="android里在一个普通的类中：getString(R.string.the_license_expired)eclipse 提示：  The method getString(int) is undefined for the type myException  百度了下说先确保获得当前的context，再去在context下获得resources，然后再去从string id获得string">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:updated_time" content="2017-10-10T16:37:19.648Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The method getString(int) is undefined for the type myException">
 <meta name="twitter:description" content="android里在一个普通的类中：getString(R.string.the_license_expired)eclipse 提示：  The method getString(int) is undefined for the type myException  百度了下说先确保获得当前的context，再去在context下获得resources，然后再去从string id获得string">
@@ -185,6 +185,7 @@
 <p>The method getString(int) is undefined for the type myException</p>
 </blockquote>
 <p>百度了下说先确保获得当前的context，再去在context下获得resources，然后再去从string id获得string就可以了：<br>First getString is not a static method,<br>you are calling it in a static context this can’t be done.<br>Second the getString method is part of the Resources class,<br>your class does not extend the Resources class so the method can’t be found.</p>
+<a id="more"></a>
 <p><a href="http://stackoverflow.com/questions/12999819/the-method-getstringint-is-undefined-for-the-type-apps" target="_blank" rel="external">http://stackoverflow.com/questions/12999819/the-method-getstringint-is-undefined-for-the-type-apps</a></p>
 <p>但这是在一个普通的类(未继承Activity)中如何获取到res呢<br><code>public class myException extends Exception { ………………</code></p>
 <p>在主界面（只有关闭程序才会finish的activity）中定义public 的context，赋值为自己本身 ，所有类中都可以调用</p>

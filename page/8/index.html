@@ -998,13 +998,9 @@ chkconfig mysqld on</code><br>再次尝试重启机器，运行正常。</p>
 <p>The method getString(int) is undefined for the type myException</p>
 </blockquote>
 <p>百度了下说先确保获得当前的context，再去在context下获得resources，然后再去从string id获得string就可以了：<br>First getString is not a static method,<br>you are calling it in a static context this can’t be done.<br>Second the getString method is part of the Resources class,<br>your class does not extend the Resources class so the method can’t be found.</p>
-<p><a href="http://stackoverflow.com/questions/12999819/the-method-getstringint-is-undefined-for-the-type-apps" target="_blank" rel="external">http://stackoverflow.com/questions/12999819/the-method-getstringint-is-undefined-for-the-type-apps</a></p>
-<p>但这是在一个普通的类(未继承Activity)中如何获取到res呢<br><code>public class myException extends Exception { ………………</code></p>
-<p>在主界面（只有关闭程序才会finish的activity）中定义public 的context，赋值为自己本身 ，所有类中都可以调用</p>
-<p>搜索了一番这种方法应该可行</p>
-<p>在继承Activity的MyActivity类中，设置一个静态变量 public static Resources pubr;<br>在onCreate中初始化 pubr = getResources();<br>然后在myException类中，通过MyActivity.pubr.getString(R.string.the_license_expired)来获取</p>
-<p>测试成功</p>
-
+        
+          <a class="article-more-a" href="/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/#more">more >></a>
+        
       
 
       

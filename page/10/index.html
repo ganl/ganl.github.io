@@ -178,22 +178,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>$.post(requestUrl,&nbsp;{</span><span class="string">“action”</span><span>:</span><span class="string">“register”</span><span>,</span><span class="string">“user_name”</span><span>:user_name,</span><span class="string">“active”</span><span>:&nbsp;</span><span class="string">“1”</span><span>,&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“user_password”</span><span>:&nbsp;user_password,&nbsp;</span><span class="string">“role”</span><span>:&nbsp;</span><span class="string">“8”</span><span>,&nbsp;</span><span class="string">“mobile”</span><span>:&nbsp;phone,&nbsp;</span><span class="string">“email”</span><span>:&nbsp;email,&nbsp;</span><span class="string">“yanzheng”</span><span>:yanzheng,</span><span class="string">“isCreate”</span><span>:</span><span class="keyword">true</span><span>},&nbsp;&nbsp;</span></span></li></ol></div>
-
-<p>FIX:<br>You are sending the object element user_password. You should post the value of object in post method user_password.value($(“#user_password”).val()).<br>只因为写错了一个变量，擦擦，，</p>
-<pre><code>passwd = $(&quot;#user_password&quot;).val();
-r_passwd =  $(&quot;#r_password&quot;).val();
-</code></pre><div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>$.post(requestUrl,&nbsp;{</span><span class="string">“action”</span><span>:</span><span class="string">“register”</span><span>,</span><span class="string">“user_name”</span><span>:user_name,</span><span class="string">“active”</span><span>:&nbsp;</span><span class="string">“1”</span><span>,&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“user_password”</span><span>:&nbsp;password,&nbsp;</span><span class="string">“role”</span><span>:&nbsp;</span><span class="string">“8”</span><span>,&nbsp;</span><span class="string">“mobile”</span><span>:&nbsp;phone,&nbsp;</span><span class="string">“email”</span><span>:&nbsp;email,&nbsp;</span><span class="string">“yanzheng”</span><span>:yanzheng,</span><span class="string">“isCreate”</span><span>:</span><span class="keyword">true</span><span>},&nbsp;&nbsp;</span></span></li></ol></div>
-
-
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$.post(requestUrl, &#123;&quot;action&quot;:&quot;register&quot;,&quot;username&quot;:username,&quot;active&quot;: &quot;1&quot;,  </div><div class="line">&quot;userpassword&quot;: userpassword, &quot;role&quot;: &quot;8&quot;, &quot;mobile&quot;: phone, &quot;email&quot;: email, &quot;yanzheng&quot;:yanzheng,&quot;isCreate&quot;:true&#125;,</div></pre></td></tr></table></figure>
+<p>FIX:<br>You are sending the object element user_password. You should post the value of object in post method user_password.value($(“#user_password”).val()).<br>只因为写错了一个变量，擦擦，，<br>
+        
+          <a class="article-more-a" href="/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/#more">more >></a>
+        
       
 
       
@@ -362,17 +351,10 @@ r_passwd =  $(&quot;#r_password&quot;).val();
     <div class="article-entry" itemprop="articleBody">
       
         <p>安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如</p>
-<p>9个文本文件 名字分别为<br>eula.1028.txt ，<br>eula.1031.txt ，<br>eula.1033.txt ，<br>eula.1036.txt ，<br>eula.1040.txt ，<br>eula.1041.txt ，<br>eula.1042.txt ，<br>eula.2052.txt ，<br>eula.3082.txt 。<br>九个.dll档 名字分别为<br>install.res.1028.dll ,<br>install.res.1031.dll ,<br>install.res.1033.dll ,<br>install.res.1036.dll ,<br>install.res.1040.dll ,<br>install.res.1041.dll ,<br>install.res.1042.dll ,<br>install.res.2052.dll ,<br>install.res.3082.dll .<br>两个.ini文件，名字分别为<br>globdata.ini ，<br>install.ini 。<br>一个.exe文件 名字为<br>install.exe<br>一个.cab文件 名字为<br>VC_RED.cab<br>一个.MSI文件<br>VC_RED.MSI<br>一个BMP图象 名字为<br>vcredist.bmp</p>
-<p>这些文件是VS2008（VS2010）再发行组件包安装时产生的临时文件,但这个软件却因为bug问题而错误的将临时文件放到了C盘更目录(本应该是temp目录并会被自动删除的,并且这个bug是微软已知的bug)</p>
-<p>这些文件可以手动删除<br><a href="http://support.microsoft.com/kb/950683" target="_blank" rel="external">http://support.microsoft.com/kb/950683</a></p>
-<p>_Following files are generated on the root directory of a drive that has the largest available space in the system : </p>
-<p>install.exe<br>install.res.1028.dll<br>install.res.1031.dll<br>install.res.1033.dll<br>install.res.1036.dll<br>install.res.1040.dll<br>install.res.1041.dll<br>install.res.1042.dll<br>install.res.2052.dll<br>install.res.3082.dll<br>vcredist.bmp<br>globdata.ini<br>install.ini<br>eula.1028.txt<br>eula.1031.txt<br>eula.1033.txt<br>eula.1036.txt<br>eula.1040.txt<br>eula.1041.txt<br>eula.1042.txt<br>eula.2052.txt<br>eula.3082.txt<br>VC_RED.MSI<br>VC_RED.cab </p>
-<p>Resolution<br>These files are unnecessary and can be safely deleted from the system. The functioning of the runtime library will not be affected by this.<br>Its a known bug and is fixed in VS2008 SP1.</p>
-<p>his is a problem with a VCRedist for the RTM version of VS 2008.  Developers should be using a later version.  See</p>
-<p><a href="http://support.microsoft.com/kb/2019667" target="_blank" rel="external">Latest Supported Visual C++ Downloads</a></p>
-<p>For example, for Visual Studio 2008, you should be using:</p>
-<p>Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package MFC Security Update<br>_</p>
-
+<p>9个文本文件 名字分别为<br>eula.1028.txt ，<br>eula.1031.txt ，<br>
+        
+          <a class="article-more-a" href="/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/#more">more >></a>
+        
       
 
       
@@ -546,8 +528,10 @@ r_passwd =  $(&quot;#r_password&quot;).val();
     <div class="article-entry" itemprop="articleBody">
       
         <p>Error    3    error C4996: ‘strcpy’: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.    g:\workspace\c++\clipboard\clipboard\clipboard\clipboarddlg.cpp    170    1    clipboard</p>
-<p>解决方案，项目 -&gt;属性 -&gt; c/c++ -&gt; 预处理器 -&gt; 点击预处理器定义，编辑，加入_CRT_SECURE_NO_WARNINGS，即可。<br><a href="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141229231759.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141229231759-300x86.jpg" alt="_CRT_SECURE_NO_WARNINGS"></a></p>
-
+<p>解决方案，项目 -&gt;属性 -&gt; c/c++ -&gt; 预处理器 -&gt; 点击预处理器定义，编辑，加入_CRT_SECURE_NO_WARNINGS，即可。<br>
+        
+          <a class="article-more-a" href="/2014/12/29/this-function-or-variable-may-be-unsafe-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8-crt-secure-no-warnings/#more">more >></a>
+        
       
 
       
@@ -833,26 +817,10 @@ r_passwd =  $(&quot;#r_password&quot;).val();
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。<br><a href="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801-300x132.jpg" alt="QQ截图20141215211801"></a><br>查了下方法，没发现特别的，</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span class="comment">/<em>&nbsp;验证码，用于登录和注册&nbsp;</em>/</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;verify()&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$verify</span><span>&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;\Think\Verify&nbsp;();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$verify</span><span>-&gt;entry&nbsp;(&nbsp;1&nbsp;);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li></ol></div><br>百度了一下，有说是gd库没开：
-
-<blockquote>
-<p>搜索之后发现是没有启用“extension=php_gd2.dll”扩展，在php.ini中去掉前边的分号; 再刷新浏览图片验证码就出来了。<br>但是昨天还能运行，有没做什么相关配置修改，应该不是，</p>
-</blockquote>
-<p>看到一篇文章说BOM的问题</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211654.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211654-300x148.jpg" alt="QQ截图20141215211654"></a></p>
-<blockquote>
-<p>今天项目中的thinkphp验证码无法显示,遂上论坛搜索,问题最多的还是在bom,有人说关闭debug后就能显示验证码,试了试,果然,关闭debug就正常了,但是一开启debug就还是无法显示了.怎么回事呢?</p>
-</blockquote>
-<p>检查了下首页文件的编码，还真是改了下就好了。</p>
-
+        <p>昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。<br><img src="http://assets.iganlei.cn/wp-content/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141215211801.jpg" alt="QQ截图20141215211801"><br>查了下方法，没发现特别的，<br>
+        
+          <a class="article-more-a" href="/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/#more">more >></a>
+        
       
 
       

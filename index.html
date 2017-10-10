@@ -324,27 +324,10 @@
 <p>HMVC: <a href="https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc" target="_blank" rel="external">https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc</a></p>
 <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>先下载到本地：</p>
 <p><code>git clone https://github.com/ganl/PhpStorm-CI.git</code></p>
-<h2 id="方法一：设置Include-Paths"><a href="#方法一：设置Include-Paths" class="headerlink" title="方法一：设置Include Paths"></a>方法一：设置Include Paths</h2><p>在项目目录中<code>External Libraries</code>上右键，选择<code>Configure PHP Include Pahts</code><br><a href="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-201933@2x.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-201933@2x-300x230.png" alt=""></a></p>
-<p>添加<code>PhpStorm-CI/CodeCompletion</code>所在位置的绝对路径。<br><a href="http://www.iganlei.cn/wp-content/uploads/2017/10/2017-09-30-20.15.24.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/2017-09-30-20.15.24-239x300.png" alt=""></a></p>
-<h2 id="方法二：设置Content-Root"><a href="#方法二：设置Content-Root" class="headerlink" title="方法二：设置Content Root"></a>方法二：设置Content Root</h2><p>Windows：菜单 File &gt; Settings &gt; Directories &gt; Add Content Root ，选择<code>PhpStorm-CI/CodeCompletion</code></p>
-<p>Mac: Preferences（comand+,）&gt; Directories &gt; Add Content Root ，选择<code>PhpStorm-CI/CodeCompletion</code></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-203042@2x.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-203042@2x-300x147.png" alt=""></a></p>
-<h1 id="CodeIgniter-Specific"><a href="#CodeIgniter-Specific" class="headerlink" title="CodeIgniter Specific"></a>CodeIgniter Specific</h1><p>将CI的Controller和Model设为Plain text</p>
-<ul>
-<li>system/core/Controller.php</li>
-<li>system/core/Model.php</li>
-<li>application/third_party/MX/Controller.php (mx_controller)</li>
-</ul>
-<p>让自己的类库和模型方法能够自动提示补全,在<code>my_cc.php</code>文档块部分增加相应的model和library即可</p>
-<pre><code>* ***************** YOUR MODELS *****************
-* @property user_model             $user_model
-*
-* ***************** YOUR LIBRARIES *****************
-* @property Migrate                $migrate               Migrate Class
-*
-</code></pre><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><a href="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-205656@2x.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-205656@2x-300x89.png" alt=""></a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-205735@2x.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20170930-205735@2x-300x152.png" alt=""></a></p>
-<h3 id="Origin-Repo-https-github-com-topdown-phpStorm-CC-Helpers"><a href="#Origin-Repo-https-github-com-topdown-phpStorm-CC-Helpers" class="headerlink" title="Origin Repo : https://github.com/topdown/phpStorm-CC-Helpers"></a>Origin Repo : <a href="https://github.com/topdown/phpStorm-CC-Helpers" target="_blank" rel="external">https://github.com/topdown/phpStorm-CC-Helpers</a></h3>
+<h2 id="方法一：设置Include-Paths"><a href="#方法一：设置Include-Paths" class="headerlink" title="方法一：设置Include Paths"></a>方法一：设置Include Paths</h2><p>在项目目录中<code>External Libraries</code>上右键，选择<code>Configure PHP Include Pahts</code><br>
+        
+          <a class="article-more-a" href="/2017/10/02/phpstorm-e4-bb-a3-e7-a0-81-e8-87-aa-e5-8a-a8-e8-a1-a5-e5-85-a8-ef-bc-8c-codeigniter3-hmvc/#more">more >></a>
+        
       
 
       
@@ -421,242 +404,11 @@
 <p><a href="http://laravelacademy.org/tags/laravel" title="View all posts in Laravel" target="_blank" rel="external">Laravel</a> 致力于让整个 PHP 开发过程变得让人愉悦，包括本地<a href="http://laravelacademy.org/tags/%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83" title="View all posts in 开发环境" target="_blank" rel="external">开发环境</a>，官方为我们提供了一整套本地开发环境 —— Laravel <a href="http://laravelacademy.org/tags/homestead" title="View all posts in Homestead" target="_blank" rel="external">Homestead</a>。</p>
 <p>安装：</p>
 <p>需要先安装Vagrant和VirtualBox，安装完之后，在ITerm中使用如下命令将 <code>laravel/homesterad</code> 添加到 Vagrant 中。</p>
-<pre><code>vagrant box add laravel/homestead`&lt;/pre&gt;
-结果就尴尬了，下载到4%就断了，尝试了几次换迅雷离线下载，成功下载了
-
-https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box
-
-再次添加：
-&lt;pre&gt;`vagrant box add laravel/homestead ./virtualbox.box`&lt;/pre&gt;
-安装 Homestead
-&lt;pre&gt;`cd ~
-git clone https://github.com/laravel/homestead.git Homestead`&lt;/pre&gt;
-再在Homestead目录中执行init
-&lt;pre&gt;`cd Homestead
-bash init.sh`&lt;/pre&gt;
-当前目录下的Homestead.yaml基本不用修改，需要注意的是sites段路径是否符合项目
-sites:
-- map: homestead.app
-to: /home/vagrant/Code/Laravel/public
-启动 Vagrant Box：
-&lt;pre&gt;`vagrant up
-`&lt;/pre&gt;
-并没有想像的那么顺利，提示找不到ssh key；生成
-&lt;pre&gt;`ssh-keygen -t rsa -C &quot;austgl@qq.com&quot;
-`&lt;/pre&gt;
-再次执行vagrant up，发现还是会从外网下载，用list看了下盒子已经存在了的
-&lt;pre&gt;`vagrant box list
-laravel/homestead (virtualbox, 0)
-laravel/homestead (vmware_desktop, 0)`&lt;/pre&gt;
-vagrant up的时候提示
-Box &apos;laravel/homestead&apos; could not be found. Attempting to find and install...
-
-搜了下，可以通过json指定meta，再加到Vagrant中，在box文件所在的目录中创建metadata.json：
-&lt;pre&gt;`{
-    &quot;name&quot;: &quot;laravel/homestead&quot;,
-    &quot;versions&quot;: [{
-        &quot;version&quot;: &quot;2.1.0&quot;,
-        &quot;providers&quot;: [{
-            &quot;name&quot;: &quot;virtualbox&quot;,
-            &quot;url&quot;: &quot;file://virtualbox.box&quot;
-        }]
-    }]
-}
-`&lt;/pre&gt;
-&lt;pre&gt;`vagrant box add metadata.json
-==&amp;gt; box: Loading metadata for box &apos;metadata.json&apos;
-    box: URL: file:///Users/ganl/dev/web/metadata.json
-==&amp;gt; box: Adding box &apos;laravel/homestead&apos; (v2.1.0) for provider: virtualbox
-
----
-    box: Unpacking necessary files from: file://virtualbox.box
-vagrant box list
-laravel/homestead (virtualbox, 0)
-laravel/homestead (virtualbox, 2.1.0)
-laravel/homestead (vmware_desktop, 0)
-`&lt;/pre&gt;
-再执行 vagrant up， 虚机正常起来了，中间有红色的报错信息，目录没挂上
-folders:
-- map: ~/Code
-to: /home/vagrant/Code
-本地没有~/Code目录，新建Code目录后，vagrant destroy Homestead-7, 再vagrant up创建虚机；在本地Code目录下新建index.html，
-vagrant ssh,连上虚机后，查看/home/vagrant/Code/下同步出现了index.html，但index.html是访问不到的，默认Homestead.yaml中的sites root是指向/home/vagrant/Code/Laravel/public。
-为了方便连虚机，设置命令alias：
-&lt;pre&gt;`alias vm=&quot;ssh vagrant@127.0.0.1 -p 2222&quot;
-➜  Homestead git:(master) vm
-Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-66-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
-3 packages can be updated.
-0 updates are security updates.
-
-vagrant@homestead:~$
-`&lt;/pre&gt;
-安装 Laravel
-需要先安装composer，再全局安装Laravel 安装器，
-&lt;pre&gt;`curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-composer global require &quot;laravel/installer&quot;
-`&lt;/pre&gt;
-再将$HOME/.composer/vendor/bin 加到系统PATH，否则不能在任意路径调用 laravel 命令
-vi ~/.bash_profile #增加一行
-export PATH=&quot;$HOME/.composer/vendor/bin:$PATH&quot;
-:wq,再source一下
-source ~/.bash_profile
-进入尾声，laravel new 命令创建一个新的 Laravel 应用
-&gt; cd ~/Code
-</code></pre><blockquote>
-<pre><code>laravel new blog
-Crafting application...
-Loading composer repositories with package information
-Installing dependencies (including require-dev) from lock file
-Package operations: 59 installs, 0 updates, 0 removals
-- Installing doctrine/inflector (v1.1.0): Downloading (100%)
-- Installing erusev/parsedown (1.6.2): Downloading (100%)
-- Installing jakub-onderka/php-console-color (0.1): Downloading (100%)
-- Installing symfony/polyfill-mbstring (v1.3.0): Loading from cache
-- Installing symfony/var-dumper (v3.2.7): Downloading (100%)
-- Installing psr/log (1.0.2): Loading from cache
-- Installing symfony/debug (v3.2.7): Loading from cache
-- Installing symfony/console (v3.2.7): Loading from cache
-- Installing nikic/php-parser (v3.0.5): Downloading (100%)
-- Installing jakub-onderka/php-console-highlighter (v0.3.2): Downloading (100%)
-- Installing dnoegel/php-xdg-base-dir (0.1): Downloading (100%)
-- Installing psy/psysh (v0.8.3): Downloading (100%)
-- Installing vlucas/phpdotenv (v2.4.0): Downloading (100%)
-- Installing symfony/css-selector (v3.2.7): Downloading (100%)
-- Installing tijsverkoyen/css-to-inline-styles (2.2.0): Downloading (100%)
-- Installing symfony/routing (v3.2.7): Downloading (100%)
-- Installing symfony/process (v3.2.7): Loading from cache
-- Installing symfony/http-foundation (v3.2.7): Downloading (100%)
-- Installing symfony/event-dispatcher (v3.2.7): Downloading (100%)
-- Installing symfony/http-kernel (v3.2.7): Downloading (100%)
-- Installing symfony/finder (v3.2.7): Downloading (100%)
-- Installing swiftmailer/swiftmailer (v5.4.7): Downloading (100%)
-- Installing paragonie/random_compat (v2.0.10): Downloading (100%)
-- Installing ramsey/uuid (3.6.1): Downloading (100%)
-- Installing symfony/translation (v3.2.7): Downloading (100%)
-- Installing nesbot/carbon (1.22.1): Downloading (100%)
-- Installing mtdowling/cron-expression (v1.2.0): Downloading (100%)
-- Installing monolog/monolog (1.22.1): Downloading (100%)
-- Installing league/flysystem (1.0.40): Downloading (100%)
-- Installing laravel/framework (v5.4.21): Downloading (100%)
-- Installing laravel/tinker (v1.0.0): Downloading (100%)
-- Installing fzaninotto/faker (v1.6.0): Downloading (100%)
-- Installing hamcrest/hamcrest-php (v1.2.2): Downloading (100%)
-- Installing mockery/mockery (0.9.9): Downloading (100%)
-- Installing webmozart/assert (1.2.0): Downloading (100%)
-- Installing phpdocumentor/reflection-common (1.0): Downloading (100%)
-- Installing phpdocumentor/type-resolver (0.2.1): Downloading (100%)
-- Installing phpdocumentor/reflection-docblock (3.1.1): Downloading (100%)
-- Installing phpunit/php-token-stream (1.4.11): Downloading (100%)
-- Installing symfony/yaml (v3.2.7): Downloading (100%)
-- Installing sebastian/version (2.0.1): Downloading (100%)
-- Installing sebastian/resource-operations (1.0.0): Downloading (100%)
-- Installing sebastian/recursion-context (2.0.0): Downloading (100%)
-- Installing sebastian/object-enumerator (2.0.1): Downloading (100%)
-- Installing sebastian/global-state (1.1.1): Downloading (100%)
-- Installing sebastian/exporter (2.0.0): Downloading (100%)
-- Installing sebastian/environment (2.0.0): Downloading (100%)
-- Installing sebastian/diff (1.4.1): Downloading (100%)
-- Installing sebastian/comparator (1.2.4): Downloading (100%)
-- Installing phpunit/php-text-template (1.2.1): Downloading (100%)
-- Installing doctrine/instantiator (1.0.5): Downloading (100%)
-- Installing phpunit/phpunit-mock-objects (3.4.3): Downloading (100%)
-- Installing phpunit/php-timer (1.0.9): Downloading (100%)
-- Installing phpunit/php-file-iterator (1.4.2): Downloading (100%)
-- Installing sebastian/code-unit-reverse-lookup (1.0.1): Downloading (100%)
-- Installing phpunit/php-code-coverage (4.0.8): Downloading (100%)
-- Installing phpspec/prophecy (v1.7.0): Downloading (100%)
-- Installing myclabs/deep-copy (1.6.1): Downloading (100%)
-- Installing phpunit/phpunit (5.7.19): Downloading (100%)
-symfony/var-dumper suggests installing ext-symfony_debug ()
-symfony/console suggests installing symfony/filesystem ()
-psy/psysh suggests installing ext-pdo-sqlite (The doc command requires SQLite to work.)
-psy/psysh suggests installing hoa/console (A pure PHP readline implementation. You&apos;ll want this if your PHP install doesn&apos;t already support readline or libedit.)
-symfony/routing suggests installing doctrine/annotations (For using the annotation loader)
-symfony/routing suggests installing symfony/config (For using the all-in-one router or any loader)
-symfony/routing suggests installing symfony/dependency-injection (For loading routes from a service)
-symfony/routing suggests installing symfony/expression-language (For using expression matching)
-symfony/event-dispatcher suggests installing symfony/dependency-injection ()
-symfony/http-kernel suggests installing symfony/browser-kit ()
-symfony/http-kernel suggests installing symfony/class-loader ()
-symfony/http-kernel suggests installing symfony/config ()
-symfony/http-kernel suggests installing symfony/dependency-injection ()
-paragonie/random_compat suggests installing ext-libsodium (Provides a modern crypto API that can be used to generate random bytes.)
-ramsey/uuid suggests installing ext-libsodium (Provides the PECL libsodium extension for use with the SodiumRandomGenerator)
-ramsey/uuid suggests installing ext-uuid (Provides the PECL UUID extension for use with the PeclUuidTimeGenerator and PeclUuidRandomGenerator)
-ramsey/uuid suggests installing ircmaxell/random-lib (Provides RandomLib for use with the RandomLibAdapter)
-ramsey/uuid suggests installing moontoast/math (Provides support for converting UUID to 128-bit integer (in string form).)
-ramsey/uuid suggests installing ramsey/uuid-console (A console application for generating UUIDs with ramsey/uuid)
-ramsey/uuid suggests installing ramsey/uuid-doctrine (Allows the use of Ramsey\Uuid\Uuid as Doctrine field type.)
-symfony/translation suggests installing symfony/config ()
-monolog/monolog suggests installing aws/aws-sdk-php (Allow sending log messages to AWS services like DynamoDB)
-monolog/monolog suggests installing doctrine/couchdb (Allow sending log messages to a CouchDB server)
-monolog/monolog suggests installing ext-amqp (Allow sending log messages to an AMQP server (1.0+ required))
-monolog/monolog suggests installing ext-mongo (Allow sending log messages to a MongoDB server)
-monolog/monolog suggests installing graylog2/gelf-php (Allow sending log messages to a GrayLog2 server)
-monolog/monolog suggests installing mongodb/mongodb (Allow sending log messages to a MongoDB server via PHP Driver)
-monolog/monolog suggests installing php-amqplib/php-amqplib (Allow sending log messages to an AMQP server using php-amqplib)
-monolog/monolog suggests installing php-console/php-console (Allow sending log messages to Google Chrome)
-monolog/monolog suggests installing rollbar/rollbar (Allow sending log messages to Rollbar)
-monolog/monolog suggests installing ruflin/elastica (Allow sending log messages to an Elastic Search server)
-monolog/monolog suggests installing sentry/sentry (Allow sending log messages to a Sentry server)
-league/flysystem suggests installing league/flysystem-aws-s3-v2 (Allows you to use S3 storage with AWS SDK v2)
-league/flysystem suggests installing league/flysystem-aws-s3-v3 (Allows you to use S3 storage with AWS SDK v3)
-league/flysystem suggests installing league/flysystem-azure (Allows you to use Windows Azure Blob storage)
-league/flysystem suggests installing league/flysystem-cached-adapter (Flysystem adapter decorator for metadata caching)
-league/flysystem suggests installing league/flysystem-copy (Allows you to use Copy.com storage)
-league/flysystem suggests installing league/flysystem-eventable-filesystem (Allows you to use EventableFilesystem)
-league/flysystem suggests installing league/flysystem-rackspace (Allows you to use Rackspace Cloud Files)
-league/flysystem suggests installing league/flysystem-sftp (Allows you to use SFTP server storage via phpseclib)
-league/flysystem suggests installing league/flysystem-webdav (Allows you to use WebDAV storage)
-league/flysystem suggests installing league/flysystem-ziparchive (Allows you to use ZipArchive adapter)
-league/flysystem suggests installing spatie/flysystem-dropbox (Allows you to use Dropbox storage)
-laravel/framework suggests installing aws/aws-sdk-php (Required to use the SQS queue driver and SES mail driver (~3.0).)
-laravel/framework suggests installing doctrine/dbal (Required to rename columns and drop SQLite columns (~2.5).)
-laravel/framework suggests installing guzzlehttp/guzzle (Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~6.0).)
-laravel/framework suggests installing league/flysystem-aws-s3-v3 (Required to use the Flysystem S3 driver (~1.0).)
-laravel/framework suggests installing league/flysystem-rackspace (Required to use the Flysystem Rackspace driver (~1.0).)
-laravel/framework suggests installing nexmo/client (Required to use the Nexmo transport (~1.0).)
-laravel/framework suggests installing pda/pheanstalk (Required to use the beanstalk queue driver (~3.0).)
-laravel/framework suggests installing predis/predis (Required to use the redis cache and queue drivers (~1.0).)
-laravel/framework suggests installing pusher/pusher-php-server (Required to use the Pusher broadcast driver (~2.0).)
-laravel/framework suggests installing symfony/dom-crawler (Required to use most of the crawler integration testing tools (~3.2).)
-laravel/framework suggests installing symfony/psr-http-message-bridge (Required to psr7 bridging features (0.2.*).)
-sebastian/global-state suggests installing ext-uopz (*)
-phpunit/php-code-coverage suggests installing ext-xdebug (^2.5.1)
-phpunit/phpunit suggests installing ext-xdebug (*)
-phpunit/phpunit suggests installing phpunit/php-invoker (~1.1)
-Generating optimized autoload files
-&amp;gt; php -r &quot;file_exists(&apos;.env&apos;) || copy(&apos;.env.example&apos;, &apos;.env&apos;);&quot;
-&amp;gt; Illuminate\Foundation\ComposerScripts::postInstall
-&amp;gt; php artisan optimize
-Generating optimized class loader
-The compiled services file has been removed.
-&amp;gt; php artisan key:generate
-Application key [base64:uCYzsyvVZfZ0GKg8+gzdr/shq27UNlbYTeLiley8SX4=] set successfully.
-Application ready! Build something amazing.
-查看目录结构：
-&lt;pre&gt;`Code ll
-total 8
-drwxr-xr-x  24 ganl  staff   816B  5  1 17:20 blog
--rw-r--r--   1 ganl  staff     6B  5  1 16:52 index.html
-➜  Code ls blog/
-app            composer.json  database       public         server.php     vendor
-artisan        composer.lock  package.json   resources      storage        webpack.mix.js
-bootstrap      config         phpunit.xml    routes         tests          yarn.lock
-`&lt;/pre&gt;
-修改hosts，增加一条记录,ip和Homestead.yaml中的对应
-&lt;pre&gt;`sudo vi /private/etc/hosts
-#homestead
-192.168.10.10 homestead.app
-</code></pre></blockquote>
-<p>访问 homestead.app 提示 No such files 之类的错误，查看日志/var/log/nginx/homestead.app-error.log：都是找不到/home/vagrant/Code/laravel/public，<br>生成的Laravel应用目录为blog，修改Homestead.yaml中的sites to /home/vagrant/Code/blog/public。<br>vagrant reload 修改后的配置未能生效，只好暴力点vagrant destroy homestead-7，再vagrant up；<br>再次访问ok了，修改welcome.blade.php试下效果：<br><a href="http://www.iganlei.cn/wp-content/uploads/2017/05/2017-05-01-22.25.14.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2017/05/2017-05-01-22.25.14-300x159.png" alt=""></a></p>
-
+<p><code>vagrant box add laravel/homestead</code></p>
+<p>结果就尴尬了，下载到4%就断了，尝试了几次换迅雷离线下载，成功下载了<br>
+        
+          <a class="article-more-a" href="/2017/05/01/laravel-e5-bc-80-e5-8f-91-e7-8e-af-e5-a2-83-homestead-e5-ae-89-e8-a3-85-laravel-e5-ba-94-e7-94-a8/#more">more >></a>
+        
       
 
       
@@ -835,105 +587,10 @@ bootstrap      config         phpunit.xml    routes         tests          yarn.
     <div class="article-entry" itemprop="articleBody">
       
         <p>收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356-170x300.png" alt="20161223150356"></a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223145852.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223145852-300x191.png" alt="20161223145852"></a></p>
-<p>官方推荐的工具（Let’s Encrypt Client）：<a href="https://github.com/certbot/certbot" target="_blank" rel="external">https://github.com/certbot/certbot</a></p>
-<p><a href="https://github.com/diafygi/acme-tiny" target="_blank" rel="external">https://github.com/diafygi/acme-tiny</a> 这个客户端比官方的轻多了，比较了下决定用这个。</p>
-<h3 id="1-Create-a-Let’s-Encrypt-account-private-key"><a href="#1-Create-a-Let’s-Encrypt-account-private-key" class="headerlink" title="1.Create a Let’s Encrypt account private key"></a>1.Create a Let’s Encrypt account private key</h3><pre><code>openssl genrsa 4096 &amp;gt; account.key`&lt;/pre&gt;
-
-### 2.Create a certificate signing request (CSR) for your domains.
-
-NOTE: you can&apos;t use your account private key as your domain private key!
-&lt;pre&gt;`openssl genrsa 4096 &amp;gt; domain.key`&lt;/pre&gt;
-&lt;pre&gt;`#单个域名
-openssl req -new -sha256 -key domain.key -subj &quot;/CN=www.vparser.com&quot; &amp;gt; domain.csr
-
-#多个域名（这里用这个）
-openssl req -new -sha256 -key domain.key -subj &quot;/&quot; -reqexts SAN -config &amp;lt;(cat /etc/ssl/openssl.cnf &amp;lt;(printf &quot;[SAN]\nsubjectAltName=DNS:vparser.com,DNS:www.vparser.com&quot;)) &amp;gt; domain.csr`&lt;/pre&gt;
-报错:
-cat: /etc/ssl/openssl.cnf: No such file or directory
-unable to find &apos;distinguished_name&apos; in config
-problems making Certificate Request
-140168944265032:error:0E06D06C:configuration file routines:NCONF_get_string:no value:conf_lib.c:335:group=req name=distinguished_name
-
-把OpenSSL的配置文件换成存在的路径，例如：/etc/pki/tls/openssl.cnf
-&lt;pre&gt;openssl req -new -sha256 -key domain.key -subj &quot;/&quot; -reqexts SAN -config &amp;lt;(cat /etc/pki/tls/openssl.cnf &amp;lt;(printf &quot;[SAN]\nsubjectAltName=DNS:vparser.com,DNS:www.vparser.com&quot;)) &amp;gt; domain.csr
-&lt;/pre&gt;
-[![20161223155522](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223155522-300x72.png)](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223155522.png)
-
-### 3.Make your website host challenge files
-
-&lt;pre&gt;`mkdir -p /data/www/challenges/`&lt;/pre&gt;
-修改vhost配置文件：
-&lt;pre&gt;&lt;span class=&quot;pl-k&quot;&gt;server&lt;/span&gt; {
-    &lt;span class=&quot;pl-k&quot;&gt;listen&lt;/span&gt; &lt;span class=&quot;pl-s&quot;&gt;80&lt;/span&gt;;
-    &lt;span class=&quot;pl-k&quot;&gt;server_name&lt;/span&gt; yoursite.com www.yoursite.com;
-
-    &lt;span class=&quot;pl-k&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;pl-en&quot;&gt;/.well-known/acme-challenge/ &lt;/span&gt;{
-        &lt;span class=&quot;pl-k&quot;&gt;alias&lt;/span&gt; /data/www/challenges/;
-        &lt;span class=&quot;pl-k&quot;&gt;try_files&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;$uri&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;=404&lt;/span&gt;;
-    }
-
-    ...&lt;span class=&quot;pl-k&quot;&gt;the&lt;/span&gt; rest of your config
-}&lt;/pre&gt;
-nginx -s reload
-
-[![20161223160335](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223160335-300x212.png)](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223160335.png)
-
-### 4.Get a signed certificate!
-
-&lt;pre&gt;`wget -O - &quot;https://raw.githubusercontent.com/diafygi/acme-tiny/master/acme_tiny.py&quot; &amp;gt; acme_tiny.py
-
-python acme_tiny.py --account-key ./account.key --csr ./domain.csr --acme-dir /data/www/challenges/ &amp;gt; ./signed.crt`&lt;/pre&gt;
-[![](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223161430-300x218.png)](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223161430.png)
-
-### 5.Install the certificate
-
-&lt;pre&gt;`#NOTE: For nginx, you need to append the Let&apos;s Encrypt intermediate cert to your cert
-wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem &amp;gt; intermediate.pem
-cat signed.crt intermediate.pem &amp;gt; chained.pem`&lt;/pre&gt;
-&lt;pre&gt;    &lt;span class=&quot;pl-k&quot;&gt;ssl_certificate&lt;/span&gt; /path/to/chained.pem;
-    &lt;span class=&quot;pl-k&quot;&gt;ssl_certificate_key&lt;/span&gt; /path/to/domain.key;&lt;/pre&gt;
-
-### 6.Setup an auto-renew cronjob (自动续签，有效期只有90天)
-
-将
-&lt;pre&gt;&lt;span class=&quot;pl-k&quot;&gt;    location&lt;/span&gt; &lt;span class=&quot;pl-en&quot;&gt;/.well-known/acme-challenge/ &lt;/span&gt;{
-        &lt;span class=&quot;pl-k&quot;&gt;alias&lt;/span&gt; /data/www/challenges/;
-        &lt;span class=&quot;pl-k&quot;&gt;try_files&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;$uri&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;=404&lt;/span&gt;;
-    }&lt;/pre&gt;
-移到https段
-&lt;pre&gt;server {
-listen 80;
-server_name www.vparser.com vparser.com;
-rewrite ^/(.*) https://$server_name/$1 permanent;
-}
-
-server {
-listen 443 ssl http2;
-……
-
-server_name www.vparser.com vparser.com;
-
-location /.well-known/acme-challenge/ {
- alias /data/www/challenges/;
- try_files $uri =404;
-}
-
-……
-}
-&lt;/pre&gt;
-增加定时脚本：
-&lt;pre&gt;&lt;span class=&quot;pl-c&quot;&gt;#!/usr/bin/sh&lt;/span&gt;
-python /path/to/acme_tiny.py --account-key /path/to/account.key --csr /path/to/domain.csr --acme-dir /data/www/challenges/ &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; /tmp/signed.crt &lt;span class=&quot;pl-k&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;exit&lt;/span&gt;
-wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; intermediate.pem
-cat /tmp/signed.crt intermediate.pem &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; /path/to/chained.pem
-service nginx reload&lt;/pre&gt;
-crontab -e or vi /etc/crontab
-&lt;pre&gt;`#example line in your crontab (runs once per month)
-0 0 1 * * /path/to/renew_cert.sh 2&amp;gt;&amp;gt; /var/log/acme_tiny.log
-</code></pre><p><a href="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223162149.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223162149-216x300.png" alt="20161223162149"></a></p>
-
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356-170x300.png" alt="20161223150356"></p>
+        
+          <a class="article-more-a" href="/2016/12/23/startssl-e5-88-87-e6-8d-a2-e5-88-b0-lets-encrypt/#more">more >></a>
+        
       
 
       
@@ -1029,13 +686,12 @@ crontab -e or vi /etc/crontab
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27-300x169.png" alt="Ubuntu16.04-2016-08-21-10-17-27"></a><br>信任 GitLab 的 GPG 公钥：</p>
-<p><pre>curl <a href="https://packages.gitlab.com/gpg.key" target="_blank" rel="external">https://packages.gitlab.com/gpg.key</a> 2&gt; /dev/null | sudo apt-key add - &amp;&gt;/dev/null<br></pre><br>添加gitlab-ce.list</p>
-<p><pre><br>vi /etc/apt/sources.list.d/gitlab-ce.list<br>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/ubuntu" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/ubuntu</a> xenial main<br></pre><br>安装gitlab</p>
-<p><pre><br>sudo apt-get update<br>sudo apt-get install gitlab-ce</pre></p>
-<p>root@ganl-ubuntu:/home/ganl# dpkg -l|grep gitlab<br>ii  gitlab-ce                                  8.10.7-ce.0                                                 amd64        GitLab Community Edition and GitLab CI (including NGINX, Postgres, Redis)<br>root@ganl-ubuntu:/home/ganl#<br><br>配置gitlab</p>
-<p><pre><br>gitlab-ctl reconfigure<br></pre><br>访问gitlab，要求修改密码：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-18.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-18-300x169.png" alt="Ubuntu16.04-2016-08-21-10-28-18"></a><br>可以使用了<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-56.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-56-300x169.png" alt="Ubuntu16.04-2016-08-21-10-28-56"></a><br>邮箱设置：<a href="http://www.iganlei.cn/environment-configuration/838.html" target="_blank" rel="external">Ubuntu12.04安装gitlab社区版(Install a GitLab CE Omnibus package on ubuntu12.04)</a></p>
-
+        <p><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27-300x169.png" alt="Ubuntu16.04-2016-08-21-10-17-27"></p>
+<p>信任 GitLab 的 GPG 公钥：</p>
+<p><pre>curl <a href="https://packages.gitlab.com/gpg.key" target="_blank" rel="external">https://packages.gitlab.com/gpg.key</a> 2&gt; /dev/null | sudo apt-key add - &amp;&gt;/dev/null<br></pre><br>添加gitlab-ce.list<br>
+        
+          <a class="article-more-a" href="/2016/08/21/ubuntu-16-04-1-e5-ae-89-e8-a3-85gitlab-8-10-7-ce-0/#more">more >></a>
+        
       
 
       

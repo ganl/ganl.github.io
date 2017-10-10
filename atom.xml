@@ -65,18 +65,15 @@
     <link href="//ganl.io/2017/10/02/phpstorm-e4-bb-a3-e7-a0-81-e8-87-aa-e5-8a-a8-e8-a1-a5-e5-85-a8-ef-bc-8c-codeigniter3-hmvc/"/>
     <id>//ganl.io/2017/10/02/phpstorm-e4-bb-a3-e7-a0-81-e8-87-aa-e5-8a-a8-e8-a1-a5-e5-85-a8-ef-bc-8c-codeigniter3-hmvc/</id>
     <published>2017-10-01T17:41:11.000Z</published>
-    <updated>2017-10-07T01:34:31.499Z</updated>
+    <updated>2017-10-10T17:14:19.589Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://github.com/ganl/PhpStorm-CI&quot; title=&quot;PhpStorm-CI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PhpStorm-CI&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;HMVC: &lt;a
-        
-      
+      &lt;p&gt;&lt;a href=&quot;https://github.com/ganl/PhpStorm-CI&quot; title=&quot;PhpStorm-CI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;PhpStorm-CI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HMVC: &lt;a href=&quot;https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h1&gt;&lt;p&gt;先下载到本地：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/ganl/PhpStorm-CI.git&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;方法一：设置Include-Paths&quot;&gt;&lt;a href=&quot;#方法一：设置Include-Paths&quot; class=&quot;headerlink&quot; title=&quot;方法一：设置Include Paths&quot;&gt;&lt;/a&gt;方法一：设置Include Paths&lt;/h2&gt;&lt;p&gt;在项目目录中&lt;code&gt;External Libraries&lt;/code&gt;上右键，选择&lt;code&gt;Configure PHP Include Pahts&lt;/code&gt;&lt;br&gt;
     
     </summary>
     
@@ -90,18 +87,16 @@
     <link href="//ganl.io/2017/05/01/laravel-e5-bc-80-e5-8f-91-e7-8e-af-e5-a2-83-homestead-e5-ae-89-e8-a3-85-laravel-e5-ba-94-e7-94-a8/"/>
     <id>//ganl.io/2017/05/01/laravel-e5-bc-80-e5-8f-91-e7-8e-af-e5-a2-83-homestead-e5-ae-89-e8-a3-85-laravel-e5-ba-94-e7-94-a8/</id>
     <published>2017-05-01T14:42:30.000Z</published>
-    <updated>2017-10-07T01:34:31.499Z</updated>
+    <updated>2017-10-10T17:13:03.233Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;本想使用 Laravel Valet，但本机上有较低版本的PHP，决定采用全平台支持的Homestead。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://laravelacademy.org/tags/laravel&quot; title=&quot;View all posts in
-        
-      
+      &lt;p&gt;本想使用 Laravel Valet，但本机上有较低版本的PHP，决定采用全平台支持的Homestead。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://laravelacademy.org/tags/laravel&quot; title=&quot;View all posts in Laravel&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Laravel&lt;/a&gt; 致力于让整个 PHP 开发过程变得让人愉悦，包括本地&lt;a href=&quot;http://laravelacademy.org/tags/%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83&quot; title=&quot;View all posts in 开发环境&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;开发环境&lt;/a&gt;，官方为我们提供了一整套本地开发环境 —— Laravel &lt;a href=&quot;http://laravelacademy.org/tags/homestead&quot; title=&quot;View all posts in Homestead&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Homestead&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;安装：&lt;/p&gt;
+&lt;p&gt;需要先安装Vagrant和VirtualBox，安装完之后，在ITerm中使用如下命令将 &lt;code&gt;laravel/homesterad&lt;/code&gt; 添加到 Vagrant 中。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vagrant box add laravel/homestead&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;结果就尴尬了，下载到4%就断了，尝试了几次换迅雷离线下载，成功下载了&lt;br&gt;
     
     </summary>
     
@@ -145,18 +140,12 @@
     <link href="//ganl.io/2016/12/23/startssl-e5-88-87-e6-8d-a2-e5-88-b0-lets-encrypt/"/>
     <id>//ganl.io/2016/12/23/startssl-e5-88-87-e6-8d-a2-e5-88-b0-lets-encrypt/</id>
     <published>2016-12-23T10:16:27.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:55:17.733Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
+      &lt;p&gt;收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356-170x300.png&quot; alt=&quot;20161223150356&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -178,17 +167,13 @@
     <link href="//ganl.io/2016/08/21/ubuntu-16-04-1-e5-ae-89-e8-a3-85gitlab-8-10-7-ce-0/"/>
     <id>//ganl.io/2016/08/21/ubuntu-16-04-1-e5-ae-89-e8-a3-85gitlab-8-10-7-ce-0/</id>
     <published>2016-08-21T02:32:33.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:22:38.763Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
-        
-      
+      &lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27-300x169.png&quot; alt=&quot;Ubuntu16.04-2016-08-21-10-17-27&quot;&gt;&lt;/p&gt;
+&lt;p&gt;信任 GitLab 的 GPG 公钥：&lt;/p&gt;
+&lt;p&gt;&lt;pre&gt;curl &lt;a href=&quot;https://packages.gitlab.com/gpg.key&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://packages.gitlab.com/gpg.key&lt;/a&gt; 2&amp;gt; /dev/null | sudo apt-key add - &amp;amp;&amp;gt;/dev/null&lt;br&gt;&lt;/pre&gt;&lt;br&gt;添加gitlab-ce.list&lt;br&gt;
     
     </summary>
     
@@ -292,17 +277,12 @@
     <link href="//ganl.io/2016/06/01/u5enq-e8-af-a2-e9-97-ae-e5-ad-97-e7-ac-a6json-decode-failed-e6-8e-a7-e5-88-b6-e5-ad-97-e7-ac-a6/"/>
     <id>//ganl.io/2016/06/01/u5enq-e8-af-a2-e9-97-ae-e5-ad-97-e7-ac-a6json-decode-failed-e6-8e-a7-e5-88-b6-e5-ad-97-e7-ac-a6/</id>
     <published>2016-06-01T06:05:42.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:23:55.307Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png&quot;
-        
-      
+      &lt;p&gt;ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png&quot; alt=&quot;20160601101750&quot;&gt;&lt;br&gt;复制结果用notepad++打开，有两个ENQ字符：&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png&quot; alt=&quot;20160601102433&quot;&gt;&lt;/p&gt;
+&lt;p&gt;尝试用php的json_decode解析一下：&lt;br&gt;
     
     </summary>
     
@@ -324,18 +304,13 @@
     <link href="//ganl.io/2016/03/08/svn-repo-e8-bf-81-e7-a7-bb-e5-88-b0gitgitlab/"/>
     <id>//ganl.io/2016/03/08/svn-repo-e8-bf-81-e7-a7-bb-e5-88-b0gitgitlab/</id>
     <published>2016-03-08T14:02:51.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:39:52.860Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
+      &lt;p&gt;平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg&quot; alt=&quot;svn-git20160308212151&quot;&gt;&lt;/p&gt;
+&lt;p&gt;硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。&lt;br&gt;
     
     </summary>
     
@@ -467,17 +442,11 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2016/01/06/shadowsocks-500-internal-privoxy-error/"/>
     <id>//ganl.io/2016/01/06/shadowsocks-500-internal-privoxy-error/</id>
     <published>2016-01-06T06:40:59.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T17:00:11.108Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。&lt;br&gt;客户端的日志显示time out：&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。&lt;br&gt;客户端的日志显示time out：&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -562,19 +531,13 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/11/06/script1028-e7-bc-ba-e5-b0-91-e6-a0-87-e8-af-86-e7-ac-a6-e3-80-81-e5-ad-97-e7-ac-a6-e4-b8-b2-e6-88-96-e6-95-b0-e5-ad-97/"/>
     <id>//ganl.io/2015/11/06/script1028-e7-bc-ba-e5-b0-91-e6-a0-87-e8-af-86-e7-ac-a6-e3-80-81-e5-ad-97-e7-ac-a6-e4-b8-b2-e6-88-96-e6-95-b0-e5-ad-97/</id>
     <published>2015-11-06T02:41:41.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T17:00:34.246Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;360极速浏览器，既然用chrome的Blink内核，为什么还整个IE11极速和兼容模式；&lt;/p&gt;
+      &lt;p&gt;360极速浏览器，既然用chrome的Blink内核，为什么还整个IE11极速和兼容模式；&lt;/p&gt;
 &lt;p&gt;搞得一不注意页面js就报错：SCRIPT1028: 缺少标识符、字符串或数字&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/11/douhao.png&quot; alt=&quot;douhao&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -630,17 +593,13 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/11/04/ubuntu12-04-e5-ae-89-e8-a3-85gitlab-e7-a4-be-e5-8c-ba-e7-89-88install-a-gitlab-ce-omnibus-package-on-ubuntu12-04/"/>
     <id>//ganl.io/2015/11/04/ubuntu12-04-e5-ae-89-e8-a3-85gitlab-e7-a4-be-e5-8c-ba-e7-89-88install-a-gitlab-ce-omnibus-package-on-ubuntu12-04/</id>
     <published>2015-11-04T04:44:44.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:21:33.947Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/977.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ubuntu 16.04.1 安装gitlab
-        
-      
+      &lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/977.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ubuntu 16.04.1 安装gitlab 8.10.7-ce.0&lt;/a&gt;&lt;br&gt;GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。&lt;/p&gt;
+&lt;p&gt;特点：1. Web框架使用Ruby on Rails。 2. 基于MIT代码发布协议。 3. 需要gitolite协同工作。&lt;/p&gt;
+&lt;h4 id=&quot;1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies&quot;&gt;&lt;a href=&quot;#1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies&quot; class=&quot;headerlink&quot; title=&quot;1.安装和配置依赖包( Install and configure the necessary dependencies)&quot;&gt;&lt;/a&gt;1.安装和配置依赖包( Install and configure the necessary dependencies)&lt;/h4&gt;
     
     </summary>
     
@@ -666,17 +625,14 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/09/22/tool-box-e5-9c-a8mac-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-88-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-89/"/>
     <id>//ganl.io/2015/09/22/tool-box-e5-9c-a8mac-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-88-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-89/</id>
     <published>2015-09-22T11:59:11.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:31:44.820Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Windows下安装Docker，参见：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/798.html&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;Windows下安装Docker，参见：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/798.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用Boot2Docker来使用Docker（toolbox在Windows下安装Docker）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在linux上安装, the Docker client, the Docker daemon, and any containers 会执行运行在本机上. 这意味着可以Docker container 可以使用直接使用本地地址，例如&lt;code&gt;localhost:8000&lt;/code&gt; 、&lt;code&gt;0.0.0.0:8376。&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922094509.png&quot; alt=&quot;blog20150922094509&quot;&gt;&lt;/p&gt;
+&lt;p&gt;In an OS X installation, the &lt;code&gt;docker&lt;/code&gt; daemon is running inside a Linux VM called &lt;code&gt;default&lt;/code&gt;. The &lt;code&gt;default&lt;/code&gt; is a lightweight Linux VM made specifically to run the Docker daemon on Mac OS X. The VM runs completely from RAM, is a small ~24MB download, and boots in approximately 5s. 和windows类似，Docker 在mac os x也是借助linux虚拟机来运行的。&lt;br&gt;
     
     </summary>
     
@@ -964,18 +920,11 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/"/>
     <id>//ganl.io/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/</id>
     <published>2015-07-30T08:11:58.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T16:40:27.274Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
+      &lt;p&gt;svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:&lt;br&gt;
     
     </summary>
     
@@ -1409,17 +1358,11 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/06/03/vc2008-e7-bc-96-e8-af-91-e6-8a-a5link-fatal-error-lnk1000-internal-error-during-incrbuildimage/"/>
     <id>//ganl.io/2015/06/03/vc2008-e7-bc-96-e8-af-91-e6-8a-a5link-fatal-error-lnk1000-internal-error-during-incrbuildimage/</id>
     <published>2015-06-03T08:02:46.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T16:21:24.932Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;LINK : fatal error LNK1000: Internal error during IncrBuildImage&lt;br&gt;[caption id=”attachment_597” align=”aligncenter” width=”300”]&lt;a
-        
-      
+      &lt;p&gt;LINK : fatal error LNK1000: Internal error during IncrBuildImage&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/06/4-300x15.png&quot; alt=&quot;fatal error LNK1000&quot;&gt;&lt;br&gt;fatal error LNK1000 解决方法：&lt;br&gt;
     
     </summary>
     
@@ -1755,19 +1698,15 @@ Preparing...
     <link href="//ganl.io/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/"/>
     <id>//ganl.io/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/</id>
     <published>2015-03-26T13:22:48.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:37:19.648Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;android里在一个普通的类中：getString(R.string.the_license_expired)&lt;br&gt;eclipse 提示：&lt;/p&gt;
+      &lt;p&gt;android里在一个普通的类中：getString(R.string.the_license_expired)&lt;br&gt;eclipse 提示：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The method getString(int) is undefined for
-        
-      
+&lt;p&gt;The method getString(int) is undefined for the type myException&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;百度了下说先确保获得当前的context，再去在context下获得resources，然后再去从string id获得string就可以了：&lt;br&gt;First getString is not a static method,&lt;br&gt;you are calling it in a static context this can’t be done.&lt;br&gt;Second the getString method is part of the Resources class,&lt;br&gt;your class does not extend the Resources class so the method can’t be found.&lt;/p&gt;
     
     </summary>
     
@@ -2014,20 +1953,12 @@ Preparing...
     <link href="//ganl.io/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/"/>
     <id>//ganl.io/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/</id>
     <published>2015-01-20T02:02:57.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:26:43.435Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span&gt;&lt;span&gt;$.post(requestUrl,&amp;nbsp;{&lt;/span&gt;&lt;span
-        
-      
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$.post(requestUrl, &amp;#123;&amp;quot;action&amp;quot;:&amp;quot;register&amp;quot;,&amp;quot;username&amp;quot;:username,&amp;quot;active&amp;quot;: &amp;quot;1&amp;quot;,  &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;quot;userpassword&amp;quot;: userpassword, &amp;quot;role&amp;quot;: &amp;quot;8&amp;quot;, &amp;quot;mobile&amp;quot;: phone, &amp;quot;email&amp;quot;: email, &amp;quot;yanzheng&amp;quot;:yanzheng,&amp;quot;isCreate&amp;quot;:true&amp;#125;,&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;FIX:&lt;br&gt;You are sending the object element user_password. You should post the value of object in post method user_password.value($(“#user_password”).val()).&lt;br&gt;只因为写错了一个变量，擦擦，，&lt;br&gt;
     
     </summary>
     
@@ -2065,18 +1996,12 @@ Preparing...
     <link href="//ganl.io/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/"/>
     <id>//ganl.io/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/</id>
     <published>2014-12-31T05:51:35.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:20:02.580Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如&lt;/p&gt;
-&lt;p&gt;9个文本文件 名字分别为&lt;br&gt;eula.1028.txt ，&lt;br&gt;eula.1031.txt
-        
-      
+      &lt;p&gt;安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如&lt;/p&gt;
+&lt;p&gt;9个文本文件 名字分别为&lt;br&gt;eula.1028.txt ，&lt;br&gt;eula.1031.txt ，&lt;br&gt;
     
     </summary>
     
@@ -2120,17 +2045,12 @@ Preparing...
     <link href="//ganl.io/2014/12/29/this-function-or-variable-may-be-unsafe-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8-crt-secure-no-warnings/"/>
     <id>//ganl.io/2014/12/29/this-function-or-variable-may-be-unsafe-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8-crt-secure-no-warnings/</id>
     <published>2014-12-29T15:22:28.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:32:16.464Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Error    3    error C4996: ‘strcpy’: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation,
-        
-      
+      &lt;p&gt;Error    3    error C4996: ‘strcpy’: This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.    g:\workspace\c++\clipboard\clipboard\clipboard\clipboarddlg.cpp    170    1    clipboard&lt;/p&gt;
+&lt;p&gt;解决方案，项目 -&amp;gt;属性 -&amp;gt; c/c++ -&amp;gt; 预处理器 -&amp;gt; 点击预处理器定义，编辑，加入_CRT_SECURE_NO_WARNINGS，即可。&lt;br&gt;
     
     </summary>
     
@@ -2199,17 +2119,11 @@ Preparing...
     <link href="//ganl.io/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
     <id>//ganl.io/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
     <published>2014-12-15T13:37:58.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:36:37.346Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801.jpg&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。&lt;br&gt;&lt;img src=&quot;http://assets.iganlei.cn/wp-content/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141215211801.jpg&quot; alt=&quot;QQ截图20141215211801&quot;&gt;&lt;br&gt;查了下方法，没发现特别的，&lt;br&gt;
     
     </summary>
     
@@ -2583,18 +2497,15 @@ Preparing...
     <link href="//ganl.io/2013/12/04/sqlite3-8-1-e7-a7-bb-e6-a4-8d-e5-88-b0tq2416-e5-9c-a8arm-linux-e5-b9-b3-e5-8f-b0-e4-b8-8a-e7-a7-bb-e6-a4-8dsqlite/"/>
     <id>//ganl.io/2013/12/04/sqlite3-8-1-e7-a7-bb-e6-a4-8d-e5-88-b0tq2416-e5-9c-a8arm-linux-e5-b9-b3-e5-8f-b0-e4-b8-8a-e7-a7-bb-e6-a4-8dsqlite/</id>
     <published>2013-12-03T17:23:20.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-10T16:59:34.509Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;在ARM-Linux平台上移植SQLite,Port SQLite to ARM-Linux Platform.&lt;br&gt;一，交叉编译器：&lt;br&gt;arm-linux-gcc-4.4.1  &lt;/p&gt;
-&lt;p&gt;二、移植步骤&lt;br&gt;下载源码&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;在ARM-Linux平台上移植SQLite,Port SQLite to ARM-Linux Platform.&lt;br&gt;一，交叉编译器：&lt;br&gt;arm-linux-gcc-4.4.1  &lt;/p&gt;
+&lt;p&gt;二、移植步骤&lt;br&gt;下载源码&lt;br&gt;&lt;a href=&quot;http://www.sqlite.org/2013/sqlite-autoconf-3080100.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sqlite.org/2013/sqlite-autoconf-3080100.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1.解压压缩包并改名进入解压后的目录，如下：  &lt;/p&gt;
+&lt;p&gt;cd sqlite3.8.1&lt;/p&gt;
+&lt;p&gt;2.创建一个目录_install并进入该目录，用于在这个目录中进行交叉编译，如下：&lt;br&gt;mkdir _install&lt;br&gt;cd _install&lt;br&gt;
     
     </summary>
     

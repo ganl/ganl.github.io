@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>shadowsocks, 500 internal privoxy error | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。客户端的日志显示time out：服务器端的日志停在 stated：怪事了，将服务器端 Shadowscocks卸载重装还是不行。百度了一番还是没能找到原因，无意中试了下telnet">
+  <meta name="description" content="昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。客户端的日志显示time out：">
 <meta name="keywords" content="Shadowsocks,500 internal privoxy error,privoxy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="shadowsocks, 500 internal privoxy error">
 <meta property="og:url" content="//ganl.io/2016/01/06/shadowsocks-500-internal-privoxy-error/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。客户端的日志显示time out：服务器端的日志停在 stated：怪事了，将服务器端 Shadowscocks卸载重装还是不行。百度了一番还是没能找到原因，无意中试了下telnet">
+<meta property="og:description" content="昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。客户端的日志显示time out：">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/01/started20160106142345.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-10T17:00:11.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="shadowsocks, 500 internal privoxy error">
-<meta name="twitter:description" content="昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。客户端的日志显示time out：服务器端的日志停在 stated：怪事了，将服务器端 Shadowscocks卸载重装还是不行。百度了一番还是没能找到原因，无意中试了下telnet">
+<meta name="twitter:description" content="昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。客户端的日志显示time out：">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -183,7 +183,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。<br>客户端的日志显示time out：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png" alt=""></a><br>服务器端的日志停在 stated：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/started20160106142345.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/started20160106142345.png" alt="started20160106142345"></a><br>怪事了，将服务器端 Shadowscocks卸载重装还是不行。<br>百度了一番还是没能找到原因，无意中试了下telnet <em>**</em> port，发现连接失败。<br>将iptables关闭后，telnet 正常，看样子oneinstack中某些安装会更改iptables。<br>将Shadowsocks 端口加入iptables<br>122 iptables -I INPUT -p tcp -m tcp –dport 20443 -j ACCEPT<br>123 iptables -L -n</p>
+        <p>昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。<br>客户端的日志显示time out：<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png" alt=""><br><a id="more"></a><br>服务器端的日志停在 stated：<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/started20160106142345.png" alt="started20160106142345"><br>怪事了，将服务器端 Shadowscocks卸载重装还是不行。<br>百度了一番还是没能找到原因，无意中试了下telnet <em>**</em> port，发现连接失败。<br>将iptables关闭后，telnet 正常，看样子oneinstack中某些安装会更改iptables。<br>将Shadowsocks 端口加入iptables<br>122 iptables -I INPUT -p tcp -m tcp –dport 20443 -j ACCEPT<br>123 iptables -L -n</p>
 <p>尝试去访问还是不行，日志还是timeout。<br><code>vi /etc/sysconfig/iptables</code><br>发现里面已有的规则是这样写的：<br><code>-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT</code><br>复制了一行改了下端口，保存，重启iptables。<br>一切正常了。</p>
 

@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ganl.io/2015/11/04/ubuntu12-04-e5-ae-89-e8-a3-85gitlab-e7-a4-be-e5-8c-ba-e7-89-88install-a-gitlab-ce-omnibus-package-on-ubuntu12-04/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="Ubuntu 16.04.1 安装gitlab 8.10.7-ce.0GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。 特点：1. Web框架使用Ruby on Rails。 2. 基于MIT代码发布协议。 3. 需要gitolite协同工作。 1.安装和配置依赖包( Install and configure the necessar">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-10T16:21:33.947Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu12.04安装gitlab社区版(Install a GitLab CE Omnibus package on ubuntu12.04)">
 <meta name="twitter:description" content="Ubuntu 16.04.1 安装gitlab 8.10.7-ce.0GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。 特点：1. Web框架使用Ruby on Rails。 2. 基于MIT代码发布协议。 3. 需要gitolite协同工作。 1.安装和配置依赖包( Install and configure the necessar">
@@ -182,7 +182,8 @@
       
         <p><a href="http://www.iganlei.cn/environment-configuration/977.html" target="_blank" rel="external">Ubuntu 16.04.1 安装gitlab 8.10.7-ce.0</a><br>GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
 <p>特点：1. Web框架使用Ruby on Rails。 2. 基于MIT代码发布协议。 3. 需要gitolite协同工作。</p>
-<h4 id="1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies"><a href="#1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies" class="headerlink" title="1.安装和配置依赖包( Install and configure the necessary dependencies)"></a>1.安装和配置依赖包( Install and configure the necessary dependencies)</h4><p>If you install Postfix to send email please select ‘Internet Site’ during setup. Instead of using Postfix you can also use Sendmail or <a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/smtp.md" target="_blank" rel="external">configure a custom SMTP server</a>. If you wish to use Exim, please <a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/smtp.md#smtp-on-localhost" target="_blank" rel="external">configure it as an SMTP server.</a></p>
+<h4 id="1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies"><a href="#1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies" class="headerlink" title="1.安装和配置依赖包( Install and configure the necessary dependencies)"></a>1.安装和配置依赖包( Install and configure the necessary dependencies)</h4><a id="more"></a>
+<p>If you install Postfix to send email please select ‘Internet Site’ during setup. Instead of using Postfix you can also use Sendmail or <a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/smtp.md" target="_blank" rel="external">configure a custom SMTP server</a>. If you wish to use Exim, please <a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/smtp.md#smtp-on-localhost" target="_blank" rel="external">configure it as an SMTP server.</a></p>
 <pre>sudo apt-get install curl openssh-server ca-certificates postfix</pre>
 
 <h4 id="2-增加gitlab安装源-并安装-gitlab-ce-Add-the-GitLab-package-server-and-install-the-package"><a href="#2-增加gitlab安装源-并安装-gitlab-ce-Add-the-GitLab-package-server-and-install-the-package" class="headerlink" title="2. 增加gitlab安装源,并安装 gitlab-ce(Add the GitLab package server and install the package)"></a>2. 增加gitlab安装源,并安装 gitlab-ce(Add the GitLab package server and install the package)</h4><pre>curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash

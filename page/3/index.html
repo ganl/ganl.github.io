@@ -178,10 +178,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。<br>客户端的日志显示time out：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png" alt=""></a><br>服务器端的日志停在 stated：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/started20160106142345.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/started20160106142345.png" alt="started20160106142345"></a><br>怪事了，将服务器端 Shadowscocks卸载重装还是不行。<br>百度了一番还是没能找到原因，无意中试了下telnet <em>**</em> port，发现连接失败。<br>将iptables关闭后，telnet 正常，看样子oneinstack中某些安装会更改iptables。<br>将Shadowsocks 端口加入iptables<br>122 iptables -I INPUT -p tcp -m tcp –dport 20443 -j ACCEPT<br>123 iptables -L -n</p>
-<p>尝试去访问还是不行，日志还是timeout。<br><code>vi /etc/sysconfig/iptables</code><br>发现里面已有的规则是这样写的：<br><code>-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
--A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT</code><br>复制了一行改了下端口，保存，重启iptables。<br>一切正常了。</p>
-
+        <p>昨天用oneinstack装了最新版的php7.0.1后，今天发现；Shadowsocks不工作了，打开www.google.com、youtube.com等都是 500 internal Privoxy error。<br>客户端的日志显示time out：<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/500proxy20160106142058-1.png" alt=""><br>
+        
+          <a class="article-more-a" href="/2016/01/06/shadowsocks-500-internal-privoxy-error/#more">more >></a>
+        
       
 
       
@@ -484,11 +484,10 @@ sudo grub-install /dev/sda</code></p>
       
         <p>360极速浏览器，既然用chrome的Blink内核，为什么还整个IE11极速和兼容模式；</p>
 <p>搞得一不注意页面js就报错：SCRIPT1028: 缺少标识符、字符串或数字</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/11/douhao.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/11/douhao.png" alt="douhao"></a></p>
-<p>去掉json最后一项的逗号就ok了。</p>
-<p><pre>toAddObj = {<br>            week: weekStr,<br>            time:[startMin, endMin],<br>            bw: bwStr<br>    }<br></pre><br>&nbsp;</p>
-<p>兼容模式是IE7文档模式?一直没找到哪里有说明。</p>
-
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2015/11/douhao.png" alt="douhao"></p>
+        
+          <a class="article-more-a" href="/2015/11/06/script1028-e7-bc-ba-e5-b0-91-e6-a0-87-e8-af-86-e7-ac-a6-e3-80-81-e5-ad-97-e7-ac-a6-e4-b8-b2-e6-88-96-e6-95-b0-e5-ad-97/#more">more >></a>
+        
       
 
       
@@ -698,96 +697,10 @@ echo &quot;serial number&quot;.&quot;\t&quot;.&quot;product type\tcompany\ttime\
       
         <p><a href="http://www.iganlei.cn/environment-configuration/977.html" target="_blank" rel="external">Ubuntu 16.04.1 安装gitlab 8.10.7-ce.0</a><br>GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
 <p>特点：1. Web框架使用Ruby on Rails。 2. 基于MIT代码发布协议。 3. 需要gitolite协同工作。</p>
-<h4 id="1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies"><a href="#1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies" class="headerlink" title="1.安装和配置依赖包( Install and configure the necessary dependencies)"></a>1.安装和配置依赖包( Install and configure the necessary dependencies)</h4><p>If you install Postfix to send email please select ‘Internet Site’ during setup. Instead of using Postfix you can also use Sendmail or <a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/smtp.md" target="_blank" rel="external">configure a custom SMTP server</a>. If you wish to use Exim, please <a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/smtp.md#smtp-on-localhost" target="_blank" rel="external">configure it as an SMTP server.</a></p>
-<pre>sudo apt-get install curl openssh-server ca-certificates postfix</pre>
-
-<h4 id="2-增加gitlab安装源-并安装-gitlab-ce-Add-the-GitLab-package-server-and-install-the-package"><a href="#2-增加gitlab安装源-并安装-gitlab-ce-Add-the-GitLab-package-server-and-install-the-package" class="headerlink" title="2. 增加gitlab安装源,并安装 gitlab-ce(Add the GitLab package server and install the package)"></a>2. 增加gitlab安装源,并安装 gitlab-ce(Add the GitLab package server and install the package)</h4><pre>curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
-sudo apt-get install gitlab-ce</pre>
-Centos快速安装脚本：
-`curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash`
-
-快速安装脚本：https://packages.gitlab.com/gitlab/gitlab-ce/install
-
-手动下载安装地址：https://packages.gitlab.com/gitlab/gitlab-ce
-<pre>dpkg -i gitlab-ce-XXX.deb</pre>
-源是加上了，但是下载也太慢了。
-
-[![](http://www.iganlei.cn/wp-content/uploads/2015/11/11.jpg)](http://www.iganlei.cn/wp-content/uploads/2015/11/11.jpg)
-
-改手动下载安装：
-
-[![2](http://www.iganlei.cn/wp-content/uploads/2015/11/2.jpg)](http://www.iganlei.cn/wp-content/uploads/2015/11/2.jpg)
-
-还是很慢，尝试换迅雷，速度也不理想，想到离线下载，还是网盘的离线功能给力：[![offline download](http://www.iganlei.cn/wp-content/uploads/2015/11/3.jpg)](http://www.iganlei.cn/wp-content/uploads/2015/11/3.jpg)
-`dpkg -i gitlab-ce_8.1.2-ce.0_amd64.deb`
-`root@ganl-virtual-machine:~# dpkg -i gitlab-ce_8.1.2-ce.0_amd64.deb
-Selecting previously unselected package gitlab-ce.
-(正在读取数据库 ... 系统当前共安装有 212515 个文件和目录。)
-正在解压缩 gitlab-ce (从 gitlab-ce_8.1.2-ce.0_amd64.deb) ...
-正在设置 gitlab-ce (8.1.2-ce.0) ...
-gitlab: Thank you for installing GitLab!
-gitlab: To configure and start GitLab, RUN THE FOLLOWING COMMAND:`
-
-sudo gitlab-ctl reconfigure
-
-gitlab: GitLab should be reachable at http://ganl-virtual-machine
-gitlab: Otherwise configure GitLab for your system by editing /etc/gitlab/gitlab.rb file
-gitlab: And running reconfigure again.
-gitlab:
-gitlab: For a comprehensive list of configuration options please see the Omnibus GitLab readme
-gitlab: https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/README.md
-gitlab:
-It looks like GitLab has not been configured yet; skipping the upgrade script.
-
-#### 3\. 配置和使用(Configure and start GitLab)
-
-<pre>sudo gitlab-ctl reconfigure</pre>
-`Recipe: gitlab::logrotate
-* ruby_block[reload logrotate svlogd configuration] action create
-- execute the ruby block reload logrotate svlogd configuration`
-
-Running handlers:
-Running handlers complete
-Chef Client finished, 94/216 resources updated in 41.887080499 seconds
-gitlab Reconfigured!
-root@ganl-virtual-machine:~#
-
-#### 4.访问看下效果( Browse to the hostname and login)
-
-Username: root
-Password: 5iveL!fe
-
-[![4](http://www.iganlei.cn/wp-content/uploads/2015/11/4-300x165.jpg)](http://www.iganlei.cn/wp-content/uploads/2015/11/4.jpg)
-
-算是装好了,过程比较简单。
-
-[![5](http://www.iganlei.cn/wp-content/uploads/2015/11/5-300x135.jpg)](http://www.iganlei.cn/wp-content/uploads/2015/11/5.jpg)
-
-**邮箱配置：**
-https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/smtp.md
-vi /etc/gitlab/gitlab.rb
-
-<pre>
-gitlab_rails['smtp_enable'] = true
-gitlab_rails['smtp_address'] = "smtp.exmail.qq.com"
-gitlab_rails['smtp_port'] = 465
-gitlab_rails['smtp_user_name'] = "xxxx@xx.com"
-gitlab_rails['smtp_password'] = "password"
-gitlab_rails['smtp_authentication'] = "login"
-gitlab_rails['smtp_ssl'] = true
-gitlab_rails['smtp_enable_starttls_auto'] = true
-gitlab_rails['smtp_tls'] = false
-
-gitlab_rails['gitlab_email_from'] = 'xxxx@xx.com'
-gitlab_rails['gitlab_email_reply_to'] = 'xxxx@xx.com'
-</pre>
-
-<p>gitlab_rails[‘gitlab_email_from’] = ‘xxxx@xx.com’<br>gitlab_rails[‘gitlab_email_reply_to’] = ‘xxxx@xx.com’</p>
-<p>需要设置，不然会报错，腾讯邮箱发不出去：<br> Net::SMTPSyntaxError: 501 mail from address must be same as authorization user<br>当ip变化或者换成域名，需要修改gitlab地址，也是编辑 /etc/gitlab/gitlab.rb<br>external_url ‘<a href="http://code.xxx.com" target="_blank" rel="external">http://code.xxx.com</a>‘<br>更换gravatar头像地址，国内：<br>gitlab_rails[‘gravatar_plain_url’] = ‘<a href="http://gravatar.duoshuo.com/avatar/%{hash}?s=%{size}&amp;d=identicon" target="_blank" rel="external">http://gravatar.duoshuo.com/avatar/%{hash}?s=%{size}&amp;d=identicon</a>‘</p>
-<p>修改完，需要执行<br><code>gitlab-ctl reconfigure</code></p>
-<p>gitlab-ctl tail 可以看动态日志</p>
-<p>网上多数修改gitlab.yml，config.yml应该都是针对gitlab7以前的版本，&gt;=7 :vi /etc/gitlab/gitlab.rb;gitlab-ctl reconfigure</p>
-
+<h4 id="1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies"><a href="#1-安装和配置依赖包-Install-and-configure-the-necessary-dependencies" class="headerlink" title="1.安装和配置依赖包( Install and configure the necessary dependencies)"></a>1.安装和配置依赖包( Install and configure the necessary dependencies)</h4>
+        
+          <a class="article-more-a" href="/2015/11/04/ubuntu12-04-e5-ae-89-e8-a3-85gitlab-e7-a4-be-e5-8c-ba-e7-89-88install-a-gitlab-ce-omnibus-package-on-ubuntu12-04/#more">more >></a>
+        
       
 
       
@@ -893,35 +806,11 @@ gitlab_rails['gitlab_email_reply_to'] = 'xxxx@xx.com'
       
         <p>Windows下安装Docker，参见：<a href="http://www.iganlei.cn/environment-configuration/798.html" target="_blank" rel="external">使用Boot2Docker来使用Docker（toolbox在Windows下安装Docker）</a></p>
 <p>在linux上安装, the Docker client, the Docker daemon, and any containers 会执行运行在本机上. 这意味着可以Docker container 可以使用直接使用本地地址，例如<code>localhost:8000</code> 、<code>0.0.0.0:8376。</code></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922094509.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922094509.png" alt="blog20150922094509"></a></p>
-<p>In an OS X installation, the <code>docker</code> daemon is running inside a Linux VM called <code>default</code>. The <code>default</code> is a lightweight Linux VM made specifically to run the Docker daemon on Mac OS X. The VM runs completely from RAM, is a small ~24MB download, and boots in approximately 5s. 和windows类似，Docker 在mac os x也是借助linux虚拟机来运行的。</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922110515.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922110515.png" alt="blog20150922110515"></a></p>
-<p>&nbsp;</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>去<a href="https://www.docker.com/toolbox下载mac版" target="_blank" rel="external">https://www.docker.com/toolbox下载mac版</a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922093435.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922093435.png" alt="blog20150922093435"></a></p>
-<p>或者去<a href="https://github.com/boot2docker/osx-installer/releases下载" target="_blank" rel="external">https://github.com/boot2docker/osx-installer/releases下载</a></p>
-<p>安装截图：</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922094914.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922094914.png" alt="blog20150922094914"></a> <a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095111.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095111.png" alt="blog20150922095111"></a> <a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095131.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095131.png" alt="blog20150922095131"></a> <a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095207.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095207.png" alt="blog20150922095207"></a> <a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095224.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922095224.png" alt="blog20150922095224"></a></p>
-<p>比windows下安装快多了。</p>
-<h3 id="the-Docker-Quickstart-Terminal"><a href="#the-Docker-Quickstart-Terminal" class="headerlink" title="the Docker Quickstart Terminal"></a>the Docker Quickstart Terminal</h3><p>在launchPad里运行Quickstart，<br><code>Creating Machine default...
-Creating CA: /Users/ganl/.docker/machine/certs/ca.pem
-Creating client certificate: /Users/ganl/.docker/machine/certs/cert.pem
-Creating VirtualBox VM...
-Creating SSH key...
-Starting VirtualBox VM...
-Starting VM...
-To see how to connect Docker to this machine, run: docker-machine env default
-Starting machine default...
-Started machines may have new IP addresses. You may need to re-run the</code>docker-machine env<code>command.
-Setting environment variables for machine default...</code></p>
-<h2 id=""><a href="#" class="headerlink" title="."></a>.</h2><h2 id="-1"><a href="#-1" class="headerlink" title="## ## =="></a>## ## ==</h2><h2 id="-2"><a href="#-2" class="headerlink" title="## ## ## ## ==="></a>## ## ## ## ===</h2><p>/“””””””””””””””””___/ ===<br><figure class="highlight plain"><figcaption><span>~~~~ ~~~ ~~~~ ~~~ ~ / </span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">\______ o __/</div><div class="line">\ \ __/</div><div class="line">\____\_______/</div><div class="line"></div><div class="line">docker is configured to use the default machine with IP 192.168.99.100</div><div class="line">For help getting started, check out the docs at https://docs.docker.com</div><div class="line"></div><div class="line">ganl:~ ganl$</div><div class="line"></div><div class="line">[![blog20150922105529](http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922105529.png)](http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922105529.png)</div><div class="line"></div><div class="line">为什么IP都和windows一样：192.168.99.100</div><div class="line"></div><div class="line">连接Docker主机：</div><div class="line">`ganl:~ ganl$ ssh docker@192.168.99.100</div><div class="line">The authenticity of host &apos;192.168.99.100 (192.168.99.100)&apos; can&apos;t be established.</div><div class="line">RSA key fingerprint is bf:61:58:f1:e4:fa:d7:aa:30:11:6c:38:8c:37:c0:e7.</div><div class="line">Are you sure you want to continue connecting (yes/no)? yes</div><div class="line">Warning: Permanently added &apos;192.168.99.100&apos; (RSA) to the list of known hosts.</div><div class="line">docker@192.168.99.100&apos;s password:</div><div class="line">## .</div><div class="line">## ## ## ==</div><div class="line">## ## ## ## ## ===</div><div class="line">/&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===</div><div class="line">~~~ &#123;~~ ~~~~ ~~~ ~~~~ ~~~ ~ / ===-</div></pre></td></tr></table></figure></p>
-<p>_<strong>_</strong> o <strong>/<br>\ \ </strong>/<br>_<strong><em>____</em></strong>/</p>
-<hr>
-<p>| |<strong> _</strong> <strong><em> | |</em>|_</strong> \ <strong>| | _</strong> <strong><em>| | __</em></strong> <em> __<br>| ‘</em> \ / <em> \ / </em> | <strong>| </strong>) / <em>` |/ </em> \ / <strong>| |/ / _ \ ‘</strong>|<br>| |<em>) | (</em>) | (<em>) | |</em> / <strong>/ (<em>| | (</em>) | (</strong>| &lt; <strong>/ |<br>|_.</strong>/ _<strong>/ _</strong>/ _<em>|<em>__</em></em>_<em>,</em>|_<strong>/ _</strong>|<em>|\</em>__<em>|</em>|<br>Boot2Docker version 1.8.2, build master : aba6192 - Thu Sep 10 20:58:17 UTC 2015<br>Docker version 1.8.2, build 0a8c2e3<br>docker@default:~$ <code>拉取，查看，运行镜像：</code>docker@default:~$ docker pull daocloud.io/library/ubuntu:14.04<br>Pulling repository daocloud.io/library/ubuntu<br>91e54dfb1179: Download complete<br>d3a1f33e8a5a: Download complete<br>c22013c84729: Download complete<br>d74508fb6632: Download complete<br>Status: Downloaded newer image for daocloud.io/library/ubuntu:14.04<br>docker@default:~$ docker images<br>REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE<br>daocloud.io/library/ubuntu 14.04 91e54dfb1179 4 weeks ago 188.4 MB<br>docker@default:~$ docker run -i -t daocloud.io/library/ubuntu:14.04 /bin/bash<br>root@f229f2406660:/# cat /etc/issue<br>Ubuntu 14.04.3 LTS \n \l`</p>
-<p>root@f229f2406660:/#</p>
-<p>docker官方安装文档：<a href="https://docs.docker.com/installation/mac/" target="_blank" rel="external">https://docs.docker.com/installation/mac/</a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/Installation-on-Mac-OS-X.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/Installation-on-Mac-OS-X.png" alt="Installation on Mac OS X"></a></p>
-
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922094509.png" alt="blog20150922094509"></p>
+<p>In an OS X installation, the <code>docker</code> daemon is running inside a Linux VM called <code>default</code>. The <code>default</code> is a lightweight Linux VM made specifically to run the Docker daemon on Mac OS X. The VM runs completely from RAM, is a small ~24MB download, and boots in approximately 5s. 和windows类似，Docker 在mac os x也是借助linux虚拟机来运行的。<br>
+        
+          <a class="article-more-a" href="/2015/09/22/tool-box-e5-9c-a8mac-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-88-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-89/#more">more >></a>
+        
       
 
       

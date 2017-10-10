@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="本想使用 Laravel Valet，但本机上有较低版本的PHP，决定采用全平台支持的Homestead。 Laravel 致力于让整个 PHP 开发过程变得让人愉悦，包括本地开发环境，官方为我们提供了一整套本地开发环境 —— Laravel Homestead。 安装： 需要先安装Vagrant和VirtualBox，安装完之后，在ITerm中使用如下命令将 laravel/homesterad">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2017/05/2017-05-01-22.25.14-300x159.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.499Z">
+<meta property="og:updated_time" content="2017-10-10T17:13:03.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Laravel 开发环境-Homestead &amp; 安装 Laravel 应用">
 <meta name="twitter:description" content="本想使用 Laravel Valet，但本机上有较低版本的PHP，决定采用全平台支持的Homestead。 Laravel 致力于让整个 PHP 开发过程变得让人愉悦，包括本地开发环境，官方为我们提供了一整套本地开发环境 —— Laravel Homestead。 安装： 需要先安装Vagrant和VirtualBox，安装完之后，在ITerm中使用如下命令将 laravel/homesterad">
@@ -186,95 +186,44 @@
 <p><a href="http://laravelacademy.org/tags/laravel" title="View all posts in Laravel" target="_blank" rel="external">Laravel</a> 致力于让整个 PHP 开发过程变得让人愉悦，包括本地<a href="http://laravelacademy.org/tags/%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83" title="View all posts in 开发环境" target="_blank" rel="external">开发环境</a>，官方为我们提供了一整套本地开发环境 —— Laravel <a href="http://laravelacademy.org/tags/homestead" title="View all posts in Homestead" target="_blank" rel="external">Homestead</a>。</p>
 <p>安装：</p>
 <p>需要先安装Vagrant和VirtualBox，安装完之后，在ITerm中使用如下命令将 <code>laravel/homesterad</code> 添加到 Vagrant 中。</p>
-<pre><code>vagrant box add laravel/homestead`&lt;/pre&gt;
-结果就尴尬了，下载到4%就断了，尝试了几次换迅雷离线下载，成功下载了
-
-https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box
-
-再次添加：
-&lt;pre&gt;`vagrant box add laravel/homestead ./virtualbox.box`&lt;/pre&gt;
-安装 Homestead
-&lt;pre&gt;`cd ~
-git clone https://github.com/laravel/homestead.git Homestead`&lt;/pre&gt;
-再在Homestead目录中执行init
-&lt;pre&gt;`cd Homestead
-bash init.sh`&lt;/pre&gt;
-当前目录下的Homestead.yaml基本不用修改，需要注意的是sites段路径是否符合项目
-sites:
-- map: homestead.app
-to: /home/vagrant/Code/Laravel/public
-启动 Vagrant Box：
-&lt;pre&gt;`vagrant up
-`&lt;/pre&gt;
-并没有想像的那么顺利，提示找不到ssh key；生成
-&lt;pre&gt;`ssh-keygen -t rsa -C &quot;austgl@qq.com&quot;
-`&lt;/pre&gt;
-再次执行vagrant up，发现还是会从外网下载，用list看了下盒子已经存在了的
-&lt;pre&gt;`vagrant box list
-laravel/homestead (virtualbox, 0)
-laravel/homestead (vmware_desktop, 0)`&lt;/pre&gt;
-vagrant up的时候提示
-Box &apos;laravel/homestead&apos; could not be found. Attempting to find and install...
-
-搜了下，可以通过json指定meta，再加到Vagrant中，在box文件所在的目录中创建metadata.json：
-&lt;pre&gt;`{
-    &quot;name&quot;: &quot;laravel/homestead&quot;,
-    &quot;versions&quot;: [{
-        &quot;version&quot;: &quot;2.1.0&quot;,
-        &quot;providers&quot;: [{
-            &quot;name&quot;: &quot;virtualbox&quot;,
-            &quot;url&quot;: &quot;file://virtualbox.box&quot;
-        }]
-    }]
-}
-`&lt;/pre&gt;
-&lt;pre&gt;`vagrant box add metadata.json
-==&amp;gt; box: Loading metadata for box &apos;metadata.json&apos;
-    box: URL: file:///Users/ganl/dev/web/metadata.json
-==&amp;gt; box: Adding box &apos;laravel/homestead&apos; (v2.1.0) for provider: virtualbox
-
----
-    box: Unpacking necessary files from: file://virtualbox.box
-vagrant box list
-laravel/homestead (virtualbox, 0)
-laravel/homestead (virtualbox, 2.1.0)
-laravel/homestead (vmware_desktop, 0)
-`&lt;/pre&gt;
-再执行 vagrant up， 虚机正常起来了，中间有红色的报错信息，目录没挂上
-folders:
-- map: ~/Code
-to: /home/vagrant/Code
-本地没有~/Code目录，新建Code目录后，vagrant destroy Homestead-7, 再vagrant up创建虚机；在本地Code目录下新建index.html，
-vagrant ssh,连上虚机后，查看/home/vagrant/Code/下同步出现了index.html，但index.html是访问不到的，默认Homestead.yaml中的sites root是指向/home/vagrant/Code/Laravel/public。
-为了方便连虚机，设置命令alias：
-&lt;pre&gt;`alias vm=&quot;ssh vagrant@127.0.0.1 -p 2222&quot;
-➜  Homestead git:(master) vm
-Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-66-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-
-3 packages can be updated.
-0 updates are security updates.
-
-vagrant@homestead:~$
-`&lt;/pre&gt;
-安装 Laravel
-需要先安装composer，再全局安装Laravel 安装器，
-&lt;pre&gt;`curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-composer global require &quot;laravel/installer&quot;
-`&lt;/pre&gt;
-再将$HOME/.composer/vendor/bin 加到系统PATH，否则不能在任意路径调用 laravel 命令
-vi ~/.bash_profile #增加一行
-export PATH=&quot;$HOME/.composer/vendor/bin:$PATH&quot;
-:wq,再source一下
-source ~/.bash_profile
-进入尾声，laravel new 命令创建一个新的 Laravel 应用
-&gt; cd ~/Code
-</code></pre><blockquote>
-<pre><code>laravel new blog
+<p><code>vagrant box add laravel/homestead</code></p>
+<p>结果就尴尬了，下载到4%就断了，尝试了几次换迅雷离线下载，成功下载了<br><a id="more"></a></p>
+<p><a href="https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box" target="_blank" rel="external">https://atlas.hashicorp.com/laravel/boxes/homestead/versions/2.1.0/providers/virtualbox.box</a></p>
+<p>再次添加：<br><code>vagrant box add laravel/homestead ./virtualbox.box</code></p>
+<p>安装 Homestead</p>
+<figure class="highlight plain"><figcaption><span>~</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/laravel/homestead.git Homestead</div></pre></td></tr></table></figure>
+<p>再在Homestead目录中执行init<br>    <pre><code>cd Homestead
+    bash init.sh</code></pre><br>当前目录下的Homestead.yaml基本不用修改，需要注意的是sites段路径是否符合项目</p>
+<blockquote>
+<p>sites:</p>
+<ul>
+<li>map: homestead.app<br>to: /home/vagrant/Code/Laravel/public</li>
+</ul>
+</blockquote>
+<p>启动 Vagrant Box：<br><code>vagrant up</code></p>
+<p>并没有想像的那么顺利，提示找不到ssh key；生成<br>    <pre><code>ssh-keygen -t rsa -C &quot;austgl@qq.com&quot;</code></pre><br>再次执行vagrant up，发现还是会从外网下载，用list看了下盒子已经存在了的<br>    <pre><code>vagrant box list
+    laravel/homestead (virtualbox, 0)
+    laravel/homestead (vmware_desktop, 0)</code></pre></p>
+<p>vagrant up的时候提示<br>    Box ‘laravel/homestead’ could not be found. Attempting to find and install…</p>
+<p>搜了下，可以通过json指定meta，再加到Vagrant中，在box文件所在的目录中创建metadata.json：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">       &quot;name&quot;: &quot;laravel/homestead&quot;,</div><div class="line">       &quot;versions&quot;: [&#123;</div><div class="line">           &quot;version&quot;: &quot;2.1.0&quot;,</div><div class="line">           &quot;providers&quot;: [&#123;</div><div class="line">               &quot;name&quot;: &quot;virtualbox&quot;,</div><div class="line">               &quot;url&quot;: &quot;file://virtualbox.box&quot;</div><div class="line">           &#125;]</div><div class="line">       &#125;]</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">vagrant box add metadata.json</div><div class="line">    ==&amp;gt; box: Loading metadata for box &apos;metadata.json&apos;</div><div class="line">        box: URL: file:///Users/ganl/dev/web/metadata.json</div><div class="line">    ==&amp;gt; box: Adding box &apos;laravel/homestead&apos; (v2.1.0) for provider: virtualbox</div><div class="line"></div><div class="line">    ---</div><div class="line">        box: Unpacking necessary files from: file://virtualbox.box</div><div class="line">    vagrant box list</div><div class="line">    laravel/homestead (virtualbox, 0)</div><div class="line">    laravel/homestead (virtualbox, 2.1.0)</div><div class="line">    laravel/homestead (vmware_desktop, 0)</div></pre></td></tr></table></figure>
+<p>再执行 vagrant up， 虚机正常起来了，中间有红色的报错信息，目录没挂上</p>
+<blockquote>
+<p>   folders:</p>
+<ul>
+<li>map: ~/Code<br>to: /home/vagrant/Code</li>
+</ul>
+</blockquote>
+<p>本地没有~/Code目录，新建Code目录后，vagrant destroy Homestead-7, 再vagrant up创建虚机；在本地Code目录下新建index.html，<code>vagrant ssh</code>连上虚机后，查看/home/vagrant/Code/下同步出现了index.html，但index.html是访问不到的，默认Homestead.yaml中的sites root是指向<code>/home/vagrant/Code/Laravel/public</code>。</p>
+<p>为了方便连虚机，设置命令alias：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">alias vm=&quot;ssh vagrant@127.0.0.1 -p 2222&quot;</div><div class="line">   ➜  Homestead git:(master) vm</div><div class="line">   Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-66-generic x86_64)</div><div class="line"></div><div class="line">    * Documentation:  https://help.ubuntu.com</div><div class="line">    * Management:     https://landscape.canonical.com</div><div class="line">    * Support:        https://ubuntu.com/advantage</div><div class="line"></div><div class="line">   3 packages can be updated.</div><div class="line">   0 updates are security updates.</div><div class="line"></div><div class="line">   vagrant@homestead:~$</div></pre></td></tr></table></figure>
+<p>安装 Laravel<br>需要先安装composer，再全局安装Laravel 安装器，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">curl -sS https://getcomposer.org/installer | php</div><div class="line">mv composer.phar /usr/local/bin/composer</div><div class="line">composer global require &quot;laravel/installer&quot;</div></pre></td></tr></table></figure>
+<p>再将$HOME/.composer/vendor/bin 加到系统PATH，否则不能在任意路径调用 laravel 命令<br>vi ~/.bash_profile #增加一行<br><code>export PATH=&quot;$HOME/.composer/vendor/bin:$PATH&quot;</code><br>:wq,再source一下<br>source ~/.bash_profile<br>进入尾声，laravel new 命令创建一个新的 Laravel 应用</p>
+<blockquote>
+<pre><code>cd ~/Code
+laravel new blog
 Crafting application...
 Loading composer repositories with package information
 Installing dependencies (including require-dev) from lock file
@@ -405,22 +354,12 @@ The compiled services file has been removed.
 &amp;gt; php artisan key:generate
 Application key [base64:uCYzsyvVZfZ0GKg8+gzdr/shq27UNlbYTeLiley8SX4=] set successfully.
 Application ready! Build something amazing.
-查看目录结构：
-&lt;pre&gt;`Code ll
-total 8
-drwxr-xr-x  24 ganl  staff   816B  5  1 17:20 blog
--rw-r--r--   1 ganl  staff     6B  5  1 16:52 index.html
-➜  Code ls blog/
-app            composer.json  database       public         server.php     vendor
-artisan        composer.lock  package.json   resources      storage        webpack.mix.js
-bootstrap      config         phpunit.xml    routes         tests          yarn.lock
-`&lt;/pre&gt;
-修改hosts，增加一条记录,ip和Homestead.yaml中的对应
-&lt;pre&gt;`sudo vi /private/etc/hosts
-#homestead
-192.168.10.10 homestead.app
 </code></pre></blockquote>
-<p>访问 homestead.app 提示 No such files 之类的错误，查看日志/var/log/nginx/homestead.app-error.log：都是找不到/home/vagrant/Code/laravel/public，<br>生成的Laravel应用目录为blog，修改Homestead.yaml中的sites to /home/vagrant/Code/blog/public。<br>vagrant reload 修改后的配置未能生效，只好暴力点vagrant destroy homestead-7，再vagrant up；<br>再次访问ok了，修改welcome.blade.php试下效果：<br><a href="http://www.iganlei.cn/wp-content/uploads/2017/05/2017-05-01-22.25.14.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2017/05/2017-05-01-22.25.14-300x159.png" alt=""></a></p>
+<p>查看目录结构：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Code ll</div><div class="line">    total 8</div><div class="line">    drwxr-xr-x  24 ganl  staff   816B  5  1 17:20 blog</div><div class="line">    -rw-r--r--   1 ganl  staff     6B  5  1 16:52 index.html</div><div class="line">    ➜  Code ls blog/</div><div class="line">    app            composer.json  database       public         server.php     vendor</div><div class="line">    artisan        composer.lock  package.json   resources      storage        webpack.mix.js</div><div class="line">    bootstrap      config         phpunit.xml    routes         tests          yarn.lock</div></pre></td></tr></table></figure>
+<p>修改hosts，增加一条记录,ip和Homestead.yaml中的对应</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo vi /private/etc/hosts</div><div class="line">#homestead</div><div class="line">192.168.10.10 homestead.app</div></pre></td></tr></table></figure>
+<p>访问 homestead.app 提示 No such files 之类的错误，查看日志/var/log/nginx/homestead.app-error.log：都是找不到/home/vagrant/Code/laravel/public，<br>生成的Laravel应用目录为blog，修改Homestead.yaml中的sites to /home/vagrant/Code/blog/public。<br>vagrant reload 修改后的配置未能生效，只好暴力点vagrant destroy homestead-7，再vagrant up；<br>再次访问ok了，修改welcome.blade.php试下效果：<br><img src="http://www.iganlei.cn/wp-content/uploads/2017/05/2017-05-01-22.25.14-300x159.png" alt=""></p>
 
       
 

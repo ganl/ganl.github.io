@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>thinkphp 验证码 无法显示 的解决方法 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。查了下方法，没发现特别的，    /&amp;nbsp;验证码，用于登录和注册&amp;nbsp;/&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;public&amp;nbsp;function&amp;nbsp;verify()&amp;nbsp;{&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbs">
+  <meta name="description" content="昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。查了下方法，没发现特别的，">
 <meta name="keywords" content="Web&#x2F;PHP,Java,C&#x2F;C++,ios,linux,视频,直链,解析,播放器,chplayer,ckplayer,CMP4,前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="thinkphp 验证码 无法显示 的解决方法">
 <meta property="og:url" content="//ganl.io/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。查了下方法，没发现特别的，    /&amp;nbsp;验证码，用于登录和注册&amp;nbsp;/&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;public&amp;nbsp;function&amp;nbsp;verify()&amp;nbsp;{&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbs">
-<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801-300x132.jpg">
-<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211654-300x148.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:description" content="昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。查了下方法，没发现特别的，">
+<meta property="og:image" content="http://assets.iganlei.cn/wp-content/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141215211801.jpg">
+<meta property="og:image" content="http://assets.iganlei.cn/wp-content/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141215211654.jpg">
+<meta property="og:updated_time" content="2017-10-10T16:36:37.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="thinkphp 验证码 无法显示 的解决方法">
-<meta name="twitter:description" content="昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。查了下方法，没发现特别的，    /&amp;nbsp;验证码，用于登录和注册&amp;nbsp;/&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;public&amp;nbsp;function&amp;nbsp;verify()&amp;nbsp;{&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbs">
-<meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801-300x132.jpg">
+<meta name="twitter:description" content="昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。查了下方法，没发现特别的，">
+<meta name="twitter:image" content="http://assets.iganlei.cn/wp-content/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141215211801.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
   
@@ -183,21 +183,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。<br><a href="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211801-300x132.jpg" alt="QQ截图20141215211801"></a><br>查了下方法，没发现特别的，</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span class="comment">/<em>&nbsp;验证码，用于登录和注册&nbsp;</em>/</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;verify()&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$verify</span><span>&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;\Think\Verify&nbsp;();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$verify</span><span>-&gt;entry&nbsp;(&nbsp;1&nbsp;);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li></ol></div><br>百度了一下，有说是gd库没开：
-
+        <p>昨天晚上还是好好的一个开源TP项目，今天在打开验证码就不能显示了。<br><img src="http://assets.iganlei.cn/wp-content/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141215211801.jpg" alt="QQ截图20141215211801"><br>查了下方法，没发现特别的，<br><a id="more"></a></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 验证码，用于登录和注册 */</span>  </div><div class="line">   <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">verify</span><span class="params">()</span> </span>&#123;  </div><div class="line">       $verify = <span class="keyword">new</span> \Think\Verify ();  </div><div class="line">       $verify-&gt;entry ( <span class="number">1</span> );  </div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>百度了一下，有说是gd库没开：</p>
 <blockquote>
 <p>搜索之后发现是没有启用“extension=php_gd2.dll”扩展，在php.ini中去掉前边的分号; 再刷新浏览图片验证码就出来了。<br>但是昨天还能运行，有没做什么相关配置修改，应该不是，</p>
 </blockquote>
 <p>看到一篇文章说BOM的问题</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211654.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/12/QQ截图20141215211654-300x148.jpg" alt="QQ截图20141215211654"></a></p>
+<p><img src="http://assets.iganlei.cn/wp-content/uploads/2014/12/QQ%E6%88%AA%E5%9B%BE20141215211654.jpg" alt="QQ截图20141215211654"></p>
 <blockquote>
 <p>今天项目中的thinkphp验证码无法显示,遂上论坛搜索,问题最多的还是在bom,有人说关闭debug后就能显示验证码,试了试,果然,关闭debug就正常了,但是一开启debug就还是无法显示了.怎么回事呢?</p>
 </blockquote>

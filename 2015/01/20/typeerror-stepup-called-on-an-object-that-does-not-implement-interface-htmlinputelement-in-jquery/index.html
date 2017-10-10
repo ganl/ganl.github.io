@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>TypeError: &#39;stepUp&#39; called on an object that does not implement interface HTMLInputElement in jquery | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="$.post(requestUrl,&amp;nbsp;{“action”:“register”,“user_name”:user_name,“active”:&amp;nbsp;“1”,&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;“user_password”:&amp;nbsp;user_password,&amp;nbsp;“r">
+  <meta name="description" content="12$.post(requestUrl, &amp;#123;&amp;quot;action&amp;quot;:&amp;quot;register&amp;quot;,&amp;quot;username&amp;quot;:username,&amp;quot;active&amp;quot;: &amp;quot;1&amp;quot;,  &amp;quot;userpassword&amp;quot;: userpassword, &amp;quot;role&amp;quot;: &amp;quot;8&amp;q">
 <meta name="keywords" content="JS,JQ,Jquery">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TypeError: &#39;stepUp&#39; called on an object that does not implement interface HTMLInputElement in jquery">
 <meta property="og:url" content="//ganl.io/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="$.post(requestUrl,&amp;nbsp;{“action”:“register”,“user_name”:user_name,“active”:&amp;nbsp;“1”,&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;“user_password”:&amp;nbsp;user_password,&amp;nbsp;“r">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:description" content="12$.post(requestUrl, &amp;#123;&amp;quot;action&amp;quot;:&amp;quot;register&amp;quot;,&amp;quot;username&amp;quot;:username,&amp;quot;active&amp;quot;: &amp;quot;1&amp;quot;,  &amp;quot;userpassword&amp;quot;: userpassword, &amp;quot;role&amp;quot;: &amp;quot;8&amp;q">
+<meta property="og:updated_time" content="2017-10-10T16:26:43.435Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TypeError: &#39;stepUp&#39; called on an object that does not implement interface HTMLInputElement in jquery">
-<meta name="twitter:description" content="$.post(requestUrl,&amp;nbsp;{“action”:“register”,“user_name”:user_name,“active”:&amp;nbsp;“1”,&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;“user_password”:&amp;nbsp;user_password,&amp;nbsp;“r">
+<meta name="twitter:description" content="12$.post(requestUrl, &amp;#123;&amp;quot;action&amp;quot;:&amp;quot;register&amp;quot;,&amp;quot;username&amp;quot;:username,&amp;quot;active&amp;quot;: &amp;quot;1&amp;quot;,  &amp;quot;userpassword&amp;quot;: userpassword, &amp;quot;role&amp;quot;: &amp;quot;8&amp;q">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
   
@@ -180,21 +180,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>$.post(requestUrl,&nbsp;{</span><span class="string">“action”</span><span>:</span><span class="string">“register”</span><span>,</span><span class="string">“user_name”</span><span>:user_name,</span><span class="string">“active”</span><span>:&nbsp;</span><span class="string">“1”</span><span>,&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“user_password”</span><span>:&nbsp;user_password,&nbsp;</span><span class="string">“role”</span><span>:&nbsp;</span><span class="string">“8”</span><span>,&nbsp;</span><span class="string">“mobile”</span><span>:&nbsp;phone,&nbsp;</span><span class="string">“email”</span><span>:&nbsp;email,&nbsp;</span><span class="string">“yanzheng”</span><span>:yanzheng,</span><span class="string">“isCreate”</span><span>:</span><span class="keyword">true</span><span>},&nbsp;&nbsp;</span></span></li></ol></div>
-
-<p>FIX:<br>You are sending the object element user_password. You should post the value of object in post method user_password.value($(“#user_password”).val()).<br>只因为写错了一个变量，擦擦，，</p>
-<pre><code>passwd = $(&quot;#user_password&quot;).val();
-r_passwd =  $(&quot;#r_password&quot;).val();
-</code></pre><div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>$.post(requestUrl,&nbsp;{</span><span class="string">“action”</span><span>:</span><span class="string">“register”</span><span>,</span><span class="string">“user_name”</span><span>:user_name,</span><span class="string">“active”</span><span>:&nbsp;</span><span class="string">“1”</span><span>,&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“user_password”</span><span>:&nbsp;password,&nbsp;</span><span class="string">“role”</span><span>:&nbsp;</span><span class="string">“8”</span><span>,&nbsp;</span><span class="string">“mobile”</span><span>:&nbsp;phone,&nbsp;</span><span class="string">“email”</span><span>:&nbsp;email,&nbsp;</span><span class="string">“yanzheng”</span><span>:yanzheng,</span><span class="string">“isCreate”</span><span>:</span><span class="keyword">true</span><span>},&nbsp;&nbsp;</span></span></li></ol></div>
-
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$.post(requestUrl, &#123;&quot;action&quot;:&quot;register&quot;,&quot;username&quot;:username,&quot;active&quot;: &quot;1&quot;,  </div><div class="line">&quot;userpassword&quot;: userpassword, &quot;role&quot;: &quot;8&quot;, &quot;mobile&quot;: phone, &quot;email&quot;: email, &quot;yanzheng&quot;:yanzheng,&quot;isCreate&quot;:true&#125;,</div></pre></td></tr></table></figure>
+<p>FIX:<br>You are sending the object element user_password. You should post the value of object in post method user_password.value($(“#user_password”).val()).<br>只因为写错了一个变量，擦擦，，<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">passwd = $(&quot;#user_password&quot;).val();</div><div class="line">r_passwd =  $(&quot;#r_password&quot;).val();</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$.post(requestUrl, &#123;&quot;action&quot;:&quot;register&quot;,&quot;username&quot;:username,&quot;active&quot;: &quot;1&quot;,  </div><div class="line">&quot;user_password&quot;: password, &quot;role&quot;: &quot;8&quot;, &quot;mobile&quot;: phone, &quot;email&quot;: email, &quot;yanzheng&quot;:yanzheng,&quot;isCreate&quot;:true&#125;,</div></pre></td></tr></table></figure>
 
       
 

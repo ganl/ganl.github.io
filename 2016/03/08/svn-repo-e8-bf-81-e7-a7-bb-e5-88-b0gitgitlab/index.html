@@ -8,21 +8,22 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>svn repo 迁移到git(gitlab) | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server  硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。 前段时间接触到gitlab，决定后面就用它了；下载最新版下了半天，s3太慢了，传到百度网盘了 _gitlab-ce_8.5.4-ce.0amd64.deb：链接">
+  <meta name="description" content="平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server  硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。">
 <meta name="keywords" content="git,git svn clone,gitlab,svn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="svn repo 迁移到git(gitlab)">
 <meta property="og:url" content="//ganl.io/2016/03/08/svn-repo-e8-bf-81-e7-a7-bb-e5-88-b0gitgitlab/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server  硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。 前段时间接触到gitlab，决定后面就用它了；下载最新版下了半天，s3太慢了，传到百度网盘了 _gitlab-ce_8.5.4-ce.0amd64.deb：链接">
+<meta property="og:description" content="平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server  硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308213930.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308214049.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308211552.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303-1024x494.jpg">
+<meta property="og:updated_time" content="2017-10-10T16:39:52.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="svn repo 迁移到git(gitlab)">
-<meta name="twitter:description" content="平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server  硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。 前段时间接触到gitlab，决定后面就用它了；下载最新版下了半天，s3太慢了，传到百度网盘了 _gitlab-ce_8.5.4-ce.0amd64.deb：链接">
+<meta name="twitter:description" content="平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server  硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -186,15 +187,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg" alt="svn-git20160308212151"></a></p>
-<p>硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。</p>
-<p>前段时间接触到gitlab，决定后面就用它了；下载最新版下了半天，s3太慢了，传到百度网盘了</p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg" alt="svn-git20160308212151"></p>
+<p>硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。<br><a id="more"></a><br>前段时间接触到gitlab，决定后面就用它了；下载最新版下了半天，s3太慢了，传到百度网盘了</p>
 <p>_gitlab-ce_8.5.4-ce.0<em>amd64.deb：</em>链接: <a href="http://pan.baidu.com/s/1skxYjnB" target="_blank" rel="external">http://pan.baidu.com/s/1skxYjnB</a> 密码: wq5v</p>
 <p>下载 Tortoisegit , 这个工具提供了良好的GIT操作界面,这里用右键Git Clone功能就行了</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308213930.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308213930.jpg" alt="svn-git20160308213930"></a> <a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308214049.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308214049.jpg" alt="svn-git20160308214049"></a><br>用命令效果一样：</p>
-<p><pre>git.exe svn clone “<a href="http://ganlei:81/svn/plugin/" target="_blank" rel="external">http://ganlei:81/svn/plugin/</a>“ “E:\git_tmp\trunk” -T trunk -b branches -t tags -r 0:HEAD –username ganl<br></pre><br>中间遇到svn密码错误，平时commit密码都是保存的，实在想不起来；折腾了好久，找到Repositories目录，里面有个htpasswd文件，加密的，用apache自带的htpasswd生成一个同名的文件覆盖一下即可，保险起见旧文件还是改下名备份一下。<br><code>htpasswd.exe -bc htpasswd ganl 123456</code><br>gitlab上新建一个git仓库：<a href="http://192.168.188.128/ganlei/plugin.git" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin.git</a><br>进到本地目录，添加远程git服务器地址</p>
-<p><pre>git remote add origin <a href="http://192.168.188.128/ganlei/plugin.git" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin.git</a><br>git add .<br>git commit<br>git push -u origin master<br></pre><br><a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308211552.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308211552.jpg" alt="svn-git20160308211552"></a></p>
-<p>再去gitlab刷新页面，算是转移到git了<br><a href="http://192.168.188.128/ganlei/plugin/commits/master[![svn-git20160308215303](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303-1024x494.jpg)](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303.jpg" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin/commits/master[![svn-git20160308215303](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303-1024x494.jpg)](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303.jpg</a>)</p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308213930.jpg" alt="svn-git20160308213930"><br><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308214049.jpg" alt="svn-git20160308214049"></p>
+<p>用命令效果一样：<br><figure class="highlight plain"><figcaption><span>svn clone "http://ganlei:81/svn/plugin/" "E:\git_tmp\trunk" -T trunk -b branches -t tags -r 0:HEAD --username ganl</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">```</div><div class="line">中间遇到svn密码错误，平时commit密码都是保存的，实在想不起来；折腾了好久，找到Repositories目录，里面有个htpasswd文件，加密的，用apache自带的htpasswd生成一个同名的文件覆盖一下即可，保险起见旧文件还是改下名备份一下。</div><div class="line">`htpasswd.exe -bc htpasswd ganl 123456`</div><div class="line">gitlab上新建一个git仓库：http://192.168.188.128/ganlei/plugin.git</div><div class="line">进到本地目录，添加远程git服务器地址</div></pre></td></tr></table></figure></p>
+<p>git remote add origin <a href="http://192.168.188.128/ganlei/plugin.git" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin.git</a><br>git add .<br>git commit<br>git push -u origin master<br>```<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308211552.jpg" alt="svn-git20160308211552"></p>
+<p>再去gitlab刷新页面，算是转移到git了<br><a href="http://192.168.188.128/ganlei/plugin/commits/master" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin/commits/master</a><br><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303-1024x494.jpg" alt="svn-git20160308215303"></p>
 <p>工作中用的是svn，除了上github用过一点git，平时都没用过；刚好迁移到git上学习学习使用方法。</p>
 
       

@@ -8,20 +8,23 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>StartSSL 切换到 Let&#39;s Encrypt | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt   官方推荐的工具（Let’s Encrypt Client）：https://github.com/certbot/certbot https://github.com/diafygi/acme-tiny 这个客户端比官方的轻多了，比较了下决定用这个。 1.Cr">
+  <meta name="description" content="收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt">
 <meta name="keywords" content="certbot,https,Let&#39;s Encrypt,StartSSL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="StartSSL 切换到 Let&#39;s Encrypt">
 <meta property="og:url" content="//ganl.io/2016/12/23/startssl-e5-88-87-e6-8d-a2-e5-88-b0-lets-encrypt/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt   官方推荐的工具（Let’s Encrypt Client）：https://github.com/certbot/certbot https://github.com/diafygi/acme-tiny 这个客户端比官方的轻多了，比较了下决定用这个。 1.Cr">
+<meta property="og:description" content="收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356-170x300.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223145852-300x191.png">
+<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223155522-300x72.png">
+<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223160335-300x212.png">
+<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223161430-300x218.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223162149-216x300.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-10T16:55:17.733Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="StartSSL 切换到 Let&#39;s Encrypt">
-<meta name="twitter:description" content="收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt   官方推荐的工具（Let’s Encrypt Client）：https://github.com/certbot/certbot https://github.com/diafygi/acme-tiny 这个客户端比官方的轻多了，比较了下决定用这个。 1.Cr">
+<meta name="twitter:description" content="收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356-170x300.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -185,104 +188,39 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>收到StartSSL的邮件通知证书快到期了，加上前段时间说StartSSL把服务器放到Qihoo了；刚好换上Let’s Encrypt</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356-170x300.png" alt="20161223150356"></a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223145852.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223145852-300x191.png" alt="20161223145852"></a></p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223150356-170x300.png" alt="20161223150356"></p>
+<a id="more"></a>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223145852-300x191.png" alt="20161223145852"></p>
 <p>官方推荐的工具（Let’s Encrypt Client）：<a href="https://github.com/certbot/certbot" target="_blank" rel="external">https://github.com/certbot/certbot</a></p>
 <p><a href="https://github.com/diafygi/acme-tiny" target="_blank" rel="external">https://github.com/diafygi/acme-tiny</a> 这个客户端比官方的轻多了，比较了下决定用这个。</p>
-<h3 id="1-Create-a-Let’s-Encrypt-account-private-key"><a href="#1-Create-a-Let’s-Encrypt-account-private-key" class="headerlink" title="1.Create a Let’s Encrypt account private key"></a>1.Create a Let’s Encrypt account private key</h3><pre><code>openssl genrsa 4096 &amp;gt; account.key`&lt;/pre&gt;
-
-### 2.Create a certificate signing request (CSR) for your domains.
-
-NOTE: you can&apos;t use your account private key as your domain private key!
-&lt;pre&gt;`openssl genrsa 4096 &amp;gt; domain.key`&lt;/pre&gt;
-&lt;pre&gt;`#单个域名
-openssl req -new -sha256 -key domain.key -subj &quot;/CN=www.vparser.com&quot; &amp;gt; domain.csr
-
-#多个域名（这里用这个）
-openssl req -new -sha256 -key domain.key -subj &quot;/&quot; -reqexts SAN -config &amp;lt;(cat /etc/ssl/openssl.cnf &amp;lt;(printf &quot;[SAN]\nsubjectAltName=DNS:vparser.com,DNS:www.vparser.com&quot;)) &amp;gt; domain.csr`&lt;/pre&gt;
-报错:
-cat: /etc/ssl/openssl.cnf: No such file or directory
-unable to find &apos;distinguished_name&apos; in config
-problems making Certificate Request
-140168944265032:error:0E06D06C:configuration file routines:NCONF_get_string:no value:conf_lib.c:335:group=req name=distinguished_name
-
-把OpenSSL的配置文件换成存在的路径，例如：/etc/pki/tls/openssl.cnf
-&lt;pre&gt;openssl req -new -sha256 -key domain.key -subj &quot;/&quot; -reqexts SAN -config &amp;lt;(cat /etc/pki/tls/openssl.cnf &amp;lt;(printf &quot;[SAN]\nsubjectAltName=DNS:vparser.com,DNS:www.vparser.com&quot;)) &amp;gt; domain.csr
-&lt;/pre&gt;
-[![20161223155522](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223155522-300x72.png)](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223155522.png)
-
-### 3.Make your website host challenge files
-
-&lt;pre&gt;`mkdir -p /data/www/challenges/`&lt;/pre&gt;
-修改vhost配置文件：
-&lt;pre&gt;&lt;span class=&quot;pl-k&quot;&gt;server&lt;/span&gt; {
-    &lt;span class=&quot;pl-k&quot;&gt;listen&lt;/span&gt; &lt;span class=&quot;pl-s&quot;&gt;80&lt;/span&gt;;
-    &lt;span class=&quot;pl-k&quot;&gt;server_name&lt;/span&gt; yoursite.com www.yoursite.com;
-
-    &lt;span class=&quot;pl-k&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;pl-en&quot;&gt;/.well-known/acme-challenge/ &lt;/span&gt;{
-        &lt;span class=&quot;pl-k&quot;&gt;alias&lt;/span&gt; /data/www/challenges/;
-        &lt;span class=&quot;pl-k&quot;&gt;try_files&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;$uri&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;=404&lt;/span&gt;;
-    }
-
-    ...&lt;span class=&quot;pl-k&quot;&gt;the&lt;/span&gt; rest of your config
-}&lt;/pre&gt;
-nginx -s reload
-
-[![20161223160335](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223160335-300x212.png)](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223160335.png)
-
-### 4.Get a signed certificate!
-
-&lt;pre&gt;`wget -O - &quot;https://raw.githubusercontent.com/diafygi/acme-tiny/master/acme_tiny.py&quot; &amp;gt; acme_tiny.py
-
-python acme_tiny.py --account-key ./account.key --csr ./domain.csr --acme-dir /data/www/challenges/ &amp;gt; ./signed.crt`&lt;/pre&gt;
-[![](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223161430-300x218.png)](http://www.iganlei.cn/wp-content/uploads/2016/12/20161223161430.png)
-
-### 5.Install the certificate
-
-&lt;pre&gt;`#NOTE: For nginx, you need to append the Let&apos;s Encrypt intermediate cert to your cert
-wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem &amp;gt; intermediate.pem
-cat signed.crt intermediate.pem &amp;gt; chained.pem`&lt;/pre&gt;
-&lt;pre&gt;    &lt;span class=&quot;pl-k&quot;&gt;ssl_certificate&lt;/span&gt; /path/to/chained.pem;
-    &lt;span class=&quot;pl-k&quot;&gt;ssl_certificate_key&lt;/span&gt; /path/to/domain.key;&lt;/pre&gt;
-
-### 6.Setup an auto-renew cronjob (自动续签，有效期只有90天)
-
-将
-&lt;pre&gt;&lt;span class=&quot;pl-k&quot;&gt;    location&lt;/span&gt; &lt;span class=&quot;pl-en&quot;&gt;/.well-known/acme-challenge/ &lt;/span&gt;{
-        &lt;span class=&quot;pl-k&quot;&gt;alias&lt;/span&gt; /data/www/challenges/;
-        &lt;span class=&quot;pl-k&quot;&gt;try_files&lt;/span&gt; &lt;span class=&quot;pl-smi&quot;&gt;$uri&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;=404&lt;/span&gt;;
-    }&lt;/pre&gt;
-移到https段
-&lt;pre&gt;server {
-listen 80;
-server_name www.vparser.com vparser.com;
-rewrite ^/(.*) https://$server_name/$1 permanent;
-}
-
-server {
-listen 443 ssl http2;
-……
-
-server_name www.vparser.com vparser.com;
-
-location /.well-known/acme-challenge/ {
- alias /data/www/challenges/;
- try_files $uri =404;
-}
-
-……
-}
-&lt;/pre&gt;
-增加定时脚本：
-&lt;pre&gt;&lt;span class=&quot;pl-c&quot;&gt;#!/usr/bin/sh&lt;/span&gt;
-python /path/to/acme_tiny.py --account-key /path/to/account.key --csr /path/to/domain.csr --acme-dir /data/www/challenges/ &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; /tmp/signed.crt &lt;span class=&quot;pl-k&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;pl-c1&quot;&gt;exit&lt;/span&gt;
-wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; intermediate.pem
-cat /tmp/signed.crt intermediate.pem &lt;span class=&quot;pl-k&quot;&gt;&amp;gt;&lt;/span&gt; /path/to/chained.pem
-service nginx reload&lt;/pre&gt;
-crontab -e or vi /etc/crontab
-&lt;pre&gt;`#example line in your crontab (runs once per month)
-0 0 1 * * /path/to/renew_cert.sh 2&amp;gt;&amp;gt; /var/log/acme_tiny.log
-</code></pre><p><a href="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223162149.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223162149-216x300.png" alt="20161223162149"></a></p>
+<h3 id="1-Create-a-Let’s-Encrypt-account-private-key"><a href="#1-Create-a-Let’s-Encrypt-account-private-key" class="headerlink" title="1.Create a Let’s Encrypt account private key"></a>1.Create a Let’s Encrypt account private key</h3><p><code>openssl genrsa 4096 &amp;gt; account.key</code></p>
+<h3 id="2-Create-a-certificate-signing-request-CSR-for-your-domains"><a href="#2-Create-a-certificate-signing-request-CSR-for-your-domains" class="headerlink" title="2.Create a certificate signing request (CSR) for your domains."></a>2.Create a certificate signing request (CSR) for your domains.</h3><p>NOTE: you can’t use your account private key as your domain private key!</p>
+<p><code>openssl genrsa 4096 &amp;gt; domain.key</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#单个域名</div><div class="line">openssl req -new -sha256 -key domain.key -subj &quot;/CN=www.vparser.com&quot; &amp;gt; domain.csr</div><div class="line"></div><div class="line">#多个域名（这里用这个）</div><div class="line">openssl req -new -sha256 -key domain.key -subj &quot;/&quot; -reqexts SAN -config &amp;lt;(cat /etc/ssl/openssl.cnf &amp;lt;(printf &quot;[SAN]\nsubjectAltName=DNS:vparser.com,DNS:www.vparser.com&quot;)) &amp;gt; domain.csr</div></pre></td></tr></table></figure>
+<p>报错:</p>
+<blockquote>
+<p>cat: /etc/ssl/openssl.cnf: No such file or directory<br>unable to find ‘distinguished_name’ in config<br>problems making Certificate Request<br>140168944265032:error:0E06D06C:configuration file routines:NCONF_get_string:no value:conf_lib.c:335:group=req name=distinguished_name</p>
+</blockquote>
+<p>把OpenSSL的配置文件换成存在的路径，例如：/etc/pki/tls/openssl.cnf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">openssl req -new -sha256 -key domain.key -subj &quot;/&quot; -reqexts SAN -config &amp;lt;(cat /etc/pki/tls/openssl.cnf &amp;lt;(printf &quot;[SAN]\nsubjectAltName=DNS:vparser.com,DNS:www.vparser.com&quot;)) &amp;gt; domain.csr</div></pre></td></tr></table></figure></p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223155522-300x72.png" alt="20161223155522"></p>
+<h3 id="3-Make-your-website-host-challenge-files"><a href="#3-Make-your-website-host-challenge-files" class="headerlink" title="3.Make your website host challenge files"></a>3.Make your website host challenge files</h3><p><code>mkdir -p /data/www/challenges/</code></p>
+<p>修改vhost配置文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">    listen 80;</div><div class="line">    server_name yoursite.com www.yoursite.com;</div><div class="line"></div><div class="line">    location /.well-known/acme-challenge/ &#123;</div><div class="line">        alias /data/www/challenges/;</div><div class="line">        try_files $uri =404;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    ...the rest of your config</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>nginx -s reload</p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223160335-300x212.png" alt="20161223160335"></p>
+<h3 id="4-Get-a-signed-certificate"><a href="#4-Get-a-signed-certificate" class="headerlink" title="4.Get a signed certificate!"></a>4.Get a signed certificate!</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wget -O - &quot;https://raw.githubusercontent.com/diafygi/acme-tiny/master/acme_tiny.py&quot; &amp;gt; acme_tiny.py</div><div class="line">python acme_tiny.py --account-key ./account.key --csr ./domain.csr --acme-dir /data/www/challenges/ &amp;gt; ./signed.crt</div></pre></td></tr></table></figure>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223161430-300x218.png" alt=""></p>
+<h3 id="5-Install-the-certificate"><a href="#5-Install-the-certificate" class="headerlink" title="5.Install the certificate"></a>5.Install the certificate</h3><figure class="highlight plain"><figcaption><span>For nginx, you need to append the Let's Encrypt intermediate cert to your cert</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem &amp;gt; intermediate.pem</div><div class="line">cat signed.crt intermediate.pem &amp;gt; chained.pem`</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ssl_certificate /path/to/chained.pem;</div><div class="line">ssl_certificate_key /path/to/domain.key;</div></pre></td></tr></table></figure>
+<h3 id="6-Setup-an-auto-renew-cronjob-自动续签，有效期只有90天"><a href="#6-Setup-an-auto-renew-cronjob-自动续签，有效期只有90天" class="headerlink" title="6.Setup an auto-renew cronjob (自动续签，有效期只有90天)"></a>6.Setup an auto-renew cronjob (自动续签，有效期只有90天)</h3><p>将</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">location /.well-known/acme-challenge/ &#123;</div><div class="line">    alias /data/www/challenges/;</div><div class="line">    try_files $uri =404;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>移到https段</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">listen 80;</div><div class="line">server_name www.vparser.com vparser.com;</div><div class="line">rewrite ^/(.*) https://$server_name/$1 permanent;</div><div class="line">&#125;</div><div class="line"></div><div class="line">server &#123;</div><div class="line">listen 443 ssl http2;</div><div class="line">……</div><div class="line"></div><div class="line">server_name www.vparser.com vparser.com;</div><div class="line"></div><div class="line"></div><div class="line">location /.well-known/acme-challenge/ &#123;</div><div class="line"> alias /data/www/challenges/;</div><div class="line"> try_files $uri =404;</div><div class="line">&#125;</div><div class="line"></div><div class="line">……</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>增加定时脚本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/sh</div><div class="line">python /path/to/acme_tiny.py --account-key /path/to/account.key --csr /path/to/domain.csr --acme-dir /data/www/challenges/ &gt; /tmp/signed.crt || exit</div><div class="line">wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem &gt; intermediate.pem</div><div class="line">cat /tmp/signed.crt intermediate.pem &gt; /path/to/chained.pem</div><div class="line">service nginx reload</div></pre></td></tr></table></figure>
+<p>crontab -e or vi /etc/crontab</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#example line in your crontab (runs once per month)</div><div class="line">0 0 1 * * /path/to/renew_cert.sh 2&amp;gt;&amp;gt; /var/log/acme_tiny.log</div></pre></td></tr></table></figure>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/12/20161223162149-216x300.png" alt="20161223162149"></p>
 
       
 

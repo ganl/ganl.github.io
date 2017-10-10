@@ -8,19 +8,20 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>\u5	ENQ 询问字符,json decode failed (控制字符) | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.复制结果用notepad++打开，有两个ENQ字符： 尝试用php的json_decode解析一下： $content =  file_get_contents(&apos;i2-circle.txt&apos;); echo $content; echo &quot;\n&quot;; json_decode($content); sw">
+  <meta name="description" content="ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.复制结果用notepad++打开，有两个ENQ字符： 尝试用php的json_decode解析一下：">
 <meta name="keywords" content="ASCII,control characters,json decode,控制字符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="\u5	ENQ 询问字符,json decode failed (控制字符)">
 <meta property="og:url" content="//ganl.io/2016/06/01/u5enq-e8-af-a2-e9-97-ae-e5-ad-97-e7-ac-a6json-decode-failed-e6-8e-a7-e5-88-b6-e5-ad-97-e7-ac-a6/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.复制结果用notepad++打开，有两个ENQ字符： 尝试用php的json_decode解析一下： $content =  file_get_contents(&apos;i2-circle.txt&apos;); echo $content; echo &quot;\n&quot;; json_decode($content); sw">
+<meta property="og:description" content="ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.复制结果用notepad++打开，有两个ENQ字符： 尝试用php的json_decode解析一下：">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101804.png">
+<meta property="og:updated_time" content="2017-10-10T16:23:55.307Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="\u5	ENQ 询问字符,json decode failed (控制字符)">
-<meta name="twitter:description" content="ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.复制结果用notepad++打开，有两个ENQ字符： 尝试用php的json_decode解析一下： $content =  file_get_contents(&apos;i2-circle.txt&apos;); echo $content; echo &quot;\n&quot;; json_decode($content); sw">
+<meta name="twitter:description" content="ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.复制结果用notepad++打开，有两个ENQ字符： 尝试用php的json_decode解析一下：">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -183,47 +184,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png" alt="20160601101750"></a><br>复制结果用notepad++打开，有两个ENQ字符：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png" alt="20160601102433"></a></p>
-<p>尝试用php的json_decode解析一下：</p>
-<pre>$content =  file_get_contents('i2-circle.txt');
-echo $content;
-echo "\n";
-json_decode($content);
-switch (json_last_error()) {
-    case JSON_ERROR_NONE:
-        echo '没有错误发生';
-        break;
-    case JSON_ERROR_DEPTH:
-        echo '到达了最大堆栈深度';
-        break;
-    case JSON_ERROR_STATE_MISMATCH:
-        echo '无效或异常的 JSON';
-        break;
-    case JSON_ERROR_CTRL_CHAR:
-        echo '控制字符错误，可能是编码不对';
-        break;
-    case JSON_ERROR_SYNTAX:
-        echo '语法错误';
-        break;
-    case JSON_ERROR_UTF8:
-        echo '异常的 UTF-8 字符，也许是因为不正确的编码。';
-        break;
-    default:
-        echo '未知错误';
-        break;
-}</pre>
-&nbsp;
-结果是：控制字符错误
-[![20160601101804](http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101804.png)](http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101804.png)
-
-在ASCII中常用的控制字符包括
-控制字符（Control Character），出现于特定的信息文本中，表示某一控制功能的字符。
-在ASCII码中，第0～31号及第127号(共33个)是控制字符或通讯专用字符，如控制符：LF（换行）、CR（回车）、FF（换页）、DEL（删除）、BS（退格)、BEL（振铃）等；通讯专用字符：SOH（文头）、EOT（文尾）、ACK（确认）等。
-
-七位ASCII定义了33个代码作为控制字符，它们是0到31、以及127，（位于0x00-0x1F及0x7F）。
-兼容的八位ISO/IEC 8859-1加上了从ISO/IEC 6429定义的从128到159的32个代码，位于0x80-0x9F。
-
-输入json字串前需要移除控制字符：
+        <p>ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png" alt="20160601101750"><br>复制结果用notepad++打开，有两个ENQ字符：<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png" alt="20160601102433"></p>
+<p>尝试用php的json_decode解析一下：<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">$content =  file_get_contents(&apos;i2-circle.txt&apos;);</div><div class="line">echo $content;</div><div class="line">echo &quot;\n&quot;;</div><div class="line">json_decode($content);</div><div class="line">switch (json_last_error()) &#123;</div><div class="line">	case JSON_ERROR_NONE:</div><div class="line">		echo &apos;没有错误发生&apos;;</div><div class="line">		break;</div><div class="line">	case JSON_ERROR_DEPTH:</div><div class="line">		echo &apos;到达了最大堆栈深度&apos;;</div><div class="line">		break;</div><div class="line">	case JSON_ERROR_STATE_MISMATCH:</div><div class="line">		echo &apos;无效或异常的 JSON&apos;;</div><div class="line">		break;</div><div class="line">	case JSON_ERROR_CTRL_CHAR:</div><div class="line">		echo &apos;控制字符错误，可能是编码不对&apos;;</div><div class="line">		break;</div><div class="line">	case JSON_ERROR_SYNTAX:</div><div class="line">		echo &apos;语法错误&apos;;</div><div class="line">		break;</div><div class="line">	case JSON_ERROR_UTF8:</div><div class="line">		echo &apos;异常的 UTF-8 字符，也许是因为不正确的编码。&apos;;</div><div class="line">		break;</div><div class="line">	default:</div><div class="line">		echo &apos;未知错误&apos;;</div><div class="line">		break;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>结果是：控制字符错误<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101804.png" alt="20160601101804"></p>
+<p>在ASCII中常用的控制字符包括<br>控制字符（Control Character），出现于特定的信息文本中，表示某一控制功能的字符。<br>在ASCII码中，第0～31号及第127号(共33个)是控制字符或通讯专用字符，如控制符：LF（换行）、CR（回车）、FF（换页）、DEL（删除）、BS（退格)、BEL（振铃）等；通讯专用字符：SOH（文头）、EOT（文尾）、ACK（确认）等。</p>
+<p>七位ASCII定义了33个代码作为控制字符，它们是0到31、以及127，（位于0x00-0x1F及0x7F）。<br>兼容的八位ISO/IEC 8859-1加上了从ISO/IEC 6429定义的从128到159的32个代码，位于0x80-0x9F。</p>
+<p>输入json字串前需要移除控制字符：</p>
 <pre>
 /**
  * remove control characters (for json)

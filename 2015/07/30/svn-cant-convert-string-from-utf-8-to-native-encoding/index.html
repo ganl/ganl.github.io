@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>svn: Can&#39;t convert string from &#39;UTF-8&#39; to native encoding: | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:  应该是系统编码的问题 参考：http://www.cnblogs.com/R-zqiang/archive/2012/11/23/2785125.html 临时解决：#export LC_CTYPE=&amp;quot;zh_CN.U">
+  <meta name="description" content="svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:">
 <meta name="keywords" content="Web&#x2F;PHP,Java,C&#x2F;C++,ios,linux,视频,直链,解析,播放器,chplayer,ckplayer,CMP4,前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="svn: Can&#39;t convert string from &#39;UTF-8&#39; to native encoding:">
 <meta property="og:url" content="//ganl.io/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:  应该是系统编码的问题 参考：http://www.cnblogs.com/R-zqiang/archive/2012/11/23/2785125.html 临时解决：#export LC_CTYPE=&amp;quot;zh_CN.U">
+<meta property="og:description" content="svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/07/convertutf8-300x28.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:updated_time" content="2017-10-10T16:40:27.274Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="svn: Can&#39;t convert string from &#39;UTF-8&#39; to native encoding:">
-<meta name="twitter:description" content="svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:  应该是系统编码的问题 参考：http://www.cnblogs.com/R-zqiang/archive/2012/11/23/2785125.html 临时解决：#export LC_CTYPE=&amp;quot;zh_CN.U">
+<meta name="twitter:description" content="svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/07/convertutf8-300x28.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -182,14 +182,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/07/convertutf8.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/07/convertutf8-300x28.png" alt="convertutf8"></a></p>
+        <p>svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:<br><a id="more"></a><br><img src="http://www.iganlei.cn/wp-content/uploads/2015/07/convertutf8-300x28.png" alt="convertutf8"></p>
 <p>应该是系统编码的问题</p>
 <p>参考：<br><a href="http://www.cnblogs.com/R-zqiang/archive/2012/11/23/2785125.html" target="_blank" rel="external">http://www.cnblogs.com/R-zqiang/archive/2012/11/23/2785125.html</a></p>
 <p>临时解决：<br><code>#export LC_CTYPE=&quot;zh_CN.UTF-8&quot;</code><br>然后重新 checkout 即可。</p>
-<p>永久生效：<br>vi /etc/profile<br><code>export LC_ALL=&quot;zh_CN.UTF-8&quot;
-export LANG=&quot;zh_CN.UTF-8&quot;</code><br>source /etc/profile</p>
-
+<p>永久生效：<br>vi /etc/profile</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export LC_ALL=&quot;zh_CN.UTF-8&quot;</div><div class="line">export LANG=&quot;zh_CN.UTF-8&quot;</div><div class="line">source /etc/profile</div></pre></td></tr></table></figure>
       
 
       

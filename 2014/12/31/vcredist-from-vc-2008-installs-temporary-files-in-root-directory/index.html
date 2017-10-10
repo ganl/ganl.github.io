@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>VCRedist from VS 2008 or VC++ runtime library installs temporary files in root directory | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如 9个文本文件 名字分别为eula.1028.txt ，eula.1031.txt ，eula.1033.txt ，eula.1036.txt ，eula.1040.txt ，eula.1041.txt ，eula.1042.txt ，eula.2052.tx">
+  <meta name="description" content="安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如 9个文本文件 名字分别为eula.1028.txt ，eula.1031.txt ，">
 <meta name="keywords" content="VC runtime library">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VCRedist from VS 2008 or VC++ runtime library installs temporary files in root directory">
 <meta property="og:url" content="//ganl.io/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如 9个文本文件 名字分别为eula.1028.txt ，eula.1031.txt ，eula.1033.txt ，eula.1036.txt ，eula.1040.txt ，eula.1041.txt ，eula.1042.txt ，eula.2052.tx">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:description" content="安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如 9个文本文件 名字分别为eula.1028.txt ，eula.1031.txt ，">
+<meta property="og:updated_time" content="2017-10-10T16:20:02.580Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VCRedist from VS 2008 or VC++ runtime library installs temporary files in root directory">
-<meta name="twitter:description" content="安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如 9个文本文件 名字分别为eula.1028.txt ，eula.1031.txt ，eula.1033.txt ，eula.1036.txt ，eula.1040.txt ，eula.1041.txt ，eula.1042.txt ，eula.2052.tx">
+<meta name="twitter:description" content="安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如 9个文本文件 名字分别为eula.1028.txt ，eula.1031.txt ，">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
   
@@ -181,7 +181,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>安装vs2008、2010或者是VC++ runtime library时候会在磁盘根目录下产生产生一系列的txt、dll、ini、等文件如</p>
-<p>9个文本文件 名字分别为<br>eula.1028.txt ，<br>eula.1031.txt ，<br>eula.1033.txt ，<br>eula.1036.txt ，<br>eula.1040.txt ，<br>eula.1041.txt ，<br>eula.1042.txt ，<br>eula.2052.txt ，<br>eula.3082.txt 。<br>九个.dll档 名字分别为<br>install.res.1028.dll ,<br>install.res.1031.dll ,<br>install.res.1033.dll ,<br>install.res.1036.dll ,<br>install.res.1040.dll ,<br>install.res.1041.dll ,<br>install.res.1042.dll ,<br>install.res.2052.dll ,<br>install.res.3082.dll .<br>两个.ini文件，名字分别为<br>globdata.ini ，<br>install.ini 。<br>一个.exe文件 名字为<br>install.exe<br>一个.cab文件 名字为<br>VC_RED.cab<br>一个.MSI文件<br>VC_RED.MSI<br>一个BMP图象 名字为<br>vcredist.bmp</p>
+<p>9个文本文件 名字分别为<br>eula.1028.txt ，<br>eula.1031.txt ，<br><a id="more"></a><br>eula.1033.txt ，<br>eula.1036.txt ，<br>eula.1040.txt ，<br>eula.1041.txt ，<br>eula.1042.txt ，<br>eula.2052.txt ，<br>eula.3082.txt 。<br>九个.dll档 名字分别为<br>install.res.1028.dll ,<br>install.res.1031.dll ,<br>install.res.1033.dll ,<br>install.res.1036.dll ,<br>install.res.1040.dll ,<br>install.res.1041.dll ,<br>install.res.1042.dll ,<br>install.res.2052.dll ,<br>install.res.3082.dll .<br>两个.ini文件，名字分别为<br>globdata.ini ，<br>install.ini 。<br>一个.exe文件 名字为<br>install.exe<br>一个.cab文件 名字为<br>VC_RED.cab<br>一个.MSI文件<br>VC_RED.MSI<br>一个BMP图象 名字为<br>vcredist.bmp</p>
 <p>这些文件是VS2008（VS2010）再发行组件包安装时产生的临时文件,但这个软件却因为bug问题而错误的将临时文件放到了C盘更目录(本应该是temp目录并会被自动删除的,并且这个bug是微软已知的bug)</p>
 <p>这些文件可以手动删除<br><a href="http://support.microsoft.com/kb/950683" target="_blank" rel="external">http://support.microsoft.com/kb/950683</a></p>
 <p>_Following files are generated on the root directory of a drive that has the largest available space in the system : </p>

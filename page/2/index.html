@@ -434,57 +434,11 @@ pod update --verbose --no-repo-update
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png" alt="20160601101750"></a><br>复制结果用notepad++打开，有两个ENQ字符：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png" alt="20160601102433"></a></p>
-<p>尝试用php的json_decode解析一下：</p>
-<pre>$content =  file_get_contents('i2-circle.txt');
-echo $content;
-echo "\n";
-json_decode($content);
-switch (json_last_error()) {
-    case JSON_ERROR_NONE:
-        echo '没有错误发生';
-        break;
-    case JSON_ERROR_DEPTH:
-        echo '到达了最大堆栈深度';
-        break;
-    case JSON_ERROR_STATE_MISMATCH:
-        echo '无效或异常的 JSON';
-        break;
-    case JSON_ERROR_CTRL_CHAR:
-        echo '控制字符错误，可能是编码不对';
-        break;
-    case JSON_ERROR_SYNTAX:
-        echo '语法错误';
-        break;
-    case JSON_ERROR_UTF8:
-        echo '异常的 UTF-8 字符，也许是因为不正确的编码。';
-        break;
-    default:
-        echo '未知错误';
-        break;
-}</pre>
-&nbsp;
-结果是：控制字符错误
-[![20160601101804](http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101804.png)](http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101804.png)
-
-在ASCII中常用的控制字符包括
-控制字符（Control Character），出现于特定的信息文本中，表示某一控制功能的字符。
-在ASCII码中，第0～31号及第127号(共33个)是控制字符或通讯专用字符，如控制符：LF（换行）、CR（回车）、FF（换页）、DEL（删除）、BS（退格)、BEL（振铃）等；通讯专用字符：SOH（文头）、EOT（文尾）、ACK（确认）等。
-
-七位ASCII定义了33个代码作为控制字符，它们是0到31、以及127，（位于0x00-0x1F及0x7F）。
-兼容的八位ISO/IEC 8859-1加上了从ISO/IEC 6429定义的从128到159的32个代码，位于0x80-0x9F。
-
-输入json字串前需要移除控制字符：
-<pre>
-/**
- * remove control characters (for json)
- * @param $str
- * @return mixed
- */
-function strip_control_characters($str){
-    return preg_replace('/[\x00-\x1F\x7F-\x9F]/u', '', $str);
-}
-</pre>
+        <p>ajax请求json数据遇到不能解析，看了下结果中出现了一个特殊字符红色的点，鼠标移上去提示\u5.<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601101750.png" alt="20160601101750"><br>复制结果用notepad++打开，有两个ENQ字符：<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/06/20160601102433.png" alt="20160601102433"></p>
+<p>尝试用php的json_decode解析一下：<br>
+        
+          <a class="article-more-a" href="/2016/06/01/u5enq-e8-af-a2-e9-97-ae-e5-ad-97-e7-ac-a6json-decode-failed-e6-8e-a7-e5-88-b6-e5-ad-97-e7-ac-a6/#more">more >></a>
+        
       
 
       
@@ -581,17 +535,11 @@ function strip_control_characters($str){
     <div class="article-entry" itemprop="articleBody">
       
         <p>平时弄一些东西方便管理版本，本地用VirtualSVN server搭了一个svn server</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg" alt="svn-git20160308212151"></a></p>
-<p>硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。</p>
-<p>前段时间接触到gitlab，决定后面就用它了；下载最新版下了半天，s3太慢了，传到百度网盘了</p>
-<p>_gitlab-ce_8.5.4-ce.0<em>amd64.deb：</em>链接: <a href="http://pan.baidu.com/s/1skxYjnB" target="_blank" rel="external">http://pan.baidu.com/s/1skxYjnB</a> 密码: wq5v</p>
-<p>下载 Tortoisegit , 这个工具提供了良好的GIT操作界面,这里用右键Git Clone功能就行了</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308213930.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308213930.jpg" alt="svn-git20160308213930"></a> <a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308214049.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308214049.jpg" alt="svn-git20160308214049"></a><br>用命令效果一样：</p>
-<p><pre>git.exe svn clone “<a href="http://ganlei:81/svn/plugin/" target="_blank" rel="external">http://ganlei:81/svn/plugin/</a>“ “E:\git_tmp\trunk” -T trunk -b branches -t tags -r 0:HEAD –username ganl<br></pre><br>中间遇到svn密码错误，平时commit密码都是保存的，实在想不起来；折腾了好久，找到Repositories目录，里面有个htpasswd文件，加密的，用apache自带的htpasswd生成一个同名的文件覆盖一下即可，保险起见旧文件还是改下名备份一下。<br><code>htpasswd.exe -bc htpasswd ganl 123456</code><br>gitlab上新建一个git仓库：<a href="http://192.168.188.128/ganlei/plugin.git" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin.git</a><br>进到本地目录，添加远程git服务器地址</p>
-<p><pre>git remote add origin <a href="http://192.168.188.128/ganlei/plugin.git" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin.git</a><br>git add .<br>git commit<br>git push -u origin master<br></pre><br><a href="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308211552.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308211552.jpg" alt="svn-git20160308211552"></a></p>
-<p>再去gitlab刷新页面，算是转移到git了<br><a href="http://192.168.188.128/ganlei/plugin/commits/master[![svn-git20160308215303](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303-1024x494.jpg)](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303.jpg" target="_blank" rel="external">http://192.168.188.128/ganlei/plugin/commits/master[![svn-git20160308215303](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303-1024x494.jpg)](http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308215303.jpg</a>)</p>
-<p>工作中用的是svn，除了上github用过一点git，平时都没用过；刚好迁移到git上学习学习使用方法。</p>
-
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2016/03/svn-git20160308212151.jpg" alt="svn-git20160308212151"></p>
+<p>硬盘满了，想格式化整个硬盘；想想这样很多东西都没了；决定本地装个虚拟机做server，以后重装系统，格硬盘，虚拟机保留一份就省去不少时间。<br>
+        
+          <a class="article-more-a" href="/2016/03/08/svn-repo-e8-bf-81-e7-a7-bb-e5-88-b0gitgitlab/#more">more >></a>
+        
       
 
       

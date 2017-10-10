@@ -280,14 +280,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/07/convertutf8.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/07/convertutf8-300x28.png" alt="convertutf8"></a></p>
-<p>应该是系统编码的问题</p>
-<p>参考：<br><a href="http://www.cnblogs.com/R-zqiang/archive/2012/11/23/2785125.html" target="_blank" rel="external">http://www.cnblogs.com/R-zqiang/archive/2012/11/23/2785125.html</a></p>
-<p>临时解决：<br><code>#export LC_CTYPE=&quot;zh_CN.UTF-8&quot;</code><br>然后重新 checkout 即可。</p>
-<p>永久生效：<br>vi /etc/profile<br><code>export LC_ALL=&quot;zh_CN.UTF-8&quot;
-export LANG=&quot;zh_CN.UTF-8&quot;</code><br>source /etc/profile</p>
-
+        <p>svn上有个文档是中文的，在Centos上co时报错：svn: Can’t convert string from ‘UTF-8’ to native encoding:<br>
+        
+          <a class="article-more-a" href="/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/#more">more >></a>
+        
       
 
       

@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>Ubuntu 16.04.1 安装gitlab  8.10.7-ce.0 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="信任 GitLab 的 GPG 公钥： curl https://packages.gitlab.com/gpg.key 2&amp;gt; /dev/null | sudo apt-key add - &amp;amp;&amp;gt;/dev/null添加gitlab-ce.list vi /etc/apt/sources.list.d/gitlab-ce.listdeb https://mirrors.tuna.t">
+  <meta name="description" content="信任 GitLab 的 GPG 公钥： curl https://packages.gitlab.com/gpg.key 2&amp;gt; /dev/null | sudo apt-key add - &amp;amp;&amp;gt;/dev/null添加gitlab-ce.list">
 <meta name="keywords" content="gitlab,gitlab 8.10.7-ce.0,gitlab8.10.7,Ubuntu 16.04.1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 16.04.1 安装gitlab  8.10.7-ce.0">
 <meta property="og:url" content="//ganl.io/2016/08/21/ubuntu-16-04-1-e5-ae-89-e8-a3-85gitlab-8-10-7-ce-0/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="信任 GitLab 的 GPG 公钥： curl https://packages.gitlab.com/gpg.key 2&amp;gt; /dev/null | sudo apt-key add - &amp;amp;&amp;gt;/dev/null添加gitlab-ce.list vi /etc/apt/sources.list.d/gitlab-ce.listdeb https://mirrors.tuna.t">
+<meta property="og:description" content="信任 GitLab 的 GPG 公钥： curl https://packages.gitlab.com/gpg.key 2&amp;gt; /dev/null | sudo apt-key add - &amp;amp;&amp;gt;/dev/null添加gitlab-ce.list">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27-300x169.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-18-300x169.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-56-300x169.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-10T16:22:38.763Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 16.04.1 安装gitlab  8.10.7-ce.0">
-<meta name="twitter:description" content="信任 GitLab 的 GPG 公钥： curl https://packages.gitlab.com/gpg.key 2&amp;gt; /dev/null | sudo apt-key add - &amp;amp;&amp;gt;/dev/null添加gitlab-ce.list vi /etc/apt/sources.list.d/gitlab-ce.listdeb https://mirrors.tuna.t">
+<meta name="twitter:description" content="信任 GitLab 的 GPG 公钥： curl https://packages.gitlab.com/gpg.key 2&amp;gt; /dev/null | sudo apt-key add - &amp;amp;&amp;gt;/dev/null添加gitlab-ce.list">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27-300x169.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -184,12 +184,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><a href="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27-300x169.png" alt="Ubuntu16.04-2016-08-21-10-17-27"></a><br>信任 GitLab 的 GPG 公钥：</p>
-<p><pre>curl <a href="https://packages.gitlab.com/gpg.key" target="_blank" rel="external">https://packages.gitlab.com/gpg.key</a> 2&gt; /dev/null | sudo apt-key add - &amp;&gt;/dev/null<br></pre><br>添加gitlab-ce.list</p>
+        <p><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-17-27-300x169.png" alt="Ubuntu16.04-2016-08-21-10-17-27"></p>
+<p>信任 GitLab 的 GPG 公钥：</p>
+<p><pre>curl <a href="https://packages.gitlab.com/gpg.key" target="_blank" rel="external">https://packages.gitlab.com/gpg.key</a> 2&gt; /dev/null | sudo apt-key add - &amp;&gt;/dev/null<br></pre><br>添加gitlab-ce.list<br><a id="more"></a></p>
 <p><pre><br>vi /etc/apt/sources.list.d/gitlab-ce.list<br>deb <a href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/ubuntu" target="_blank" rel="external">https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/ubuntu</a> xenial main<br></pre><br>安装gitlab</p>
 <p><pre><br>sudo apt-get update<br>sudo apt-get install gitlab-ce</pre></p>
 <p>root@ganl-ubuntu:/home/ganl# dpkg -l|grep gitlab<br>ii  gitlab-ce                                  8.10.7-ce.0                                                 amd64        GitLab Community Edition and GitLab CI (including NGINX, Postgres, Redis)<br>root@ganl-ubuntu:/home/ganl#<br><br>配置gitlab</p>
-<p><pre><br>gitlab-ctl reconfigure<br></pre><br>访问gitlab，要求修改密码：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-18.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-18-300x169.png" alt="Ubuntu16.04-2016-08-21-10-28-18"></a><br>可以使用了<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-56.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-56-300x169.png" alt="Ubuntu16.04-2016-08-21-10-28-56"></a><br>邮箱设置：<a href="http://www.iganlei.cn/environment-configuration/838.html" target="_blank" rel="external">Ubuntu12.04安装gitlab社区版(Install a GitLab CE Omnibus package on ubuntu12.04)</a></p>
+<p><pre><br>gitlab-ctl reconfigure<br></pre><br>访问gitlab，要求修改密码：<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-18-300x169.png" alt="Ubuntu16.04-2016-08-21-10-28-18"><br>可以使用了<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/08/Ubuntu16.04-2016-08-21-10-28-56-300x169.png" alt="Ubuntu16.04-2016-08-21-10-28-56"><br>邮箱设置：<a href="http://www.iganlei.cn/environment-configuration/838.html" target="_blank" rel="external">Ubuntu12.04安装gitlab社区版(Install a GitLab CE Omnibus package on ubuntu12.04)</a></p>
 
       
 
