@@ -1269,11 +1269,11 @@ chkconfig ipsec on</code></p>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg" alt="ssl20160106224619"></a><br>根本登录不上，在wp-config.php里加上了<br><code>define(&#39;FORCE_SSL_LOGIN&#39;, false);
-define(&#39;FORCE_SSL_ADMIN&#39;, false);</code><br>访问登录页还是会跳转到https，想着只能禁用插件了或者改插件的配置项；<br>禁用插件来的简单点：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106225534.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106225534.jpg" alt="ssl20160106225534"></a><br>将wp_options（表前缀改成自己的）中option_name为active_plugins对应的 option_value 置空即可。</p>
-<p>`select option_value from wp_options where option_name=’active_plugins’;<br>+—————————————————————————————————————-+<br>| option_value                                                                                                   |<br>+—————————————————————————————————————-+<br>| a:2:{i:0;s:45:”Replace-Google-Fonts/replace-google-fonts.php”;i:1;s:35:”wordpress-https/wordpress-https.php”;} |<br>+—————————————————————————————————————-+<br>1 row in set (0.00 sec)</p>
-<p>update wp_options set option_value=”” where option_name=’active_plugins’;<br>Query OK, 1 row affected (0.00 sec)<br>Rows matched: 1  Changed: 1  Warnings: 0`</p>
-
+        <p>强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg" alt="ssl20160106224619"><br>根本登录不上，在wp-config.php里加上了<br><code>define(&#39;FORCE_SSL_LOGIN&#39;, false);
+define(&#39;FORCE_SSL_ADMIN&#39;, false);</code><br>访问登录页还是会跳转到https，想着只能禁用插件了或者改插件的配置项；<br>
+        
+          <a class="article-more-a" href="/2016/01/06/wordpress-e5-90-8e-e5-8f-b0-e6-8f-92-e4-bb-b6-e5-bc-80-e5-90-af-e5-bc-ba-e5-88-b6ssl-e7-99-bb-e5-bd-95-ef-bc-8c-e7-94-b1-e4-ba-8e-e6-b7-b7-e5-90-88-e5-86-85-e5-ae-b9-e6-97-a0-e6-b3-95-e7-99-bb/#more">more >></a>
+        
       
 
       

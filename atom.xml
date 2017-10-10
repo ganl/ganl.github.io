@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-10-10T15:00:23.324Z</updated>
+  <updated>2017-10-10T15:30:24.747Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -21,17 +21,17 @@
     <link href="//ganl.io/2017/10/10/Wordpress%E6%90%AC%E8%BF%81%E5%88%B0github-coding-hexo/"/>
     <id>//ganl.io/2017/10/10/Wordpress搬迁到github-coding-hexo/</id>
     <published>2017-10-10T12:29:31.000Z</published>
-    <updated>2017-10-10T15:00:23.324Z</updated>
+    <updated>2017-10-10T15:30:24.747Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;从WordPress导出旧文章-并迁移到hexo&quot;&gt;&lt;a href=&quot;#从WordPress导出旧文章-并迁移到hexo&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;从WordPress导出旧文章-并迁移到hexo&quot;&gt;&lt;a href=&quot;#从WordPress导出旧文章-并迁移到hexo&quot; class=&quot;headerlink&quot; title=&quot;从WordPress导出旧文章,并迁移到hexo&quot;&gt;&lt;/a&gt;从WordPress导出旧文章,并迁移到hexo&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在“工具”-“导出”中导出所有内容&lt;br&gt;导出的是xml格式文件：ganlei.wordpress.2017-10-06.xml&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2017/10/WX20171010-203704.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装hexo并初始化&lt;br&gt;安装hexo-cli，需要先安装node和npm，执行&lt;code&gt;npm install -g hexo-cli&lt;/code&gt;&lt;br&gt;初始化目录：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd ~/Code/&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo init hexo_blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd hexo_blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -210,18 +210,12 @@
     <link href="//ganl.io/2016/07/06/windows-top/"/>
     <id>//ganl.io/2016/07/06/windows-top/</id>
     <published>2016-07-06T03:39:40.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:15:53.548Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Windows PowerShell中执行：&lt;/p&gt;
-&lt;p&gt;&lt;pre&gt;while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;Windows PowerShell中执行：&lt;/p&gt;
+&lt;p&gt;&lt;pre&gt;while (1) { ps | sort -desc cpu | select -first 30; sleep -seconds 2; cls }&lt;br&gt;&lt;/pre&gt;&lt;br&gt;
     
     </summary>
     
@@ -448,17 +442,12 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2016/01/06/wordpress-e5-90-8e-e5-8f-b0-e6-8f-92-e4-bb-b6-e5-bc-80-e5-90-af-e5-bc-ba-e5-88-b6ssl-e7-99-bb-e5-bd-95-ef-bc-8c-e7-94-b1-e4-ba-8e-e6-b7-b7-e5-90-88-e5-86-85-e5-ae-b9-e6-97-a0-e6-b3-95-e7-99-bb/"/>
     <id>//ganl.io/2016/01/06/wordpress-e5-90-8e-e5-8f-b0-e6-8f-92-e4-bb-b6-e5-bc-80-e5-90-af-e5-bc-ba-e5-88-b6ssl-e7-99-bb-e5-bd-95-ef-bc-8c-e7-94-b1-e4-ba-8e-e6-b7-b7-e5-90-88-e5-86-85-e5-ae-b9-e6-97-a0-e6-b3-95-e7-99-bb/</id>
     <published>2016-01-06T15:00:32.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:14:29.731Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg&quot; alt=&quot;ssl20160106224619&quot;&gt;&lt;br&gt;根本登录不上，在wp-config.php里加上了&lt;br&gt;&lt;code&gt;define(&amp;#39;FORCE_SSL_LOGIN&amp;#39;, false);
+define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问登录页还是会跳转到https，想着只能禁用插件了或者改插件的配置项；&lt;br&gt;
     
     </summary>
     
@@ -741,18 +730,12 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/"/>
     <id>//ganl.io/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/</id>
     <published>2015-09-18T16:27:44.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:10:59.206Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的；&lt;/p&gt;
-&lt;p&gt;Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport
-        
-      
+      &lt;p&gt;更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的；&lt;/p&gt;
+&lt;p&gt;Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.&lt;br&gt;
     
     </summary>
     
@@ -845,17 +828,12 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/"/>
     <id>//ganl.io/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/</id>
     <published>2015-09-13T12:42:08.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-10T16:15:39.642Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;编辑上一篇文章时：&lt;a href=&quot;http://www.iganlei.cn/web/js/755.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iganlei.cn/web/js/755.html&lt;/a&gt;
-        
-      
+      &lt;p&gt;编辑上一篇文章时：&lt;a href=&quot;http://www.iganlei.cn/web/js/755.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iganlei.cn/web/js/755.html&lt;/a&gt; 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin-300x180.jpg&quot; alt=&quot;ajaxadmin&quot;&gt;&lt;/a&gt;&lt;br&gt;修改admin-ajax.php，打开错误输出：&lt;br&gt;&lt;code&gt;ini_set(&amp;quot;display_errors&amp;quot;,&amp;quot;On&amp;quot;);
+error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     
     </summary>
     
@@ -902,17 +880,11 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
     <id>//ganl.io/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
     <published>2015-08-16T06:50:41.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T16:17:48.670Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；&lt;br&gt;不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI
-        
-      
+      &lt;p&gt;重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；&lt;br&gt;不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed&lt;br&gt;
     
     </summary>
     
@@ -1163,19 +1135,13 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/07/08/vs2008-e9-a2-91-e7-b9-81-e5-b4-a9-e6-ba-83-e6-89-93-e5-bc-80-e6-8f-90-e7-a4-ba-e5-b7-b2-e5-81-9c-e6-ad-a2/"/>
     <id>//ganl.io/2015/07/08/vs2008-e9-a2-91-e7-b9-81-e5-b4-a9-e6-ba-83-e6-89-93-e5-bc-80-e6-8f-90-e7-a4-ba-e5-b7-b2-e5-81-9c-e6-ad-a2/</id>
     <published>2015-07-08T05:32:53.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T16:17:34.972Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;查看事件日志：&lt;br&gt;devenv.exe 错误模块路径: C:\Windows\SysWOW64\ntdll.dll&lt;/p&gt;
+      &lt;p&gt;查看事件日志：&lt;br&gt;devenv.exe 错误模块路径: C:\Windows\SysWOW64\ntdll.dll&lt;/p&gt;
 &lt;p&gt;度娘提供的解决方案：&lt;/p&gt;
-&lt;p&gt;打开开始菜单》所有程序》Microsoft Visual Studio》Visual
-        
-      
+&lt;p&gt;打开开始菜单》所有程序》Microsoft Visual Studio》Visual Studio工具》Visual&lt;br&gt; Studio命令行（以管理员身份）；&lt;br&gt;
     
     </summary>
     
@@ -1347,17 +1313,11 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/06/17/wxpwnetwlhwin7wxp-e3-80-81wnet-e3-80-81wlh-e3-80-81xp-e3-80-81wlh-e3-80-81win8-e3-80-81win7-e3-80-81vista/"/>
     <id>//ganl.io/2015/06/17/wxpwnetwlhwin7wxp-e3-80-81wnet-e3-80-81wlh-e3-80-81xp-e3-80-81wlh-e3-80-81win8-e3-80-81win7-e3-80-81vista/</id>
     <published>2015-06-17T09:03:45.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T16:11:19.835Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;wxp/wnet/wlh/win7&lt;br&gt;wxp - Windows XP&lt;br&gt;wnet - Windows Server 2003&lt;br&gt;wlh - Windows Vista and Windows Server 2008&lt;br&gt;win7 - Windows 7
-        
-      
+      &lt;p&gt;wxp/wnet/wlh/win7&lt;br&gt;wxp - Windows XP&lt;br&gt;wnet - Windows Server 2003&lt;br&gt;wlh - Windows Vista and Windows Server 2008&lt;br&gt;win7 - Windows 7 and Windows Server 2008 R2&lt;br&gt;
     
     </summary>
     
@@ -1427,17 +1387,11 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/06/04/warning-attempt-to-present-on-which-is-already-presenting/"/>
     <id>//ganl.io/2015/06/04/warning-attempt-to-present-on-which-is-already-presenting/</id>
     <published>2015-06-03T16:18:42.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T16:16:19.312Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;在iOS 7模拟器上测试没问题。iOS 8.3上报了如下警告：&lt;br&gt;Warning: Attempt to present &lt;uinavigationcontroller: 0x7caa83c0=&quot;&quot;&gt;  on
-        
-      
+      &lt;p&gt;在iOS 7模拟器上测试没问题。iOS 8.3上报了如下警告：&lt;br&gt;Warning: Attempt to present &lt;uinavigationcontroller: 0x7caa83c0=&quot;&quot;&gt;  on &lt;/uinavigationcontroller:&gt;&lt;uinavigationcontroller: 0x7b6c7710=&quot;&quot;&gt; which is already presenting &lt;uialertcontroller: 0x7b6d9030=&quot;&quot;&gt;&lt;br&gt;但是在模拟器上测试：iPhone模拟器上没发现异常，依旧可以选择，在iPad上点击没有反应，还是得解决。&lt;br&gt;
     
     </summary>
     
@@ -1570,17 +1524,11 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/"/>
     <id>//ganl.io/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</id>
     <published>2015-05-13T14:27:20.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T16:17:07.520Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;域名解析到ip后，访问出现下图情况&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/05/8.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
-        
-      
+      &lt;p&gt;域名解析到ip后，访问出现下图情况&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/05/8-300x94.jpg&quot; alt=&quot;8&quot;&gt;&lt;br&gt;查找Apache中相关配置,发现有一段：&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/05/7-300x161.jpg&quot; alt=&quot;7&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -1662,19 +1610,16 @@ cat /dev/ppp&lt;/pre&gt;
     <link href="//ganl.io/2015/04/14/zend-studio-e9-85-8d-e7-bd-ae-e8-b0-83-e8-af-95xdebug-e6-96-b9-e5-bc-8f/"/>
     <id>//ganl.io/2015/04/14/zend-studio-e9-85-8d-e7-bd-ae-e8-b0-83-e8-af-95xdebug-e6-96-b9-e5-bc-8f/</id>
     <published>2015-04-14T02:18:52.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-10T15:49:17.055Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;ins datetime=&quot;2015-04-14T01:56:33+00:00&quot;&gt;zend studio配置调试(Xdebug方式)&lt;/ins&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;ins datetime=&quot;2015-04-14T01:56:33+00:00&quot;&gt;zend studio配置调试(Xdebug方式)&lt;/ins&gt;&lt;/p&gt;
 &lt;p&gt;1.下载xdebug&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
+&lt;p&gt;&lt;a href=&quot;http://xdebug.org/download.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://xdebug.org/download.php&lt;/a&gt; 我先下的是PHP 5.4 VC9 (32 bit)&lt;/p&gt;
+&lt;p&gt;【当前系统php是php5.4.32(win32)版本】&lt;/p&gt;
+&lt;p&gt;2.配置php.ini&lt;/p&gt;
+&lt;p&gt;在文件最后配置&lt;br&gt;
     
     </summary>
     
@@ -1951,17 +1896,11 @@ Preparing...
     <link href="//ganl.io/2015/03/13/wordpress-e5-bb-ba-e7-ab-8b-e6-95-b0-e6-8d-ae-e5-ba-93-e8-bf-9e-e6-8e-a5-e6-97-b6-e5-87-ba-e9-94-99-e8-a7-a3-e5-86-b3-e6-96-b9-e6-a1-88/"/>
     <id>//ganl.io/2015/03/13/wordpress-e5-bb-ba-e7-ab-8b-e6-95-b0-e6-8d-ae-e5-ba-93-e8-bf-9e-e6-8e-a5-e6-97-b6-e5-87-ba-e9-94-99-e8-a7-a3-e5-86-b3-e6-96-b9-e6-a1-88/</id>
     <published>2015-03-13T13:18:09.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:12:57.774Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;网上有很多种说法：&lt;br&gt;1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）&lt;br&gt;2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）&lt;br&gt;3、最重要的一个原因，wp_options表需要修复。wordp
-        
-      
+      &lt;p&gt;网上有很多种说法：&lt;br&gt;1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）&lt;br&gt;2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）&lt;br&gt;3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。&lt;br&gt;
     
     </summary>
     
@@ -2054,18 +1993,12 @@ Preparing...
     <link href="//ganl.io/2015/01/20/zend-studio-e5-90-af-e5-8a-a8java-e6-8a-a5-e9-94-99-ef-bc-9ajava-was-started-but-returned-exit-code13/"/>
     <id>//ganl.io/2015/01/20/zend-studio-e5-90-af-e5-8a-a8java-e6-8a-a5-e9-94-99-ef-bc-9ajava-was-started-but-returned-exit-code13/</id>
     <published>2015-01-20T02:13:47.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T15:59:41.325Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;重启Zend Studio时，报了个错：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/01/QQ截图20150115142834.jpg&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;重启Zend Studio时，报了个错：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/01/QQ截图20150115142834.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/01/QQ截图20150115142834-192x300.jpg&quot; alt=&quot;java exit&quot;&gt;&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -2114,17 +2047,11 @@ Preparing...
     <link href="//ganl.io/2015/01/12/you-must-use-the-role-management-tool-to-install-or-configure-microsoft-net/"/>
     <id>//ganl.io/2015/01/12/you-must-use-the-role-management-tool-to-install-or-configure-microsoft-net/</id>
     <published>2015-01-12T05:58:26.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:10:29.319Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;在Windows Server 2008 下安装VS 2008时，碰到如下错误：&lt;br&gt;You must use the Role Management Tool to install or configure Microsoft .NET……&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;在Windows Server 2008 下安装VS 2008时，碰到如下错误：&lt;br&gt;You must use the Role Management Tool to install or configure Microsoft .NET……&lt;br&gt;&lt;img src=&quot;http://assets.iganlei.cn/wp-content/uploads/2015/01/QQ%E6%88%AA%E5%9B%BE20150112135122.png&quot; alt=&quot;.net 3.5&quot;&gt;&lt;br&gt;
     
     </summary>
     
@@ -2219,17 +2146,11 @@ Preparing...
     <link href="//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/"/>
     <id>//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</id>
     <published>2014-12-28T11:12:35.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T16:18:20.125Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Error    1    error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property
-        
-      
+      &lt;p&gt;Error    1    error MSB8031: Building an MFC project for a non-Unicode character set is deprecated. You must change the project property to Unicode or download an additional library. See &lt;a href=&quot;http://go.microsoft.com/fwlink/p/?LinkId=286820&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://go.microsoft.com/fwlink/p/?LinkId=286820&lt;/a&gt; for more information.    G:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets    376    5    Smon&lt;br&gt;
     
     </summary>
     
@@ -2418,17 +2339,11 @@ Preparing...
     <link href="//ganl.io/2014/08/30/ztev967s-e5-bc-80-e6-9c-ba-e5-81-9c-e5-9c-a8voo-ef-bc-8c-e7-ba-bf-e5-88-b7-e5-ae-98-e6-96-b9-e4-bf-ae-e6-94-b9-e7-89-88-e4-b8-a4-e4-b8-89-e4-b8-aa-e6-98-9f-e6-9c-9f-e5-b7-a6-e5-8f-b3-e5-86-8d/"/>
     <id>//ganl.io/2014/08/30/ztev967s-e5-bc-80-e6-9c-ba-e5-81-9c-e5-9c-a8voo-ef-bc-8c-e7-ba-bf-e5-88-b7-e5-ae-98-e6-96-b9-e4-bf-ae-e6-94-b9-e7-89-88-e4-b8-a4-e4-b8-89-e4-b8-aa-e6-98-9f-e6-9c-9f-e5-b7-a6-e5-8f-b3-e5-86-8d/</id>
     <published>2014-08-30T13:22:20.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-10T15:44:03.906Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;ZTEV967S 开机停在voo，线刷官方修改版两三个星期左右再次不能进入系统，决定刷miui。&lt;br&gt;在小米官网有两个版本的miui，都下载了放到sd卡，均出现installation
-        
-      
+      &lt;p&gt;ZTEV967S 开机停在voo，线刷官方修改版两三个星期左右再次不能进入系统，决定刷miui。&lt;br&gt;在小米官网有两个版本的miui，都下载了放到sd卡，均出现installation aborted。&lt;br&gt;以为是这两个rom包有问题。&lt;br&gt;在搞机圈下载了中文的recovery&lt;br&gt;
     
     </summary>
     
@@ -2611,17 +2526,13 @@ Preparing...
     <link href="//ganl.io/2014/03/05/youkuaddress/"/>
     <id>//ganl.io/2014/03/05/youkuaddress/</id>
     <published>2014-03-05T13:01:12.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-10T15:59:50.487Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;看到一篇博客&lt;br&gt;&lt;a href=&quot;http://blog.163.com/zjq_123/blog/static/408997932012101715653556/&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;看到一篇博客&lt;br&gt;&lt;a href=&quot;http://blog.163.com/zjq_123/blog/static/408997932012101715653556/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.163.com/zjq_123/blog/static/408997932012101715653556/&lt;/a&gt;&lt;br&gt;里面讲了优酷真实地址解析，看了看把flash改成php代理了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://f.youku.com/player/getFlvPath/sid/00_00/st/mp4/fileid/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://f.youku.com/player/getFlvPath/sid/00_00/st/mp4/fileid/&lt;/a&gt;&lt;br&gt;03000803004D9F4390A67E002BCF4E9F3D1FCE-FB5D-561B-1A73-F791EE1DC9B3&lt;br&gt;?K=3c1817963398751b2827379d&lt;br&gt;　　这是视频文件链接的标准式样。红色字符是需更换的内容。&lt;br&gt;03000803004D9F4390A67E002BCF4E9F3D1FCE-FB5D-561B-1A73-F791EE1DC9B3&lt;br&gt;　　这一串字符由解密计算得到，“00”处是多片段节目的序号，为16进制。一个页面的节目无论多少段，每段的链接地址中的这一部分是相同的。&lt;br&gt;&lt;del datetime=&quot;2014-03-05T12:31:14+00:00&quot;&gt;&lt;a href=&quot;http://v.youku.com/v_show/id_XMjU3MzIxOTk2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://v.youku.com/v_show/id_XMjU3MzIxOTk2.html&lt;/a&gt;&lt;/del&gt;&lt;br&gt;　　这是节目所在页面的地址，其中白色字符为节目的“编号”或叫“标志”应该都可以。所有关于节目的信息都是从这里得到的。&lt;br&gt;&lt;del datetime=&quot;2014-03-05T12:31:14+00:00&quot;&gt;&lt;a href=&quot;http://v.youku.com/player/getPlayList/VideoIDS/XMjU3MzIxOTk2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://v.youku.com/player/getPlayList/VideoIDS/XMjU3MzIxOTk2&lt;/a&gt;&lt;/del&gt;&lt;br&gt;　　节目的信息文件的地址。贴到地址栏可以看到内容，下载后成为一个文本文件。&lt;br&gt;　　该文件内容为哈希表（json）格式，网上可方便查找到相关资料，flash的帮助里面也有介绍。这里不详述，恐篇幅太大。&lt;br&gt;　　脚本编程中，用地址读入此信息文件的内容，然后根据内容得到或计算（解密）得到需要的东西，最后拼接出完整的视频文件地址。&lt;br&gt;　　信息文件中的内容总是变化的，据网上资料介绍，仅维持一小时（未验证）。&lt;br&gt;　　根据前帖所述资料介绍的方法，未能成功还原出视频地址。经反复尝试，对比，剖析优酷网站播放器的脚本，终于正确解密了地址。优酷网实在是用心良苦。&lt;br&gt;
     
     </summary>
     
@@ -2758,18 +2669,13 @@ Preparing...
     <link href="//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/"/>
     <id>//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/</id>
     <published>2013-11-26T16:55:35.000Z</published>
-    <updated>2017-10-07T01:34:31.490Z</updated>
+    <updated>2017-10-10T15:49:06.163Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;V967s 精简ROM包&lt;br&gt;下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1d47qk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1d47qk&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;按照
-        
-      
+      &lt;p&gt;V967s 精简ROM包&lt;br&gt;下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1d47qk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1d47qk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;按照 下面的列表来精简的&lt;br&gt;从官网下的包有365M（374771KB）  精简后248M（254575KB）&lt;/p&gt;
+&lt;p&gt;下载官方ROM 解压后 对system\vendor\operator\app 下的自带应用（还多广告性质应用）进行删除和替换更新&lt;br&gt;对system\app 下的 应用选择删除&lt;br&gt;
     
     </summary>
     

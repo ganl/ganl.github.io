@@ -276,24 +276,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在iOS 7模拟器上测试没问题。iOS 8.3上报了如下警告：<br>Warning: Attempt to present <uinavigationcontroller: 0x7caa83c0="">  on </uinavigationcontroller:><uinavigationcontroller: 0x7b6c7710=""> which is already presenting <uialertcontroller: 0x7b6d9030=""><br>但是在模拟器上测试：iPhone模拟器上没发现异常，依旧可以选择，在iPad上点击没有反应，还是得解决。</uialertcontroller:></uinavigationcontroller:></p>
-<ul>
-<li><p>(IBAction)addAccount:(id)sender<br>{<br>  UIActionSheet <em>actionSheet;<br>  pressedIndex = nil;<br>  NSString </em>privserver = NSLocalizedString(@”xxx”, @”sss”);<br>  if (IsIpad())</p>
-<pre><code>actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:privserver, @&quot;www.iganlei.cn&quot;, @&quot;www.iganlei.cn&quot;, nil];
-</code></pre><p>  else</p>
-<pre><code>actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@&quot;Cancel&quot;, @&quot;sss&quot;) destructiveButtonTitle:nil otherButtonTitles:privserver, @&quot;www.iganlei.cn&quot;, @&quot;www.iganlei.cn&quot;, nil];
-</code></pre><p>  [actionSheet showFromBarButtonItem:sender animated:YES];<br>}<br>……</p>
-</li>
-<li><p>(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex<br>{<br>……</p>
-</li>
-</ul>
-<p>百度了一段解释：<br>根据问题可以看出ViewController在present UIImagePickerController之前present了UIAlertController，但是，我并没有是用UIAlertView。但是这里出现了UIAlertController这个iOS 8推出的新的类，问题应该就出现在这里。</p>
-<p>解决方法：<br>/<em> 替换 actionSheet: clickedButtonAtIndex:为下面这个方法 </em>/</p>
-<ul>
-<li>(void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex<br>{</li>
-</ul>
-<p>问题解决。。</p>
-
+        <p>在iOS 7模拟器上测试没问题。iOS 8.3上报了如下警告：<br>Warning: Attempt to present <uinavigationcontroller: 0x7caa83c0="">  on </uinavigationcontroller:><uinavigationcontroller: 0x7b6c7710=""> which is already presenting <uialertcontroller: 0x7b6d9030=""><br>但是在模拟器上测试：iPhone模拟器上没发现异常，依旧可以选择，在iPad上点击没有反应，还是得解决。<br>
+        
+          <a class="article-more-a" href="/2015/06/04/warning-attempt-to-present-on-which-is-already-presenting/#more">more >></a>
+        
       
 
       
@@ -781,15 +767,10 @@ AddType application/x-httpd-php-source .phps
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>域名解析到ip后，访问出现下图情况<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/05/8.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/8-300x94.jpg" alt="8"></a><br>查找Apache中相关配置,发现有一段：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/05/7.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/7-300x161.jpg" alt="7"></a><br>改成如下所示:<br>`#   onlineoffline tag - don’t remove<br>    Order Deny,Allow</p>
-<pre><code>#Deny from all
-Allow from all`
-</code></pre><p>重启服务后：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/05/1.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/1-300x185.jpg" alt="1"></a><br>新装的Discuz论坛，可以正常访问了。</p>
-<p>附带，修改wamp mysql初始空密码的方法：<br>右下角点击wamp的托盘图标，选中mysql，打开console；<br>直接回车进入mysql命令状态：<br>use mysql</p>
-<p>update user set password=password(“xxxxxx”) where user=”root”;<br>XXXXXX为要设置的密码</p>
-<p>flush privileges;<br>一定要执行这句</p>
-<p>exit</p>
-
+        <p>域名解析到ip后，访问出现下图情况<br><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/8-300x94.jpg" alt="8"><br>查找Apache中相关配置,发现有一段：<br><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/7-300x161.jpg" alt="7"><br>
+        
+          <a class="article-more-a" href="/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/#more">more >></a>
+        
       
 
       

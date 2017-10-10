@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>wordpress 升级4.3后，后台发表出现：admin-ajax.php 500 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="编辑上一篇文章时：http://www.iganlei.cn/web/js/755.html 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；修改admin-ajax.php，打开错误输出：ini_set(&amp;quot;display_errors&amp;quot;,&amp;quot;On&amp;quot;); error_reporting(E_ALL); 发现又是A">
+  <meta name="description" content="编辑上一篇文章时：http://www.iganlei.cn/web/js/755.html 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；修改admin-ajax.php，打开错误输出：ini_set(&amp;quot;display_errors&amp;quot;,&amp;quot;On&amp;quot;); error_reporting(E_ALL);">
 <meta name="keywords" content="Web&#x2F;PHP,Java,C&#x2F;C++,ios,linux,视频,直链,解析,播放器,chplayer,ckplayer,CMP4,前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="wordpress 升级4.3后，后台发表出现：admin-ajax.php 500">
 <meta property="og:url" content="//ganl.io/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="编辑上一篇文章时：http://www.iganlei.cn/web/js/755.html 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；修改admin-ajax.php，打开错误输出：ini_set(&amp;quot;display_errors&amp;quot;,&amp;quot;On&amp;quot;); error_reporting(E_ALL); 发现又是A">
+<meta property="og:description" content="编辑上一篇文章时：http://www.iganlei.cn/web/js/755.html 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；修改admin-ajax.php，打开错误输出：ini_set(&amp;quot;display_errors&amp;quot;,&amp;quot;On&amp;quot;); error_reporting(E_ALL);">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin-300x180.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/limit-memory-300x118.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/correct-300x91.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-10T16:15:39.642Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wordpress 升级4.3后，后台发表出现：admin-ajax.php 500">
-<meta name="twitter:description" content="编辑上一篇文章时：http://www.iganlei.cn/web/js/755.html 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；修改admin-ajax.php，打开错误输出：ini_set(&amp;quot;display_errors&amp;quot;,&amp;quot;On&amp;quot;); error_reporting(E_ALL); 发现又是A">
+<meta name="twitter:description" content="编辑上一篇文章时：http://www.iganlei.cn/web/js/755.html 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；修改admin-ajax.php，打开错误输出：ini_set(&amp;quot;display_errors&amp;quot;,&amp;quot;On&amp;quot;); error_reporting(E_ALL);">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin-300x180.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -185,8 +185,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>编辑上一篇文章时：<a href="http://www.iganlei.cn/web/js/755.html" target="_blank" rel="external">http://www.iganlei.cn/web/js/755.html</a> 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin-300x180.jpg" alt="ajaxadmin"></a><br>修改admin-ajax.php，打开错误输出：<br><code>ini_set(&quot;display_errors&quot;,&quot;On&quot;);
-error_reporting(E_ALL);</code></p>
-<p>发现又是Allowed memory size of <em>*</em> bytes exhausted，升级的时候升级数据库就出现过一次；<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/limit-memory.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/limit-memory-300x118.jpg" alt="limit memory"></a></p>
+error_reporting(E_ALL);</code><br><a id="more"></a><br>发现又是Allowed memory size of <em>*</em> bytes exhausted，升级的时候升级数据库就出现过一次；<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/limit-memory.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/limit-memory-300x118.jpg" alt="limit memory"></a></p>
 <p>修改admin-ajax.php，在调整memory_limit 的值：<br><code>ini_set(&quot;memory_limit&quot;,&quot;256M&quot;);</code><br>再次添加媒体，正常了：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/correct.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/correct-300x91.jpg" alt="correct"></a></p>
 <p>这应该是wp的原因，升级前没这问题。</p>
 

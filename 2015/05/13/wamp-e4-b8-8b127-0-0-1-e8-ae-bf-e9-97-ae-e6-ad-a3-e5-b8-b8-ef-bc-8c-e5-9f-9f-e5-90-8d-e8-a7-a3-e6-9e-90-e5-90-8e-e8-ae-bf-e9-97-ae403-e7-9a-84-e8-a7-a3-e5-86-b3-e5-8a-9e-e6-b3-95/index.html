@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>wamp下127.0.0.1访问正常，域名解析后访问403的解决办法 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="域名解析到ip后，访问出现下图情况查找Apache中相关配置,发现有一段：改成如下所示:`#   onlineoffline tag - don’t remove    Order Deny,Allow #Deny from all Allow from all` 重启服务后：新装的Discuz论坛，可以正常访问了。 附带，修改wamp mysql初始空密码的方法：右下角点击wamp的托盘图标，选">
+  <meta name="description" content="域名解析到ip后，访问出现下图情况查找Apache中相关配置,发现有一段：">
 <meta name="keywords" content="apache,php,msyql,wamp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="wamp下127.0.0.1访问正常，域名解析后访问403的解决办法">
 <meta property="og:url" content="//ganl.io/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="域名解析到ip后，访问出现下图情况查找Apache中相关配置,发现有一段：改成如下所示:`#   onlineoffline tag - don’t remove    Order Deny,Allow #Deny from all Allow from all` 重启服务后：新装的Discuz论坛，可以正常访问了。 附带，修改wamp mysql初始空密码的方法：右下角点击wamp的托盘图标，选">
+<meta property="og:description" content="域名解析到ip后，访问出现下图情况查找Apache中相关配置,发现有一段：">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/05/8-300x94.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/05/7-300x161.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/05/1-300x185.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:updated_time" content="2017-10-10T16:17:07.520Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wamp下127.0.0.1访问正常，域名解析后访问403的解决办法">
-<meta name="twitter:description" content="域名解析到ip后，访问出现下图情况查找Apache中相关配置,发现有一段：改成如下所示:`#   onlineoffline tag - don’t remove    Order Deny,Allow #Deny from all Allow from all` 重启服务后：新装的Discuz论坛，可以正常访问了。 附带，修改wamp mysql初始空密码的方法：右下角点击wamp的托盘图标，选">
+<meta name="twitter:description" content="域名解析到ip后，访问出现下图情况查找Apache中相关配置,发现有一段：">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/05/8-300x94.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -184,10 +184,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>域名解析到ip后，访问出现下图情况<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/05/8.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/8-300x94.jpg" alt="8"></a><br>查找Apache中相关配置,发现有一段：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/05/7.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/7-300x161.jpg" alt="7"></a><br>改成如下所示:<br>`#   onlineoffline tag - don’t remove<br>    Order Deny,Allow</p>
+        <p>域名解析到ip后，访问出现下图情况<br><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/8-300x94.jpg" alt="8"><br>查找Apache中相关配置,发现有一段：<br><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/7-300x161.jpg" alt="7"><br><a id="more"></a><br>改成如下所示:<br>`#   onlineoffline tag - don’t remove<br>    Order Deny,Allow</p>
 <pre><code>#Deny from all
 Allow from all`
-</code></pre><p>重启服务后：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/05/1.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/1-300x185.jpg" alt="1"></a><br>新装的Discuz论坛，可以正常访问了。</p>
+</code></pre><p>重启服务后：<br><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/1-300x185.jpg" alt="1">新装的Discuz论坛，可以正常访问了。</p>
 <p>附带，修改wamp mysql初始空密码的方法：<br>右下角点击wamp的托盘图标，选中mysql，打开console；<br>直接回车进入mysql命令状态：<br>use mysql</p>
 <p>update user set password=password(“xxxxxx”) where user=”root”;<br>XXXXXX为要设置的密码</p>
 <p>flush privileges;<br>一定要执行这句</p>

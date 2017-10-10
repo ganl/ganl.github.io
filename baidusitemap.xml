@@ -4,8 +4,376 @@
 
     
   <url>
+    <loc>//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</loc>
+    <lastmod>2017-10-10T16:18:20.125Z</lastmod>
+    <data>
+        <display>
+        <title>Visual Studio 2013 编译 multi-byte character set MFC程序出现 MSB8031 错误的解决办法</title>
+        <pubTime>2014-12-28T11:12:35.000Z</pubTime>
+        
+        <tag>MFC</tag>
+         
+        <tag>MSB8031</tag>
+         
+        <tag>Visual Studio 2013</tag>
+         
+        <tag>VS2013</tag>
+         
+         
+           
+             
+              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
+    <lastmod>2017-10-10T16:17:48.670Z</lastmod>
+    <data>
+        <display>
+        <title>VMware Workstation …… vmwareworkstation.msi …… Failed解决方法</title>
+        <pubTime>2015-08-16T06:50:41.000Z</pubTime>
+        
+        <tag>VMware</tag>
+         
+        <tag>VMware Workstation</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/07/08/vs2008-e9-a2-91-e7-b9-81-e5-b4-a9-e6-ba-83-e6-89-93-e5-bc-80-e6-8f-90-e7-a4-ba-e5-b7-b2-e5-81-9c-e6-ad-a2/</loc>
+    <lastmod>2017-10-10T16:17:34.972Z</lastmod>
+    <data>
+        <display>
+        <title>VS2008 频繁崩溃,打开提示已停止</title>
+        <pubTime>2015-07-08T05:32:53.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</loc>
+    <lastmod>2017-10-10T16:17:07.520Z</lastmod>
+    <data>
+        <display>
+        <title>wamp下127.0.0.1访问正常，域名解析后访问403的解决办法</title>
+        <pubTime>2015-05-13T14:27:20.000Z</pubTime>
+        
+        <tag>apache</tag>
+         
+        <tag>php</tag>
+         
+        <tag>msyql</tag>
+         
+        <tag>wamp</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/06/04/warning-attempt-to-present-on-which-is-already-presenting/</loc>
+    <lastmod>2017-10-10T16:16:19.312Z</lastmod>
+    <data>
+        <display>
+        <title>Warning: Attempt to present   on  which is already presenting </title>
+        <pubTime>2015-06-03T16:18:42.000Z</pubTime>
+        
+        <tag>UIAlertController</tag>
+         
+        <tag>UINavigationController</tag>
+         
+         
+           
+             
+              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2016/07/06/windows-top/</loc>
+    <lastmod>2017-10-10T16:15:53.548Z</lastmod>
+    <data>
+        <display>
+        <title>Windows top</title>
+        <pubTime>2016-07-06T03:39:40.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>top</tag>
+         
+        <tag>Windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="Application" url="//ganl.io/categories/Application/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/</loc>
+    <lastmod>2017-10-10T16:15:39.642Z</lastmod>
+    <data>
+        <display>
+        <title>wordpress 升级4.3后，后台发表出现：admin-ajax.php 500</title>
+        <pubTime>2015-09-13T12:42:08.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2016/01/06/wordpress-e5-90-8e-e5-8f-b0-e6-8f-92-e4-bb-b6-e5-bc-80-e5-90-af-e5-bc-ba-e5-88-b6ssl-e7-99-bb-e5-bd-95-ef-bc-8c-e7-94-b1-e4-ba-8e-e6-b7-b7-e5-90-88-e5-86-85-e5-ae-b9-e6-97-a0-e6-b3-95-e7-99-bb/</loc>
+    <lastmod>2017-10-10T16:14:29.731Z</lastmod>
+    <data>
+        <display>
+        <title>wordpress后台 插件开启强制ssl登录，由于混合内容无法登录的解决方法</title>
+        <pubTime>2016-01-06T15:00:32.000Z</pubTime>
+        
+        <tag>https</tag>
+         
+        <tag>ssl</tag>
+         
+        <tag>wordpress</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/03/13/wordpress-e5-bb-ba-e7-ab-8b-e6-95-b0-e6-8d-ae-e5-ba-93-e8-bf-9e-e6-8e-a5-e6-97-b6-e5-87-ba-e9-94-99-e8-a7-a3-e5-86-b3-e6-96-b9-e6-a1-88/</loc>
+    <lastmod>2017-10-10T16:12:57.774Z</lastmod>
+    <data>
+        <display>
+        <title>wordpress“建立数据库连接时出错”解决方案</title>
+        <pubTime>2015-03-13T13:18:09.000Z</pubTime>
+        
+        <tag>秒格式为天/小时/分钟/秒</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/06/17/wxpwnetwlhwin7wxp-e3-80-81wnet-e3-80-81wlh-e3-80-81xp-e3-80-81wlh-e3-80-81win8-e3-80-81win7-e3-80-81vista/</loc>
+    <lastmod>2017-10-10T16:11:19.835Z</lastmod>
+    <data>
+        <display>
+        <title>wxp/wnet/wlh/win7|wxp、wnet、wlh、xp、wlh、win8、win7、vista</title>
+        <pubTime>2015-06-17T09:03:45.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/</loc>
+    <lastmod>2017-10-10T16:10:59.206Z</lastmod>
+    <data>
+        <display>
+        <title>Xcode7 (IOS9) 网络请求报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.</title>
+        <pubTime>2015-09-18T16:27:44.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/01/12/you-must-use-the-role-management-tool-to-install-or-configure-microsoft-net/</loc>
+    <lastmod>2017-10-10T16:10:29.319Z</lastmod>
+    <data>
+        <display>
+        <title>“You must use the Role Management Tool to install or configure Microsoft .NET”</title>
+        <pubTime>2015-01-12T05:58:26.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="C#.net" url="//ganl.io/categories/C-net/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/03/05/youkuaddress/</loc>
+    <lastmod>2017-10-10T15:59:50.487Z</lastmod>
+    <data>
+        <display>
+        <title>优酷视频真实地址(分段以及整段mp4地址)</title>
+        <pubTime>2014-03-05T13:01:12.000Z</pubTime>
+        
+        <tag>php</tag>
+         
+        <tag>video</tag>
+         
+        <tag>youku</tag>
+         
+        <tag>地址</tag>
+         
+        <tag>视频</tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
+          
+             
+              <breadCrumb title="Web开发" url="//ganl.io/categories/PHP/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/01/20/zend-studio-e5-90-af-e5-8a-a8java-e6-8a-a5-e9-94-99-ef-bc-9ajava-was-started-but-returned-exit-code13/</loc>
+    <lastmod>2017-10-10T15:59:41.325Z</lastmod>
+    <data>
+        <display>
+        <title>Zend Studio 启动JAVA报错：Java was started but returned exit code=13</title>
+        <pubTime>2015-01-20T02:13:47.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/04/14/zend-studio-e9-85-8d-e7-bd-ae-e8-b0-83-e8-af-95xdebug-e6-96-b9-e5-bc-8f/</loc>
+    <lastmod>2017-10-10T15:49:17.055Z</lastmod>
+    <data>
+        <display>
+        <title>zend studio配置调试(Xdebug方式)</title>
+        <pubTime>2015-04-14T02:18:52.000Z</pubTime>
+        
+        <tag>xdebug</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/</loc>
+    <lastmod>2017-10-10T15:49:06.163Z</lastmod>
+    <data>
+        <display>
+        <title>ZTE V967s 精简ROM包</title>
+        <pubTime>2013-11-26T16:55:35.000Z</pubTime>
+        
+        <tag>ROM</tag>
+         
+        <tag>V967s</tag>
+         
+         
+           
+             
+              <breadCrumb title="手机应用" url="//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/08/30/ztev967s-e5-bc-80-e6-9c-ba-e5-81-9c-e5-9c-a8voo-ef-bc-8c-e7-ba-bf-e5-88-b7-e5-ae-98-e6-96-b9-e4-bf-ae-e6-94-b9-e7-89-88-e4-b8-a4-e4-b8-89-e4-b8-aa-e6-98-9f-e6-9c-9f-e5-b7-a6-e5-8f-b3-e5-86-8d/</loc>
+    <lastmod>2017-10-10T15:44:03.906Z</lastmod>
+    <data>
+        <display>
+        <title>ZTEV967S 开机停在voo，线刷官方修改版两三个星期左右再次不能进入系统，决定刷miui</title>
+        <pubTime>2014-08-30T13:22:20.000Z</pubTime>
+        
+        <tag>ROM</tag>
+         
+        <tag>ZTE</tag>
+         
+        <tag>线刷</tag>
+         
+         
+           
+             
+              <breadCrumb title="手机应用" url="//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ganl.io/2017/10/10/Wordpress%E6%90%AC%E8%BF%81%E5%88%B0github-coding-hexo/</loc>
-    <lastmod>2017-10-10T15:00:23.324Z</lastmod>
+    <lastmod>2017-10-10T15:30:24.747Z</lastmod>
     <data>
         <display>
         <title>Wordpress搬迁到github & coding + hexo</title>
@@ -104,48 +472,6 @@
     
     
   <url>
-    <loc>//ganl.io/2016/01/06/wordpress-e5-90-8e-e5-8f-b0-e6-8f-92-e4-bb-b6-e5-bc-80-e5-90-af-e5-bc-ba-e5-88-b6ssl-e7-99-bb-e5-bd-95-ef-bc-8c-e7-94-b1-e4-ba-8e-e6-b7-b7-e5-90-88-e5-86-85-e5-ae-b9-e6-97-a0-e6-b3-95-e7-99-bb/</loc>
-    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-    <data>
-        <display>
-        <title>wordpress后台 插件开启强制ssl登录，由于混合内容无法登录的解决方法</title>
-        <pubTime>2016-01-06T15:00:32.000Z</pubTime>
-        
-        <tag>https</tag>
-         
-        <tag>ssl</tag>
-         
-        <tag>wordpress</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/</loc>
-    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-    <data>
-        <display>
-        <title>wordpress 升级4.3后，后台发表出现：admin-ajax.php 500</title>
-        <pubTime>2015-09-13T12:42:08.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ganl.io/2015/11/04/ubuntu12-04-e5-ae-89-e8-a3-85gitlab-e7-a4-be-e5-8c-ba-e7-89-88install-a-gitlab-ce-omnibus-package-on-ubuntu12-04/</loc>
     <lastmod>2017-10-07T01:34:31.498Z</lastmod>
     <data>
@@ -202,23 +528,42 @@
 
     
   <url>
-    <loc>//ganl.io/2015/09/22/e4-bd-bf-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-88toolbox-e5-9c-a8windows-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-89/</loc>
+    <loc>//ganl.io/2016/02/16/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-89-ef-bc-89softether-vpn-e9-98-bf-e9-87-8c-e4-ba-91-ef-bc-8caliyun-ecs-centos6-5-e6-90-ad-e5-bb-bavpn/</loc>
     <lastmod>2017-10-07T01:34:31.498Z</lastmod>
     <data>
         <display>
-        <title>用Boot2Docker来使用Docker（toolbox在Windows下安装Docker）</title>
-        <pubTime>2015-09-21T18:06:06.000Z</pubTime>
+        <title>科学上网利器（三）SoftEther VPN ,阿 *里*云，ali*yun ecs CentOS6.5 搭建VPN</title>
+        <pubTime>2016-02-16T13:11:26.000Z</pubTime>
         
-        <tag>Boot2Docker</tag>
+        <tag>aliyun</tag>
          
-        <tag>Docker</tag>
+        <tag>SoftEther</tag>
          
-        <tag>Docker Quickstart</tag>
+        <tag>VPN</tag>
          
-        <tag>toolbox</tag>
+        <tag>阿里云</tag>
          
-        <tag>VMware</tag>
          
+           
+             
+              <breadCrumb title="Application" url="//ganl.io/categories/Application/"/>
+          
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/Application/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2016/02/04/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-ba-8c-ef-bc-89centos-e5-ae-89-e8-a3-85pptp-vpn-e3-80-81ipsecl2tp-vpn/</loc>
+    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+    <data>
+        <display>
+        <title>科学上网利器（二）CentOS安装PPTP VPN、IPSec/L2TP VPN</title>
+        <pubTime>2016-02-04T10:51:49.000Z</pubTime>
+        
          
            
              
@@ -291,30 +636,6 @@
            
              
               <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/</loc>
-    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-    <data>
-        <display>
-        <title>Js的条件判断的bug, false 居然通过了 if ?真是这样？</title>
-        <pubTime>2015-09-13T12:12:19.000Z</pubTime>
-        
-        <tag>JS</tag>
-         
-        <tag>&amp;amp;&amp;amp;</tag>
-         
-        <tag>||</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
           
         </display>
     </data>
@@ -422,13 +743,19 @@
 
     
   <url>
-    <loc>//ganl.io/2016/02/14/chrome-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-e9-bb-98-e8-ae-a4-e7-99-be-e5-ba-a6-e6-90-9c-e7-b4-a2-e6-97-b6-ef-bc-8c-e4-bc-9a-e8-b7-b3-e8-bd-ac-e5-88-b0tntn90855269-hao-pg/</loc>
+    <loc>//ganl.io/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/</loc>
     <lastmod>2017-10-07T01:34:31.498Z</lastmod>
     <data>
         <display>
-        <title>Chrome 谷歌浏览器 默认百度搜索时，会跳转到tn=&?tn=90855269_hao_pg</title>
-        <pubTime>2016-02-14T12:40:15.000Z</pubTime>
+        <title>Js的条件判断的bug, false 居然通过了 if ?真是这样？</title>
+        <pubTime>2015-09-13T12:12:19.000Z</pubTime>
         
+        <tag>JS</tag>
+         
+        <tag>&amp;amp;&amp;amp;</tag>
+         
+        <tag>||</tag>
+         
          
            
              
@@ -466,25 +793,17 @@
 
     
   <url>
-    <loc>//ganl.io/2016/06/25/coding-net-e5-88-b6-e4-bd-9ccocoapods-e5-9b-bd-e5-86-85-e9-95-9c-e5-83-8f-e6-ba-90/</loc>
+    <loc>//ganl.io/2016/02/14/chrome-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-e9-bb-98-e8-ae-a4-e7-99-be-e5-ba-a6-e6-90-9c-e7-b4-a2-e6-97-b6-ef-bc-8c-e4-bc-9a-e8-b7-b3-e8-bd-ac-e5-88-b0tntn90855269-hao-pg/</loc>
     <lastmod>2017-10-07T01:34:31.498Z</lastmod>
     <data>
         <display>
-        <title>coding.net制作CocoaPods国内镜像源</title>
-        <pubTime>2016-06-24T17:50:01.000Z</pubTime>
+        <title>Chrome 谷歌浏览器 默认百度搜索时，会跳转到tn=&?tn=90855269_hao_pg</title>
+        <pubTime>2016-02-14T12:40:15.000Z</pubTime>
         
-        <tag>CocoaPods</tag>
-         
-        <tag>coding.net</tag>
-         
-        <tag>国内镜像</tag>
-         
-        <tag>阿里云Code</tag>
-         
          
            
              
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
           
         </display>
     </data>
@@ -560,42 +879,21 @@
 
     
   <url>
-    <loc>//ganl.io/2016/02/16/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-89-ef-bc-89softether-vpn-e9-98-bf-e9-87-8c-e4-ba-91-ef-bc-8caliyun-ecs-centos6-5-e6-90-ad-e5-bb-bavpn/</loc>
+    <loc>//ganl.io/2016/06/25/coding-net-e5-88-b6-e4-bd-9ccocoapods-e5-9b-bd-e5-86-85-e9-95-9c-e5-83-8f-e6-ba-90/</loc>
     <lastmod>2017-10-07T01:34:31.498Z</lastmod>
     <data>
         <display>
-        <title>科学上网利器（三）SoftEther VPN ,阿 *里*云，ali*yun ecs CentOS6.5 搭建VPN</title>
-        <pubTime>2016-02-16T13:11:26.000Z</pubTime>
+        <title>coding.net制作CocoaPods国内镜像源</title>
+        <pubTime>2016-06-24T17:50:01.000Z</pubTime>
         
-        <tag>aliyun</tag>
+        <tag>CocoaPods</tag>
          
-        <tag>SoftEther</tag>
+        <tag>coding.net</tag>
          
-        <tag>VPN</tag>
+        <tag>国内镜像</tag>
          
-        <tag>阿里云</tag>
+        <tag>阿里云Code</tag>
          
-         
-           
-             
-              <breadCrumb title="Application" url="//ganl.io/categories/Application/"/>
-          
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/Application/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2016/02/04/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-ba-8c-ef-bc-89centos-e5-ae-89-e8-a3-85pptp-vpn-e3-80-81ipsecl2tp-vpn/</loc>
-    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-    <data>
-        <display>
-        <title>科学上网利器（二）CentOS安装PPTP VPN、IPSec/L2TP VPN</title>
-        <pubTime>2016-02-04T10:51:49.000Z</pubTime>
-        
          
            
              
@@ -607,41 +905,27 @@
 
     
   <url>
-    <loc>//ganl.io/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/</loc>
+    <loc>//ganl.io/2015/09/22/e4-bd-bf-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-88toolbox-e5-9c-a8windows-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-89/</loc>
     <lastmod>2017-10-07T01:34:31.498Z</lastmod>
     <data>
         <display>
-        <title>Xcode7 (IOS9) 网络请求报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.</title>
-        <pubTime>2015-09-18T16:27:44.000Z</pubTime>
+        <title>用Boot2Docker来使用Docker（toolbox在Windows下安装Docker）</title>
+        <pubTime>2015-09-21T18:06:06.000Z</pubTime>
         
+        <tag>Boot2Docker</tag>
          
-           
-             
-              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2016/07/06/windows-top/</loc>
-    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-    <data>
-        <display>
-        <title>Windows top</title>
-        <pubTime>2016-07-06T03:39:40.000Z</pubTime>
-        
-        <tag>linux</tag>
+        <tag>Docker</tag>
          
-        <tag>top</tag>
+        <tag>Docker Quickstart</tag>
          
-        <tag>Windows</tag>
+        <tag>toolbox</tag>
+         
+        <tag>VMware</tag>
          
          
            
              
-              <breadCrumb title="Application" url="//ganl.io/categories/Application/"/>
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
           
         </display>
     </data>
@@ -665,6 +949,26 @@
         <tag>PATH</tag>
          
         <tag>环境变量</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/09/18/github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84/</loc>
+    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+    <data>
+        <display>
+        <title>github Contributions Calendar不记录的</title>
+        <pubTime>2015-09-18T14:47:23.000Z</pubTime>
+        
+        <tag>Contributions Calendar</tag>
          
          
            
@@ -701,37 +1005,23 @@
 
     
   <url>
-    <loc>//ganl.io/2015/09/18/github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84/</loc>
-    <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+    <loc>//ganl.io/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
         <display>
-        <title>github Contributions Calendar不记录的</title>
-        <pubTime>2015-09-18T14:47:23.000Z</pubTime>
+        <title>RHEL6.5更改为阿里云(aliyun)CentOS6的yum源</title>
+        <pubTime>2015-05-21T06:17:47.000Z</pubTime>
         
-        <tag>Contributions Calendar</tag>
+        <tag>aliyun</tag>
+         
+        <tag>阿里云</tag>
+         
+        <tag>mirrors</tag>
          
          
            
              
               <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/07/03/e7-94-a8webtatic-com-e6-8f-90-e4-be-9b-e7-9a-84-e6-ba-90-e5-8d-87-e7-ba-a7php5-4-42/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>用Webtatic.com提供的源升级PHP5.4.42</title>
-        <pubTime>2015-07-03T03:28:21.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
           
         </display>
     </data>
@@ -765,6 +1055,110 @@
 
     
   <url>
+    <loc>//ganl.io/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下libevent安装</title>
+        <pubTime>2015-04-24T06:54:18.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>libevent</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/07/30/linux-e4-b8-8bmysql-e6-b2-a1-e6-9c-89-e5-bc-80-e6-9c-ba-e8-87-aa-e5-90-af-e5-8a-a8/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>linux 下mysql没有开机自启动</title>
+        <pubTime>2015-07-30T07:56:31.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>mysql5.6 无故退出 InnoDB: mmap(137363456 bytes) failed; errno 12</title>
+        <pubTime>2015-06-07T01:42:00.000Z</pubTime>
+        
+        <tag>InnoDB</tag>
+         
+        <tag>mysql5.6</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/07/11/nginx-e5-87-ba-e7-8e-b0413-request-entity-too-large-e9-94-99-e8-af-af-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx出现413 Request Entity Too Large错误解决方法</title>
+        <pubTime>2015-07-11T09:31:28.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/06/09/css-e6-b8-90-e5-8f-98-e5-85-bc-e5-ae-b9-e5-86-99-e6-b3-95-ie-chrome-firefox/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>css 渐变兼容写法 ie chrome firefox</title>
+        <pubTime>2015-06-09T03:47:04.000Z</pubTime>
+        
+        <tag>gradient</tag>
+         
+        <tag>ie11</tag>
+         
+         
+           
+             
+              <breadCrumb title="html/css" url="//ganl.io/categories/html-css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ganl.io/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/</loc>
     <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
@@ -787,12 +1181,104 @@
 
     
   <url>
-    <loc>//ganl.io/2015/04/12/github-e5-9c-a8-e7-ba-bf-e5-88-9b-e5-bb-ba-e6-96-87-e4-bb-b6-e5-a4-b9-e7-9b-ae-e5-bd-95/</loc>
+    <loc>//ganl.io/2015/03/30/e9-98-bf-e9-87-8c-e4-ba-91linux-e4-b8-80-e9-94-ae-e5-ae-89-e8-a3-85web-e7-8e-af-e5-a2-83-e5-8d-87-e7-ba-a7/</loc>
     <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
         <display>
-        <title>github在线创建文件夹(目录)</title>
-        <pubTime>2015-04-12T12:53:56.000Z</pubTime>
+        <title>阿里云linux一键安装web环境 升级</title>
+        <pubTime>2015-03-29T18:03:47.000Z</pubTime>
+        
+        <tag>升级</tag>
+         
+        <tag>阿里云linux一键安装web环境</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/07/07/e9-98-bf-e9-87-8c-e4-ba-91dns/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>阿里云DNS</title>
+        <pubTime>2015-07-07T02:16:23.000Z</pubTime>
+        
+        <tag>dns</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/05/18/python-cannot-find-dateutil-relativedelta/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>Python cannot find dateutil.relativedelta</title>
+        <pubTime>2015-05-18T02:11:32.000Z</pubTime>
+        
+        <tag>python</tag>
+         
+        <tag>dateutil</tag>
+         
+        <tag>relativedelta</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="//ganl.io/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/07/06/ios8-e6-a1-88-e4-be-8b-e5-a4-a7-e5-85-a8-e7-9b-ae-e5-bd-95/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>ios8案例大全目录</title>
+        <pubTime>2015-07-06T15:45:36.000Z</pubTime>
+        
+        <tag>ios</tag>
+         
+        <tag>ios8</tag>
+         
+        <tag>oc</tag>
+         
+        <tag>swift</tag>
+         
+         
+           
+             
+              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>svn: Can't convert string from 'UTF-8' to native encoding:</title>
+        <pubTime>2015-07-30T08:11:58.000Z</pubTime>
         
          
            
@@ -849,6 +1335,24 @@
 
     
   <url>
+    <loc>//ganl.io/2015/04/12/github-e5-9c-a8-e7-ba-bf-e5-88-9b-e5-bb-ba-e6-96-87-e4-bb-b6-e5-a4-b9-e7-9b-ae-e5-bd-95/</loc>
+    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
+    <data>
+        <display>
+        <title>github在线创建文件夹(目录)</title>
+        <pubTime>2015-04-12T12:53:56.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ganl.io/2015/07/11/got-a-packet-bigger-than-max-allowed-packet-bytes/</loc>
     <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
@@ -869,15 +1373,13 @@
 
     
   <url>
-    <loc>//ganl.io/2015/04/14/zend-studio-e9-85-8d-e7-bd-ae-e8-b0-83-e8-af-95xdebug-e6-96-b9-e5-bc-8f/</loc>
+    <loc>//ganl.io/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/</loc>
     <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
         <display>
-        <title>zend studio配置调试(Xdebug方式)</title>
-        <pubTime>2015-04-14T02:18:52.000Z</pubTime>
+        <title>将远程SVN版本库搬到本地</title>
+        <pubTime>2015-07-07T05:26:59.000Z</pubTime>
         
-        <tag>xdebug</tag>
-         
          
            
              
@@ -889,60 +1391,12 @@
 
     
   <url>
-    <loc>//ganl.io/2015/07/06/ios8-e6-a1-88-e4-be-8b-e5-a4-a7-e5-85-a8-e7-9b-ae-e5-bd-95/</loc>
+    <loc>//ganl.io/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/</loc>
     <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
         <display>
-        <title>ios8案例大全目录</title>
-        <pubTime>2015-07-06T15:45:36.000Z</pubTime>
-        
-        <tag>ios</tag>
-         
-        <tag>ios8</tag>
-         
-        <tag>oc</tag>
-         
-        <tag>swift</tag>
-         
-         
-           
-             
-              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下libevent安装</title>
-        <pubTime>2015-04-24T06:54:18.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>libevent</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/07/30/linux-e4-b8-8bmysql-e6-b2-a1-e6-9c-89-e5-bc-80-e6-9c-ba-e8-87-aa-e5-90-af-e5-8a-a8/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>linux 下mysql没有开机自启动</title>
-        <pubTime>2015-07-30T07:56:31.000Z</pubTime>
+        <title>将 SVN 仓库转换为 Git 仓库</title>
+        <pubTime>2015-07-07T09:10:57.000Z</pubTime>
         
          
            
@@ -984,21 +1438,17 @@
 
     
   <url>
-    <loc>//ganl.io/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/</loc>
+    <loc>//ganl.io/2015/07/03/e7-94-a8webtatic-com-e6-8f-90-e4-be-9b-e7-9a-84-e6-ba-90-e5-8d-87-e7-ba-a7php5-4-42/</loc>
     <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
         <display>
-        <title>mysql5.6 无故退出 InnoDB: mmap(137363456 bytes) failed; errno 12</title>
-        <pubTime>2015-06-07T01:42:00.000Z</pubTime>
+        <title>用Webtatic.com提供的源升级PHP5.4.42</title>
+        <pubTime>2015-07-03T03:28:21.000Z</pubTime>
         
-        <tag>InnoDB</tag>
-         
-        <tag>mysql5.6</tag>
-         
          
            
              
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
           
         </display>
     </data>
@@ -1006,41 +1456,17 @@
 
     
   <url>
-    <loc>//ganl.io/2015/07/11/nginx-e5-87-ba-e7-8e-b0413-request-entity-too-large-e9-94-99-e8-af-af-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
+    <loc>//ganl.io/2015/06/03/vc2008-e7-bc-96-e8-af-91-e6-8a-a5link-fatal-error-lnk1000-internal-error-during-incrbuildimage/</loc>
     <lastmod>2017-10-07T01:34:31.497Z</lastmod>
     <data>
         <display>
-        <title>Nginx出现413 Request Entity Too Large错误解决方法</title>
-        <pubTime>2015-07-11T09:31:28.000Z</pubTime>
+        <title>vc2008编译报LINK : fatal error LNK1000: Internal error during IncrBuildImage</title>
+        <pubTime>2015-06-03T08:02:46.000Z</pubTime>
         
-        <tag>nginx</tag>
-         
          
            
              
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/03/30/e9-98-bf-e9-87-8c-e4-ba-91linux-e4-b8-80-e9-94-ae-e5-ae-89-e8-a3-85web-e7-8e-af-e5-a2-83-e5-8d-87-e7-ba-a7/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>阿里云linux一键安装web环境 升级</title>
-        <pubTime>2015-03-29T18:03:47.000Z</pubTime>
-        
-        <tag>升级</tag>
-         
-        <tag>阿里云linux一键安装web环境</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
           
         </display>
     </data>
@@ -1074,336 +1500,6 @@
 
     
   <url>
-    <loc>//ganl.io/2015/05/18/python-cannot-find-dateutil-relativedelta/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>Python cannot find dateutil.relativedelta</title>
-        <pubTime>2015-05-18T02:11:32.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-        <tag>dateutil</tag>
-         
-        <tag>relativedelta</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="//ganl.io/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/06/17/wxpwnetwlhwin7wxp-e3-80-81wnet-e3-80-81wlh-e3-80-81xp-e3-80-81wlh-e3-80-81win8-e3-80-81win7-e3-80-81vista/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>wxp/wnet/wlh/win7|wxp、wnet、wlh、xp、wlh、win8、win7、vista</title>
-        <pubTime>2015-06-17T09:03:45.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>RHEL6.5更改为阿里云(aliyun)CentOS6的yum源</title>
-        <pubTime>2015-05-21T06:17:47.000Z</pubTime>
-        
-        <tag>aliyun</tag>
-         
-        <tag>阿里云</tag>
-         
-        <tag>mirrors</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/07/07/e9-98-bf-e9-87-8c-e4-ba-91dns/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>阿里云DNS</title>
-        <pubTime>2015-07-07T02:16:23.000Z</pubTime>
-        
-        <tag>dns</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/07/30/svn-cant-convert-string-from-utf-8-to-native-encoding/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>svn: Can't convert string from 'UTF-8' to native encoding:</title>
-        <pubTime>2015-07-30T08:11:58.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>将 SVN 仓库转换为 Git 仓库</title>
-        <pubTime>2015-07-07T09:10:57.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>将远程SVN版本库搬到本地</title>
-        <pubTime>2015-07-07T05:26:59.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/06/09/css-e6-b8-90-e5-8f-98-e5-85-bc-e5-ae-b9-e5-86-99-e6-b3-95-ie-chrome-firefox/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>css 渐变兼容写法 ie chrome firefox</title>
-        <pubTime>2015-06-09T03:47:04.000Z</pubTime>
-        
-        <tag>gradient</tag>
-         
-        <tag>ie11</tag>
-         
-         
-           
-             
-              <breadCrumb title="html/css" url="//ganl.io/categories/html-css/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/06/03/vc2008-e7-bc-96-e8-af-91-e6-8a-a5link-fatal-error-lnk1000-internal-error-during-incrbuildimage/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>vc2008编译报LINK : fatal error LNK1000: Internal error during IncrBuildImage</title>
-        <pubTime>2015-06-03T08:02:46.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>VMware Workstation …… vmwareworkstation.msi …… Failed解决方法</title>
-        <pubTime>2015-08-16T06:50:41.000Z</pubTime>
-        
-        <tag>VMware</tag>
-         
-        <tag>VMware Workstation</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/05/13/wamp-e4-b8-8b127-0-0-1-e8-ae-bf-e9-97-ae-e6-ad-a3-e5-b8-b8-ef-bc-8c-e5-9f-9f-e5-90-8d-e8-a7-a3-e6-9e-90-e5-90-8e-e8-ae-bf-e9-97-ae403-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>wamp下127.0.0.1访问正常，域名解析后访问403的解决办法</title>
-        <pubTime>2015-05-13T14:27:20.000Z</pubTime>
-        
-        <tag>apache</tag>
-         
-        <tag>php</tag>
-         
-        <tag>msyql</tag>
-         
-        <tag>wamp</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/06/04/warning-attempt-to-present-on-which-is-already-presenting/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>Warning: Attempt to present   on  which is already presenting </title>
-        <pubTime>2015-06-03T16:18:42.000Z</pubTime>
-        
-        <tag>UIAlertController</tag>
-         
-        <tag>UINavigationController</tag>
-         
-         
-           
-             
-              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/07/08/vs2008-e9-a2-91-e7-b9-81-e5-b4-a9-e6-ba-83-e6-89-93-e5-bc-80-e6-8f-90-e7-a4-ba-e5-b7-b2-e5-81-9c-e6-ad-a2/</loc>
-    <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-    <data>
-        <display>
-        <title>VS2008 频繁崩溃,打开提示已停止</title>
-        <pubTime>2015-07-08T05:32:53.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/08/30/ztev967s-e5-bc-80-e6-9c-ba-e5-81-9c-e5-9c-a8voo-ef-bc-8c-e7-ba-bf-e5-88-b7-e5-ae-98-e6-96-b9-e4-bf-ae-e6-94-b9-e7-89-88-e4-b8-a4-e4-b8-89-e4-b8-aa-e6-98-9f-e6-9c-9f-e5-b7-a6-e5-8f-b3-e5-86-8d/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>ZTEV967S 开机停在voo，线刷官方修改版两三个星期左右再次不能进入系统，决定刷miui</title>
-        <pubTime>2014-08-30T13:22:20.000Z</pubTime>
-        
-        <tag>ROM</tag>
-         
-        <tag>ZTE</tag>
-         
-        <tag>线刷</tag>
-         
-         
-           
-             
-              <breadCrumb title="手机应用" url="//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/01/12/you-must-use-the-role-management-tool-to-install-or-configure-microsoft-net/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>“You must use the Role Management Tool to install or configure Microsoft .NET”</title>
-        <pubTime>2015-01-12T05:58:26.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="C#.net" url="//ganl.io/categories/C-net/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later</title>
-        <pubTime>2014-11-01T07:27:26.000Z</pubTime>
-        
-        <tag>xcode6</tag>
-         
-         
-           
-             
-              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ganl.io/2015/03/25/e8-a7-a3-e5-86-b3django-e7-94-9f-e6-88-90po-e6-96-87-e4-bb-b6-e7-bf-bb-e8-af-91-e5-a4-b1-e6-95-88-e7-9a-84-e9-97-ae-e9-a2-98/</loc>
     <lastmod>2017-10-07T01:34:31.496Z</lastmod>
     <data>
@@ -1422,19 +1518,39 @@
 
     
   <url>
-    <loc>//ganl.io/2015/03/18/apache-e9-81-87-e5-88-b0-e7-9a-84-e4-b8-a4-e4-b8-aa-e9-97-ae-e9-a2-98-disabled-use-of-acceptex-winsock2-api-e9-94-99-e8-af-af-warn-os-64-e6-8c-87-e5-ae-9a-e7-9a-84-e7-bd-91-e7-bb-9c-e5-90-8d/</loc>
+    <loc>//ganl.io/2014/09/04/fiddler-chrome/</loc>
     <lastmod>2017-10-07T01:34:31.496Z</lastmod>
     <data>
         <display>
-        <title>apache遇到的两个问题 Disabled use of AcceptEx() WinSock2 API错误 [warn] (OS 64)指定的网络名不再可用。  : winnt_accept: Asynchronous AcceptEx failed.</title>
-        <pubTime>2015-03-18T09:39:38.000Z</pubTime>
+        <title>fiddler无法抓取chrome，IE正常抓取，解决方法  </title>
+        <pubTime>2014-09-04T13:14:21.000Z</pubTime>
         
-        <tag>apache</tag>
+        <tag>抓包</tag>
          
          
            
              
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/12/24/curltypes-h-no-such-file-or-directory-e9-97-ae-e9-a2-98-e7-9a-84-e8-a7-a3-e5-86-b3/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>curl/types.h: No such file or directory问题的解决</title>
+        <pubTime>2014-12-24T05:06:48.000Z</pubTime>
+        
+        <tag>types.h</tag>
+         
+         
+           
+             
+              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
           
         </display>
     </data>
@@ -1468,219 +1584,6 @@
 
     
   <url>
-    <loc>//ganl.io/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>502 Bad Gateway错误可能原因及解决方法</title>
-        <pubTime>2014-11-19T13:28:31.000Z</pubTime>
-        
-        <tag>disk</tag>
-         
-        <tag>log</tag>
-         
-        <tag>nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>/bin/sh^M:bad interpreter: No such file or directory</title>
-        <pubTime>2015-01-26T03:10:42.000Z</pubTime>
-        
-        <tag>genapp</tag>
-         
-        <tag>ios</tag>
-         
-         
-           
-             
-              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/03/13/wordpress-e5-bb-ba-e7-ab-8b-e6-95-b0-e6-8d-ae-e5-ba-93-e8-bf-9e-e6-8e-a5-e6-97-b6-e5-87-ba-e9-94-99-e8-a7-a3-e5-86-b3-e6-96-b9-e6-a1-88/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>wordpress“建立数据库连接时出错”解决方案</title>
-        <pubTime>2015-03-13T13:18:09.000Z</pubTime>
-        
-        <tag>秒格式为天/小时/分钟/秒</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/03/11/windows-server-2008-r2-e9-85-8d-e7-bd-aeadactive-directory-e5-9f-9f-e6-8e-a7-e5-88-b6-e5-99-a8/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>Windows Server 2008 R2 配置AD(Active Directory)域控制器</title>
-        <pubTime>2015-03-11T09:49:08.000Z</pubTime>
-        
-        <tag>Windows AD域用户配置</tag>
-         
-         
-           
-             
-              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>The method getString(int) is undefined for the type myException</title>
-        <pubTime>2015-03-26T13:22:48.000Z</pubTime>
-        
-        <tag>android</tag>
-         
-        <tag>Exception</tag>
-         
-        <tag>getString</tag>
-         
-         
-           
-             
-              <breadCrumb title="JAVA" url="//ganl.io/categories/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/12/29/this-function-or-variable-may-be-unsafe-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8-crt-secure-no-warnings/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>This function or variable may be unsafe.如何使用_CRT_SECURE_NO_WARNINGS</title>
-        <pubTime>2014-12-29T15:22:28.000Z</pubTime>
-        
-        <tag>_CRT_SECURE_NO_WARNINGS</tag>
-         
-         
-           
-             
-              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>thinkphp 验证码 无法显示 的解决方法</title>
-        <pubTime>2014-12-15T13:37:58.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/03/19/jquery-e9-87-87-e7-94-a8append-e6-b7-bb-e5-8a-a0-e7-9a-84-e5-85-83-e7-b4-a0-e4-ba-8b-e4-bb-b6-e6-97-a0-e6-95-88/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>JQuery采用append添加的元素事件无效</title>
-        <pubTime>2015-03-19T10:03:38.000Z</pubTime>
-        
-        <tag>append()</tag>
-         
-        <tag>live()</tag>
-         
-        <tag>on()</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/01/20/zend-studio-e5-90-af-e5-8a-a8java-e6-8a-a5-e9-94-99-ef-bc-9ajava-was-started-but-returned-exit-code13/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>Zend Studio 启动JAVA报错：Java was started but returned exit code=13</title>
-        <pubTime>2015-01-20T02:13:47.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>TypeError: 'stepUp' called on an object that does not implement interface HTMLInputElement in jquery</title>
-        <pubTime>2015-01-20T02:02:57.000Z</pubTime>
-        
-        <tag>JS</tag>
-         
-        <tag>JQ</tag>
-         
-        <tag>Jquery</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ganl.io/2014/11/01/xcode6-e4-bd-bf-e7-94-a8mjrefresh-ef-bc-8ctoo-many-arguments-to-function-call-expected-0-have/</loc>
     <lastmod>2017-10-07T01:34:31.496Z</lastmod>
     <data>
@@ -1698,160 +1601,6 @@
            
              
               <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/12/24/curltypes-h-no-such-file-or-directory-e9-97-ae-e9-a2-98-e7-9a-84-e8-a7-a3-e5-86-b3/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>curl/types.h: No such file or directory问题的解决</title>
-        <pubTime>2014-12-24T05:06:48.000Z</pubTime>
-        
-        <tag>types.h</tag>
-         
-         
-           
-             
-              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/12/30/e3-80-90mark-e3-80-91linux-top-e5-91-bd-e4-bb-a4virtresshrdata-e7-9a-84-e5-90-ab-e4-b9-89/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>【mark】linux top命令VIRT,RES,SHR,DATA的含义</title>
-        <pubTime>2014-12-30T04:39:10.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>top</tag>
-         
-         
-           
-             
-              <breadCrumb title="嵌入式Linux" url="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2015/04/02/js-e5-ae-9e-e7-8e-b0-e8-a1-a8-e6-a0-bc-e6-a0-b9-e6-8d-ae-e5-ad-97-e6-ae-b5-e6-8e-92-e5-ba-8f/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>js实现表格根据字段排序</title>
-        <pubTime>2015-04-02T13:14:26.000Z</pubTime>
-        
-        <tag>JS</tag>
-         
-        <tag>sort()</tag>
-         
-        <tag>排序</tag>
-         
-        <tag>表格</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>VCRedist from VS 2008 or VC++ runtime library installs temporary files in root directory</title>
-        <pubTime>2014-12-31T05:51:35.000Z</pubTime>
-        
-        <tag>VC runtime library</tag>
-         
-         
-           
-             
-              <breadCrumb title="C#.net" url="//ganl.io/categories/C-net/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>Visual Studio 2013 编译 multi-byte character set MFC程序出现 MSB8031 错误的解决办法</title>
-        <pubTime>2014-12-28T11:12:35.000Z</pubTime>
-        
-        <tag>MFC</tag>
-         
-        <tag>MSB8031</tag>
-         
-        <tag>Visual Studio 2013</tag>
-         
-        <tag>VS2013</tag>
-         
-         
-           
-             
-              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/09/04/fiddler-chrome/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>fiddler无法抓取chrome，IE正常抓取，解决方法  </title>
-        <pubTime>2014-09-04T13:14:21.000Z</pubTime>
-        
-        <tag>抓包</tag>
-         
-         
-           
-             
-              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/06/11/e5-be-ae-e8-a7-86-e9-85-b7-e7-82-ab-e7-89-88-e6-9b-b4-e6-96-b0-e5-bc-95-e7-88-868-e7-a7-92-e9-9c-87-e6-92-bc-e8-a7-86-e6-95-88/</loc>
-    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-    <data>
-        <display>
-        <title>微视酷炫版更新引爆8秒“震撼视效”</title>
-        <pubTime>2014-06-10T17:58:00.000Z</pubTime>
-        
-        <tag>微视</tag>
-         
-         
-           
-             
-              <breadCrumb title="科技前沿" url="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
           
         </display>
     </data>
@@ -1897,6 +1646,224 @@
 
     
   <url>
+    <loc>//ganl.io/2014/12/29/this-function-or-variable-may-be-unsafe-e5-a6-82-e4-bd-95-e4-bd-bf-e7-94-a8-crt-secure-no-warnings/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>This function or variable may be unsafe.如何使用_CRT_SECURE_NO_WARNINGS</title>
+        <pubTime>2014-12-29T15:22:28.000Z</pubTime>
+        
+        <tag>_CRT_SECURE_NO_WARNINGS</tag>
+         
+         
+           
+             
+              <breadCrumb title="C/C++" url="//ganl.io/categories/C-C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/12/15/thinkphp-e9-aa-8c-e8-af-81-e7-a0-81-e6-97-a0-e6-b3-95-e6-98-be-e7-a4-ba-e7-9a-84-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>thinkphp 验证码 无法显示 的解决方法</title>
+        <pubTime>2014-12-15T13:37:58.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/04/02/js-e5-ae-9e-e7-8e-b0-e8-a1-a8-e6-a0-bc-e6-a0-b9-e6-8d-ae-e5-ad-97-e6-ae-b5-e6-8e-92-e5-ba-8f/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>js实现表格根据字段排序</title>
+        <pubTime>2015-04-02T13:14:26.000Z</pubTime>
+        
+        <tag>JS</tag>
+         
+        <tag>sort()</tag>
+         
+        <tag>排序</tag>
+         
+        <tag>表格</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/03/26/the-method-getstringint-is-undefined-for-the-type-myexception/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>The method getString(int) is undefined for the type myException</title>
+        <pubTime>2015-03-26T13:22:48.000Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>Exception</tag>
+         
+        <tag>getString</tag>
+         
+         
+           
+             
+              <breadCrumb title="JAVA" url="//ganl.io/categories/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/01/20/typeerror-stepup-called-on-an-object-that-does-not-implement-interface-htmlinputelement-in-jquery/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>TypeError: 'stepUp' called on an object that does not implement interface HTMLInputElement in jquery</title>
+        <pubTime>2015-01-20T02:02:57.000Z</pubTime>
+        
+        <tag>JS</tag>
+         
+        <tag>JQ</tag>
+         
+        <tag>Jquery</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/12/30/e3-80-90mark-e3-80-91linux-top-e5-91-bd-e4-bb-a4virtresshrdata-e7-9a-84-e5-90-ab-e4-b9-89/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>【mark】linux top命令VIRT,RES,SHR,DATA的含义</title>
+        <pubTime>2014-12-30T04:39:10.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>top</tag>
+         
+         
+           
+             
+              <breadCrumb title="嵌入式Linux" url="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/03/11/windows-server-2008-r2-e9-85-8d-e7-bd-aeadactive-directory-e5-9f-9f-e6-8e-a7-e5-88-b6-e5-99-a8/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>Windows Server 2008 R2 配置AD(Active Directory)域控制器</title>
+        <pubTime>2015-03-11T09:49:08.000Z</pubTime>
+        
+        <tag>Windows AD域用户配置</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later</title>
+        <pubTime>2014-11-01T07:27:26.000Z</pubTime>
+        
+        <tag>xcode6</tag>
+         
+         
+           
+             
+              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/03/19/jquery-e9-87-87-e7-94-a8append-e6-b7-bb-e5-8a-a0-e7-9a-84-e5-85-83-e7-b4-a0-e4-ba-8b-e4-bb-b6-e6-97-a0-e6-95-88/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>JQuery采用append添加的元素事件无效</title>
+        <pubTime>2015-03-19T10:03:38.000Z</pubTime>
+        
+        <tag>append()</tag>
+         
+        <tag>live()</tag>
+         
+        <tag>on()</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/12/31/vcredist-from-vc-2008-installs-temporary-files-in-root-directory/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>VCRedist from VS 2008 or VC++ runtime library installs temporary files in root directory</title>
+        <pubTime>2014-12-31T05:51:35.000Z</pubTime>
+        
+        <tag>VC runtime library</tag>
+         
+         
+           
+             
+              <breadCrumb title="C#.net" url="//ganl.io/categories/C-net/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ganl.io/2014/06/11/e8-b0-b7-e6-ad-8c-e6-88-96-e5-80-9f-e5-8d-ab-e6-98-9f-e6-89-a9-e5-a4-a7-e4-ba-92-e8-81-94-e7-bd-91-e6-8e-a5-e5-85-a5-e6-9c-8d-e5-8a-a1/</loc>
     <lastmod>2017-10-07T01:34:31.496Z</lastmod>
     <data>
@@ -1917,6 +1884,92 @@
 
     
   <url>
+    <loc>//ganl.io/2014/06/11/e5-be-ae-e8-a7-86-e9-85-b7-e7-82-ab-e7-89-88-e6-9b-b4-e6-96-b0-e5-bc-95-e7-88-868-e7-a7-92-e9-9c-87-e6-92-bc-e8-a7-86-e6-95-88/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>微视酷炫版更新引爆8秒“震撼视效”</title>
+        <pubTime>2014-06-10T17:58:00.000Z</pubTime>
+        
+        <tag>微视</tag>
+         
+         
+           
+             
+              <breadCrumb title="科技前沿" url="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>502 Bad Gateway错误可能原因及解决方法</title>
+        <pubTime>2014-11-19T13:28:31.000Z</pubTime>
+        
+        <tag>disk</tag>
+         
+        <tag>log</tag>
+         
+        <tag>nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/03/18/apache-e9-81-87-e5-88-b0-e7-9a-84-e4-b8-a4-e4-b8-aa-e9-97-ae-e9-a2-98-disabled-use-of-acceptex-winsock2-api-e9-94-99-e8-af-af-warn-os-64-e6-8c-87-e5-ae-9a-e7-9a-84-e7-bd-91-e7-bb-9c-e5-90-8d/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>apache遇到的两个问题 Disabled use of AcceptEx() WinSock2 API错误 [warn] (OS 64)指定的网络名不再可用。  : winnt_accept: Asynchronous AcceptEx failed.</title>
+        <pubTime>2015-03-18T09:39:38.000Z</pubTime>
+        
+        <tag>apache</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境配置" url="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/</loc>
+    <lastmod>2017-10-07T01:34:31.496Z</lastmod>
+    <data>
+        <display>
+        <title>/bin/sh^M:bad interpreter: No such file or directory</title>
+        <pubTime>2015-01-26T03:10:42.000Z</pubTime>
+        
+        <tag>genapp</tag>
+         
+        <tag>ios</tag>
+         
+         
+           
+             
+              <breadCrumb title="IOS" url="//ganl.io/categories/IOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ganl.io/2014/06/11/e4-bc-a0-e8-b0-b7-e6-ad-8c6-e6-9c-88-e6-8e-a8-e5-87-ba-e5-8f-af-e6-a8-a1-e6-8b-9f-e4-ba-ba-e7-9c-bc-e8-a7-86-e8-a7-89-e7-9a-847-e5-af-b8-e6-96-b0-e5-b9-b3-e6-9d-bf/</loc>
     <lastmod>2017-10-07T01:34:31.495Z</lastmod>
     <data>
@@ -1925,6 +1978,26 @@
         <pubTime>2014-06-10T17:51:12.000Z</pubTime>
         
         <tag>谷歌</tag>
+         
+         
+           
+             
+              <breadCrumb title="科技前沿" url="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2014/06/11/e8-8b-b9-e6-9e-9c-e5-8f-af-e8-83-bd-e5-9c-a8-e5-bc-80-e5-8f-91-e8-80-85-e4-bc-9a-e4-b8-8a-e5-85-ac-e5-b8-83-e6-9b-b4-e5-a4-9aibeacons-e7-bb-86-e8-8a-82/</loc>
+    <lastmod>2017-10-07T01:34:31.495Z</lastmod>
+    <data>
+        <display>
+        <title>苹果可能在开发者会上公布更多iBeacons细节</title>
+        <pubTime>2014-06-10T17:45:22.000Z</pubTime>
+        
+        <tag>iBeacons</tag>
          
          
            
@@ -1957,42 +2030,18 @@
 
     
   <url>
-    <loc>//ganl.io/2014/06/11/e8-8b-b9-e6-9e-9c-e5-8f-af-e8-83-bd-e5-9c-a8-e5-bc-80-e5-8f-91-e8-80-85-e4-bc-9a-e4-b8-8a-e5-85-ac-e5-b8-83-e6-9b-b4-e5-a4-9aibeacons-e7-bb-86-e8-8a-82/</loc>
+    <loc>//ganl.io/2013/11/29/e5-9c-a8wordpress-e4-b8-ad-ef-bc-88-e6-95-b4-e5-90-88-ef-bc-89-e6-8f-92-e5-85-a5-e8-87-aa-e5-ae-9a-e4-b9-89-e8-a7-86-e9-a2-91-e6-92-ad-e6-94-be-e5-99-a8/</loc>
     <lastmod>2017-10-07T01:34:31.495Z</lastmod>
     <data>
         <display>
-        <title>苹果可能在开发者会上公布更多iBeacons细节</title>
-        <pubTime>2014-06-10T17:45:22.000Z</pubTime>
+        <title>wordpress文章（整合）插入自定义视频播放器 CKplayer CMP letv youku</title>
+        <pubTime>2013-11-29T15:58:12.000Z</pubTime>
         
-        <tag>iBeacons</tag>
+        <tag>ck</tag>
          
+        <tag>cmp</tag>
          
-           
-             
-              <breadCrumb title="科技前沿" url="//ganl.io/categories/%E7%A7%91%E6%8A%80%E5%89%8D%E6%B2%BF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/03/05/youkuaddress/</loc>
-    <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-    <data>
-        <display>
-        <title>优酷视频真实地址(分段以及整段mp4地址)</title>
-        <pubTime>2014-03-05T13:01:12.000Z</pubTime>
-        
-        <tag>php</tag>
-         
-        <tag>video</tag>
-         
-        <tag>youku</tag>
-         
-        <tag>地址</tag>
-         
-        <tag>视频</tag>
+        <tag>播放器</tag>
          
          
            
@@ -2028,6 +2077,24 @@
 
     
   <url>
+    <loc>//ganl.io/2014/03/02/nginx-e6-97-a5-e5-bf-97-e6-96-87-e4-bb-b6-e7-9a-84-e5-88-87-e5-89-b2-binbashm-bad-interpreter-no-such-file-or-directory/</loc>
+    <lastmod>2017-10-07T01:34:31.495Z</lastmod>
+    <data>
+        <display>
+        <title>nginx日志文件的切割 & /bin/bash^M: bad interpreter: No such file or directory</title>
+        <pubTime>2014-03-02T07:00:24.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ganl.io/2014/04/19/class-phpmailer-php-e4-bd-bf-e7-94-a8phpmailer-e5-8f-91-e9-80-81-e9-82-ae-e4-bb-b6-e9-99-84-e4-bb-b6-e5-9b-be-e7-89-87-html/</loc>
     <lastmod>2017-10-07T01:34:31.495Z</lastmod>
     <data>
@@ -2052,71 +2119,6 @@
 
     
   <url>
-    <loc>//ganl.io/2013/11/29/e5-9c-a8wordpress-e4-b8-ad-ef-bc-88-e6-95-b4-e5-90-88-ef-bc-89-e6-8f-92-e5-85-a5-e8-87-aa-e5-ae-9a-e4-b9-89-e8-a7-86-e9-a2-91-e6-92-ad-e6-94-be-e5-99-a8/</loc>
-    <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-    <data>
-        <display>
-        <title>wordpress文章（整合）插入自定义视频播放器 CKplayer CMP letv youku</title>
-        <pubTime>2013-11-29T15:58:12.000Z</pubTime>
-        
-        <tag>ck</tag>
-         
-        <tag>cmp</tag>
-         
-        <tag>播放器</tag>
-         
-         
-           
-             
-              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
-          
-             
-              <breadCrumb title="Web开发" url="//ganl.io/categories/PHP/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2014/03/02/nginx-e6-97-a5-e5-bf-97-e6-96-87-e4-bb-b6-e7-9a-84-e5-88-87-e5-89-b2-binbashm-bad-interpreter-no-such-file-or-directory/</loc>
-    <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-    <data>
-        <display>
-        <title>nginx日志文件的切割 & /bin/bash^M: bad interpreter: No such file or directory</title>
-        <pubTime>2014-03-02T07:00:24.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2013/10/21/e7-99-be-e5-ba-a6-e5-88-86-e4-ba-ab/</loc>
-    <lastmod>2017-10-07T01:34:31.490Z</lastmod>
-    <data>
-        <display>
-        <title>在博客或网站添加一个固定在左下角的百度分享按钮</title>
-        <pubTime>2013-10-21T12:39:01.000Z</pubTime>
-        
-        <tag>百度</tag>
-         
-         
-           
-             
-              <breadCrumb title="html/css" url="//ganl.io/categories/html-css/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ganl.io/2013/11/20/qq-e5-af-bc-e8-88-aa-e4-b8-8a-e7-9a-84-e5-a4-a9-e6-b0-94-e6-8e-a5-e5-8f-a3hao-qq-com-get-weather-php/</loc>
     <lastmod>2017-10-07T01:34:31.490Z</lastmod>
     <data>
@@ -2130,26 +2132,6 @@
            
              
               <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/</loc>
-    <lastmod>2017-10-07T01:34:31.490Z</lastmod>
-    <data>
-        <display>
-        <title>嵌入式CGI c语言 获取form表单的数据（注册登录程序）</title>
-        <pubTime>2013-12-03T01:50:12.000Z</pubTime>
-        
-        <tag>CGI</tag>
-         
-         
-           
-             
-              <breadCrumb title="嵌入式Linux" url="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
           
         </display>
     </data>
@@ -2186,21 +2168,19 @@
 
     
   <url>
-    <loc>//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/</loc>
+    <loc>//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/</loc>
     <lastmod>2017-10-07T01:34:31.490Z</lastmod>
     <data>
         <display>
-        <title>ZTE V967s 精简ROM包</title>
-        <pubTime>2013-11-26T16:55:35.000Z</pubTime>
+        <title>嵌入式CGI c语言 获取form表单的数据（注册登录程序）</title>
+        <pubTime>2013-12-03T01:50:12.000Z</pubTime>
         
-        <tag>ROM</tag>
-         
-        <tag>V967s</tag>
+        <tag>CGI</tag>
          
          
            
              
-              <breadCrumb title="手机应用" url="//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
+              <breadCrumb title="嵌入式Linux" url="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
           
         </display>
     </data>
@@ -2208,17 +2188,19 @@
 
     
   <url>
-    <loc>//ganl.io/2013/07/31/httpd-e6-9c-8d-e5-8a-a1-e6-97-a0-e6-b3-95-e5-90-af-e5-8a-a8-binsystemctl-start-httpd-service/</loc>
-    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+    <loc>//ganl.io/2013/10/21/e7-99-be-e5-ba-a6-e5-88-86-e4-ba-ab/</loc>
+    <lastmod>2017-10-07T01:34:31.490Z</lastmod>
     <data>
         <display>
-        <title>httpd服务无法启动  /bin/systemctl start  httpd.service</title>
-        <pubTime>2013-07-31T12:23:40.000Z</pubTime>
+        <title>在博客或网站添加一个固定在左下角的百度分享按钮</title>
+        <pubTime>2013-10-21T12:39:01.000Z</pubTime>
         
+        <tag>百度</tag>
+         
          
            
              
-              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+              <breadCrumb title="html/css" url="//ganl.io/categories/html-css/"/>
           
         </display>
     </data>
@@ -2268,89 +2250,12 @@
 
     
   <url>
-    <loc>//ganl.io/2013/05/23/e9-86-89-e9-a3-8e-e4-ba-91-e5-8d-9a-e5-ae-a2-e7-83-ad-e7-82-b9-e5-92-8c-e5-b9-bb-e7-81-af-e7-89-87-e8-ae-be-e7-bd-ae/</loc>
-    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
-    <data>
-        <display>
-        <title>醉风云博客热点和幻灯片设置</title>
-        <pubTime>2013-05-23T03:53:11.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ganl.io/2013/09/24/java-warning-build-path-specifies-execution-environment-j2se-1-5/</loc>
     <lastmod>2017-10-07T01:34:31.489Z</lastmod>
     <data>
         <display>
         <title>Java. Warning - Build path specifies execution environment J2SE-1.5</title>
         <pubTime>2013-09-24T06:11:09.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="JAVA" url="//ganl.io/categories/JAVA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2013/06/30/fedora-18-e5-ae-89-e8-a3-85google-chrome/</loc>
-    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
-    <data>
-        <display>
-        <title>Fedora 18 安装google Chrome </title>
-        <pubTime>2013-06-30T02:40:45.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2013/05/18/179/</loc>
-    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
-    <data>
-        <display>
-        <title>短地址生成源码 php</title>
-        <pubTime>2013-05-18T04:56:01.000Z</pubTime>
-        
-        <tag>url</tag>
-         
-         
-           
-             
-              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
-          
-             
-              <breadCrumb title="业余Demo" url="//ganl.io/categories/PHP/%E4%B8%9A%E4%BD%99Demo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2013/09/24/description-resource-path-location-type-target-runtime-myeclipse-tomcat-v7-0-unknownfaceted-project-problem/</loc>
-    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
-    <data>
-        <display>
-        <title>Description Resource Path Location Type Target runtime MyEclipse Tomcat v7.0  Unknown	Faceted Project Problem</title>
-        <pubTime>2013-09-24T05:54:12.000Z</pubTime>
         
          
            
@@ -2387,24 +2292,6 @@
 
     
   <url>
-    <loc>//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/</loc>
-    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
-    <data>
-        <display>
-        <title>html5 audio 给博客 网页加背景音乐 自动播放</title>
-        <pubTime>2013-11-13T14:52:25.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>//ganl.io/2013/09/11/android-studio-e4-b8-8d-e8-83-bd-e6-94-b9-e5-8f-98-e7-bc-96-e8-be-91-e5-ad-97-e4-bd-93-ef-bc-88-e8-ae-be-e7-bd-ae-e5-ad-97-e4-bd-93-e7-bc-96-e7-a0-81-e6-a0-bc-e5-bc-8f-ef-bc-89/</loc>
     <lastmod>2017-10-07T01:34:31.489Z</lastmod>
     <data>
@@ -2423,12 +2310,143 @@
 
     
   <url>
+    <loc>//ganl.io/2013/06/30/fedora-18-e5-ae-89-e8-a3-85google-chrome/</loc>
+    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+    <data>
+        <display>
+        <title>Fedora 18 安装google Chrome </title>
+        <pubTime>2013-06-30T02:40:45.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2013/09/24/description-resource-path-location-type-target-runtime-myeclipse-tomcat-v7-0-unknownfaceted-project-problem/</loc>
+    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+    <data>
+        <display>
+        <title>Description Resource Path Location Type Target runtime MyEclipse Tomcat v7.0  Unknown	Faceted Project Problem</title>
+        <pubTime>2013-09-24T05:54:12.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="JAVA" url="//ganl.io/categories/JAVA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2013/07/31/httpd-e6-9c-8d-e5-8a-a1-e6-97-a0-e6-b3-95-e5-90-af-e5-8a-a8-binsystemctl-start-httpd-service/</loc>
+    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+    <data>
+        <display>
+        <title>httpd服务无法启动  /bin/systemctl start  httpd.service</title>
+        <pubTime>2013-07-31T12:23:40.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2013/05/18/179/</loc>
+    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+    <data>
+        <display>
+        <title>短地址生成源码 php</title>
+        <pubTime>2013-05-18T04:56:01.000Z</pubTime>
+        
+        <tag>url</tag>
+         
+         
+           
+             
+              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
+          
+             
+              <breadCrumb title="业余Demo" url="//ganl.io/categories/PHP/%E4%B8%9A%E4%BD%99Demo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2013/05/23/e9-86-89-e9-a3-8e-e4-ba-91-e5-8d-9a-e5-ae-a2-e7-83-ad-e7-82-b9-e5-92-8c-e5-b9-bb-e7-81-af-e7-89-87-e8-ae-be-e7-bd-ae/</loc>
+    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+    <data>
+        <display>
+        <title>醉风云博客热点和幻灯片设置</title>
+        <pubTime>2013-05-23T03:53:11.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Web开发" url="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/</loc>
+    <lastmod>2017-10-07T01:34:31.489Z</lastmod>
+    <data>
+        <display>
+        <title>html5 audio 给博客 网页加背景音乐 自动播放</title>
+        <pubTime>2013-11-13T14:52:25.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="JavaScript" url="//ganl.io/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>//ganl.io/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-e4-b9-8b-e5-9b-9b-ef-bc-88ip-e6-9f-a5-e8-af-a2-ef-bc-89/</loc>
     <lastmod>2017-10-07T01:34:31.488Z</lastmod>
     <data>
         <display>
         <title>微信公众平台体验之四（IP查询）</title>
         <pubTime>2013-04-24T10:09:28.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>//ganl.io/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-ef-bc-88-e4-ba-8c-ef-bc-89-ef-bc-88-e5-8d-95-e8-af-8d-e7-bf-bb-e8-af-91-ef-bc-89/</loc>
+    <lastmod>2017-10-07T01:34:31.488Z</lastmod>
+    <data>
+        <display>
+        <title>微信公众平台体验（二）（单词翻译）</title>
+        <pubTime>2013-04-24T10:00:46.000Z</pubTime>
         
          
            
@@ -2483,24 +2501,6 @@
         <display>
         <title>微信公众平台体验（一）</title>
         <pubTime>2013-04-24T09:58:47.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="PHP" url="//ganl.io/categories/PHP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>//ganl.io/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-ef-bc-88-e4-ba-8c-ef-bc-89-ef-bc-88-e5-8d-95-e8-af-8d-e7-bf-bb-e8-af-91-ef-bc-89/</loc>
-    <lastmod>2017-10-07T01:34:31.488Z</lastmod>
-    <data>
-        <display>
-        <title>微信公众平台体验（二）（单词翻译）</title>
-        <pubTime>2013-04-24T10:00:46.000Z</pubTime>
         
          
            

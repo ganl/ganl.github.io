@@ -179,15 +179,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的；</p>
-<p>Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.</p>
-<p>记得听到过IOS9要求App内访问的网络必须使用<code>HTTPS</code>协议，百度到以下解决方法：</p>
-<ol>
-<li>在Info.plist中添加<code>NSAppTransportSecurity</code>类型<code>Dictionary</code>。</li>
-<li>在<code>NSAppTransportSecurity</code>下添加<code>NSAllowsArbitraryLoads</code>类型<code>Boolean</code>,值设为<code>YES</code><br>添加后问题解决</li>
-</ol>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/Snip20150919_2.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/Snip20150919_2.png" alt="Snip20150919_2"></a></p>
-<p>&nbsp;</p>
-
+<p>Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.<br>
+        
+          <a class="article-more-a" href="/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/#more">more >></a>
+        
       
 
       
@@ -601,11 +596,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>编辑上一篇文章时：<a href="http://www.iganlei.cn/web/js/755.html" target="_blank" rel="external">http://www.iganlei.cn/web/js/755.html</a> 添加媒体，弹出的model层获取不到图片，F12，发现admin-ajax.php报500错误；<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/ajaxadmin-300x180.jpg" alt="ajaxadmin"></a><br>修改admin-ajax.php，打开错误输出：<br><code>ini_set(&quot;display_errors&quot;,&quot;On&quot;);
-error_reporting(E_ALL);</code></p>
-<p>发现又是Allowed memory size of <em>*</em> bytes exhausted，升级的时候升级数据库就出现过一次；<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/limit-memory.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/limit-memory-300x118.jpg" alt="limit memory"></a></p>
-<p>修改admin-ajax.php，在调整memory_limit 的值：<br><code>ini_set(&quot;memory_limit&quot;,&quot;256M&quot;);</code><br>再次添加媒体，正常了：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/correct.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/correct-300x91.jpg" alt="correct"></a></p>
-<p>这应该是wp的原因，升级前没这问题。</p>
-
+error_reporting(E_ALL);</code><br>
+        
+          <a class="article-more-a" href="/2015/09/13/wordpress-e5-8d-87-e7-ba-a74-3-e5-90-8e-ef-bc-8c-e5-90-8e-e5-8f-b0-e5-8f-91-e8-a1-a8-e5-87-ba-e7-8e-b0-ef-bc-9aadmin-ajax-php-500/#more">more >></a>
+        
       
 
       
@@ -973,14 +967,10 @@ error_reporting(E_ALL);</code></p>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；<br>不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed</p>
-<p>网上有说是卸载不干净等等，试了没用；还有提供另外一中安装方法：<br>解压提取：<br><code>H:\&gt;VMware-workstation-full-10.0.1-1379776.exe /extract H:\vm2</code><br>然后命令安装，需要加上 EULAS_AGREED=1<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/vmware.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/vmware-300x63.jpg" alt="vmware"></a></p>
-<p>过了一会儿又提示：“failed to install the hcmon driver”<br>百度上类似错误都是和VMware vSphere Client有关，有篇文章里说到把运行着的VMware Workstation关掉，想着就把VMware vSphere Client关掉试试，还是不行。<br>一觉醒来，想想把VMware vSphere Client卸掉试试，还真安装上了。<br>再安装VMware vSphere Client，不过没出现</p>
-<blockquote>
-<p><a href="http://blog.chinaunix.net/xmlrpc.php?r=blog/article&amp;uid=26212859&amp;id=3598591" target="_blank" rel="external">http://blog.chinaunix.net/xmlrpc.php?r=blog/article&amp;uid=26212859&amp;id=3598591</a></p>
-</blockquote>
-<p>这里的情况。</p>
-
+        <p>重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；<br>不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed<br>
+        
+          <a class="article-more-a" href="/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/#more">more >></a>
+        
       
 
       

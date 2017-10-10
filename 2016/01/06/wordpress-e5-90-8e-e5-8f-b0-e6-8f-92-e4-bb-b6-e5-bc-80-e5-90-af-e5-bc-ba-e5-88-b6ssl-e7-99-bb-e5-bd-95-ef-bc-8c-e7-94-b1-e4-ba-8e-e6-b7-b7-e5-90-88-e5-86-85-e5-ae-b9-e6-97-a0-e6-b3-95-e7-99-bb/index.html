@@ -17,7 +17,7 @@
 <meta property="og:description" content="强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；根本登录不上，在wp-config.php里加上了define(&amp;#39;FORCE_SSL_LOGIN&amp;#39;, false); define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);访问登录页还是会跳转到https，想着只能禁用插件了或者改插件的配置项">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106225534.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-10T16:14:29.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wordpress后台 插件开启强制ssl登录，由于混合内容无法登录的解决方法">
 <meta name="twitter:description" content="强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；根本登录不上，在wp-config.php里加上了define(&amp;#39;FORCE_SSL_LOGIN&amp;#39;, false); define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);访问登录页还是会跳转到https，想着只能禁用插件了或者改插件的配置项">
@@ -183,8 +183,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg" alt="ssl20160106224619"></a><br>根本登录不上，在wp-config.php里加上了<br><code>define(&#39;FORCE_SSL_LOGIN&#39;, false);
-define(&#39;FORCE_SSL_ADMIN&#39;, false);</code><br>访问登录页还是会跳转到https，想着只能禁用插件了或者改插件的配置项；<br>禁用插件来的简单点：<br><a href="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106225534.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106225534.jpg" alt="ssl20160106225534"></a><br>将wp_options（表前缀改成自己的）中option_name为active_plugins对应的 option_value 置空即可。</p>
+        <p>强制后台ssl登录，并开启了fix非https的element，绿色图标是能出现了，不过一次登录会出现两次301；<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106224619.jpg" alt="ssl20160106224619"><br>根本登录不上，在wp-config.php里加上了<br><code>define(&#39;FORCE_SSL_LOGIN&#39;, false);
+define(&#39;FORCE_SSL_ADMIN&#39;, false);</code><br>访问登录页还是会跳转到https，想着只能禁用插件了或者改插件的配置项；<br><a id="more"></a><br>禁用插件来的简单点：<br><img src="http://www.iganlei.cn/wp-content/uploads/2016/01/ssl20160106225534.jpg" alt="ssl20160106225534"><br>将wp_options（表前缀改成自己的）中option_name为active_plugins对应的 option_value 置空即可。</p>
 <p>`select option_value from wp_options where option_name=’active_plugins’;<br>+—————————————————————————————————————-+<br>| option_value                                                                                                   |<br>+—————————————————————————————————————-+<br>| a:2:{i:0;s:45:”Replace-Google-Fonts/replace-google-fonts.php”;i:1;s:35:”wordpress-https/wordpress-https.php”;} |<br>+—————————————————————————————————————-+<br>1 row in set (0.00 sec)</p>
 <p>update wp_options set option_value=”” where option_name=’active_plugins’;<br>Query OK, 1 row affected (0.00 sec)<br>Rows matched: 1  Changed: 1  Warnings: 0`</p>
 

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>VMware Workstation …… vmwareworkstation.msi …… Failed解决方法 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed 网上有说是卸载不干净等等，试了没用；还有提供另外一中安装方法：解压提取：H:\&amp;gt;VMware-workstation-full-10.0.1-1379776.exe /extr">
+  <meta name="description" content="重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed">
 <meta name="keywords" content="VMware,VMware Workstation">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VMware Workstation …… vmwareworkstation.msi …… Failed解决方法">
 <meta property="og:url" content="//ganl.io/2015/08/16/vmware-workstation-vmwareworkstation-msi-failed-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed 网上有说是卸载不干净等等，试了没用；还有提供另外一中安装方法：解压提取：H:\&amp;gt;VMware-workstation-full-10.0.1-1379776.exe /extr">
+<meta property="og:description" content="重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/08/vmware-300x63.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:updated_time" content="2017-10-10T16:17:48.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VMware Workstation …… vmwareworkstation.msi …… Failed解决方法">
-<meta name="twitter:description" content="重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed 网上有说是卸载不干净等等，试了没用；还有提供另外一中安装方法：解压提取：H:\&amp;gt;VMware-workstation-full-10.0.1-1379776.exe /extr">
+<meta name="twitter:description" content="重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/08/vmware-300x63.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -182,8 +182,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；<br>不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed</p>
-<p>网上有说是卸载不干净等等，试了没用；还有提供另外一中安装方法：<br>解压提取：<br><code>H:\&gt;VMware-workstation-full-10.0.1-1379776.exe /extract H:\vm2</code><br>然后命令安装，需要加上 EULAS_AGREED=1<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/vmware.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/vmware-300x63.jpg" alt="vmware"></a></p>
+        <p>重装系统后，到之前安装目录下找到VMvare.exe启动，让输入一个key或者是邮箱试用，都是提示权限不足；<br>不知道是不是要用administrator登录才可以，没去管；找到安装包重新安装提示： MSI Failed<br><a id="more"></a><br>网上有说是卸载不干净等等，试了没用；还有提供另外一中安装方法：<br>解压提取：<br><code>H:\&gt;VMware-workstation-full-10.0.1-1379776.exe /extract H:\vm2</code><br>然后命令安装，需要加上 EULAS_AGREED=1<br><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/vmware-300x63.jpg" alt="vmware"></p>
 <p>过了一会儿又提示：“failed to install the hcmon driver”<br>百度上类似错误都是和VMware vSphere Client有关，有篇文章里说到把运行着的VMware Workstation关掉，想着就把VMware vSphere Client关掉试试，还是不行。<br>一觉醒来，想想把VMware vSphere Client卸掉试试，还真安装上了。<br>再安装VMware vSphere Client，不过没出现</p>
 <blockquote>
 <p><a href="http://blog.chinaunix.net/xmlrpc.php?r=blog/article&amp;uid=26212859&amp;id=3598591" target="_blank" rel="external">http://blog.chinaunix.net/xmlrpc.php?r=blog/article&amp;uid=26212859&amp;id=3598591</a></p>

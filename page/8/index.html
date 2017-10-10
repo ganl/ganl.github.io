@@ -281,27 +281,10 @@ To connect to sourceforge.net insecurely, use</code>–no-check-certificate’.<
 <p><a href="http://xdebug.org/download.php" target="_blank" rel="external">http://xdebug.org/download.php</a> 我先下的是PHP 5.4 VC9 (32 bit)</p>
 <p>【当前系统php是php5.4.32(win32)版本】</p>
 <p>2.配置php.ini</p>
-<p>在文件最后配置</p>
-<p>[Xdebug]<br>zend_extension=”C:\Program Files (x86)\info2soft-ctrlcenter\PHP\ext\php_xdebug-2.3.2-5.4-vc9-nts.dll”</p>
-<p>xdebug.auto_trace=1<br>xdebug.collect_params=1<br>xdebug.collect_return=1<br>xdebug.trace_output_dir=”D:/PHPWeb/xdebug/trace”<br>xdebug.profiler_enable=1<br>xdebug.profiler_output_dir=”D:/PHPWeb/xdebug/profiler”</p>
-<p>xdebug.remote_enable=true<br>xdebug.remote_host=192.168.80.155<br>xdebug.remote_port=9000</p>
-<p>【PHP5.3之前版本配置Xdebug时使用zend_extension_ts】</p>
-<p>但是怎么重启，用phpinfo(),打印出来的都没有Xdebug项，在Xdebug官网看到下面的链接：</p>
-<p><a href="http://xdebug.org/wizard.php" title="http://xdebug.org/wizard.php" target="_blank" rel="external">http://xdebug.org/wizard.php</a></p>
-<p>将phpinfo信息全部输入后得到下面的内容：</p>
-<blockquote>
-<p>Tailored Installation Instructions</p>
-<p>Summary</p>
-<p>Xdebug installed: no<br>Server API: Apache 2.0 Handler<br>Windows: yes - Compiler: MS VC9 - Architecture: x86<br>Zend Server: no<br>PHP Version: 5.4.32<br>Zend API nr: 220100525<br>PHP API nr: 20100525<br>Debug Build: no<br>Thread Safe Build: yes<br>Configuration File Path: C:\Windows<br>Configuration File: C:\Program Files (x86)\ctrlcenter\PHP\php.ini<br>Extensions directory: C:\Program Files (x86)\ctrlcenter\PHP\ext<br>Instructions</p>
-<p>Download php_xdebug-2.3.2-5.4-vc9.dll<br>Move the downloaded file to “C:\Program Files (x86)\ctrlcenter\PHP\ext”<br>Edit C:\Program Files (x86)\ctrlcenter\PHP\php.ini and add the line<br>zend_extension = “C:\Program Files (x86)\ctrlcenter\PHP\ext\php_xdebug-2.3.2-5.4-vc9.dll”<br>Restart the webserver<br>If you like Xdebug, and thinks it saves you time and money, please have a look at the donation page.</p>
-</blockquote>
-<p>再下载其提供的dll，放到ext目录，再修改了下配置：</p>
-<p>[Xdebug]<br>;zend_extension=”C:\Program Files (x86)\ctrlcenter\PHP\ext\php_xdebug-2.3.2-5.4-vc9-nts.dll”<br>zend_extension = “C:\Program Files (x86)\ctrlcenter\PHP\ext\php_xdebug-2.3.2-5.4-vc9.dll”</p>
-<p>xdebug.auto_trace=1<br>xdebug.collect_params=1<br>xdebug.collect_return=1<br>xdebug.trace_output_dir=”D:/PHPWeb/xdebug/trace”<br>xdebug.profiler_enable=1<br>xdebug.profiler_output_dir=”D:/PHPWeb/xdebug/profiler”</p>
-<p>xdebug.remote_enable=true<br>xdebug.remote_host=192.168.80.155<br>xdebug.remote_port=9000</p>
-<p>3.重启apache服务器 通过phpinfo()看到如下信息，证明配置成功：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/04/xdebug.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/04/xdebug-300x206.jpg" alt="xdebug"></a></p>
-<p>4.Debug Configurations可通过三种方式进入：1、右击需要调试的PHP文件，选择Debug As或者打开调试的PHP文件；2、选择菜单栏上Run菜单下的Debug As进入；3、点击菜单栏Run菜单下方小蜘蛛图标旁的向下箭头选择Debug Configurations。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/04/yz.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/04/yz-199x300.jpg" alt="yz"></a></p>
-
+<p>在文件最后配置<br>
+        
+          <a class="article-more-a" href="/2015/04/14/zend-studio-e9-85-8d-e7-bd-ae-e8-b0-83-e8-af-95xdebug-e6-96-b9-e5-bc-8f/#more">more >></a>
+        
       
 
       

@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>wordpress“建立数据库连接时出错”解决方案 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网上有很多种说法：1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。 下午服务器被binlog撑爆了，然后就关了bi">
+  <meta name="description" content="网上有很多种说法：1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。">
 <meta name="keywords" content="秒格式为天&#x2F;小时&#x2F;分钟&#x2F;秒">
 <meta property="og:type" content="article">
 <meta property="og:title" content="wordpress“建立数据库连接时出错”解决方案">
 <meta property="og:url" content="//ganl.io/2015/03/13/wordpress-e5-bb-ba-e7-ab-8b-e6-95-b0-e6-8d-ae-e5-ba-93-e8-bf-9e-e6-8e-a5-e6-97-b6-e5-87-ba-e9-94-99-e8-a7-a3-e5-86-b3-e6-96-b9-e6-a1-88/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="网上有很多种说法：1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。 下午服务器被binlog撑爆了，然后就关了bi">
+<meta property="og:description" content="网上有很多种说法：1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/03/1-130I1091531627-300x91.png">
-<meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/03/QQ截图20150313210434-300x175.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:image" content="http://assets.iganlei.cn/wp-content/uploads/2015/03/QQ%E6%88%AA%E5%9B%BE20150313210434.jpg">
+<meta property="og:updated_time" content="2017-10-10T16:12:57.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wordpress“建立数据库连接时出错”解决方案">
-<meta name="twitter:description" content="网上有很多种说法：1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。 下午服务器被binlog撑爆了，然后就关了bi">
+<meta name="twitter:description" content="网上有很多种说法：1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/03/1-130I1091531627-300x91.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -183,8 +183,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>网上有很多种说法：<br>1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）<br>2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）<br>3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。</p>
-<p>下午服务器被binlog撑爆了，然后就关了binlog，并reset master；<br>晚上发现wp建立数据库连接出错了<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/03/1-130I1091531627.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/03/1-130I1091531627-300x91.png" alt="1-130I1091531627"></a><br>测试下面方法成功修复：<br>1、使用phpmyadmin去直接修复这个表；<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/03/QQ截图20150313210434.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/03/QQ截图20150313210434-300x175.jpg" alt="QQ截图20150313210434"></a></p>
+        <p>网上有很多种说法：<br>1、数据库配置文件被篡改。（这种几率蛮小，除非被黑客入侵篡改过）<br>2、数据库服务器的问题，服务未启动或者其他的一些数据库故障。（这个问题的话可以联系空间商确认是否有问题）<br>3、最重要的一个原因，wp_options表需要修复。wordpress运行一段时间之后就会出现这样的一个问题，但确实数据库连接时出错的问题很大可能是这个问题引起的。<br><a id="more"></a><br>下午服务器被binlog撑爆了，然后就关了binlog，并reset master；<br>晚上发现wp建立数据库连接出错了<br><img src="http://www.iganlei.cn/wp-content/uploads/2015/03/1-130I1091531627-300x91.png" alt="1-130I1091531627"><br>测试下面方法成功修复：<br>1、使用phpmyadmin去直接修复这个表；<br><img src="http://assets.iganlei.cn/wp-content/uploads/2015/03/QQ%E6%88%AA%E5%9B%BE20150313210434.jpg" alt="QQ截图20150313210434"></p>
 <p>2、也可以在wp-config.php文件中增加一句代码：define(‘WP_ALLOW_REPAIR’, true);<br>然后直接访问后台<a href="http://www.bossidc.com/wp-admin/,按照wordpress的修复步骤操作即可。" target="_blank" rel="external">http://www.bossidc.com/wp-admin/,按照wordpress的修复步骤操作即可。</a></p>
 
       

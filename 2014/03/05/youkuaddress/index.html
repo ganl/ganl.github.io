@@ -18,7 +18,7 @@
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2014/03/1-300x120.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2014/03/QQ截图20140305202822-300x162.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2014/03/3-300x94.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.495Z">
+<meta property="og:updated_time" content="2017-10-10T15:59:50.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="优酷视频真实地址(分段以及整段mp4地址)">
 <meta name="twitter:description" content="看到一篇博客http://blog.163.com/zjq_123/blog/static/408997932012101715653556/里面讲了优酷真实地址解析，看了看把flash改成php代理了。  http://f.youku.com/player/getFlvPath/sid/00_00/st/mp4/fileid/03000803004D9F4390A67E002BCF4E9F3D1">
@@ -186,11 +186,10 @@
       
         <p>看到一篇博客<br><a href="http://blog.163.com/zjq_123/blog/static/408997932012101715653556/" target="_blank" rel="external">http://blog.163.com/zjq_123/blog/static/408997932012101715653556/</a><br>里面讲了优酷真实地址解析，看了看把flash改成php代理了。</p>
 <blockquote>
-<p><a href="http://f.youku.com/player/getFlvPath/sid/00_00/st/mp4/fileid/" target="_blank" rel="external">http://f.youku.com/player/getFlvPath/sid/00_00/st/mp4/fileid/</a><br>03000803004D9F4390A67E002BCF4E9F3D1FCE-FB5D-561B-1A73-F791EE1DC9B3<br>?K=3c1817963398751b2827379d<br>　　这是视频文件链接的标准式样。红色字符是需更换的内容。<br>03000803004D9F4390A67E002BCF4E9F3D1FCE-FB5D-561B-1A73-F791EE1DC9B3<br>　　这一串字符由解密计算得到，“00”处是多片段节目的序号，为16进制。一个页面的节目无论多少段，每段的链接地址中的这一部分是相同的。<br><del datetime="2014-03-05T12:31:14+00:00"><a href="http://v.youku.com/v_show/id_XMjU3MzIxOTk2.html" target="_blank" rel="external">http://v.youku.com/v_show/id_XMjU3MzIxOTk2.html</a></del><br>　　这是节目所在页面的地址，其中白色字符为节目的“编号”或叫“标志”应该都可以。所有关于节目的信息都是从这里得到的。<br><del datetime="2014-03-05T12:31:14+00:00"><a href="http://v.youku.com/player/getPlayList/VideoIDS/XMjU3MzIxOTk2" target="_blank" rel="external">http://v.youku.com/player/getPlayList/VideoIDS/XMjU3MzIxOTk2</a></del><br>　　节目的信息文件的地址。贴到地址栏可以看到内容，下载后成为一个文本文件。<br>　　该文件内容为哈希表（json）格式，网上可方便查找到相关资料，flash的帮助里面也有介绍。这里不详述，恐篇幅太大。<br>　　脚本编程中，用地址读入此信息文件的内容，然后根据内容得到或计算（解密）得到需要的东西，最后拼接出完整的视频文件地址。<br>　　信息文件中的内容总是变化的，据网上资料介绍，仅维持一小时（未验证）。<br>　　根据前帖所述资料介绍的方法，未能成功还原出视频地址。经反复尝试，对比，剖析优酷网站播放器的脚本，终于正确解密了地址。优酷网实在是用心良苦。</p>
-</blockquote>
-<p>用php改写了下解析程序，网上流传的几个函数什么的都是一样的，但是都只对第一段做了处理，后面的就没了，贴一个OOP的。</p>
+<p><a href="http://f.youku.com/player/getFlvPath/sid/00_00/st/mp4/fileid/" target="_blank" rel="external">http://f.youku.com/player/getFlvPath/sid/00_00/st/mp4/fileid/</a><br>03000803004D9F4390A67E002BCF4E9F3D1FCE-FB5D-561B-1A73-F791EE1DC9B3<br>?K=3c1817963398751b2827379d<br>　　这是视频文件链接的标准式样。红色字符是需更换的内容。<br>03000803004D9F4390A67E002BCF4E9F3D1FCE-FB5D-561B-1A73-F791EE1DC9B3<br>　　这一串字符由解密计算得到，“00”处是多片段节目的序号，为16进制。一个页面的节目无论多少段，每段的链接地址中的这一部分是相同的。<br><del datetime="2014-03-05T12:31:14+00:00"><a href="http://v.youku.com/v_show/id_XMjU3MzIxOTk2.html" target="_blank" rel="external">http://v.youku.com/v_show/id_XMjU3MzIxOTk2.html</a></del><br>　　这是节目所在页面的地址，其中白色字符为节目的“编号”或叫“标志”应该都可以。所有关于节目的信息都是从这里得到的。<br><del datetime="2014-03-05T12:31:14+00:00"><a href="http://v.youku.com/player/getPlayList/VideoIDS/XMjU3MzIxOTk2" target="_blank" rel="external">http://v.youku.com/player/getPlayList/VideoIDS/XMjU3MzIxOTk2</a></del><br>　　节目的信息文件的地址。贴到地址栏可以看到内容，下载后成为一个文本文件。<br>　　该文件内容为哈希表（json）格式，网上可方便查找到相关资料，flash的帮助里面也有介绍。这里不详述，恐篇幅太大。<br>　　脚本编程中，用地址读入此信息文件的内容，然后根据内容得到或计算（解密）得到需要的东西，最后拼接出完整的视频文件地址。<br>　　信息文件中的内容总是变化的，据网上资料介绍，仅维持一小时（未验证）。<br>　　根据前帖所述资料介绍的方法，未能成功还原出视频地址。经反复尝试，对比，剖析优酷网站播放器的脚本，终于正确解密了地址。优酷网实在是用心良苦。<br><a id="more"></a><br>用php改写了下解析程序，网上流传的几个函数什么的都是一样的，但是都只对第一段做了处理，后面的就没了，贴一个OOP的。</p>
 <div class="dp-highlighter"><div class="bar"></div>
 
+</div></blockquote>
 <ol>
 <li><span><span>&lt;?php&nbsp;&nbsp;</span></span></li>
 <li><span>&nbsp;<span class="comment">/*</span>&nbsp;</span></li>
@@ -309,8 +308,8 @@
 <li><span>&nbsp;&nbsp;&nbsp;</span></li>
 <li><span>&nbsp;&nbsp;&nbsp;</span></li>
 <li><span>&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;?&gt;&nbsp;&nbsp;</span></li></ol></div>
-
+<li><span>&nbsp;?&gt;&nbsp;&nbsp;</span></li>
+</ol>
 <p>加上对分段的处理。。。效果截图：只有一段多种格式，<br>[caption id=”attachment_399” align=”aligncenter” width=”300”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/03/1.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/03/1-300x120.jpg" alt="只有一段"></a> 只有一段多种格式[/caption]<br>有多段一种格式，<br>[caption id=”attachment_400” align=”aligncenter” width=”300”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/03/QQ截图20140305202822.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/03/QQ截图20140305202822-300x162.jpg" alt="多段只有一种格式"></a> 多段只有一种格式[/caption]<br>多段多格式，<br>[caption id=”attachment_401” align=”aligncenter” width=”300”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/03/3.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/03/3-300x94.jpg" alt="多格式多段"></a> 多格式多段[/caption]</p>
 <p>以上的接口json获取的都是分段的，每段只有7分钟左右。</p>
 <p>某论坛上发现了个手机接口，mp4整段的，可供播放器直接调用，如下：</p>

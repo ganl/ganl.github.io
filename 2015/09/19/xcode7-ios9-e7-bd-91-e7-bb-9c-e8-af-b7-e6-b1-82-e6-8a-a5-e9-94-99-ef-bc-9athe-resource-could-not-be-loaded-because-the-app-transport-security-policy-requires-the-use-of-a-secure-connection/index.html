@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>Xcode7 (IOS9) 网络请求报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection. | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的； Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection. 记得听到过IOS9要求App内访">
+  <meta name="description" content="更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的； Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.">
 <meta name="keywords" content="Web&#x2F;PHP,Java,C&#x2F;C++,ios,linux,视频,直链,解析,播放器,chplayer,ckplayer,CMP4,前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Xcode7 (IOS9) 网络请求报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.">
 <meta property="og:url" content="//ganl.io/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的； Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection. 记得听到过IOS9要求App内访">
+<meta property="og:description" content="更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的； Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/Snip20150919_2.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-10T16:10:59.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Xcode7 (IOS9) 网络请求报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.">
-<meta name="twitter:description" content="更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的； Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection. 记得听到过IOS9要求App内访">
+<meta name="twitter:description" content="更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的； Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/Snip20150919_2.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -183,8 +183,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的；</p>
-<p>Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.</p>
-<p>记得听到过IOS9要求App内访问的网络必须使用<code>HTTPS</code>协议，百度到以下解决方法：</p>
+<p>Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.<br><a id="more"></a><br>记得听到过IOS9要求App内访问的网络必须使用<code>HTTPS</code>协议，百度到以下解决方法：</p>
 <ol>
 <li>在Info.plist中添加<code>NSAppTransportSecurity</code>类型<code>Dictionary</code>。</li>
 <li>在<code>NSAppTransportSecurity</code>下添加<code>NSAllowsArbitraryLoads</code>类型<code>Boolean</code>,值设为<code>YES</code><br>添加后问题解决</li>
