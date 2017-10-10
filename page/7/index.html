@@ -158,6 +158,104 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/">mysql5.6 无故退出 InnoDB: mmap(137363456 bytes) failed; errno 12</a>
+    </h1>
+  
+
+        
+        <a href="/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/" class="archive-article-date">
+  	<time datetime="2015-06-07T01:42:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>百度了一下，貌似阿里云很多用户都遇到过这个问题，主机内存2G的。<br>在一堆日志中看了一句：<br>InnoDB: mmap(137363456 bytes) failed; errno 12<br>度娘说：修改my.cnf ，设置innodb_buffer_pool_size=8M</p>
+<h1 id="Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data"><a href="#Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data" class="headerlink" title="Remove leading # and set to the amount of RAM for the most important data"></a>Remove leading # and set to the amount of RAM for the most important data</h1><h1 id="cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10"><a href="#cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10" class="headerlink" title="cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%."></a>cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</h1><h1 id="innodb-buffer-pool-size-128M"><a href="#innodb-buffer-pool-size-128M" class="headerlink" title="innodb_buffer_pool_size = 128M"></a>innodb_buffer_pool_size = 128M</h1><p>暂且改下吧。</p>
+<hr>
+<p>2G内存为什么这么容易耗光？？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138-300x35.jpg" alt="QQ截图20150607113138"></a><br>到底谁占的多？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104-300x110.jpg" alt="QQ截图20150607113104"></a></p>
+<p>修改php-fpm.conf<br>pm=dynamic –&gt;&gt; pm = ondemand<br>去掉：<br>pm.process_idle_timeout=10s的注释。</p>
+<p>no children are created at startup. Children will be forked when<br>;             new requests will connect. The following parameter are used:</p>
+<p>网上的一段话：<br>当运行一段时间后,发现内存不断增长,其中一部分是PageCache的增长，这个可以通过echo 3 &gt; /proc/sys/vm/drop_caches 命令来进行有效的释放</p>
+<p>看内存占用<br>ps -A –sort -rss -o comm,pmem,pcpu | uniq -c |head -15<br>pmap $(pgrep php-fpm|head -1)</p>
+<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120514.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120514-300x234.jpg" alt="QQ截图20150607120514"></a><br>哎，貌似有点效果。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120539.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120539-300x230.jpg" alt="QQ截图20150607120539"></a></p>
+<p>估计会引来另外一个问题：<br>pm.max_children 不知道设置成多少合适了</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">InnoDB</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">mysql5.6</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/环境配置//" class="article-tag-list-link color5">环境配置</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-warning-attempt-to-present-on-which-is-already-presenting" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -928,104 +1026,6 @@ bottom_bar.9.psd  uu
 
 
   
-    <article id="post-linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/">Linux下libevent安装</a>
-    </h1>
-  
-
-        
-        <a href="/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/" class="archive-article-date">
-  	<time datetime="2015-04-24T06:54:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-04-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><code>[root@localhost ~]# wget https://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz
---2015-04-24 11:30:56--  https://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz
-正在解析主机 sourceforge.net... 216.34.181.60
-Connecting to sourceforge.net|216.34.181.60|:443... 已连接。
-ERROR: certificate common name</code>*.sourceforge.net’ doesn’t match requested host name <code>sourceforge.net&#39;.
-To connect to sourceforge.net insecurely, use</code>–no-check-certificate’.<br>无法建立 SSL 连接。<br>[root@localhost ~]# wget <a href="http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz" target="_blank" rel="external">http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz</a><br>–2015-04-24 11:31:07–  <a href="http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz" target="_blank" rel="external">http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz</a><br>`</p>
-<p>`<br>100%[========================================================================================================================================&gt;] 854,987      317K/s   in 2.6s    </p>
-<p>2015-04-24 11:31:15 (317 KB/s) - `libevent-2.0.22-stable.tar.gz’ saved [854987/854987]<br>[root@localhost ~]# tar zxvf libevent-2.0.22-stable.tar.gz<br>[root@localhost libevent-2.0.22-stable]# cd libevent-2.0.22-stable<br>[root@localhost libevent-2.0.22-stable]# ./configure -prefix=/usr<br>[root@localhost libevent-2.0.22-stable]# make<br>[root@localhost libevent-2.0.22-stable]# make install<br>[root@localhost libevent]#  ls -al /usr/lib | grep libevent<br>lrwxrwxrwx   1 root root       21 04-24 11:41 libevent-2.0.so.5 -&gt; libevent-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root   773058 04-24 11:41 libevent-2.0.so.5.1.9<br>lrwxrwxrwx   1 root root       26 04-24 11:41 libevent_core-2.0.so.5 -&gt; libevent_core-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root   467660 04-24 11:41 libevent_core-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root      970 04-24 11:41 libevent_core.la<br>lrwxrwxrwx   1 root root       27 04-24 11:41 libevent_extra-2.0.so.5 -&gt; libevent_extra-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root   323782 04-24 11:41 libevent_extra-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root      977 04-24 11:41 libevent_extra.la<br>-rwxr-xr-x   1 root root      935 04-24 11:41 libevent.la<br>lrwxrwxrwx   1 root root       29 04-24 11:41 libevent_openssl-2.0.so.5 -&gt; libevent_openssl-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root    71489 04-24 11:41 libevent_openssl-2.0.so.5.1.9<br>-rw-r–r–   1 root root    79904 04-24 11:41 libevent_openssl.a<br>-rwxr-xr-x   1 root root     1006 04-24 11:41 libevent_openssl.la<br>lrwxrwxrwx   1 root root       29 04-24 11:41 libevent_openssl.so -&gt; libevent_openssl-2.0.so.5.1.9<br>lrwxrwxrwx   1 root root       30 04-24 11:41 libevent_pthreads-2.0.so.5 -&gt; libevent_pthreads-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root    14325 04-24 11:41 libevent_pthreads-2.0.so.5.1.9<br>-rw-r–r–   1 root root    11874 04-24 11:41 libevent_pthreads.a<br>-rwxr-xr-x   1 root root      998 04-24 11:41 libevent_pthreads.la<br>lrwxrwxrwx   1 root root       30 04-24 11:41 libevent_pthreads.so -&gt; libevent_pthreads-2.0.so.5.1.9</p>
-<p>`</p>
-<p>安装成功</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">libevent</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/环境配置//" class="article-tag-list-link color5">环境配置</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/6/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/8/">Next &raquo;</a>
@@ -1256,10 +1256,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">FUSE</a>
               </li>
              
@@ -1276,23 +1272,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">百度</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MAC OSX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Shadowsocks</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1312,11 +1292,27 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color3">android</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">编译</a>
+                <a href="javascript:void(0)" class="js-tag color3">MAC OSX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Shadowsocks</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">百度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iBeacons</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1324,7 +1320,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iBeacons</a>
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">编译</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1364,15 +1364,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Contributions Calendar</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">抓包</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">max_allowed_packet</a>
+                <a href="javascript:void(0)" class="js-tag color3">Contributions Calendar</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1388,15 +1384,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">oc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">swift</a>
+                <a href="javascript:void(0)" class="js-tag color4">max_allowed_packet</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1417,6 +1405,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">环境变量</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">oc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">swift</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1448,6 +1448,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">&amp;&amp;</a>
               </li>
              
@@ -1461,10 +1465,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">laravel</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1552,6 +1552,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -1561,14 +1569,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">逗号</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1588,10 +1588,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">sqlite</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
@@ -1605,6 +1601,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">sqlite</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1716,7 +1716,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Windows AD域用户配置</a>
+                <a href="javascript:void(0)" class="js-tag color4">ssl</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1724,11 +1728,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ssl</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
+                <a href="javascript:void(0)" class="js-tag color1">Windows AD域用户配置</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1756,15 +1756,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ZTE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">线刷</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
               </li>
              
               <li class="article-tag-list-item">

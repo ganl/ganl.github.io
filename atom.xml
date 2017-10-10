@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-10-07T01:33:00.151Z</updated>
+  <updated>2017-10-10T15:00:23.324Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Wordpress搬迁到github &amp; coding + hexo</title>
+    <link href="//ganl.io/2017/10/10/Wordpress%E6%90%AC%E8%BF%81%E5%88%B0github-coding-hexo/"/>
+    <id>//ganl.io/2017/10/10/Wordpress搬迁到github-coding-hexo/</id>
+    <published>2017-10-10T12:29:31.000Z</published>
+    <updated>2017-10-10T15:00:23.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;从WordPress导出旧文章-并迁移到hexo&quot;&gt;&lt;a href=&quot;#从WordPress导出旧文章-并迁移到hexo&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -2843,30 +2865,6 @@ Preparing...
     </summary>
     
       <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>嵌入式web服务器lighttpd的移植及配置（for arm-linux TQ2416）  Fedora 18</title>
-    <link href="//ganl.io/2013/11/02/e5-b5-8c-e5-85-a5-e5-bc-8fweb-e6-9c-8d-e5-8a-a1-e5-99-a8lighttpd-e7-9a-84-e7-a7-bb-e6-a4-8d-e5-8f-8a-e9-85-8d-e7-bd-ae-ef-bc-88for-arm-linux-tq2416-ef-bc-89/"/>
-    <id>//ganl.io/2013/11/02/e5-b5-8c-e5-85-a5-e5-bc-8fweb-e6-9c-8d-e5-8a-a1-e5-99-a8lighttpd-e7-9a-84-e7-a7-bb-e6-a4-8d-e5-8f-8a-e9-85-8d-e7-bd-ae-ef-bc-88for-arm-linux-tq2416-ef-bc-89/</id>
-    <published>2013-11-02T04:47:07.000Z</published>
-    <updated>2017-10-07T01:44:35.735Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;strong&gt;TQ2416 出厂给的zImage 已经移植好了web服务器，，&lt;/strong&gt;&lt;br&gt;如何自己移植，百度加google。记录一下过程吧。&lt;br&gt;&lt;strong&gt;cgi 测试页面如下：&lt;/strong&gt;&lt;br&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
     
     
   </entry>

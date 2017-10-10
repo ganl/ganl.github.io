@@ -158,6 +158,120 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Wordpress搬迁到github-coding-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/10/Wordpress搬迁到github-coding-hexo/">Wordpress搬迁到github &amp; coding + hexo</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/10/Wordpress搬迁到github-coding-hexo/" class="archive-article-date">
+  	<time datetime="2017-10-10T12:29:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="从WordPress导出旧文章-并迁移到hexo"><a href="#从WordPress导出旧文章-并迁移到hexo" class="headerlink" title="从WordPress导出旧文章,并迁移到hexo"></a>从WordPress导出旧文章,并迁移到hexo</h1><ul>
+<li><p>在“工具”-“导出”中导出所有内容<br>导出的是xml格式文件：ganlei.wordpress.2017-10-06.xml<br><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20171010-203704.png" alt=""></p>
+</li>
+<li><p>安装hexo并初始化<br>安装hexo-cli，需要先安装node和npm，执行<code>npm install -g hexo-cli</code><br>初始化目录：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd ~/Code/</div><div class="line">hexo init hexo_blog</div><div class="line">cd hexo_blog</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<ul>
+<li>迁移WordPress导出文件<br>需要安装hexo-migrator-wordpress插件，然后执行<br><code>hexo migrate wordpress ~/WordPress-migration/ganlei.wordpress.2017-10-06.xml</code></li>
+</ul>
+<p>其他类型的博客迁移可以看下文档：<a href="https://hexo.io/docs/migration.html" target="_blank" rel="external">migration.html</a></p>
+<ul>
+<li>本地访问</li>
+</ul>
+<p>生成静态文件：<code>hexo generate</code><br>本地预览：<code>hexo server</code><br><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20171010-205051@2x.png" alt=""><br>这个时候就可以访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 来预览效果了。</p>
+<h1 id="同时部署到github-pages和Coding-pages"><a href="#同时部署到github-pages和Coding-pages" class="headerlink" title="同时部署到github pages和Coding pages"></a>同时部署到github pages和Coding pages</h1><p>原本只想着部署到github，国内访问较慢，同时部署到coding.net上；这样国内访问coding.me，国外访问github.io</p>
+<ul>
+<li>coding.net上启用pages repo<br>Coding.net推荐的仓库名格式：<username>.coding.me，这样什么都不用设置可以直接用username+ coding.me 访问，建议勾选「启动README.md文件初始化项目」。</username></li>
+</ul>
+<ol>
+<li>在 Coding.net 中创建项目ganl.coding.me</li>
+<li>在仓库中新建 index.html 文件，进入项目的代码仓库后，可使用「+ 新建文件」功能新建 index.html 文件。</li>
+<li>开启pages服务</li>
+</ol>
+<ul>
+<li><p>github 上启用pages<br>步骤和coding一样，仓库名格式为<code>&lt;username&gt;.github.io</code>，访问地址为<username>.github.io<br>详细见:<a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank" rel="external">user-organization-and-project-pages</a></username></p>
+</li>
+<li><p>添加ssh key到github和coding<br>这里两个平台都需要ssh key 可以只生成一个，两个站点用同一个；<br>生成相应平台key的时候注意存放路径，不要覆盖了：<br><code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code></p>
+</li>
+</ul>
+<p>也可以生成多个ssh key同时使用，需要在<code>~/.ssh/</code>目录下增加一个config文件：<br><code>vi ~/.ssh/config</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"># coding</div><div class="line">Host git.coding.net</div><div class="line">HostName git.coding.net</div><div class="line">PreferredAuthentications publickey</div><div class="line">AddKeysToAgent yes</div><div class="line">UseKeychain yes</div><div class="line">IdentityFile ~/.ssh/id_rsa.coding</div><div class="line">User ganl</div><div class="line"># github.ganl</div><div class="line">Host github.com</div><div class="line">HostName github.com</div><div class="line">PreferredAuthentications publickey</div><div class="line">AddKeysToAgent yes</div><div class="line">UseKeychain yes</div><div class="line">IdentityFile ~/.ssh/id_rsa.ganl.github</div><div class="line">User ganl</div></pre></td></tr></table></figure>
+<p>平台上添加key都一样，可以看下github的帮助文档：<a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank" rel="external">adding-a-new-ssh-key-to-your-github-account</a></p>
+<p>测试SSH连接:<br><code>ssh -T git@github.com</code><br><code>ssh -T git@git.coding.net</code><br><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20171010-214337@2x.png" alt=""></p>
+<ul>
+<li>配置hexo _config.yml<br>修改deploy：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo:</div><div class="line">      github: git@github.com:ganl/ganl.github.io.git,master</div><div class="line">      coding: git@git.coding.net:ganl/ganl.coding.me.git,master</div></pre></td></tr></table></figure>
+<p>部署到github.io和coding.me，执行<br><code>hexo d -g</code></p>
+<p>这里会报个错：ERROR Deployer not found: git，安装hexo-deployer-git插件就好了，<br><code>npm install hexo-deployer-git --save</code></p>
+<p>浏览器分别访问 ganl.coding.me 和 ganl.github.io, 正常显示，查看repo已经有commit。<br><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20171010-222714.png" alt=""></p>
+<h1 id="最后一步，绑定域名"><a href="#最后一步，绑定域名" class="headerlink" title="最后一步，绑定域名"></a>最后一步，绑定域名</h1><p>这里注册了一个io域名: ganl.io，github需要在根目录下增加一个CNMAE文件，<br>进入到source目录下, 新建一个CNAME文件，内容为要绑定的域名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">➜  hexo_blog git:(master) ✗ cat source/CNAME</div><div class="line">www.ganl.io</div></pre></td></tr></table></figure>
+<p>增加域名解析<br><code>www CNAME 默认 ganl.coding.me - - 600</code><br><code>www CNAME 国外 ganl.github.io - - 600</code></p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/WX20171010-223550.png" alt=""></p>
+<p>等一会儿，待解析生效，尝试访问：<a href="//www.ganl.io">ganl.io</a></p>
+<ul>
+<li>Coding Pages 需要在页面上放置「Hosted by Coding Pages」<blockquote>
+<p>银牌会员的 Coding Pages 在访问时默认会先加载 Pages 跳转页，您可选择在网站首页任意位置放置「Hosted by Coding Pages」的文字版或图片版，然后勾选下方的「已放置 Hosted by Coding Pages」选项，通过审核后您的 Pages 将不会显示跳转页。请务必将「Hosted by Coding Pages」持续保留在网站首页，撤掉后跳转页会再次出现。</p>
+</blockquote>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/10/Wordpress搬迁到github-coding-hexo/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1135,80 +1249,6 @@ crontab -e or vi /etc/crontab
 
 
   
-    <article id="post-trashed" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/06/trashed/">__trashed</a>
-    </h1>
-  
-
-        
-        <a href="/2016/07/06/trashed/" class="archive-article-date">
-  	<time datetime="2016-07-06T03:07:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>[youku]视频ID[/youku]</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Web开发//" class="article-tag-list-link color1">Web开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/06/trashed/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1439,10 +1479,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">FUSE</a>
               </li>
              
@@ -1459,23 +1495,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">百度</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MAC OSX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Shadowsocks</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1495,11 +1515,27 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color3">android</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">编译</a>
+                <a href="javascript:void(0)" class="js-tag color3">MAC OSX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Shadowsocks</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">百度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iBeacons</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1507,7 +1543,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iBeacons</a>
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">编译</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1547,15 +1587,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Contributions Calendar</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">抓包</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">max_allowed_packet</a>
+                <a href="javascript:void(0)" class="js-tag color3">Contributions Calendar</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1571,15 +1607,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">oc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">swift</a>
+                <a href="javascript:void(0)" class="js-tag color4">max_allowed_packet</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1600,6 +1628,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">环境变量</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">oc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">swift</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1631,6 +1671,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">&amp;&amp;</a>
               </li>
              
@@ -1644,10 +1688,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">laravel</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1735,6 +1775,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -1744,14 +1792,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">逗号</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1771,10 +1811,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">sqlite</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
@@ -1788,6 +1824,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">sqlite</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1899,7 +1939,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Windows AD域用户配置</a>
+                <a href="javascript:void(0)" class="js-tag color4">ssl</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1907,11 +1951,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ssl</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
+                <a href="javascript:void(0)" class="js-tag color1">Windows AD域用户配置</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1939,15 +1979,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ZTE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">线刷</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
               </li>
              
               <li class="article-tag-list-item">

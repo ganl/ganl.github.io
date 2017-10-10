@@ -464,14 +464,14 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/%E7%BC%96%E8%AF%91/</loc>
+        <loc>//ganl.io/tags/Webbench/</loc>
         <lastmod>2017-10-07T01:34:31.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>//ganl.io/tags/Webbench/</loc>
+        <loc>//ganl.io/tags/%E7%BC%96%E8%AF%91/</loc>
         <lastmod>2017-10-07T01:34:31.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -737,13 +737,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/Shadowsocks/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/aliyun/</loc>
         <lastmod>2017-10-07T01:34:31.498Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -766,6 +759,13 @@
 
     <url>
         <loc>//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Shadowsocks/</loc>
         <lastmod>2017-10-07T01:34:31.498Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -933,6 +933,20 @@
     </url>
 
     <url>
+        <loc>//ganl.io/tags/500-internal-privoxy-error/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/privoxy/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>//ganl.io/tags/json/</loc>
         <lastmod>2017-10-07T01:34:31.498Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -948,20 +962,6 @@
 
     <url>
         <loc>//ganl.io/tags/%E9%80%97%E5%8F%B7/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/500-internal-privoxy-error/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/privoxy/</loc>
         <lastmod>2017-10-07T01:34:31.498Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1108,13 +1108,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/Windows/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/ssl/</loc>
         <lastmod>2017-10-07T01:34:31.498Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1123,6 +1116,13 @@
 
     <url>
         <loc>//ganl.io/tags/wordpress/</loc>
+        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Windows/</loc>
         <lastmod>2017-10-07T01:34:31.498Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

@@ -158,6 +158,88 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/">Xcode7 (IOS9) 网络请求报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.</a>
+    </h1>
+  
+
+        
+        <a href="/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/" class="archive-article-date">
+  	<time datetime="2015-09-18T16:27:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-09-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>更新了下Xcode，运行之前的项目发现提示网络不可用，在模拟器里用浏览器访问相应地址，是可以打开的；</p>
+<p>Xcode7 (IOS9) 报错：The resource could not be loaded because the App Transport Security policy requires the use of a secure connection.</p>
+<p>记得听到过IOS9要求App内访问的网络必须使用<code>HTTPS</code>协议，百度到以下解决方法：</p>
+<ol>
+<li>在Info.plist中添加<code>NSAppTransportSecurity</code>类型<code>Dictionary</code>。</li>
+<li>在<code>NSAppTransportSecurity</code>下添加<code>NSAllowsArbitraryLoads</code>类型<code>Boolean</code>,值设为<code>YES</code><br>添加后问题解决</li>
+</ol>
+<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/Snip20150919_2.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/Snip20150919_2.png" alt="Snip20150919_2"></a></p>
+<p>&nbsp;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/IOS//" class="article-tag-list-link color4">IOS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/09/19/xcode7-ios9-e7-bd-91-e7-bb-9c-e8-af-b7-e6-b1-82-e6-8a-a5-e9-94-99-ef-bc-9athe-resource-could-not-be-loaded-because-the-app-transport-security-policy-requires-the-use-of-a-secure-connection/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1072,108 +1154,6 @@ error_reporting(E_ALL);</code></p>
 
 
   
-    <article id="post-esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/">Esxi(vSphere) 5.5 开发（一）vSphere 5.5 环境搭建</a>
-    </h1>
-  
-
-        
-        <a href="/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/" class="archive-article-date">
-  	<time datetime="2015-08-07T13:14:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.到官方网站下载ESXi5.5，然后刻成光盘（用UltraISO烧到U盘应该也是可以的）。<br>找一台干净机器，开机后从光驱启动，进行引导安装，直接选择第一项“标准安装”回车继续，<br>引导程序会加载VMkernel以及相关模块到内存中，同时ESXi 5.5安装程序也会读取服务器的规格型号及CPU、内存信息。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_105725.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_105725-300x222.jpg" alt="IMG_20150804_105725"></a><br>2.欢迎界面按回车继续，许可界面按F11继续<br> <a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114512.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114512-300x222.jpg" alt="IMG_20150804_114512"></a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114518.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114518-300x222.jpg" alt="IMG_20150804_114518"></a></p>
-<p>3.安装程序会识别到服务器上可用的存储设备，包括本地磁盘和挂载的磁盘阵列上的磁盘<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114524.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114524-300x222.jpg" alt="IMG_20150804_114524"></a><br>enter，继续<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114528.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114528-300x222.jpg" alt="IMG_20150804_114528"></a><br>enter，继续<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114542.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114542-300x222.jpg" alt="IMG_20150804_114542"></a></p>
-<p>4.设置root密码<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114600.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114600-300x222.jpg" alt="IMG_20150804_114600"></a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114603.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114603-300x222.jpg" alt="IMG_20150804_114603"></a></p>
-<p>5.确认覆盖现有数据<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114645.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114645-300x222.jpg" alt="IMG_20150804_114645"></a></p>
-<p>6.随后会出现安装进度条<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114656.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_114656-300x222.jpg" alt="IMG_20150804_114656"></a><br>等待安装完成：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122226.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122226-300x222.jpg" alt="IMG_20150804_122226"></a><br>重启机器<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122239.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122239-300x222.jpg" alt="IMG_20150804_122239"></a></p>
-<p>7.重启esxi<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122350.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122350-300x222.jpg" alt="IMG_20150804_122350"></a></p>
-<p>8.配置网络，默认是0.0.0.0<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122519.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122519-300x222.jpg" alt="IMG_20150804_122519"></a><br>需要验证用户：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122624.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_122624-300x222.jpg" alt="IMG_20150804_122624"></a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_123439.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_123439-300x222.jpg" alt="IMG_20150804_123439"></a><br>配置后：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_123900.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_123900-300x222.jpg" alt="IMG_20150804_123900"></a></p>
-<p>9.浏览器内访问配置的ip，出现下图则表示安装成功<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/QQ截图20150804124320.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/QQ截图20150804124320-247x300.png" alt="QQ截图20150804124320"></a></p>
-<p>10.安装vSphere Client，链接ESXi服务器进行管理<br>可以将其添加到vCenter统一管理：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/vCenter-Server.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/vCenter-Server-300x125.png" alt="vCenter Server"></a></p>
-<p>遇到的问题：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_110513.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_110513-300x222.jpg" alt="IMG_20150804_110513"></a><br>镜像不对，不要新自定义版本的，下载标准版或者下载对应机器品牌OEM版本的。</p>
-<p>连到vCenter与直接连接Esxi：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/QQ截图20150804172119.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/QQ截图20150804172119-300x171.png" alt="QQ截图20150804172119"></a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Esxi</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">vSphere</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/环境配置//" class="article-tag-list-link color5">环境配置</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
@@ -1404,10 +1384,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">FUSE</a>
               </li>
              
@@ -1424,23 +1400,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">百度</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MAC OSX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Shadowsocks</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1460,11 +1420,27 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color3">android</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">编译</a>
+                <a href="javascript:void(0)" class="js-tag color3">MAC OSX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Shadowsocks</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">百度</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iBeacons</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1472,7 +1448,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iBeacons</a>
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">编译</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1512,15 +1492,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Contributions Calendar</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">抓包</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">max_allowed_packet</a>
+                <a href="javascript:void(0)" class="js-tag color3">Contributions Calendar</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1536,15 +1512,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">oc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">swift</a>
+                <a href="javascript:void(0)" class="js-tag color4">max_allowed_packet</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1565,6 +1533,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">环境变量</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">oc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">swift</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1596,6 +1576,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">&amp;&amp;</a>
               </li>
              
@@ -1609,10 +1593,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">laravel</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1700,6 +1680,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -1709,14 +1697,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">逗号</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1736,10 +1716,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">sqlite</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
@@ -1753,6 +1729,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">sqlite</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1864,7 +1844,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Windows AD域用户配置</a>
+                <a href="javascript:void(0)" class="js-tag color4">ssl</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1872,11 +1856,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ssl</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">wordpress</a>
+                <a href="javascript:void(0)" class="js-tag color1">Windows AD域用户配置</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1904,15 +1884,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ZTE</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">线刷</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
               </li>
              
               <li class="article-tag-list-item">
