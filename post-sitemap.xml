@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>//ganl.io/2017/10/07/hello-world/</loc>
+        <lastmod>2017-10-10T17:20:49.570Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>//ganl.io/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/</loc>
+        <lastmod>2017-10-10T17:19:36.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>//ganl.io/2017/10/02/phpstorm-e4-bb-a3-e7-a0-81-e8-87-aa-e5-8a-a8-e8-a1-a5-e5-85-a8-ef-bc-8c-codeigniter3-hmvc/</loc>
         <lastmod>2017-10-10T17:14:19.589Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -305,14 +321,6 @@
     <url>
         <loc>//ganl.io/2013/11/02/e5-b5-8c-e5-85-a5-e5-bc-8fweb-e6-9c-8d-e5-8a-a1-e5-99-a8lighttpd-e7-9a-84-e7-a7-bb-e6-a4-8d-e5-8f-8a-e9-85-8d-e7-bd-ae-ef-bc-88for-arm-linux-tq2416-ef-bc-89/</loc>
         <lastmod>2017-10-07T01:44:35.735Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>//ganl.io/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/</loc>
-        <lastmod>2017-10-07T01:34:31.499Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -929,14 +937,6 @@
     <url>
         <loc>//ganl.io/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-ef-bc-88-e4-b8-80-ef-bc-89/</loc>
         <lastmod>2017-10-07T01:34:31.488Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>//ganl.io/2017/10/07/hello-world/</loc>
-        <lastmod>2017-10-07T01:33:00.151Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

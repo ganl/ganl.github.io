@@ -39,21 +39,16 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
+    <title>Hello World hexo</title>
     <link href="//ganl.io/2017/10/07/hello-world/"/>
     <id>//ganl.io/2017/10/07/hello-world/</id>
     <published>2017-10-07T01:33:00.151Z</published>
-    <updated>2017-10-07T01:33:00.151Z</updated>
+    <updated>2017-10-10T17:20:49.570Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -116,17 +111,11 @@
     <link href="//ganl.io/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/"/>
     <id>//ganl.io/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/</id>
     <published>2017-03-29T04:27:07.000Z</published>
-    <updated>2017-10-07T01:34:31.499Z</updated>
+    <updated>2017-10-10T17:19:36.499Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]#&lt;br&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]# python -V&lt;br&gt;Python 2.6.6&lt;br&gt;[root@iZu18qlblzrZ
-        
-      
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]#&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]# python -V&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Python 2.6.6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]# wget -c https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ shadowsocks-2.9.1]# tar zxvf Python-2.7.13.tgz&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# cd Python-2.7.13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# ./configure&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# make all&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# make install&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# /usr/local/bin/python2.7 -V&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Python 2.7.13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# ln -s /usr/local/bin/python2.7 /usr/bin/python&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;ln: creating symbolic link `/usr/bin/python&amp;apos;: File exists&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# mv /usr/bin/python /usr/bin/python2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;python2 python2.6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# mv /usr/bin/python /usr/bin/python2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;python2 python2.6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# mv /usr/bin/python /usr/bin/python2.6.6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# ln -s /usr/local/bin/python2.7 /usr/bin/python&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]# python -V&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Python 2.7.13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@iZu18qlblzrZ Python-2.7.13]#&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     

@@ -133,13 +133,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
-        <lastmod>2017-10-10T17:00:11.108Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/categories/Web%E5%BC%80%E5%8F%91/</loc>
         <lastmod>2017-10-10T17:00:34.246Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -156,6 +149,13 @@
     <url>
         <loc>//ganl.io/categories/PHP/</loc>
         <lastmod>2017-10-10T17:14:19.589Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+        <lastmod>2017-10-10T17:19:36.499Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
