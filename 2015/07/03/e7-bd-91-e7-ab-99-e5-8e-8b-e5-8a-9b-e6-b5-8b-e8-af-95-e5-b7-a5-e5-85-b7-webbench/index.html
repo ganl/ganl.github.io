@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ganl.io/2015/07/03/e7-bd-91-e7-ab-99-e5-8e-8b-e5-8a-9b-e6-b5-8b-e8-af-95-e5-b7-a5-e5-85-b7-webbench/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="webbench编译安装包备份链接: http://pan.baidu.com/s/1mg26wT6 密码: 7sax步骤：wget http://home.tiscali.cz/~cz210552/distfiles/webbench-1.5.tar.gz tar -zxvf webbench-1.5.tar.gz  cd webbench-1.5 make 出现错误：[root@localho">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:updated_time" content="2017-10-11T06:16:21.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网站压力测试工具 Webbench">
 <meta name="twitter:description" content="webbench编译安装包备份链接: http://pan.baidu.com/s/1mg26wT6 密码: 7sax步骤：wget http://home.tiscali.cz/~cz210552/distfiles/webbench-1.5.tar.gz tar -zxvf webbench-1.5.tar.gz  cd webbench-1.5 make 出现错误：[root@localho">
@@ -185,6 +185,7 @@
 <p>cd webbench-1.5</p>
 <p>make</p>
 <p>出现错误：<br>[root@localhost webbench-1.5]# make &amp;&amp; make install<br>cc -Wall -ggdb -W -O   -c -o webbench.o webbench.c<br>webbench.c: In function ‘alarm_handler’:<br>webbench.c:77: 警告：未使用的参数 ‘signal’<br>cc -Wall -ggdb -W -O  -o webbench webbench.o<br>ctags *.c<br>/bin/sh: ctags: command not found<br>make: [tags] 错误 127 (忽略)</p>
+<a id="more"></a>
 <p>安装ctags<br>yum install ctags</p>
 <p>再次 make&amp;make install</p>
 <p>[root@localhost webbench-1.5]# mkdir /usr/local/man<br>[root@localhost webbench-1.5]# make install<br>install -s webbench /usr/local/bin<br>install -m 644 webbench.1 /usr/local/man/man1<br>install -d /usr/local/share/doc/webbench<br>install -m 644 debian/copyright /usr/local/share/doc/webbench<br>install -m 644 debian/changelog /usr/local/share/doc/webbench</p>

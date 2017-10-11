@@ -8,22 +8,22 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>嵌入式web服务器lighttpd的移植及配置（for arm-linux TQ2416）  Fedora 18 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="TQ2416 出厂给的zImage 已经移植好了web服务器，，如何自己移植，百度加google。记录一下过程吧。cgi 测试页面如下：机器相关信息    [root@austgl&amp;nbsp;gl]#&amp;nbsp;cat&amp;nbsp;/proc/version&amp;nbsp;&amp;nbsp; Linux&amp;nbsp;version&amp;nbsp;3.11.4-101.fc18.x86_64&amp;nbsp;(mockbu">
+  <meta name="description" content="TQ2416 出厂给的zImage 已经移植好了web服务器，，如何自己移植，百度加google。记录一下过程吧。cgi 测试页面如下：机器相关信息">
 <meta name="keywords" content="Web&#x2F;PHP,Java,C&#x2F;C++,ios,linux,视频,直链,解析,播放器,chplayer,ckplayer,CMP4,前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="嵌入式web服务器lighttpd的移植及配置（for arm-linux TQ2416）  Fedora 18">
 <meta property="og:url" content="//ganl.io/2013/11/02/e5-b5-8c-e5-85-a5-e5-bc-8fweb-e6-9c-8d-e5-8a-a1-e5-99-a8lighttpd-e7-9a-84-e7-a7-bb-e6-a4-8d-e5-8f-8a-e9-85-8d-e7-bd-ae-ef-bc-88for-arm-linux-tq2416-ef-bc-89/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="TQ2416 出厂给的zImage 已经移植好了web服务器，，如何自己移植，百度加google。记录一下过程吧。cgi 测试页面如下：机器相关信息    [root@austgl&amp;nbsp;gl]#&amp;nbsp;cat&amp;nbsp;/proc/version&amp;nbsp;&amp;nbsp; Linux&amp;nbsp;version&amp;nbsp;3.11.4-101.fc18.x86_64&amp;nbsp;(mockbu">
+<meta property="og:description" content="TQ2416 出厂给的zImage 已经移植好了web服务器，，如何自己移植，百度加google。记录一下过程吧。cgi 测试页面如下：机器相关信息">
 <meta property="og:image" content="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE11.png">
 <meta property="og:image" content="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE10.png">
 <meta property="og:image" content="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE4.png">
 <meta property="og:image" content="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE9.png">
 <meta property="og:image" content="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE7.png">
-<meta property="og:updated_time" content="2017-10-07T01:44:35.735Z">
+<meta property="og:updated_time" content="2017-10-11T06:19:03.826Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="嵌入式web服务器lighttpd的移植及配置（for arm-linux TQ2416）  Fedora 18">
-<meta name="twitter:description" content="TQ2416 出厂给的zImage 已经移植好了web服务器，，如何自己移植，百度加google。记录一下过程吧。cgi 测试页面如下：机器相关信息    [root@austgl&amp;nbsp;gl]#&amp;nbsp;cat&amp;nbsp;/proc/version&amp;nbsp;&amp;nbsp; Linux&amp;nbsp;version&amp;nbsp;3.11.4-101.fc18.x86_64&amp;nbsp;(mockbu">
+<meta name="twitter:description" content="TQ2416 出厂给的zImage 已经移植好了web服务器，，如何自己移植，百度加google。记录一下过程吧。cgi 测试页面如下：机器相关信息">
 <meta name="twitter:image" content="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE11.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -186,7 +186,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>TQ2416 出厂给的zImage 已经移植好了web服务器，，</strong><br>如何自己移植，百度加google。记录一下过程吧。<br><strong>cgi 测试页面如下：</strong><br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE11.png" alt=""><br><strong>机器相关信息</strong></p>
+        <p><strong>TQ2416 出厂给的zImage 已经移植好了web服务器，，</strong><br>如何自己移植，百度加google。记录一下过程吧。<br><strong>cgi 测试页面如下：</strong><br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE11.png" alt=""><br><strong>机器相关信息</strong><br><a id="more"></a></p>
 <div class="dp-highlighter"><div class="bar"></div>
 
 <ol>

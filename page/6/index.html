@@ -180,20 +180,10 @@
       
         <p>1) 将远程SVN仓库搬到本地（见：<a href="http://www.iganlei.cn/environment-configuration/628.html" target="_blank" rel="external">将远程SVN仓库搬到本地</a>）<br>假设最终要转换的SVN仓库为file:///D:/ane-lab</p>
 <p>2) 使用git svn clone命令开始转换<br>git svn clone file:///D:/ane-lab -T trunk -b branches -t tags</p>
-<p>如果遇到：<br> open repository ‘file:///D:/ane-lab’: Expected FS format ‘2’; found format ‘6’<br>at /usr/lib/perl5/site_perl/Git/SVN.pm line 310<br>第一步里的 服务程序是1.4.x版本的svnserve或mod_dav_svn，版本库通过1.8.x版本的svnadmin或TortoiseSVN创建的，会产生这个问题</p>
-<p>If you access your Subversion repository using a network protocol (such as svn://) instead of local file access, then things should work properly for you. It appears as though you’re asking git-svn to access the repository directly, causing the problem you’ve shown. The Subversion network protocols are more resilient to older clients connecting.</p>
-<p>不方便更换版本<br>可以直接用network协议的地址，例如：ssh://,svn://</p>
-<p>实在不行不用本地库：<br>git svn clone <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a> -T trunk -b branches -t tags</p>
-<p>相当于针对所提供的 URL 运行了两条命令git svn init加上gitsvn fetch。因Git需要提取每一个版本，每次一个，再逐个提交。<br>-T trunk -b branches -t tags告诉Git该Subversion仓库遵循了基本的分支和标签命名法则。如果你的主干(trunk，相当于Git里的master分支，代表开发的主线）、分支或者标签以不同的方式命名，则应做出相应改变。由于该法则的常见性，可以使用-s来代替整条命令，它意味着标准布局（s是Standard layout的首字母），也就是前面选项的内容。下面的命令有相同的效果：<br>git svn clone file:///D:/ane-lab -s</p>
-<p>用“git show-ref”就可以看到转换后Git仓库的相关情况，结果类似如下：</p>
-<p>git show-ref</p>
-<p>C:\Users\Administrator\Documents\GitHub\svn [master]&gt; git show-ref<br>03ad1cde113d2c9e00f98bbbcc59b0057224740b refs/heads/master<br>03ad1cde113d2c9e00f98bbbcc59b0057224740b refs/remotes/trunk</p>
-<p>3) 获取SVN服务器的最新更新到转换后的Git仓库（这步通常在连续的转换过程中就没必要了）<br>git svn rebase<br>C:\Users\Administrator\Documents\GitHub\svn [master]&gt; git svn rebase<br>Current branch master is up to date.</p>
-<p>4) 转换SVN仓库的svn:ignore属性到Git仓库的.gitignore文件<br>git svn create-ignore<br>    该命令自动建立对应的.gitignore文件，以便下次提交的时候可以包含它。如果在生成.gitignore文件前想先查看一下，运行命令“git svn show-ignore”即可。</p>
-<p>5) 转换SVN的标签为Git标签<br>   cp -Rf .git/refs/remotes/tags/<em> .git/refs/tags/<br>   rm -Rf .git/refs/remotes/tags<br>    该命令将原本以 tag/ 开头的远程分支的索引变成真正的（轻巧的）标签。<br>    这个在Window下试过不行，报”cp: cannot stat `.git/refs/remotes/tags/</em>‘: No such file or directory“的错误，可以使用如下两个标准命令处理：<br>git tag tagname tags/tagname     —-用指定的分支创建一个Git标签<br>git branch -r -d tags/tagname    —-删除指定的远程分支</p>
-<p>6) 转换SVN的分支为Git分支<br>cp -Rf .git/refs/remotes/* .git/refs/heads/<br>rm -Rf .git/refs/remotes<br>    该命令把refs/remotes下面剩下的索引变成Git本地分支</p>
-<p>7) 最后把转换后的本地Git仓库推到公共的Git服务器<br>git remote add origin <a href="https://github.com/austgl/ane-lab.git" target="_blank" rel="external">https://github.com/austgl/ane-lab.git</a><br>git push origin master –tags<br>    所有的标签和主干现在都应该整齐干净的躺在新的Git服务器里了。如果要将分支也同步到远程Git服务器，将–tags改为–all。</p>
-
+<p>如果遇到：<br>
+        
+          <a class="article-more-a" href="/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/#more">more >></a>
+        
       
 
       
@@ -267,8 +257,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行</p>
-<p>1）在本地建立一个新的版本库：<br>    svnadmin create D:\ane-lab<br>2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）<br>    文件中只需要一行内容即可“exit 0”。<br>3）初始化同步操作：<br>    svnsync init file:///D:/ane-lab <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a><br>    （如果需要用户名/密码，则按提示输入。成功后命令行将输出信息：复制版本 0 的属性）<br>C:\ane-lab&gt;svnsync init file:///D:/ane-lab <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a><br>Copied properties for revision 0.<br>注意：执行命令时可能需要管理员权限，否则可能提示错误：<br>svnsync: E165006: Repository has not been enabled to accept revision propchanges;<br>ask the administrator to create a pre-revprop-change hook<br>4）执行同步操作：<br>    svnsync sync file:///D:/ane-lab<br>   （如果需要用户名/密码，则按提示输入。如果远程SVN库数据较多，需要慢慢等待）<br>5）如果远程SVN库有了新的更新，只需重复执行步骤4即可。</p>
-
+<p>1）在本地建立一个新的版本库：<br>    svnadmin create D:\ane-lab<br>2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）<br>    文件中只需要一行内容即可“exit 0”。</p>
+        
+          <a class="article-more-a" href="/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/#more">more >></a>
+        
       
 
       
@@ -341,7 +333,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>233.5.5.5<br>233.6.6.6</p>
+        <blockquote>
+<p>233.5.5.5</p>
+<p>233.6.6.6</p>
+</blockquote>
 
       
 
@@ -426,8 +421,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第1章 搭建开发环境实战    1<br>实例001 下载并安装Xcode    1<br>实例002 改变Xcode工程的公司名称    4<br>实例003 通过搜索框缩小文件范围并格式化代码    5<br>实例004 代码缩进和提示处理    6<br>实例005 设置项目快照以及恢复到快照    7<br>实例006 实现复杂的查找和替代工作    8<br>实例007 使用书签    10<br>实例008 实现断点调试    11<br>实例009 启动模拟器    12<br>实例010 使用第三方工具iPhone Simulator    15<br>第2章 界面布局实战    16<br>实例011 使用Interface Builder的故事板    16<br>实例012 设置UIView的位置和尺寸    22<br>实例013 隐藏指定的UIView区域    24<br>实例014 改变背景颜色    25<br>实例015 实现背景透明    27<br>实例016 定位屏幕中的图片    29<br>实例017 旋转和缩放视图    31<br>实例018 伸缩屏幕中的视图    34<br>实例019 实现视图的大小自适应    36<br>实例020 实现视图嵌套    38<br>实例021 插入或删除视图中的子元素    41<br>实例022 设置视图位置互换显示    42<br>实例023 设置视图位置互换显示    44<br>实例024 获得屏幕内视图的坐标    46<br>实例025 实现视图外观的自动调整    48<br>实例026 自动调整视图中的子元素    51<br>实例027 实现不同界面之间的跳转处理    54<br>实例028 通过列表实现不同界面之间的跳转    56<br>实例029 通过UITabBarController选项卡实现不同界面之间的跳转    58<br>实例030 在布局中实现一个模态对话框    60<br>实例031 实现仿iPhone的底部选项卡    61<br>实例032 实现导航条效果    64<br>实例033 在导航条中添加一个滑动条    65<br>实例034 在屏幕中显示一个工具条    66<br>实例035 在工具条中添加系统按钮    68<br>实例036 在工具条中自定义按钮（1）    70<br>实例037 在工具条中自定义按钮（2）    71<br>实例038 改变状态栏的颜色    72<br>第3章 iOS控件应用实战    74<br>实例039 使用文本、键盘和按钮    74<br>实例040 使用文本、键盘和按钮    77<br>实例041 在屏幕中显示一个指定的文本    79<br>实例042 设置屏幕中文本的对齐方式    79<br>实例043 设置屏幕中标签的颜色和文本的颜色    80<br>实例044 设置屏幕中显示不同字体的文本    81<br>实例045 自动调整屏幕中的文本大小    83<br>实例046 在一个UILabel控件中显示多行文本    84<br>实例047 设置文本的换行和省略模式    85<br>实例048 实现文本的阴影效果    86<br>实例049 高亮显示屏幕中的文本    87<br>实例050 定制一个文本绘制方法    88<br>实例051 按下按钮后触发一个事件    89<br>实例052 在屏幕中显示不同的按钮    90<br>实例053 点击按钮后改变按钮的文字    92<br>实例054 点击按钮后实现阴影反转    93<br>实例055 点击按钮时实现闪烁效果    94<br>实例056 在按钮中添加图像    95<br>实例057 调整屏幕中按钮的边间距    97<br>实例058 设置按钮中文本的换行和省略格式    99<br>实例059 在屏幕中显示一个文本输入框    99<br>实例060 设置文本输入框的边框线样式    100<br>实例061 设置文本输入框的字体和颜色    101<br>实例062 在文本输入框中设置一个清空按钮    102<br>实例063 为文本输入框设置背景图片    103<br>实例064 在文本输入框中添加UIView元素    104<br>实例065 监视文本输入框的状态    105<br>实例066 实现一个开关效果    106<br>实例067 改变UISWitch文本和颜色    108<br>实例068 显示具有开关状态的开关    110<br>实例069 在屏幕中显示一个分段选项    112<br>实例070 选择一个分段卡后可以改变屏幕的背景颜色    114<br>实例071 设置分段卡的显示样式    115<br>实例072 设置不显示分段卡的选择状态    116<br>实例073 改变分段卡的显示颜色    117<br>实例074 选择某个选项时在此分段卡中显示一幅图片    118<br>实例075 设置指定图片作为分段卡的选项    119<br>实例076 修改分段卡标题的位置    119<br>实例077 设置某个选项不可用    120<br>实例078 插入\删除分段卡中的选项    121<br>实例079 插入\删除分段卡中的选项    122<br>实例080 滑动滑块时显示对应的值    128<br>实例081 滑动滑块控制文字的大小    129<br>实例082 自定义一个滑块    131<br>实例083 实现一个日期选择器    131<br>实例084 获取当前的时间    138<br>实例085 设置日期选择器中的时间间隔    139<br>实例086 设置日期选择器框的显示样式    140<br>实例087 设置日期选择器框的显示样式    141<br>实例088 实现自动倒计时功能    142<br>实例089 使用选择器视图    143<br>实例090 自定义一个选择器    146<br>实例091 实现一个数字选择器    153<br>实例092 突出显示选择器中的某一行    154<br>实例093 向选择器中添加UIView子类    155<br>实例094 设置选择器框行和列尺寸    157<br>实例095 实现一个播放器的活动指示器    158<br>实例096 实现一个蓝色进度条效果    160<br>实例097 在进度条中显示进度百分比    162<br>实例098 在屏幕中实现一个检索框效果    163<br>实例099 实现一个实时显示检索框效果    165<br>实例100 设置检索框的背景颜色    166<br>实例101 在检索框中添加一个书签按钮    167<br>实例102 在检索框中添加一个范围条    169<br>实例103 添加或删除屏幕中的翻页数目    170<br>实例104 使用滚动的方式查看屏幕中的内容    172<br>实例105 使用滚动的方式查看图片    175<br>实例106 设置滚动条的颜色    177<br>实例107 将滚动条设置为分页的形式    178<br>第4章 文本和表格处理实战    180<br>实例108 在屏幕中换行显示文本    180<br>实例109 在屏幕中显示可编辑的文本    181<br>实例110 将屏幕中的文本实现编辑状态和非编辑状态之间的切换    182<br>实例111 设置屏幕中文本的对齐方式，确定文本的选择范围    184<br>实例112 自动处理屏幕中文本的URL地址和电话号码    187<br>实例113 在屏幕文本中显示密码黑点“.”    187<br>实例114 自定义UITableViewCell    188<br>实例115 拆分表视图    192<br>实例116 列表显示18条数据    194<br>实例117 分段显示列表中的数据    195<br>实例118 删除单元格    197<br>实例119 添加新的单元格    198<br>实例120 移动单元格的位置    200<br>实例121 实现单元格的编辑模式和<br>非编辑模式的切换    201<br>实例122 编辑分组单元格（1）    202<br>实例123 编辑分组单元格（2）    204<br>实例124 设置单元格的尺寸和颜色    205<br>实例125 在单元格中添加图片    206<br>实例126 为单元格中的图片添加注释    207<br>实例127 在单元格中添加附件    208<br>实例128 在单元格中添加自定义附件    209<br>实例129 设置只在编辑模式下显示附件    210<br>实例130 向单元格中添加其他控件    211<br>实例131 自定义单元格的背景    213<br>实例132 设置被选中单元格的背景颜色    214<br>实例133 自动滚动到被选中单元格    215<br>实例134 在单元格中自动排列指定的数据    216<br>实例135 为每行单元格设置展开子项    218<br>实例136 实现气泡样式的聊天对话框效果    220<br>实例137 在搜索框中实现下拉列表效果    222<br>实例138 实现一个高度自动适应性的输入框    223<br>第5章 屏幕显示实战    226<br>实例139 在屏幕中显示一段文本    226<br>实例140 绘制字符串    227<br>实例141 设置屏幕中文本的横向对齐方式    228<br>实例142 缩小文本并设置纵向对齐方式    229<br>实例143 设置屏幕中的字符串自动缩小    231<br>实例144 获取绘制文本所需要的空间范围    232<br>实例145 显示系统中的字体    233<br>实例146 列表显示系统中所有的字体    234<br>实例147 在屏幕中显示不同的颜色    236<br>实例148 使用系统颜色    238<br>实例149 在屏幕中自定义颜色    239<br>实例150 使用背景图片创建特殊背景    240<br>实例151 在屏幕中绘制指定颜色的文字    241<br>实例152 在屏幕中显示图像    242<br>实例153 在屏幕中绘制一幅图像    243<br>实例154 在屏幕中绘图时设置透明度    244<br>实例155 限制图像的缩放区域    246<br>实例156 使用UIImageView实现动画效果    246<br>实例157 在屏幕中实现日历效果    248<br>实例158 在屏幕中自定义一个导航条    254<br>实例159 在屏幕中实现仿iPhone锁定界面效果    255<br>第6章 图形、图像和动画实战    257实例160 在屏幕中实现一个简单的动画效果    257<br>实例161 设置在屏幕中的动画延迟    258<br>实例162 设置在屏幕中动画的透明度    258<br>实例163 设置屏幕中的动画实现放大/缩小/旋转效果    260<br>实例164 检测屏幕中动画的状态    261<br>实例165 在屏幕中实现过渡动画效果    262<br>实例166 联合使用滑块和步进控件实现动画效果    264<br>实例167 实现全屏显示效果    268<br>实例168 实现渐变样式的全屏效果切换    270<br>实例169 设置屏幕中的元素随着设备旋转而自动适应    271<br>实例170 设置界面旋转时自动调整图像尺寸    272<br>实例171 定制屏幕中的旋转图像    273<br>实例172 同时实现屏幕自适应功能和全屏功能    275<br>实例173 创建可旋转和调整大小的界面    276<br>实例174 屏幕旋转时调整控件的框架    279<br>实例175 屏幕旋转时切换视图    284<br>实例176 实现一个图片浏览工具    287<br>实例177 实现“烟花烟花满天飞”效果    289<br>实例178 实现“漫天飞雪”效果    291<br>实例179 在屏幕中绘制一个三角形    293<br>实例180 在屏幕中实现颜色选择器/调色板功能    295<br>实例181 在屏幕中实现滑动颜色选择器/调色板功能    297<br>实例182 在屏幕中实现网格化视图效果    300<br>第7章 多媒体应用实战    304<br>实例183 使用MediaPlayer Framework框架播放视频    304<br>实例184 使用Core Image框架处理照片    306<br>实例185 创建一个多功能播放器    308<br>实例186 使用系统内的相册    320<br>实例187 实现录制视频功能    322<br>实例188 设置屏幕中视频的画面    324<br>实例189 剪辑系统内的视频    326<br>实例190 开发一个音频播放器    328<br>实例191 在屏幕中实现一个电子琴效果    329<br>实例192 在屏幕中实现一个DJ混音器    331<br>实例193 在屏幕中实现一个音乐选择器    333<br>实例194 在屏幕中听声音    336<br>实例195 播放本地的视频文件    337<br>实例196 在播放界面中叠加视频    339<br>第8章 互联网应用实战    342<br>实例197 使用Web视图获取网络信息    342<br>实例198 在屏幕中显示指定的网页    350<br>实例199 控制屏幕中的网页    351<br>实例200 在网页中加载显示PDF、Word和JPEG图片    353<br>实例201 在网页中加载HTML代码    355<br>实例202 在网页中实现触摸处理    356<br>实例203 在屏幕中显示CSDN主页    359<br>实例204 一个简单的网页浏览器    361<br>实例205 下载并显示远程URL地址的JPEG图片    364<br>实例206 解析指定的XML文件    365<br>实例207 实时检测Wi-Fi状况    368<br>实例208 断点续传下载后实现播放    372<br>第9章 地图定位应用实战    379<br>实例209 获得当前所在位置和苹果公司总部的距离    379<br>实例210 使用磁性指南针    383<br>实例211 在屏幕中实现一个定位系统    388<br>实例212 在屏幕中使用谷歌地图    391<br>实例213 在收集地图中实现定位和位置标示    396<br>实例214 在地图中实现标注    399<br>实例215 在地图中灵活标注    404<br>实例216 实现复杂的地图标注    407<br>第10章 传感器、触摸和交互    416<br>实例217 实现一个可触摸识别程序    416<br>实例218 触摸按钮    423<br>实例219 同时滑动两个滑块    424<br>实例220 触摸屏幕检测    425<br>实例221 触摸屏幕中的文字标签    426<br>实例222 演示一次触摸和两次触摸    427<br>实例223 演示3次触摸    428<br>实例224 拖曳方式移动屏幕中的图片    429<br>实例225 可以检测上、下、左、右4个方向的触摸    431<br>实例226 检测触摸滑动的方向    433<br>实例227 实现屏幕的多点触摸    434<br>实例228 检测双指滑动    435<br>实例229 通过触摸方式放大或缩小屏幕中的图片    436<br>实例230 通过触摸方式放大或缩小屏幕中的图片    437<br>实例231 使用加速传感器    438<br>实例232 触摸屏幕后插入一幅图片    441<br>实例233 触摸后实现开花效果    442<br>实例234 使用轻扫手势触摸    443<br>实例235 双指触摸放大或缩小屏幕中图片    444<br>实例236 自定义触摸手势删除屏幕中的图片    445<br>实例237 触摸屏幕时发出声音    447<br>第11章 和设备之间的操作实战    449<br>实例238 在屏幕中添加标记    449<br>实例239 调用外部程序    450<br>实例240 使用接近传感器    451<br>实例241 获取电池的状态    453<br>实例242 获取系统信息    454<br>实例243 获取设备的终端识别符    455<br>实例244 设置一个复制菜单    456<br>实例245 复制/剪切/粘贴屏幕中的图片    458<br>实例246 在粘贴板中保存自定义类    459<br>实例247 获取电池的详细信息    460<br>实例248 获取iPhone的硬件版本以及系统信息    464<br>第12章 游戏应用实战    467<br>实例249 实现一个连连看游戏    467<br>实例250 实现一个移动老虎机游戏    485<br>实例251 实现一个移动打砖块游戏    488<br>第13章 移动Web实战    495<br>实例252 实现页眉定位    495<br>实例253 在页眉中使用按钮    497<br>实例254 在页眉中使用分段控件    498<br>实例255 在iOS网页中使用页脚    500<br>实例256 在iOS系统中使用工具栏    501<br>实例257 使用带有标准图标的标签栏    503<br>实例258 在iOS中使用链接按钮    504<br>实例259 在iOS中使用分组按钮    505<br>实例260 在iOS中创建并使用动态按钮    507<br>实例261 在iOS中使用表单    510<br>实例262 在iOS中使用选择菜单    511<br>实例263 在iOS中使用单选按钮    512<br>实例264 在iOS中水平放置复选框    513<br>实例265 在iOS中使用列表    515<br>实例266 在iOS中使用两列表格    516<br>实例267 在iOS中实现可折叠内容块效果    517<br>实例268 搭建PhoneGap开发环境    519<br>实例269 在iOS平台创建基于PhoneGap的程序    521<br>实例270 使用通知API    522<br>实例271 使用确认API    524<br>第14章 Swift实战    526<br>实例272 使用Xcode创建Swift程序    526<br>实例273 在界面中实现按钮的交互    528<br>实例274 使用UITextField控件    531<br>实例275 使用文本视图控件    533<br>实例276 使用UILabel控件    534<br>实例277 开发一个方块游戏    537<br>实例278 使用滑块（UISlider）控件    550<br>实例279 使用图像视图（UIImageView）控件    551<br>实例280 使用开关（UISwitch）控件    553<br>实例281 使用分段控件    555<br>实例282 动态控制表视图中的列表条目    556<br>实例283 动态添加列表    559<br>实例284 实现一个新闻阅读器    562<br>实例285 实现一个MP3播放器    566</p>
-
+        <p>第1章 搭建开发环境实战    1<br>实例001 下载并安装Xcode    1<br>实例002 改变Xcode工程的公司名称    4<br>实例003 通过搜索框缩小文件范围并格式化代码    5<br>实例004 代码缩进和提示处理    6<br>实例005 设置项目快照以及恢复到快照    7<br>实例006 实现复杂的查找和替代工作    8<br>实例007 使用书签    10<br>实例008 实现断点调试    11<br>实例009 启动模拟器    12<br>
+        
+          <a class="article-more-a" href="/2015/07/06/ios8-e6-a1-88-e4-be-8b-e5-a4-a7-e5-85-a8-e7-9b-ae-e5-bd-95/#more">more >></a>
+        
       
 
       
@@ -528,13 +525,9 @@
 <p>cd webbench-1.5</p>
 <p>make</p>
 <p>出现错误：<br>[root@localhost webbench-1.5]# make &amp;&amp; make install<br>cc -Wall -ggdb -W -O   -c -o webbench.o webbench.c<br>webbench.c: In function ‘alarm_handler’:<br>webbench.c:77: 警告：未使用的参数 ‘signal’<br>cc -Wall -ggdb -W -O  -o webbench webbench.o<br>ctags *.c<br>/bin/sh: ctags: command not found<br>make: [tags] 错误 127 (忽略)</p>
-<p>安装ctags<br>yum install ctags</p>
-<p>再次 make&amp;make install</p>
-<p>[root@localhost webbench-1.5]# mkdir /usr/local/man<br>[root@localhost webbench-1.5]# make install<br>install -s webbench /usr/local/bin<br>install -m 644 webbench.1 /usr/local/man/man1<br>install -d /usr/local/share/doc/webbench<br>install -m 644 debian/copyright /usr/local/share/doc/webbench<br>install -m 644 debian/changelog /usr/local/share/doc/webbench</p>
-<p>测试<br>webbench -c 500 -t 30 <a href="http://192.168.80.155:8080/" target="_blank" rel="external">http://192.168.80.155:8080/</a><br>返回结果：<br>Webbench - Simple Web Benchmark 1.5<br>Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.</p>
-<p>Benchmarking: GET <a href="http://192.168.80.155:8080/" target="_blank" rel="external">http://192.168.80.155:8080/</a><br>500 clients, running 30 sec.</p>
-<p>Speed=64632 pages/min, 130348 bytes/sec.<br>Requests: 7097 susceed, 25219 failed.</p>
-
+        
+          <a class="article-more-a" href="/2015/07/03/e7-bd-91-e7-ab-99-e5-8e-8b-e5-8a-9b-e6-b5-8b-e8-af-95-e5-b7-a5-e5-85-b7-webbench/#more">more >></a>
+        
       
 
       
@@ -621,12 +614,9 @@
         <p>To install, first you must add the Webtatic EL yum repository information corresponding to your CentOS/RHEL version to yum:</p>
 <p>CentOS/RHEL 7.x:</p>
 <p>rpm -Uvh <a href="https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm" target="_blank" rel="external">https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</a><br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el7/webtatic-release.rpm" target="_blank" rel="external">https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</a><br>CentOS/RHEL 6.x:</p>
-<p>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el6/latest.rpm" target="_blank" rel="external">https://mirror.webtatic.com/yum/el6/latest.rpm</a><br>CentOS/RHEL 5.x:</p>
-<p>rpm -Uvh <a href="http://mirror.webtatic.com/yum/el5/latest.rpm" target="_blank" rel="external">http://mirror.webtatic.com/yum/el5/latest.rpm</a><br>Now you can install php by doing:</p>
-<p>yum install php54w</p>
-<p>选择<br>rpm -Uvh <a href="https://mirror.webtatic.com/yum/el6/latest.rpm" target="_blank" rel="external">https://mirror.webtatic.com/yum/el6/latest.rpm</a><br>安装替换插件：<br>yum install yum-plugin-replace</p>
-<p>替换升级就ok了：<br>yum replace php –replace-with=php54w<br>相关库会依赖升级。</p>
-
+        
+          <a class="article-more-a" href="/2015/07/03/e7-94-a8webtatic-com-e6-8f-90-e4-be-9b-e7-9a-84-e6-ba-90-e5-8d-87-e7-ba-a7php5-4-42/#more">more >></a>
+        
       
 
       

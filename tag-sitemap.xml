@@ -2,230 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>//ganl.io/tags/url/</loc>
-        <lastmod>2017-10-07T01:34:31.489Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/CGI/</loc>
-        <lastmod>2017-10-07T01:34:31.490Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E7%99%BE%E5%BA%A6/</loc>
-        <lastmod>2017-10-07T01:34:31.490Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/eclipse/</loc>
-        <lastmod>2017-10-07T01:34:31.490Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/light/</loc>
-        <lastmod>2017-10-07T01:34:31.490Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E6%8E%A5%E5%8F%A3/</loc>
-        <lastmod>2017-10-07T01:34:31.490Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/mail/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/phpmailer/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E9%99%84%E4%BB%B6/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E8%B0%B7%E6%AD%8C/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/ck/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/cmp/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E6%92%AD%E6%94%BE%E5%99%A8/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E6%99%BA%E8%83%BD%E6%89%8B%E8%A1%A8/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/iBeacons/</loc>
-        <lastmod>2017-10-07T01:34:31.495Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/disk/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/log/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/genapp/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/types-h/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E5%BE%AE%E8%A7%86/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A5%E5%85%A5/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E6%8A%93%E5%8C%85/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/append/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/live/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/on/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/sort/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E6%8E%92%E5%BA%8F/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E8%A1%A8%E6%A0%BC/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/lvm/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/pv/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/vg/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/xcode6/</loc>
-        <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/Windows-AD%E5%9F%9F%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE/</loc>
         <lastmod>2017-10-07T01:34:31.496Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -235,20 +11,6 @@
     <url>
         <loc>//ganl.io/tags/code/</loc>
         <lastmod>2017-10-07T01:34:31.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/nginx/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/ios/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -268,140 +30,7 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/FUSE/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/OOS/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/s3fs/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/s3fs-fuse/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/MAC-OSX/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Webbench/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E7%BC%96%E8%AF%91/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/dns/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E5%8D%87%E7%BA%A7/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91linux%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85web%E7%8E%AF%E5%A2%83/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Esxi/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/vSphere/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/max-allowed-packet/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/ios8/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/oc/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/swift/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/libevent/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/InnoDB/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/mysql5-6/</loc>
         <lastmod>2017-10-07T01:34:31.497Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -417,251 +46,6 @@
     <url>
         <loc>//ganl.io/tags/relativedelta/</loc>
         <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/mirrors/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Google/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Google-hosts/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/hosts/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/youtube/</loc>
-        <lastmod>2017-10-07T01:34:31.497Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/CocoaPods/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/coding-net/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91Code/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Docker-Quickstart/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/toolbox/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/aliyun/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/SoftEther/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/VPN/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Contributions-Calendar/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/grub/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/rescue/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Ubuntu/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/CLASSPATH/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/JAVA-HOME/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/PATH/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/amp-amp/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags//</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/OAuth-2-0/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/REST-API/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/excel/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/GBK/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/UTF8/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/debugger/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/pycharm/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/pydev/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/python/</loc>
-        <lastmod>2017-10-07T01:34:31.498Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -695,20 +79,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/xdebug/</loc>
-        <lastmod>2017-10-10T15:49:17.055Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Java/</loc>
-        <lastmod>2017-10-10T15:59:41.325Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/video/</loc>
         <lastmod>2017-10-10T15:59:50.487Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -737,13 +107,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/%E7%A7%92%E6%A0%BC%E5%BC%8F%E4%B8%BA%E5%A4%A9-%E5%B0%8F%E6%97%B6-%E5%88%86%E9%92%9F-%E7%A7%92/</loc>
-        <lastmod>2017-10-10T16:12:57.774Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/ssl/</loc>
         <lastmod>2017-10-10T16:14:29.731Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -753,20 +116,6 @@
     <url>
         <loc>//ganl.io/tags/wordpress/</loc>
         <lastmod>2017-10-10T16:14:29.731Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/linux/</loc>
-        <lastmod>2017-10-10T16:15:53.548Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/top/</loc>
-        <lastmod>2017-10-10T16:15:53.548Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -793,20 +142,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/apache/</loc>
-        <lastmod>2017-10-10T16:17:07.520Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/php/</loc>
-        <lastmod>2017-10-10T16:17:07.520Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/msyql/</loc>
         <lastmod>2017-10-10T16:17:07.520Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -816,13 +151,6 @@
     <url>
         <loc>//ganl.io/tags/wamp/</loc>
         <lastmod>2017-10-10T16:17:07.520Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/VMware/</loc>
-        <lastmod>2017-10-10T16:17:48.670Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -954,13 +282,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/JS/</loc>
-        <lastmod>2017-10-10T16:26:43.435Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/JQ/</loc>
         <lastmod>2017-10-10T16:26:43.435Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -975,20 +296,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/Boot2Docker/</loc>
-        <lastmod>2017-10-10T16:31:44.820Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/Docker/</loc>
-        <lastmod>2017-10-10T16:31:44.820Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/Mac/</loc>
         <lastmod>2017-10-10T16:31:44.820Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -998,13 +305,6 @@
     <url>
         <loc>//ganl.io/tags/CRT-SECURE-NO-WARNINGS/</loc>
         <lastmod>2017-10-10T16:32:16.464Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>//ganl.io/tags/android/</loc>
-        <lastmod>2017-10-10T16:37:19.648Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -1087,13 +387,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/Shadowsocks/</loc>
-        <lastmod>2017-10-10T17:00:11.108Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/500-internal-privoxy-error/</loc>
         <lastmod>2017-10-10T17:00:11.108Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1138,6 +431,713 @@
     <url>
         <loc>//ganl.io/tags/laravel/</loc>
         <lastmod>2017-10-10T17:13:03.233Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/mirrors/</loc>
+        <lastmod>2017-10-11T06:01:30.389Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/xcode6/</loc>
+        <lastmod>2017-10-11T06:01:52.029Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E6%8E%A5%E5%8F%A3/</loc>
+        <lastmod>2017-10-11T06:02:20.084Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/debugger/</loc>
+        <lastmod>2017-10-11T06:03:09.369Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/pycharm/</loc>
+        <lastmod>2017-10-11T06:03:09.369Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/pydev/</loc>
+        <lastmod>2017-10-11T06:03:09.369Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/python/</loc>
+        <lastmod>2017-10-11T06:03:09.369Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E7%A7%92%E6%A0%BC%E5%BC%8F%E4%B8%BA%E5%A4%A9-%E5%B0%8F%E6%97%B6-%E5%88%86%E9%92%9F-%E7%A7%92/</loc>
+        <lastmod>2017-10-11T06:03:26.869Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/excel/</loc>
+        <lastmod>2017-10-11T06:03:53.337Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/GBK/</loc>
+        <lastmod>2017-10-11T06:03:53.337Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/UTF8/</loc>
+        <lastmod>2017-10-11T06:03:53.337Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</loc>
+        <lastmod>2017-10-11T06:03:53.337Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/OAuth-2-0/</loc>
+        <lastmod>2017-10-11T06:04:16.923Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/REST-API/</loc>
+        <lastmod>2017-10-11T06:04:16.923Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/InnoDB/</loc>
+        <lastmod>2017-10-11T06:04:59.760Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/mysql5-6/</loc>
+        <lastmod>2017-10-11T06:04:59.760Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/lvm/</loc>
+        <lastmod>2017-10-11T06:07:39.918Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/pv/</loc>
+        <lastmod>2017-10-11T06:07:39.918Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/vg/</loc>
+        <lastmod>2017-10-11T06:07:39.918Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/libevent/</loc>
+        <lastmod>2017-10-11T06:08:15.181Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/amp-amp/</loc>
+        <lastmod>2017-10-11T06:09:04.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags//</loc>
+        <lastmod>2017-10-11T06:09:04.188Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/JS/</loc>
+        <lastmod>2017-10-11T06:09:13.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/sort/</loc>
+        <lastmod>2017-10-11T06:09:13.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E6%8E%92%E5%BA%8F/</loc>
+        <lastmod>2017-10-11T06:09:13.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E8%A1%A8%E6%A0%BC/</loc>
+        <lastmod>2017-10-11T06:09:13.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/append/</loc>
+        <lastmod>2017-10-11T06:09:41.932Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/live/</loc>
+        <lastmod>2017-10-11T06:09:41.932Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/on/</loc>
+        <lastmod>2017-10-11T06:09:41.932Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/CLASSPATH/</loc>
+        <lastmod>2017-10-11T06:11:01.994Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Java/</loc>
+        <lastmod>2017-10-11T06:11:01.994Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/JAVA-HOME/</loc>
+        <lastmod>2017-10-11T06:11:01.994Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/PATH/</loc>
+        <lastmod>2017-10-11T06:11:01.994Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</loc>
+        <lastmod>2017-10-11T06:11:01.994Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/ios8/</loc>
+        <lastmod>2017-10-11T06:11:16.535Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/oc/</loc>
+        <lastmod>2017-10-11T06:11:16.535Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/swift/</loc>
+        <lastmod>2017-10-11T06:11:16.535Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/grub/</loc>
+        <lastmod>2017-10-11T06:12:17.484Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/rescue/</loc>
+        <lastmod>2017-10-11T06:12:17.484Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Ubuntu/</loc>
+        <lastmod>2017-10-11T06:12:17.484Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Contributions-Calendar/</loc>
+        <lastmod>2017-10-11T06:12:47.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E6%8A%93%E5%8C%85/</loc>
+        <lastmod>2017-10-11T06:13:02.555Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Esxi/</loc>
+        <lastmod>2017-10-11T06:14:02.121Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/vSphere/</loc>
+        <lastmod>2017-10-11T06:14:02.121Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/eclipse/</loc>
+        <lastmod>2017-10-11T06:14:18.612Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/light/</loc>
+        <lastmod>2017-10-11T06:14:18.612Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/xdebug/</loc>
+        <lastmod>2017-10-11T06:14:18.612Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E5%8D%87%E7%BA%A7/</loc>
+        <lastmod>2017-10-11T06:14:47.834Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91linux%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85web%E7%8E%AF%E5%A2%83/</loc>
+        <lastmod>2017-10-11T06:14:47.834Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/dns/</loc>
+        <lastmod>2017-10-11T06:15:17.913Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A5%E5%85%A5/</loc>
+        <lastmod>2017-10-11T06:15:41.762Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/iBeacons/</loc>
+        <lastmod>2017-10-11T06:16:09.673Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Webbench/</loc>
+        <lastmod>2017-10-11T06:16:21.220Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/php/</loc>
+        <lastmod>2017-10-11T06:16:30.564Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E7%BC%96%E8%AF%91/</loc>
+        <lastmod>2017-10-11T06:16:30.564Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/aliyun/</loc>
+        <lastmod>2017-10-11T06:16:42.216Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/SoftEther/</loc>
+        <lastmod>2017-10-11T06:16:42.216Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/VPN/</loc>
+        <lastmod>2017-10-11T06:16:42.216Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
+        <lastmod>2017-10-11T06:16:42.216Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/android/</loc>
+        <lastmod>2017-10-11T06:16:47.890Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/MAC-OSX/</loc>
+        <lastmod>2017-10-11T06:16:47.890Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Shadowsocks/</loc>
+        <lastmod>2017-10-11T06:16:47.890Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+        <lastmod>2017-10-11T06:16:47.890Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E7%99%BE%E5%BA%A6/</loc>
+        <lastmod>2017-10-11T06:17:02.772Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/FUSE/</loc>
+        <lastmod>2017-10-11T06:17:18.411Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/OOS/</loc>
+        <lastmod>2017-10-11T06:17:18.411Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/s3fs/</loc>
+        <lastmod>2017-10-11T06:17:18.411Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/s3fs-fuse/</loc>
+        <lastmod>2017-10-11T06:17:18.411Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E6%99%BA%E8%83%BD%E6%89%8B%E8%A1%A8/</loc>
+        <lastmod>2017-10-11T06:17:50.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E5%BE%AE%E8%A7%86/</loc>
+        <lastmod>2017-10-11T06:18:19.242Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/CGI/</loc>
+        <lastmod>2017-10-11T06:19:08.411Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/ck/</loc>
+        <lastmod>2017-10-11T06:20:17.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/cmp/</loc>
+        <lastmod>2017-10-11T06:20:17.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E6%92%AD%E6%94%BE%E5%99%A8/</loc>
+        <lastmod>2017-10-11T06:20:17.221Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Boot2Docker/</loc>
+        <lastmod>2017-10-11T06:20:43.648Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Docker/</loc>
+        <lastmod>2017-10-11T06:20:43.648Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Docker-Quickstart/</loc>
+        <lastmod>2017-10-11T06:20:43.648Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/toolbox/</loc>
+        <lastmod>2017-10-11T06:20:43.648Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/VMware/</loc>
+        <lastmod>2017-10-11T06:20:43.648Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E8%B0%B7%E6%AD%8C/</loc>
+        <lastmod>2017-10-11T06:20:58.306Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/linux/</loc>
+        <lastmod>2017-10-11T06:21:09.378Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/top/</loc>
+        <lastmod>2017-10-11T06:21:09.378Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/types-h/</loc>
+        <lastmod>2017-10-11T06:21:32.486Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/CocoaPods/</loc>
+        <lastmod>2017-10-11T06:21:54.727Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/coding-net/</loc>
+        <lastmod>2017-10-11T06:21:54.727Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</loc>
+        <lastmod>2017-10-11T06:21:54.727Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91Code/</loc>
+        <lastmod>2017-10-11T06:21:54.727Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/mail/</loc>
+        <lastmod>2017-10-11T06:22:06.358Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/phpmailer/</loc>
+        <lastmod>2017-10-11T06:22:06.358Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/%E9%99%84%E4%BB%B6/</loc>
+        <lastmod>2017-10-11T06:22:06.358Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/genapp/</loc>
+        <lastmod>2017-10-11T06:22:23.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/ios/</loc>
+        <lastmod>2017-10-11T06:22:23.645Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/apache/</loc>
+        <lastmod>2017-10-11T06:22:39.699Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Google/</loc>
+        <lastmod>2017-10-11T06:23:03.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/Google-hosts/</loc>
+        <lastmod>2017-10-11T06:23:03.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/hosts/</loc>
+        <lastmod>2017-10-11T06:23:03.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/youtube/</loc>
+        <lastmod>2017-10-11T06:23:03.021Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/disk/</loc>
+        <lastmod>2017-10-11T06:23:09.464Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/log/</loc>
+        <lastmod>2017-10-11T06:23:09.464Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/nginx/</loc>
+        <lastmod>2017-10-11T06:23:09.464Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/url/</loc>
+        <lastmod>2017-10-11T06:23:22.351Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

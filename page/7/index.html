@@ -181,14 +181,10 @@
         <p>百度了一下，貌似阿里云很多用户都遇到过这个问题，主机内存2G的。<br>在一堆日志中看了一句：<br>InnoDB: mmap(137363456 bytes) failed; errno 12<br>度娘说：修改my.cnf ，设置innodb_buffer_pool_size=8M</p>
 <h1 id="Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data"><a href="#Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data" class="headerlink" title="Remove leading # and set to the amount of RAM for the most important data"></a>Remove leading # and set to the amount of RAM for the most important data</h1><h1 id="cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10"><a href="#cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10" class="headerlink" title="cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%."></a>cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</h1><h1 id="innodb-buffer-pool-size-128M"><a href="#innodb-buffer-pool-size-128M" class="headerlink" title="innodb_buffer_pool_size = 128M"></a>innodb_buffer_pool_size = 128M</h1><p>暂且改下吧。</p>
 <hr>
-<p>2G内存为什么这么容易耗光？？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138-300x35.jpg" alt="QQ截图20150607113138"></a><br>到底谁占的多？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104-300x110.jpg" alt="QQ截图20150607113104"></a></p>
-<p>修改php-fpm.conf<br>pm=dynamic –&gt;&gt; pm = ondemand<br>去掉：<br>pm.process_idle_timeout=10s的注释。</p>
-<p>no children are created at startup. Children will be forked when<br>;             new requests will connect. The following parameter are used:</p>
-<p>网上的一段话：<br>当运行一段时间后,发现内存不断增长,其中一部分是PageCache的增长，这个可以通过echo 3 &gt; /proc/sys/vm/drop_caches 命令来进行有效的释放</p>
-<p>看内存占用<br>ps -A –sort -rss -o comm,pmem,pcpu | uniq -c |head -15<br>pmap $(pgrep php-fpm|head -1)</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120514.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120514-300x234.jpg" alt="QQ截图20150607120514"></a><br>哎，貌似有点效果。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120539.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120539-300x230.jpg" alt="QQ截图20150607120539"></a></p>
-<p>估计会引来另外一个问题：<br>pm.max_children 不知道设置成多少合适了</p>
-
+<p>2G内存为什么这么容易耗光？？<br>
+        
+          <a class="article-more-a" href="/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/#more">more >></a>
+        
       
 
       
@@ -444,48 +440,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>下载Apache并解压：<br> 6  wget <a href="http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz" target="_blank" rel="external">http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz</a><br> 28  tar zxvf httpd-2.2.29.tar.gz<br> 29  cd httpd-2.2.29</p>
-<p>配置：<br> 83  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cache –enable-disk-cache –enable-mem-cache –enable-file-cache –enable-nonportable-atomics –enable-mods-shared=most –enable-so –enable-rewrite –enable-ssl<br>遇到错误：<br> configure: error: mod_ssl has been requested but can not be built due to prerequisite failures；<br>解决办法：<br> 84  yum install openssl-devel<br>再次配置：<br>   85  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cache –enable-disk-cache –enable-mem-cache –enable-file-cache –enable-nonportable-atomics –enable-mods-shared=most –enable-so –enable-rewrite –enable-ssl<br>编译并安装：<br>   86  make;make install<br>修改配置：<br>   87  cd /usr/local/apache2/conf<br>   90  vi httpd.conf<br>增加ServerName localhost:80<br>启动Apache：<br>  148  cd /usr/local/apache2/<br>  149  ls<br>  150  cd bin/<br>  151  ls<br>  152  ./apachectl start</p>
-<p>访问测试192.168.80.205，发现无法访问，测试127.0.0.1,It works.</p>
-<p>根据之前的文章修改 Deny -&gt; ALlow ；发现还是不能访问。</p>
-<p>想了半天，service iptables stop</p>
-<h2 id="再次访问，ok，一切正常。"><a href="#再次访问，ok，一切正常。" class="headerlink" title="再次访问，ok，一切正常。"></a>再次访问，ok，一切正常。</h2><p>下载并解压php：<br>  200  wget <a href="http://cn2.php.net/get/php-5.4.41.tar.gz/from/this/mirror" target="_blank" rel="external">http://cn2.php.net/get/php-5.4.41.tar.gz/from/this/mirror</a><br>  201  tar zxvf php-5.4.41.tar.gz<br>  202  cd php-5.4.41<br>  203  ls<br>配置：<br>./configure –prefix=/usr/local/php –enable-fpm  –with-mcrypt=/usr/local/libmcrypt –with-zlib –enable-mbstring –with-openssl –with-mysql –with-mysqli –with-mysql-sock –with-gd –with-jpeg-dir=/usr/lib –enable-gd-native-ttf  –enable-pdo –with-pdo-mysql –with-pdo-pgsql –with-gettext –with-curl –with-mbstring –enable-sockets –enable-bcmath –enable-xml –with-bz2 –enable-zip –enable-freetype –enable-xmlrpc<br>遇到错误：<br>onfigure: error: xml2-config not found. Please check your libxml2 installation.<br>安装libxml2，再次配置发现还是报错，安装 libxml2-devel，错误解决。<br> 205  yum install libxml2<br> 206  ./configure –prefix=/usr/local/php –enable-fpm  –with-mcrypt=/usr/local/libmcrypt –with-zlib –enable-mbstring –with-openssl –with-mysql –with-mysqli –with-mysql-sock –with-gd –with-jpeg-dir=/usr/lib –enable-gd-native-ttf  –enable-pdo –with-pdo-mysql –with-pdo-pgsql –with-gettext –with-curl –with-mbstring –enable-sockets –enable-bcmath –enable-xml –with-bz2 –enable-zip –enable-freetype –enable-xmlrpc<br> 207  yum install libxml2-devel<br> 208  ls<br> 209  ./configure –prefix=/usr/local/php –enable-fpm  –with-mcrypt=/usr/local/libmcrypt –with-zlib –enable-mbstring –with-openssl –with-mysql –with-mysqli –with-mysql-sock –with-gd –with-jpeg-dir=/usr/lib –enable-gd-native-ttf  –enable-pdo –with-pdo-mysql –with-pdo-pgsql –with-gettext –with-curl –with-mbstring –enable-sockets –enable-bcmath –enable-xml –with-bz2 –enable-zip –enable-freetype –enable-xmlrpc<br>再次配置遇到新错误：<br>configure: error: Please reinstall the BZip2 distribution<br>解决方法：<br>yum install bzip2-devel</p>
-<p>遇到错误再安装：<br>configure: error: Please reinstall the libcurl distribution -<br>    easy.h should be in <curl -dir="">/include/curl/<br>[root@localhost php-5.4.41]# yum install libcurl libcurl-devel</curl></p>
-<p>configure: error: jpeglib.h not found.</p>
-<p>安装一些相关库<br>yum install libjpeg libpng freetype libjpeg-devel libpng-devel freetype-devel</p>
-<p>configure: error: mcrypt.h not found. Please reinstall libmcrypt</p>
-<p>居然没有可用的包<br>[root@localhost php-5.4.41]# yum install libmcrypt-devel<br>Loaded plugins: fastestmirror, product-id, subscription-manager<br>This system is not registered to Red Hat Subscription Management. You can use subscription-manager to register.<br>Setting up Install Process<br>Loading mirror speeds from cached hostfile</p>
-<ul>
-<li>base: mirrors.aliyun.com</li>
-<li>extras: mirrors.aliyun.com</li>
-<li>updates: mirrors.aliyun.com<br>No package libmcrypt-devel available.</li>
-</ul>
-<p>wget <a href="http://www.atomicorp.com/installers/atomic" target="_blank" rel="external">http://www.atomicorp.com/installers/atomic</a><br>sh ./atomic </p>
-<p>sed -i ‘s/\$releasever/6/g’ /etc/yum.repos.d/atomic.repo<br>再次执行：<br>yum install libmcrypt libmcrypt-devel</p>
-<p>configure: error: Cannot find libpq-fe.h. Please specify correct PostgreSQL installation path<br><br>yum install postgresql-devel</p>
-<p>configure: WARNING: unrecognized options: –with-mbstring, –enable-freetype, –enable-xmlrpc</p>
-<p> ./configure –prefix=/usr/local/php –enable-fpm  –with-mcrypt=/usr/local/libmcrypt –with-zlib –enable-mbstring –with-openssl –with-mysql –with-mysqli –with-mysql-sock –with-gd –with-jpeg-dir=/usr/lib –enable-gd-native-ttf  –enable-pdo –with-pdo-mysql –with-pdo-pgsql –with-pgsql –with-gettext –with-curl –enable-sockets –enable-bcmath –enable-xml –with-bz2 –enable-zip –with-apxs2=/usr/local/apache2/bin/apxs</p>
-<p>没有报错了，<br>make;make install </p>
-<p>使Apache支持PHP<br>cd /usr/local/apache2/conf。 编辑文件：vi httpd.conf</p>
-<p>查找字符串AddType，并增加</p>
-<pre><code>AddType application/x-httpd-php .php .php3 .htm .phtml .php4
-
-AddType application/x-httpd-php-source .phps
-
-然后重启apache使配置生效
-</code></pre><p> 查找字符串DirectoryIndex，并修改为 DirectoryIndex index.html index.php3 index.php default.php</p>
-<p> cp /root/php-5.4.41/php.ini-development /usr/local/php/lib/php.ini</p>
-<p>查找extension=<br>去掉要打开的库前面的分号</p>
-<p>测试PHP vi /usr/local/apache2/htdocs/index.php</p>
-<p>&lt; ?php<br>phpinfo();<br>?&gt;</p>
-<p>结果截图：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/05/QQ截图20150521173556.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/05/QQ截图20150521173556-300x155.png" alt="QQ截图20150521173556"></a></p>
-<p>附录：网上找的php各个版本的编译参数如下。</p>
-<p>Fast-CGI:<br>./configure –prefix=/usr/local/php –enable-fastcgi –enable-force-cgi-redirect –with-config-file-path=/etc –with-zlib –with-mysql –with-xml –with-gd –enable-gd-native-ttf –enable-gd-jis-conv –with-freetype-dir –with-jpeg-dir –with-png-dir –enable-mbstring</p>
-<p>PHP4-Server:<br>./configure –prefix=/usr/local/php –with-apxs2=/usr/local/apache2/bin/apxs –with-mysql –with-config-file-path=/etc –with-gd –enable-gd-native-ttf –enable-gd-jis-conv –with-freetype-dir –with-jpeg-dir –with-png-dir –with-zlib –enable-xml –enable-mbstring</p>
-<p>PHP4-Max:<br>./configure –prefix=/usr/local/php –with-apxs2=/usr/local/apache/bin/apxs –mandir=/usr/share/man –with-mysql=/usr/local/mysql –with-config-file-path=/usr/local/php/etc –with-openssl=/usr/local/openssl-0.9.7e –with-gd –enable-gd-native-ttf –enable-gd-jis-conv –with-freetype-dir –with-jpeg-dir –with-png-dir –with-zlib –with-bz2 –with-inifile –with-hyperwave –enable-xml –enable-track-vars –enable-dba –enable-dbase –enable-filepro –enable-ftp –enable-versioning –enable-memory-limit –enable-calendar –enable-session –enable-sockets –enable-sysmsg –enable-sysvsem –enable-sysvshm –enable-tokenizer –enable-overload –enable-ctype –enable-sigchild –enable-magic-quotes –enable-roxen-zts –enable-fastcgi –enable-dbx –enable-dio –enable-shmop –enable-mbstring</p>
-<p>PHP5-Server:<br>./configure –prefix=/usr/local/php –with-apxs2=/usr/local/apache2/bin/apxs –with-zlib-dir –with-bz2 –with-tiff-dir –with-libxml-dir –with-gd –with-freetype-dir –with-jpeg-dir –with-png-dir –with-ttf –enable-mbstring –with-mysql=/usr/lib/mysql –with-config-file-path=/etc –disable-ipv6 –enable-gd-native-ttf</p>
-<p>PHP5-Standard:<br>./configure –prefix=/usr/local/php –with-apxs2=/usr/local/apache/bin/apxs –mandir=/usr/share/man –with-openssl=/usr/local/openssl-0.9.7e –with-zlib –with-bz2 –with-tiff-dir –with-libxml-dir –enable-dio –enable-ftp –with-gd –with-freetype-dir –with-jpeg-dir –with-png-dir –with-zlib-dir –with-bz2-dir –with-ttf –enable-mbstring –with-mysql=/usr/local/mysql –with-config-file-path=/usr/local/php/etc –disable-ipv6 –enable-gd-native-ttf</p>
-<p>PHP5-Max:<br>./configure –prefix=/usr/local/php –with-apxs2=/usr/local/apache/bin/apxs –mandir=/usr/share/man –with-openssl=/usr/local/openssl-0.9.7e –with-zlib –with-bz2 –with-tiff-dir –with-libxml-dir –enable-dio –enable-ftp –with-gd –with-freetype-dir –with-jpeg-dir –with-png-dir –with-zlib-dir –with-bz2-dir –with-ttf –with-inifile –enable-dba –enable-dbase –enable-filepro –enable-versioning –enable-memory-limit –enable-calendar –enable-sockets –enable-sysvsem –enable-sigchild –enable-magic-quotes –enable-roxen-zts –enable-fastcgi –enable-dbx –enable-shmop –enable-mbstring –with-mysql=/usr/local/mysql –with-config-file-path=/usr/local/php/etc –disable-ipv6 –enable-gd-native-ttf</p>
-
+<p>配置：</p>
+        
+          <a class="article-more-a" href="/2015/05/21/e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85apache-ef-bc-882-2-29-ef-bc-89-e5-92-8cphp-ef-bc-88php-5-4-41-ef-bc-89/#more">more >></a>
+        
       
 
       
@@ -577,11 +535,12 @@ AddType application/x-httpd-php-source .phps
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>删除原有的yum包<br>  45  rpm -qa | grep yum|xargs rpm -e –nodeps<br>安装yum包<br>   46  rpm -ivh <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm</a><br>   47  rpm -ivh <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-metadata-parser-1.1.2-16.el6.x86_64.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-metadata-parser-1.1.2-16.el6.x86_64.rpm</a><br>  52  rpm -ivh <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-3.2.29-60.el6.centos.noarch.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-3.2.29-60.el6.centos.noarch.rpm</a> <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.30-30.el6.noarch.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.30-30.el6.noarch.rpm</a><br>注：52 后面的包两个包需要一起安装。</p>
-<p>添加源<br> 54  cd /etc/yum.repos.d/<br> 55  rm -rf *<br> 56  wget -O /etc/yum.repos.d/rhel-source.repo <a href="http://mirrors.aliyun.com/repo/Centos-6.repo" target="_blank" rel="external">http://mirrors.aliyun.com/repo/Centos-6.repo</a><br> 59  sed -i ‘s/\$releasever/6/g’ rhel-source.repo </p>
-<p> 清理yum缓存<br>   60  yum clean all<br>将服务器上的软件包信息缓存到本地，以提高速度<br>   61  yum makecache</p>
-<p>测试安装<br>   62  yum install open-ssl</p>
-
+        <p><strong>删除原有的yum包</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">  45  rpm -qa | grep yum|xargs rpm -e --nodeps</div><div class="line">安装yum包</div><div class="line">   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm</div><div class="line">   47  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-metadata-parser-1.1.2-16.el6.x86_64.rpm</div><div class="line">  52  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-3.2.29-60.el6.centos.noarch.rpm http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.30-30.el6.noarch.rpm</div><div class="line">注：52 后面的包两个包需要一起安装。</div></pre></td></tr></table></figure>
+<p><strong>添加源</strong><br>
+        
+          <a class="article-more-a" href="/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/#more">more >></a>
+        
       
 
       
@@ -869,71 +828,9 @@ AddType application/x-httpd-php-source .phps
     <div class="article-entry" itemprop="articleBody">
       
         <p>s3fs是把Amazon S3存储服务挂载到本地硬盘或者服务器上的程序，天翼云存储OOS和S3兼容，只需要修改s3fs一行代码，它就能挂载天翼OSS到服务器上。<br>github地址：<a href="https://github.com/s3fs-fuse/s3fs-fuse" target="_blank" rel="external">https://github.com/s3fs-fuse/s3fs-fuse</a></p>
-<p><code>1001  yum install gcc libstdc++-devel gcc-c++ curl curl* curl-devel libxml2 libxml2* libxml2-devel openssl-devel mailcap
- 1002  wget http://sourceforge.net/projects/fuse/files/latest/download?source=files
- 1003  tar -xzvf fuse-2.9.3.tar.gz
- 1004  cd fuse-2.9.3
- 1005  ./configure --prefix=/usr
- 1006  make &amp;&amp;  make install
- 1007  export PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/lib64/pkgconfig/
- 1008  ldconfig
- 1009  modprobe fuse
- 1010  pkg-config --modversion fuse
- 1011  git
- 1012  yum install git
- 1015  cd ../
- 1016  git clone https://github.com/s3fs-fuse/s3fs-fuse.git
- 1017  cd s3fs-fuse/
- 1018  vim src/s3fs.cpp</code></p>
-<p><code>将    std::string host             = &quot;http://s3.amazonaws.com&quot;;
-改为：std::string host             = &quot;http://oos.ctyunapi.cn&quot;;</code></p>
-<p><code>1019  ./autogen.sh 
- 1020  ./configure --prefix=/usr
- 1021  make
- 1022  make install</code></p>
-<p>建立密匙文件：</p>
-<p>vim ~/.passwd-s3fs<br>文件中内容如下：</p>
-<p>天翼OOS的 AccessKeyID:AccessSecretKey  </p>
-<p>获取地址：<a href="http://oos.ctyun.cn/oos/padmin/security.html" target="_blank" rel="external">http://oos.ctyun.cn/oos/padmin/security.html</a></p>
-<p> 1023  vim ~/.passwd-s3fs<br> 1024  chmod 600 ~/.passwd-s3fs<br> 1025  mkdir -p /mnt/s3<br> 1026  s3fs ganl /mnt/s3/ -ouse_cache=/tmp<br> 1027  cd /mnt/s3/<br> 1028  ls<br> 1029  history</p>
-<p><code>[root@localhost s3]# ls
-bottom_bar.9.psd  uu
-[root@localhost s3]# cd uu
-[root@localhost uu]# touch 222.text</code></p>
-<p>THIS README CONTAINS OUTDATED INFORMATION - please refer to the wiki or –help</p>
-<p>S3FS-Fuse</p>
-<p>S3FS is FUSE (File System in User Space) based solution to mount/unmount an Amazon S3 storage buckets and use system commands with S3 just like it was another Hard Disk.</p>
-<p>In order to compile s3fs, You’ll need the following requirements:</p>
-<ul>
-<li>Kernel-devel packages (or kernel source) installed that is the SAME version of your running kernel</li>
-<li>LibXML2-devel packages</li>
-<li>CURL-devel packages (or compile curl from sources at: curl.haxx.se/ use 7.15.X)</li>
-<li>GCC, GCC-C++</li>
-<li>pkgconfig</li>
-<li>FUSE (&gt;= 2.8.4)</li>
-<li>FUSE Kernel module installed and running (RHEL 4.x/CentOS 4.x users - read below)</li>
-<li>OpenSSL-devel (0.9.8)<br>GnuTLS(gcrypt and nettle)<br>NSS</li>
-<li>Git</li>
-</ul>
-<p>If you’re using YUM or APT to install those packages, then it might require additional packaging, allow it to be installed.</p>
-<h2 id="Downloading-amp-Compiling"><a href="#Downloading-amp-Compiling" class="headerlink" title="Downloading &amp; Compiling:"></a>Downloading &amp; Compiling:</h2><p>In order to download s3fs, download from following url:<br><a href="https://github.com/s3fs-fuse/s3fs-fuse/archive/master.zip" target="_blank" rel="external">https://github.com/s3fs-fuse/s3fs-fuse/archive/master.zip</a><br>Or clone the following command:<br>git clone git://github.com/s3fs-fuse/s3fs-fuse.git</p>
-<p>Go inside the directory that has been created (s3fs-fuse) and run: ./autogen.sh<br>This will generate a number of scripts in the project directory, including a configure script which you should run with: ./configure<br>If configure succeeded, you can now run: make. If it didn’t, make sure you meet the dependencies above.<br>This should compile the code. If everything goes OK, you’ll be greated with “ok!” at the end and you’ll have a binary file called “s3fs”<br>in the src/ directory.</p>
-<p>As root (you can use su, su -, sudo) do: “make install” -this will copy the “s3fs” binary to /usr/local/bin.</p>
-<p>Congratulations. S3fs is now compiled and installed.</p>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage:"></a>Usage:</h2><p>In order to use s3fs, make sure you have the Access Key and the Secret Key handy. (refer to the wiki)<br>First, create a directory where to mount the S3 bucket you want to use.<br>Example (as root): mkdir -p /mnt/s3<br>Then run: s3fs mybucket[:path] /mnt/s3</p>
-<p>This will mount your bucket to /mnt/s3. You can do a simple “ls -l /mnt/s3” to see the content of your bucket.</p>
-<p>If you want to allow other people access the same bucket in the same machine, you can add “-o allow_other” to read/write/delete content of the bucket.</p>
-<p>You can add a fixed mount point in /etc/fstab, here’s an example:</p>
-<p>s3fs#mybucket /mnt/s3 fuse allow_other 0 0</p>
-<p>This will mount upon reboot (or by launching: mount -a) your bucket on your machine.<br>If that does not work, probably you should specify with “_netdev” option in fstab.</p>
-<p>All other options can be read at: <a href="https://github.com/s3fs-fuse/s3fs-fuse/wiki/Fuse-Over-Amazon" target="_blank" rel="external">https://github.com/s3fs-fuse/s3fs-fuse/wiki/Fuse-Over-Amazon</a></p>
-<h2 id="Known-Issues"><a href="#Known-Issues" class="headerlink" title="Known Issues:"></a>Known Issues:</h2><p>s3fs should be working fine with S3 storage. However, There are couple of limitations:</p>
-<ul>
-<li>Currently s3fs could hang the CPU if you have lots of time-outs. This is <em>NOT</em> a fault of s3fs but rather libcurl. This happens when you try to copy thousands of files in 1 session, it doesn’t happen when you upload hundreds of files or less.</li>
-<li>CentOS 4.x/RHEL 4.x users - if you use the kernel that shipped with your distribution and didn’t upgrade to the latest kernel RedHat/CentOS gives, you might have a problem loading the “fuse” kernel. Please upgrade to the latest kernel (2.6.16 or above) and make sure “fuse” kernel module is compiled and loadable since FUSE requires this kernel module and s3fs requires it as well.</li>
-<li>Moving/renaming/erasing files takes time since the whole file needs to be accessed first. A workaround could be to use s3fs’s cache support with the use_cache option.</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2015/04/24/e7-94-a8s3fs-e6-8c-82-e8-bd-bd-e5-a4-a9-e7-bf-bcoos-e5-88-b0-e6-9c-8d-e5-8a-a1-e5-99-a8/#more">more >></a>
+        
       
 
       

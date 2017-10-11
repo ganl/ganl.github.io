@@ -204,50 +204,10 @@
 <li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(<span class="variable">$this</span><span>);&nbsp;&nbsp;</span></span></li>
 <li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</span></li></ol></div>
 
-<p>发现点击后没任何反应也不报错，<br>后来改为为每个点击span加个id，断点去调试，发现取值居然是空的</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>var&nbsp;history=</span><span class="string">“&lt;ul&gt;&lt;li&nbsp;class=’t’&gt;”</span><span>&nbsp;+&nbsp;scanType&nbsp;+&nbsp;</span><span class="string">“&lt;/li&gt;”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>history+=<span class="string">“&lt;li&nbsp;class=’p’&gt;”</span><span>&nbsp;+&nbsp;’发现了’&nbsp;+&nbsp;scanFileNumber&nbsp;&nbsp;+&nbsp;’个威胁’+&nbsp;</span><span class="string">“&lt;/li&gt;”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>history+=<span class="string">“&lt;li&nbsp;class=’m’&gt;”</span><span>&nbsp;+&nbsp;scanTime&nbsp;+&nbsp;</span><span class="string">“&lt;/li&gt;”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>history+=<span class="string">“&lt;li&nbsp;class=’s’&gt;&lt;span&nbsp;id=’dsp_”</span><span>+&nbsp;scanTime&nbsp;+</span><span class="string">“‘&nbsp;data-dsp=buf&gt;报告&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>$(<span class="string">“.h_scan&nbsp;.dsp”</span><span>).append(history);&nbsp;&nbsp;</span></span></li>
-<li><span>$(<span class="string">“#dsp_”</span><span>+scanTime).click(function(){&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;con=$(<span class="string">“#dsp_”</span><span>+scanTime).attr(</span><span class="string">“data-dsp”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(con);&nbsp;&nbsp;</span></li>
-<li><span>});&nbsp;&nbsp;</span></li></ol></div><br>百度了一下：<br>而解决这个问题只需要修改一个地方就可以了：<br>`                                var history=”
-
-<ul>
-<li><p>“ + scanType + “<br>“</p>
-<pre><code>history+=&quot;*   &quot; + &apos;发现了&apos; + scanFileNumber  + &apos;个威胁&apos;+ &quot;
-</code></pre><p>“</p>
-<pre><code>            history+=&quot;*   &quot; + scanTime + &quot;&lt;li class=&apos;s&apos;&gt;&lt;span data-dsp=buf&gt;报告&lt;/span&gt;&lt;/li&gt;&quot;
-            $(&quot;.h_scan .dsp&quot;).append(history);
-            });
-     }
-
-});
-}
-
-$().h_add();
-
-$(&quot;.dsp .s span&quot;).**live(&quot;click&quot;**,function(){
-
-    var $this=$(this).attr(&quot;data-dsp&quot;);
-
-    alert($this);
-    });`
-</code></pre></li>
-</ul>
-<p><em>live方法</em></p>
-<p>live( type, fn )<br>jQuery 1.3中新增的方法。给所有当前以及将来会匹配的元素绑定一个事件处理函数（比如click事件）。也能绑定自定义事件。<br>目前支持 click, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, keydown, keypress, keyup。<br>还不支持 blur, focus, mouseenter, mouseleave, change, submit<br>与bind()不同的是，live()一次只能绑定一个事件。</p>
-<p>这个方法跟传统的bind很像，区别在于用live来绑定事件会给所有当前以及将来在页面上的元素绑定事件(使用委派的方式)。比如说，如果你给页面上所有的li用live绑定了click事件。那么当在以后增加一个li到这个页面时，对于这个新增加的li，其click事件依然可用。而无需重新给这种新增加的元素绑定事件。</p>
-<p><em>on 方法</em></p>
-<p>但是随着jQuery的版本升级，自从jQuery 1.9及其以上已经无法使用live了，那么没有办法了吗，不是的，对于jQuery1.9版本及其以上可以使用on，其效果等同于live。</p>
-
+<p>发现点击后没任何反应也不报错，<br>
+        
+          <a class="article-more-a" href="/2015/03/19/jquery-e9-87-87-e7-94-a8append-e6-b7-bb-e5-8a-a0-e7-9a-84-e5-85-83-e7-b4-a0-e4-ba-8b-e4-bb-b6-e6-97-a0-e6-95-88/#more">more >></a>
+        
       
 
       
@@ -357,36 +317,10 @@ $(&quot;.dsp .s span&quot;).**live(&quot;click&quot;**,function(){
 <li><span>[Wed&nbsp;Mar&nbsp;18&nbsp;16:54:31&nbsp;2015]&nbsp;[warn]&nbsp;(OS&nbsp;64)指定的网络名不再可用。&nbsp;&nbsp;:&nbsp;winnt_accept:&nbsp;Asynchronous&nbsp;AcceptEx&nbsp;failed.&nbsp;&nbsp;</span></li>
 <li><span>[Wed&nbsp;Mar&nbsp;18&nbsp;16:54:33&nbsp;2015]&nbsp;[warn]&nbsp;(OS&nbsp;64)指定的网络名不再可用。&nbsp;&nbsp;:&nbsp;winnt_accept:&nbsp;Asynchronous&nbsp;AcceptEx&nbsp;failed.&nbsp;&nbsp;</span></li></ol></div>
 
-<p>apache遇到的两个问题 ：<br>1.[warn] (OS 64)指定的网络名不再可用。  : winnt_accept: Asynchronous AcceptEx failed.<br>解决：<br>在 httpd.conf 文件中  去掉注释#<br><code>Include conf/extra/httpd-mpm.conf</code><br>修改\ Apache2.2\conf\extra<br>下的httpd-mpm.conf<br>`# prefork MPM</p>
-<h1 id="StartServers-number-of-server-processes-to-start"><a href="#StartServers-number-of-server-processes-to-start" class="headerlink" title="StartServers: number of server processes to start"></a>StartServers: number of server processes to start</h1><h1 id="MinSpareServers-minimum-number-of-server-processes-which-are-kept-spare"><a href="#MinSpareServers-minimum-number-of-server-processes-which-are-kept-spare" class="headerlink" title="MinSpareServers: minimum number of server processes which are kept spare"></a>MinSpareServers: minimum number of server processes which are kept spare</h1><h1 id="MaxSpareServers-maximum-number-of-server-processes-which-are-kept-spare"><a href="#MaxSpareServers-maximum-number-of-server-processes-which-are-kept-spare" class="headerlink" title="MaxSpareServers: maximum number of server processes which are kept spare"></a>MaxSpareServers: maximum number of server processes which are kept spare</h1><h1 id="MaxClients-maximum-number-of-server-processes-allowed-to-start"><a href="#MaxClients-maximum-number-of-server-processes-allowed-to-start" class="headerlink" title="MaxClients: maximum number of server processes allowed to start"></a>MaxClients: maximum number of server processes allowed to start</h1><h1 id="MaxRequestsPerChild-maximum-number-of-requests-a-server-process-serves"><a href="#MaxRequestsPerChild-maximum-number-of-requests-a-server-process-serves" class="headerlink" title="MaxRequestsPerChild: maximum number of requests a server process serves"></a>MaxRequestsPerChild: maximum number of requests a server process serves</h1><p><ifmodule mpm_prefork_module=""><br>  ServerLimit          3000<br>  StartServers          100<br>  MinSpareServers       100<br>  MaxSpareServers      200<br>  MaxClients          2500<br>  MaxRequestsPerChild   0<br></ifmodule><code>或者：
-在httpd.conf 中加入 以下配置</code>#mpm</p>
-<p><ifmodule mpm_winnt.c=""><br>Win32DisableAcceptEx<br>EnableMMAP Off<br>EnableSendfile Off<br>ThreadsPerChild 1800<br>MaxRequestsPerChild 0<br></ifmodule>`</p>
-<p>解决网站访问变慢，log中出现 指定的网络名不再可用 的错误，似乎日志里又出了</p>
-<p><code>[Wed Mar 18 17:18:42 2015] [notice] Server built: Aug 28 2014 16:28:52
-[Wed Mar 18 17:18:42 2015] [notice] Distributed by: The Apache Haus
-[Wed Mar 18 17:18:42 2015] [notice] Compiled with: Visual Studio 2008
-[Wed Mar 18 17:18:42 2015] [notice] Parent: Created child process 11428
-[Wed Mar 18 17:18:42 2015] [notice] Disabled use of AcceptEx() WinSock2 API
-[Wed Mar 18 17:18:42 2015] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
-[Wed Mar 18 17:18:44 2015] [notice] Child 11428: Child process is running
-[Wed Mar 18 17:18:44 2015] [notice] Child 11428: Acquired the start mutex.
-[Wed Mar 18 17:18:44 2015] [notice] Child 11428: Starting 150 worker threads.
-[Wed Mar 18 17:18:44 2015] [notice] Child 11428: Listening on port 55443.
-[Wed Mar 18 17:18:44 2015] [notice] Child 11428: Listening on port 55443.
-[Wed Mar 18 17:18:44 2015] [notice] Child 11428: Listening on port 58080.
-[Wed Mar 18 17:18:44 2015] [notice] Child 11428: Listening on port 58080.</code></p>
-<p>问题二：<br>2.Disabled use of AcceptEx() WinSock2 API notice</p>
-<p>`The Apache service named  reported the following error:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>[Wed Mar 18 17:18:41 2015] [notice] Disabled use of AcceptEx() WinSock2 API   `</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>网上搜了一下，这个问题是由于WinSock出错导致的，可以通过命令重置WinSock得以解决：</p>
-<p>netsh winsock reset<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/03/winsock.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/03/winsock-300x166.png" alt="winsock"></a><br>然后重启Apache即可。</p>
-
+<p>apache遇到的两个问题 ：<br>
+        
+          <a class="article-more-a" href="/2015/03/18/apache-e9-81-87-e5-88-b0-e7-9a-84-e4-b8-a4-e4-b8-aa-e9-97-ae-e9-a2-98-disabled-use-of-acceptex-winsock2-api-e9-94-99-e8-af-af-warn-os-64-e6-8c-87-e5-ae-9a-e7-9a-84-e7-bd-91-e7-bb-9c-e5-90-8d/#more">more >></a>
+        
       
 
       
@@ -475,52 +409,9 @@ $(&quot;.dsp .s span&quot;).**live(&quot;click&quot;**,function(){
 
 <ol>
 <li><span><span>&lt;?php&nbsp;</span><span class="func">echo</span><span>&nbsp;</span><span class="func">intval</span><span>(</span><span class="vars">$sys_info</span><span>[‘sysinfo’][‘runtime’]/3600/24).’天’.</span><span class="func">date</span><span>(‘H小时i分s秒’,</span><span class="vars">$sys_info</span><span>[‘sysinfo’][‘runtime’]);?&gt;&nbsp;&nbsp;</span></span></li></ol></div>
-
-<p>方法二：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;?php&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="comment">/**</span>&nbsp;</span></li>
-<li><span><span class="comment">&nbsp;*&nbsp;计算给定的秒数距离当前时间多久（服务器运行时间，uptime）</span>&nbsp;</span></li>
-<li><span><span class="comment">&nbsp;*&nbsp;@param&nbsp;int&nbsp;$timestamp</span>&nbsp;</span></li>
-<li><span><span class="comment">&nbsp;*&nbsp;&nbsp;秒数，通常是当前时间减去另一个时间</span>&nbsp;</span></li>
-<li><span><span class="comment">&nbsp;*&nbsp;@param&nbsp;int&nbsp;$granularity</span>&nbsp;</span></li>
-<li><span><span class="comment">&nbsp;*&nbsp;&nbsp;显示级别，默认为&nbsp;年&nbsp;周&nbsp;天&nbsp;小时&nbsp;分钟&nbsp;秒</span>&nbsp;</span></li>
-<li><span><span class="comment">&nbsp;*&nbsp;@return&nbsp;string</span>&nbsp;</span></li>
-<li><span><span class="comment">&nbsp;*/</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">function</span><span>&nbsp;time_format_interval(</span><span class="vars">$timestamp</span><span>,&nbsp;</span><span class="vars">$granularity</span><span>&nbsp;=&nbsp;5)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$units</span><span>&nbsp;=&nbsp;</span><span class="keyword">array</span><span>(&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;31536000&nbsp;=&gt;&nbsp;&nbsp;’年’,&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;604800&nbsp;=&gt;&nbsp;’周’,&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;86400&nbsp;=&gt;&nbsp;’天’,&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3600&nbsp;=&gt;&nbsp;&nbsp;’小时’,&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60&nbsp;=&gt;&nbsp;&nbsp;’分钟’,&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;=&gt;&nbsp;&nbsp;’秒’&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$output</span><span>&nbsp;=&nbsp;</span><span class="string">‘’</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">foreach</span><span>&nbsp;(</span><span class="vars">$units</span><span>&nbsp;</span><span class="keyword">as</span><span>&nbsp;</span><span class="vars">$key</span><span>&nbsp;=&gt;&nbsp;</span><span class="vars">$value</span><span>)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(</span><span class="vars">$timestamp</span><span>&nbsp;&gt;=&nbsp;</span><span class="vars">$key</span><span>)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$output</span><span>&nbsp;.=&nbsp;</span><span class="func">floor</span><span>(</span><span class="vars">$timestamp</span><span>&nbsp;/&nbsp;</span><span class="vars">$key</span><span>)&nbsp;.&nbsp;</span><span class="vars">$value</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$timestamp</span><span>&nbsp;%=&nbsp;</span><span class="vars">$key</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$granularity</span><span>–;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(</span><span class="vars">$granularity</span><span>&nbsp;==&nbsp;0)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="vars">$output</span><span>&nbsp;?&nbsp;</span><span class="vars">$output</span><span>&nbsp;:&nbsp;’0&nbsp;秒’;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="func">echo</span><span>&nbsp;time_format_interval(</span><span class="vars">$sys_info</span><span>[‘sysinfo’][‘runtime’]);&nbsp;&nbsp;</span></span></li>
-<li><span>?&gt;&nbsp;&nbsp;</span></li></ol></div>
-
-<p>$sys_info[‘sysinfo’][‘runtime’] 获取的服务器的uptime.</p>
-
+        
+          <a class="article-more-a" href="/2015/03/16/php-e5-b0-86-e7-a7-92-e8-bd-ac-e6-88-90-e8-b7-9d-e7-a6-bb-e5-bd-93-e5-89-8d-e5-a4-9a-e5-b0-91-e5-a4-a9-e6-97-a5-e5-88-86-e7-a7-92-e7-a7-92-e6-a0-bc-e5-bc-8f-e4-b8-ba-e5-a4-a9-e5-b0-8f-e6-97-b6/#more">more >></a>
+        
       
 
       
@@ -858,11 +749,10 @@ $(&quot;.dsp .s span&quot;).**live(&quot;click&quot;**,function(){
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758-300x87.png" alt="genapp.sh"></a><br>分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。<br>解决：1）在windows下转换：<br>利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。<br>2）也可在Linux中转换：<br>首先要确保文件有可执行权限 </p>
-<p>#sh&gt;chmod a+x filename<br>然后修改文件格式 </p>
-<p>#sh&gt;vi filename<br>利用如下命令查看文件格式<br>:set ff 或 :set fileformat<br>可以看到如下信息<br>fileformat=dos 或 fileformat=unix<br>利用如下命令修改文件格式<br>:set ff=unix 或 :set fileformat=unix<br>:wq (存盘退出)<br>最后再执行文件 </p>
-<p>#sh&gt;./filename</p>
-
+        <p>在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758-300x87.png" alt="genapp.sh"></a><br>分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。<br>解决：1）在windows下转换：<br>
+        
+          <a class="article-more-a" href="/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/#more">more >></a>
+        
       
 
       

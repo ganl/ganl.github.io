@@ -274,16 +274,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>File “/usr/lib/python2.7/logging/config.py”, line 562, in configure<br>‘filter %r: %s’ % (name, e))<br>ValueError: Unable to configure filter ‘require_debug_false’: ‘DictConfigurator’ object has no attribute ‘startswith’</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/12/console.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/12/console.png" alt="console"></a></p>
-<p>解决方法见：</p>
-<p><a href="http://stackoverflow.com/questions/28806403/python-logging-and-pydev-debugger" target="_blank" rel="external">http://stackoverflow.com/questions/28806403/python-logging-and-pydev-debugger</a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/12/python5.0.2-pydevd.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/12/python5.0.2-pydevd.png" alt="python5.0.2 pydevd"></a></p>
-<p>修改pycharm/helpers/pydev/pydevd.py,注释pydev_monkey_qt.patch_qt()</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/12/pydevd.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/12/pydevd.png" alt="pydevd"></a></p>
-<p>再次debug，正常</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/12/console2.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/12/console2.png" alt="console2"></a></p>
-<p>&nbsp;</p>
-
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2015/12/console.png" alt="console"></p>
+<p>解决方法见：<br>
+        
+          <a class="article-more-a" href="/2015/12/17/pycharm-valueerror-unable-to-configure-filter-require-debug-false-dictconfigurator-object-has-no-attribute-startswith/#more">more >></a>
+        
       
 
       
@@ -381,16 +376,10 @@
       
         <p>导入virtualbox vdi文件，启动后出现error：file not found</p>
 <p>grub rescue &gt;</p>
-<p>找到系统所在分区：</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/12/rescue.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/12/rescue.png" alt="rescue"></a></p>
-<p><code>grub rescue&amp;gt;set root=(hd0,msdos3)
-grub rescue&amp;gt;set prefix=(hd0,msdos3)/boot/grub
-grub rescue&amp;gt;insmod /boot/grub/normal.mod
-grub rescue&amp;gt;normal</code></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/12/menu.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/12/menu.png" alt="menu"></a></p>
-<p>进入Linux中，对grub进行修复<br><code>sudo update-grub
-sudo grub-install /dev/sda</code></p>
-
+<p>找到系统所在分区：<br>
+        
+          <a class="article-more-a" href="/2015/12/13/grub-rescue-e7-bb-88-e7-ab-af-e6-a8-a1-e5-bc-8f-e4-bf-ae-e5-a4-8d-e6-96-b9-e6-b3-95/#more">more >></a>
+        
       
 
       
@@ -581,21 +570,11 @@ sudo grub-install /dev/sda</code></p>
       
         <p>有时候会遇到把日志或者其他信息导出来，最开始用的csv到没发现存在乱码的问题；</p>
 <p>今天导license换成excel，发现里面的中文都乱码了，</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/11/unicode.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/11/unicode.jpg" alt="unicode"></a></p>
-<p>把excel后缀 .xls 改成 .txt,用notepad++打开，能正常显示看了下编码，utf8；</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/11/21.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/11/21.jpg" alt="2"></a></p>
-<p>想着header加上编码应该就没问题了：</p>
-<p><code>header(&quot;Content-type:application/vnd.ms-excel;charset=UTF-8&quot;);</code></p>
-<p>测试了依然乱码，试了下用notepad++将文件编码转成ascii码后，wps打开中文显示正常；只好在输出汉字的地方加上编码转换了。<br><code>iconv(&quot;UTF-8&quot;, &quot;GBK&quot;, $lic[&#39;company&#39;]).&quot;\t&quot;;</code><br>再次测试，正常了；发现不改后缀notepad++也能打开xls，对excel文件格式不了解，不去研究了。</p>
-<p>附上php导出excel比较简单的方法，不依赖第三方类或库：<br><code>$file_name = &quot;info.xls&quot;;
-//ob_end_clean();
-header(&quot;Content-type:application/vnd.ms-excel;charset=UTF-8&quot;);
-header(&quot;Content-Disposition:attachment;filename=&quot;.$file_name);
-echo &quot;serial number&quot;.&quot;\t&quot;.&quot;product type\tcompany\ttime\t\n&quot;;</code></p>
-<p>$lic_value = sd_get_licenses();//</p>
-<p>foreach ($lic_value as $lic){<br>echo $lic[‘sn’].”\t”;<br>$label = LicenseCode::getProductLabelByProduct($lic[‘product’]);//<br>echo $label.”\t”;<br>echo iconv(“UTF-8”, “GBK”, $lic[‘company’]).”\t”;<br>echo $lic[‘time’].”\t”;<br>echo “\n”;<br>}</p>
-<p>&nbsp;</p>
-
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2015/11/unicode.jpg" alt="unicode"></p>
+<p>把excel后缀 .xls 改成 .txt,用notepad++打开，能正常显示看了下编码，utf8；<br>
+        
+          <a class="article-more-a" href="/2015/11/05/php-e5-af-bc-e5-87-baexcel-ef-bc-8c-e4-b8-ad-e6-96-87-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/#more">more >></a>
+        
       
 
       
@@ -904,63 +883,9 @@ echo &quot;serial number&quot;.&quot;\t&quot;.&quot;product type\tcompany\ttime\
       
         <h3 id="安装之前先了解下关键概念："><a href="#安装之前先了解下关键概念：" class="headerlink" title="安装之前先了解下关键概念："></a>安装之前先了解下关键概念：</h3><p>在linux上安装Docker，你的机器即使localhost也是docker主机；在网络中，localhost是指您的计算机。docker主机是容器中在该机器上运行。说白了就是直接安装在linux上，英文翻译真蛋疼。</p>
 <p>在Windows安装，Docker守护进程运行Linux虚拟机内。您可以使用Windows的客户端与虚拟机中的Docker主机通信。这台主机中运行你的Docker容器。</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/win_docker_host.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/win_docker_host.png" alt="win_docker_host"></a></p>
-<p>&nbsp;</p>
-<p>在Windows中，Docker主机地址是Linux VM的地址。当启动docker-machine虚拟机时会被分配一个IP地址。当你启动一个容器，容器的端口会映射到VM。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>&nbsp;</p>
-<p><a href="https://www.docker.com/toolbox" target="_blank" rel="external">https://www.docker.com/toolbox</a></p>
-<p>或者去github上下在：<a href="https://github.com/boot2docker/windows-installer/releases" target="_blank" rel="external">https://github.com/boot2docker/windows-installer/releases</a></p>
-<p>不能下载 可以到网盘下载 链接: <a href="http://pan.baidu.com/s/1jGrkJ7w" target="_blank" rel="external">http://pan.baidu.com/s/1jGrkJ7w</a> 密码: 3xie</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150921235847.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150921235847.jpg" alt="blog20150921235847"></a></p>
-<p>基本是下一步，下一步，最后一步选上 加到path：</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150921235949.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150921235949.jpg" alt="blog20150921235949"></a></p>
-<h3 id="the-Docker-Quickstart-Terminal"><a href="#the-Docker-Quickstart-Terminal" class="headerlink" title="the Docker Quickstart Terminal"></a>the Docker Quickstart Terminal</h3><p>装完后桌面上会多出几个图标，其中有一个是Docker Quickstart Terminal，双击运行，居然出现错误：</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922001611.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922001611.jpg" alt="blog20150922001611"></a></p>
-<p>关掉，已管理员身份运行：<br>`## .</p>
-<h2 id=""><a href="#" class="headerlink" title="## ## =="></a>## ## ==</h2><h2 id="-1"><a href="#-1" class="headerlink" title="## ## ## ## ==="></a>## ## ## ## ===</h2><p>/“””””””””””””””””___/ ===<br><figure class="highlight plain"><figcaption><span>~~~~ ~~~ ~~~~ ~~~ ~ / </span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">\______ o __/</div><div class="line">\ \ __/</div><div class="line">\____\_______/`</div><div class="line"></div><div class="line">host is not running</div><div class="line">docker is configured to use the default machine with IP</div><div class="line">For help getting started, check out the docs at https://docs.docker.com</div><div class="line">lei@ganlei MINGW64 ~</div><div class="line">$</div><div class="line"></div><div class="line">手动启动虚拟机，提示VT-x/AMD-V 硬件加速在系统中不可用；记得以前用VMware时开启过的，重启进BIOS检查,发现状态是Disabled，修改为Enabled 开启虚拟化支持：</div><div class="line"></div><div class="line">[![](http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922005204.jpg)](http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922005204.jpg)</div><div class="line"></div><div class="line">删掉重新来：</div><div class="line"></div><div class="line">Creating Machine default...</div><div class="line">Creating VirtualBox VM...</div><div class="line">Creating SSH key...</div><div class="line">Starting VirtualBox VM...</div><div class="line">Starting VM...</div><div class="line">To see how to connect Docker to this machine, run: G:\Program Files\Docker Toolbox\docker-machine.exe env default</div><div class="line">Starting machine default...</div><div class="line">Started machines may have new IP addresses. You may need to re-run the `docker-machine env` command.</div><div class="line">Setting environment variables for machine default...</div><div class="line">## .</div><div class="line">## ## ## ==</div><div class="line">## ## ## ## ## ===</div><div class="line">/&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;\___/ ===</div><div class="line">~~~ &#123;~~ ~~~~ ~~~ ~~~~ ~~~ ~ / ===-</div></pre></td></tr></table></figure></p>
-<p>_<strong>_</strong> o <strong>/<br>\ \ </strong>/<br>_<strong><em>____</em></strong>/</p>
-<p>docker is configured to use the default machine with IP 192.168.99.100<br>For help getting started, check out the docs at <a href="https://docs.docker.com" target="_blank" rel="external">https://docs.docker.com</a><br>lei@ganlei MINGW64 ~<br>$</p>
-<p>瞅一眼Docker主机是什么样子的：</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922011047.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922011047.jpg" alt="blog20150922011047"></a></p>
-<p>通过运行hello-world容器来验证是否安装成功：</p>
-<blockquote>
-<p>lei@ganlei MINGW64 ~<br>$ docker run hello-world<br>Unable to find image ‘hello-world:latest’ locally<br>latest: Pulling from library/hello-world<br>535020c3e8ad: Pulling fs layer<br>af340544ed62: Pulling fs layer<br>af340544ed62: Verifying Checksum<br>af340544ed62: Download complete<br>535020c3e8ad: Verifying Checksum<br>535020c3e8ad: Download complete<br>535020c3e8ad: Pull complete<br>af340544ed62: Pull complete<br>library/hello-world:latest: The image you are pulling has been verified. Important: image verification is a tech preview feature and should not be relied on to provide security.<br>Digest: sha256:02fee8c3220ba806531f606525eceb83f4feb654f62b207191b1c9209188dedd<br>Status: Downloaded newer image for hello-world:latest</p>
-<p>Hello from Docker.<br>This message shows that your installation appears to be working correctly.</p>
-<p>To generate this message, Docker took the following steps:<br>1. The Docker client contacted the Docker daemon.<br>2. The Docker daemon pulled the “hello-world” image from the Docker Hub.<br>3. The Docker daemon created a new container from that image which runs the<br>executable that produces the output you are currently reading.<br>4. The Docker daemon streamed that output to the Docker client, which sent it<br>to your terminal.</p>
-<p>To try something more ambitious, you can run an Ubuntu container with:<br>$ docker run -it ubuntu bash</p>
-<p>Share images, automate workflows, and more with a free Docker Hub account:<br><a href="https://hub.docker.com" target="_blank" rel="external">https://hub.docker.com</a></p>
-<p>For more examples and ideas, visit:<br><a href="https://docs.docker.com/userguide/" target="_blank" rel="external">https://docs.docker.com/userguide/</a><br>lei@ganlei MINGW64 ~<br>$<br>安装Docker镜像：</p>
-</blockquote>
-<p>默认用户名docker,密码：tcuser</p>
-<p>$ ssh docker@192.168.99.100<br>docker@192.168.99.100’s password:</p>
-<h2 id="-2"><a href="#-2" class="headerlink" title="."></a>.</h2><h2 id="-3"><a href="#-3" class="headerlink" title="## ## =="></a>## ## ==</h2><h2 id="-4"><a href="#-4" class="headerlink" title="## ## ## ## ==="></a>## ## ## ## ===</h2><p>/“””””””””””””””””_<strong>/ ===<br><del>~ {</del> <del>~~ ~</del> <del>~~ ~</del> ~ / ===- ~~~<br>____</strong> o <strong>/<br>\ \ </strong>/<br>_<strong><em>____</em></strong>/</p>
-<hr>
-<p>| |<strong> _</strong> <strong><em> | |</em>|_</strong> \ <strong>| | _</strong> <strong><em>| | __</em></strong> <em> __<br>| ‘</em> \ / <em> \ / </em> | <strong>| </strong>) / <em>` |/ </em> \ / <strong>| |/ / _ \ ‘</strong>|<br>| |<em>) | (</em>) | (<em>) | |</em> / <strong>/ (<em>| | (</em>) | (</strong>| &lt; <strong>/ |<br>|_.</strong>/ _<strong>/ _</strong>/ _<em>|<em>__</em></em>_<em>,</em>|_<strong>/ _</strong>|<em>|\</em>__<em>|</em>|<br>Boot2Docker version 1.8.2, build master : aba6192 - Thu Sep 10 20:58:17 UTC 2015<br>Docker version 1.8.2, build 0a8c2e3<br>docker@default:~$</p>
-<p>拉取一个镜像：<br><code>docker pull daocloud.io/daocloud/dao-2048:v1.0
-Pulling repository daocloud.io/daocloud/dao-2048
-ebedc5b763b3: Pulling image (v1.0) from daocloud.io/daocloud/dao-2048, endpoint:ebedc5b763b3: Download complete
-31f630c65071: Download complete
-1eae7e4d52e1: Download complete
-63e8c6f236f9: Download complete
-2a6e8fa08c63: Download complete
-c96993b7308a: Download complete
-Status: Downloaded newer image for daocloud.io/daocloud/dao-2048:v1.0</code><br>查看镜像：<br><code>docker@default:~$ docker images
-REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE
-hello-world latest af340544ed62 6 weeks ago 960 B
-daocloud.io/daocloud/dao-2048 v1.0 ebedc5b763b3 9 weeks ago 8.017 MB
-daocloud.io/library/ubuntu 10.04 3db9c44f4520 17 months ago 183 MB
-docker@default:~$</code></p>
-<p>运行容器：<br><code>docker@default:~$ docker run -i -t daocloud.io/library/ubuntu:10.04 /bin/bash
-root@6c76a556b6ed:/# ls
-bin boot dev etc home lib lib64 media mnt opt proc root sbin selinux srv sys tmp usr var
-root@6c76a556b6ed:/# pwd
-/</code></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922020318.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150922020318.jpg" alt="blog20150922020318"></a></p>
-<p>&nbsp;</p>
-<p>如果有阿里云的ECS可以利用云服务器内网来拉取镜像，阿里云ECS内网Docker镜像地址：<a href="http://help.aliyun.com/knowledge_detail.htm?knowledgeId=5974865" target="_blank" rel="external">http://help.aliyun.com/knowledge_detail.htm?knowledgeId=5974865</a></p>
-<p>docker官方安装文档：<a href="https://docs.docker.com/installation/windows/" target="_blank" rel="external">https://docs.docker.com/installation/windows/</a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/Installation-on-Windows-docs_docker_com_installation_windows.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/Installation-on-Windows-docs_docker_com_installation_windows.jpg" alt="docs_docker_com_installation_windows"></a></p>
-
+        
+          <a class="article-more-a" href="/2015/09/22/e4-bd-bf-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-88toolbox-e5-9c-a8windows-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-89/#more">more >></a>
+        
       
 
       

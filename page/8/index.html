@@ -184,11 +184,9 @@
 Connecting to sourceforge.net|216.34.181.60|:443... 已连接。
 ERROR: certificate common name</code>*.sourceforge.net’ doesn’t match requested host name <code>sourceforge.net&#39;.
 To connect to sourceforge.net insecurely, use</code>–no-check-certificate’.<br>无法建立 SSL 连接。<br>[root@localhost ~]# wget <a href="http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz" target="_blank" rel="external">http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz</a><br>–2015-04-24 11:31:07–  <a href="http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz" target="_blank" rel="external">http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz</a><br>`</p>
-<p>`<br>100%[========================================================================================================================================&gt;] 854,987      317K/s   in 2.6s    </p>
-<p>2015-04-24 11:31:15 (317 KB/s) - `libevent-2.0.22-stable.tar.gz’ saved [854987/854987]<br>[root@localhost ~]# tar zxvf libevent-2.0.22-stable.tar.gz<br>[root@localhost libevent-2.0.22-stable]# cd libevent-2.0.22-stable<br>[root@localhost libevent-2.0.22-stable]# ./configure -prefix=/usr<br>[root@localhost libevent-2.0.22-stable]# make<br>[root@localhost libevent-2.0.22-stable]# make install<br>[root@localhost libevent]#  ls -al /usr/lib | grep libevent<br>lrwxrwxrwx   1 root root       21 04-24 11:41 libevent-2.0.so.5 -&gt; libevent-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root   773058 04-24 11:41 libevent-2.0.so.5.1.9<br>lrwxrwxrwx   1 root root       26 04-24 11:41 libevent_core-2.0.so.5 -&gt; libevent_core-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root   467660 04-24 11:41 libevent_core-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root      970 04-24 11:41 libevent_core.la<br>lrwxrwxrwx   1 root root       27 04-24 11:41 libevent_extra-2.0.so.5 -&gt; libevent_extra-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root   323782 04-24 11:41 libevent_extra-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root      977 04-24 11:41 libevent_extra.la<br>-rwxr-xr-x   1 root root      935 04-24 11:41 libevent.la<br>lrwxrwxrwx   1 root root       29 04-24 11:41 libevent_openssl-2.0.so.5 -&gt; libevent_openssl-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root    71489 04-24 11:41 libevent_openssl-2.0.so.5.1.9<br>-rw-r–r–   1 root root    79904 04-24 11:41 libevent_openssl.a<br>-rwxr-xr-x   1 root root     1006 04-24 11:41 libevent_openssl.la<br>lrwxrwxrwx   1 root root       29 04-24 11:41 libevent_openssl.so -&gt; libevent_openssl-2.0.so.5.1.9<br>lrwxrwxrwx   1 root root       30 04-24 11:41 libevent_pthreads-2.0.so.5 -&gt; libevent_pthreads-2.0.so.5.1.9<br>-rwxr-xr-x   1 root root    14325 04-24 11:41 libevent_pthreads-2.0.so.5.1.9<br>-rw-r–r–   1 root root    11874 04-24 11:41 libevent_pthreads.a<br>-rwxr-xr-x   1 root root      998 04-24 11:41 libevent_pthreads.la<br>lrwxrwxrwx   1 root root       30 04-24 11:41 libevent_pthreads.so -&gt; libevent_pthreads-2.0.so.5.1.9</p>
-<p>`</p>
-<p>安装成功</p>
-
+        
+          <a class="article-more-a" href="/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/#more">more >></a>
+        
       
 
       
@@ -442,41 +440,13 @@ To connect to sourceforge.net insecurely, use</code>–no-check-certificate’.<
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>安装软件提示存储不足：<br><code>[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm 
-Preparing...                ########################################### [100%]
-        installing package in**-6478.el5.i386 needs 49MB on the / filesystem
-[root@localhost ~]#</code><br>[root@localhost ~]# df<br>文件系统               1K-块        已用     可用 已用% 挂载点<br><code>/dev/mapper/VolGroup00-LogVol00
-                      18156292  17826096         0 100% /
-/dev/sda1               101086     38687     57180  41% /boot
-tmpfs                  1037460         0   1037460   0% /dev/shm
-.host:/              157287392 134538736  22748656  86% /mnt/hgfs</code></p>
-<p>`[root@localhost ~]# fdisk -l</p>
-<p>Disk /dev/sda: 21.4 GB, 21474836480 bytes<br>255 heads, 63 sectors/track, 2610 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
-<p>   Device Boot      Start         End      Blocks   Id  System<br>/dev/sda1   *           1          13      104391   83  Linux<br>/dev/sda2              14        2610    20860402+  8e  Linux LVM`</p>
-<p>在虚拟机设置里添加一块硬盘，</p>
-<p>`<br>[root@localhost ~]# fdisk /dev/sdb </p>
-<p>The number of cylinders for this disk is set to 2610.<br>There is nothing wrong with that, but this is larger than 1024,<br>and could in certain setups cause problems with:<br>1) software that runs at boot time (e.g., old versions of LILO)<br>2) booting and partitioning software from other OSs<br>   (e.g., DOS FDISK, OS/2 FDISK)</p>
-<p>Command (m for help): n<br>Command action<br>   e   extended<br>   p   primary partition (1-4)<br>p<br>Partition number (1-4): q<br>Partition number (1-4): 1<br>First cylinder (1-2610, default 1):<br>Using default value 1<br>Last cylinder or +size or +sizeM or +sizeK (1-2610, default 2610):<br>Using default value 2610</p>
-<p>Command (m for help): w<br>The partition table has been altered!</p>
-<p>Calling ioctl() to re-read partition table.<br>Syncing disks.</p>
-<p><code>再fdisk：</code>[root@localhost ~]# fdisk -l</p>
-<p>Disk /dev/sda: 21.4 GB, 21474836480 bytes<br>255 heads, 63 sectors/track, 2610 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
-<p>   Device Boot      Start         End      Blocks   Id  System<br>/dev/sda1   *           1          13      104391   83  Linux<br>/dev/sda2              14        2610    20860402+  8e  Linux LVM</p>
-<p>Disk /dev/sdb: 21.4 GB, 21474836480 bytes<br>255 heads, 63 sectors/track, 2610 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
-<p>   Device Boot      Start         End      Blocks   Id  System<br>/dev/sdb1               1        2610    20964793+   5  Extended<br>`</p>
-<p>创建PV：<br><code>[root@localhost ~]# pvcreate /dev/sdb1 
-  Writing physical volume data to disk &quot;/dev/sdb1&quot;
-  Physical volume &quot;/dev/sdb1&quot; successfully created
-[root@localhost ~]#</code><br>扩展VolGroup00 ：<br><code>[root@localhost ~]# vgextend VolGroup00 /dev/sdb1 
-  Volume group &quot;VolGroup00&quot; successfully extended
-[root@localhost ~]#</code></p>
-<p>扩展LV：<br><code>[root@localhost ~]# lvextend -L 20G /dev/VolGroup00/LogVol00
-  Extending logical volume LogVol00 to 20.00 GB
-  Logical volume LogVol00 successfully resized
-[root@localhost ~]#</code></p>
-<p>执行重设大小：<br>`[root@localhost ~]# resize2fs /dev/VolGroup00/LogVol00<br>resize2fs 1.39 (29-May-2006)<br>Filesystem at /dev/VolGroup00/LogVol00 is mounted on /; on-line resizing required<br>Performing an on-line resize of /dev/VolGroup00/LogVol00 to 5242880 (4k) blocks.<br>The filesystem on /dev/VolGroup00/LogVol00 is now 5242880 blocks long.</p>
-<p>[root@localhost ~]# `</p>
-
+        <p>安装软件提示存储不足：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm </div><div class="line">Preparing...                ########################################### [100%]</div><div class="line">        installing package in**-6478.el5.i386 needs 49MB on the / filesystem</div><div class="line">[root@localhost ~]#</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# df</div><div class="line">文件系统               1K-块        已用     可用 已用% 挂载点</div><div class="line">/dev/mapper/VolGroup00-LogVol00</div><div class="line">                      18156292  17826096         0 100% /</div><div class="line">/dev/sda1               101086     38687     57180  41% /boot</div><div class="line">tmpfs                  1037460         0   1037460   0% /dev/shm</div><div class="line">.host:/              157287392 134538736  22748656  86% /mnt/hgfs</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# fdisk -l</div><div class="line"></div><div class="line">Disk /dev/sda: 21.4 GB, 21474836480 bytes</div><div class="line">255 heads, 63 sectors/track, 2610 cylinders</div><div class="line">Units = cylinders of 16065 * 512 = 8225280 bytes</div><div class="line"></div><div class="line">   Device Boot      Start         End      Blocks   Id  System</div><div class="line">/dev/sda1   *           1          13      104391   83  Linux</div><div class="line">/dev/sda2              14        2610    20860402+  8e  Linux LVM</div></pre></td></tr></table></figure>
+<p>在虚拟机设置里添加一块硬盘，<br>
+        
+          <a class="article-more-a" href="/2015/04/08/linux-lvm-e6-89-a9-e5-ae-b9/#more">more >></a>
+        
       
 
       
@@ -572,104 +542,10 @@ tmpfs                  1037460         0   1037460   0% /dev/shm
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>定义和用法<br>sort() 方法用于对数组的元素进行排序。<br>语法<br>arrayObject.sort(sortby)<br>参数    描述<br>sortby    可选。规定排序顺序。必须是函数。<br>返回值<br>对数组的引用。请注意，数组在原数组上进行排序，不生成副本。<br>说明<br>如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序，说得更精确点，是按照字符编码的顺序进行排序。要实现这一点，首先应把数组的元素都转换成字符串（如有必要），以便进行比较。<br>如果想按照其他标准进行排序，就需要提供比较函数，该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：<br>若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。<br>若 a 等于 b，则返回 0。<br>若 a 大于 b，则返回一个大于 0 的值。<br>例子：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;script&nbsp;type=</span><span class="string">“text/javascript”</span><span>&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>function&nbsp;sortNumber(a,b)&nbsp;&nbsp;</span></li>
-<li><span>{&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">return</span><span>&nbsp;a&nbsp;-&nbsp;b&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>var&nbsp;arr&nbsp;=&nbsp;<span class="keyword">new</span><span>&nbsp;Array(</span><span class="number">6</span><span>)&nbsp;&nbsp;</span></span></li>
-<li><span>arr[<span class="number">0</span><span>]&nbsp;=&nbsp;</span><span class="string">“10”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>arr[<span class="number">1</span><span>]&nbsp;=&nbsp;</span><span class="string">“5”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>arr[<span class="number">2</span><span>]&nbsp;=&nbsp;</span><span class="string">“40”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>arr[<span class="number">3</span><span>]&nbsp;=&nbsp;</span><span class="string">“25”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>arr[<span class="number">4</span><span>]&nbsp;=&nbsp;</span><span class="string">“1000”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>arr[<span class="number">5</span><span>]&nbsp;=&nbsp;</span><span class="string">“1”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>document.write(arr&nbsp;+&nbsp;<span class="string">“&lt;br&nbsp;/&gt;”</span><span>)&nbsp;&nbsp;</span></span></li>
-<li><span>document.write(arr.sort(sortNumber))&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&lt;/script&gt;&nbsp;&nbsp;</span></li></ol></div>
-
-<p>HTMLTableElement:<br><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement</a></p>
-<p>JS：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;script&nbsp;type=</span><span class="string">“text/javascript”</span><span>&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>function&nbsp;sortTable(tableId,col,dataType){&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;mtable&nbsp;=&nbsp;$(‘table#’+tableId);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;mtrs&nbsp;=&nbsp;<span class="keyword">new</span><span>&nbsp;Array;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>(var&nbsp;i&nbsp;=&nbsp;</span><span class="number">0</span><span>;i&lt;mtable[</span><span class="number">0</span><span>].rows.length;i++){&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mtrs.push(mtable[<span class="number">0</span><span>].rows[i]);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//alert(mtable);</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;$.each(mtrs,&nbsp;function(index,row){&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//alert($(this).find(“.”+col,mtable).html());</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;row.sortKey&nbsp;=&nbsp;$(<span class="keyword">this</span><span>).find(</span><span class="string">“.”</span><span>+col,mtable).html();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;mtrs.sort(function(a,b){&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;&nbsp;alert(a);</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;&nbsp;alert(b);</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mtra&nbsp;=&nbsp;dataConvert(a.sortKey,dataType);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mtrb&nbsp;=&nbsp;dataConvert(b.sortKey,dataType);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(mtra&nbsp;&lt;&nbsp;mtrb){&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;-</span><span class="number">1</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<span class="keyword">else</span><span>&nbsp;</span><span class="keyword">if</span><span>(mtra&nbsp;&gt;&nbsp;mtrb){&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="number">1</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<span class="keyword">else</span><span>{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="number">0</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;$.each(&nbsp;mtrs,&nbsp;function(&nbsp;index,&nbsp;row&nbsp;){&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mtable.children(‘tbody’).append(row);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;row.sortKey&nbsp;=&nbsp;<span class="keyword">null</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;jQuery.fn.alterRowClass&nbsp;=&nbsp;function()&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(‘tbody&nbsp;tr:odd’,&nbsp;<span class="keyword">this</span><span>).removeClass(‘uneven’).addClass(‘even’);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(‘tbody&nbsp;tr:even’,&nbsp;<span class="keyword">this</span><span>).removeClass(‘even’).addClass(‘uneven’);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">this</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;mtable.alterRowClass();&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>function&nbsp;dataConvert(mValue,dataType){&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">switch</span><span>&nbsp;&nbsp;(dataType)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span><span>&nbsp;</span><span class="string">“int”</span><span>:&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;parseInt(mValue);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span><span>&nbsp;</span><span class="string">“ip”</span><span>:&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;ip2int(mValue);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span><span>&nbsp;</span><span class="string">“user”</span><span>:&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;mValue.toString();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span><span>&nbsp;</span><span class="string">“date”</span><span>:&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">new</span><span>&nbsp;Date(Date.parse(mValue));&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">default</span><span>&nbsp;:&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;mValue.toString();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>function&nbsp;ip2int(ip){&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;num&nbsp;=&nbsp;<span class="number">0</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;ip&nbsp;=&nbsp;ip.split(<span class="string">“.”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;num&nbsp;=&nbsp;Number(ip[<span class="number">0</span><span>])&nbsp;<em>&nbsp;</em></span><span class="number">256</span><span>&nbsp;&nbsp;</span><span class="number">256</span><span>&nbsp;<em>&nbsp;</em></span><span class="number">256</span><span>&nbsp;+&nbsp;Number(ip[</span><span class="number">1</span><span>])&nbsp;&nbsp;</span><span class="number">256</span><span>&nbsp;<em>&nbsp;</em></span><span class="number">256</span><span>&nbsp;+&nbsp;Number(ip[</span><span class="number">2</span><span>])&nbsp;&nbsp;</span><span class="number">256</span><span>&nbsp;+&nbsp;Number(ip[</span><span class="number">3</span><span>]);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;num;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&lt;/script&gt;&nbsp;&nbsp;&nbsp;</span></li></ol></div>
-
-<p>HTML：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;span&nbsp;onclick&nbsp;=&nbsp;</span><span class="string">“sortTable(‘baklist’,$(this).attr(‘class’),’ip’);”</span><span>&nbsp;</span><span class="keyword">class</span><span>=</span><span class="string">“row_5”</span><span>&gt;&lt;?php&nbsp;echo&nbsp;$L[‘DATA_ADDRESS’];&nbsp;?&gt;&lt;/span&gt;&nbsp;&nbsp;</span></span></li></ol></div>
-
-
+        <p>定义和用法<br>sort() 方法用于对数组的元素进行排序。<br>语法<br>arrayObject.sort(sortby)<br>参数    描述<br>sortby    可选。规定排序顺序。必须是函数。<br>返回值<br>对数组的引用。请注意，数组在原数组上进行排序，不生成副本。<br>说明<br>如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序，说得更精确点，是按照字符编码的顺序进行排序。要实现这一点，首先应把数组的元素都转换成字符串（如有必要），以便进行比较。<br>如果想按照其他标准进行排序，就需要提供比较函数，该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：<br>若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。<br>若 a 等于 b，则返回 0。<br>若 a 大于 b，则返回一个大于 0 的值。<br>例子：<br>
+        
+          <a class="article-more-a" href="/2015/04/02/js-e5-ae-9e-e7-8e-b0-e8-a1-a8-e6-a0-bc-e6-a0-b9-e6-8d-ae-e5-ad-97-e6-ae-b5-e6-8e-92-e5-ba-8f/#more">more >></a>
+        
       
 
       
@@ -765,147 +641,10 @@ tmpfs                  1037460         0   1037460   0% /dev/shm
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>说是升级，实际是重装了，<br>先<br><code>mv www /home/www
-  mv rewrite /home/rewrite/
-  mv vhosts /home/vhosts
-  mv mysql/var /home/var</code><br>然后下载最新的一键安装脚本，<a href="http://market.aliyun.com/product/12-121590002-cmgj000262.html?spm=5176.775974333.2.4.Q5uTDp" target="_blank" rel="external">http://market.aliyun.com/product/12-121590002-cmgj000262.html?spm=5176.775974333.2.4.Q5uTDp</a><br>进到脚本目录执行./install.sh,等待一段时间，估计半个小时。<br>安装完成后，提示如下，<br><code>---------- make dir ok ----------
----------- env ok ----------
----------- mysql-5.6.21 ok ----------
----------- nginx-1.4.4 ok ----------
----------- php-5.3.29 ok ----------
----------- php extension ok ----------
----------- vsftpd-2.3.5  ok ----------
----------- phpwind-8.7 ok ----------
----------- phpmyadmin-4.1.8 ok ----------
----------- web init ok ----------
----------- rc init ok ----------
----------- mysql init ok ----------</code></p>
-<p>修改mysql数据库密码 ：set password for ‘root’@’localhost’ = PASSWORD(‘XXXXXXX’)</p>
-<p>然后：<br><code>mv /home/www www
-  mv /home/rewrite/ rewrite
-  mv /home/vhosts vhosts
-  mv /home/var var</code></p>
-<p>修改/etc/my.cnf：增加 ：datadir=/alidata/server/mysql/var</p>
-<p>重启了下机器，</p>
-<p>ps -ef|grep mys</p>
-<p>发现没有相应进程，<br>手动启动mysql，/etc/init.d/mysqld start</p>
-<p>Starting MySQL.The server quit without updating PID file (/var/lib/mysql/tserver.pid).[FAILED]</p>
-<p>查看了下日志</p>
-<p>`150330 01:17:34 mysqld_safe mysqld from pid file /alidata/server/mysql/var/AY130302115939322bd1.pid ended<br>150330 01:19:31 mysqld_safe Starting mysqld daemon with databases from /alidata/server/mysql/var<br>2015-03-30 01:19:31 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use –explicit_defaults_for_timestamp server option (see documentation for more detail<br>s).<br>2015-03-30 01:19:31 5193 [Note] Plugin ‘FEDERATED’ is disabled.<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Using atomics to ref count buffer pool pages<br>2015-03-30 01:19:31 5193 [Note] InnoDB: The InnoDB memory heap is disabled<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Memory barrier is not used<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Compressed tables use zlib 1.2.3<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Using Linux native AIO<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Using CPU crc32 instructions<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Initializing buffer pool, size = 128.0M<br>2015-03-30 01:19:31 5193 [Note] InnoDB: Completed initialization of buffer pool<br>2015-03-30 01:19:31 5193 [ERROR] InnoDB: auto-extending data file ./ibdata1 is of a different size 640 pages (rounded down to MB) than specified in the .cnf file: initial 768 pag<br>es, max 0 (relevant if non-zero) pages!<br>2015-03-30 01:19:31 5193 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you shou<br>ld now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zero<br>s, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!<br>2015-03-30 01:19:31 5193 [ERROR] Plugin ‘InnoDB’ init function returned error.<br>2015-03-30 01:19:31 5193 [ERROR] Plugin ‘InnoDB’ registration as a STORAGE ENGINE failed.<br>2015-03-30 01:19:31 5193 [ERROR] Unknown/unsupported storage engine: InnoDB<br>2015-03-30 01:19:31 5193 [ERROR] Aborting</p>
-<p>2015-03-30 01:19:31 5193 [Note] Binlog end<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘partition’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘PERFORMANCE_SCHEMA’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘BLACKHOLE’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_DATAFILES’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_TABLESPACES’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_FOREIGN_COLS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_FOREIGN’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_FIELDS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_COLUMNS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_INDEXES’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_TABLESTATS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_SYS_TABLES’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_FT_INDEX_TABLE’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_FT_INDEX_CACHE’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_FT_CONFIG’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_FT_BEING_DELETED’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_FT_DELETED’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_FT_DEFAULT_STOPWORD’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_METRICS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_BUFFER_POOL_STATS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_BUFFER_PAGE_LRU’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_BUFFER_PAGE’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_CMP_PER_INDEX_RESET’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_CMP_PER_INDEX’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_CMPMEM_RESET’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_CMPMEM’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_CMP_RESET’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_CMP’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_LOCK_WAITS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_LOCKS’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘INNODB_TRX’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘ARCHIVE’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘MyISAM’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘CSV’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘MRG_MYISAM’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘MEMORY’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘sha256_password’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘mysql_old_password’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘mysql_native_password’<br>2015-03-30 01:19:31 5193 [Note] Shutting down plugin ‘binlog’<br>2015-03-30 01:19:31 5193 [Note] /alidata/server/mysql/bin/mysqld: Shutdown complete`</p>
-<p>百度了一下，解决方法，删除下面文件，再启动就ok了：</p>
-<p><code>mv ibdata1 /home/ibdata1
- mv ib_logfile0 /home/ib_logfile0
- mv ib_logfile1 /home/ib_logfile1
- mv mysql-bin.000001 /home/mysql-bin.000001</code></p>
-<p>此时打开博客，发现出现502 bad gateway nginx，但是打开其他静态页面有正常，百度了没有找到看起来像能解决的方法；<br>郁闷，nginx -t 报log_format 警告，将vhosts下的配置文件中的<br><code>log_format &#39;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#39;
-                     &#39;$status $body_bytes_sent &quot;$http_referer&quot; &#39;
-                      &#39;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#39;;</code><br>删除后，nginx -t 正常，重启后发现还是502，无语了；<br>然后想着，所有进程都重启下吧，<br><code>root@AY130302115939322bd1:/alidata/server/php/etc# /etc/init.d/php-fpm restart
-Gracefully shutting down php-fpm warning, no pid file found - php-fpm is not running ?
-Starting php-fpm  done</code><br>我擦，为什么不会开机自启动，再去刷新页面 ok了，</p>
-<p>php-fpm 开机为什么没起来<br><code>[30-Mar-2015 00:27:43] NOTICE: fpm is running, pid 2994
-[30-Mar-2015 00:27:43] NOTICE: ready to handle connections
-[30-Mar-2015 00:28:20] NOTICE: Finishing ...
-[30-Mar-2015 00:28:20] NOTICE: exiting, bye-bye!
-[30-Mar-2015 00:28:21] NOTICE: fpm is running, pid 5984
-[30-Mar-2015 00:28:21] NOTICE: ready to handle connections
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5985 exited on signal 15 (SIGTERM) after 672.692836 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6702 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5986 exited on signal 15 (SIGTERM) after 672.692858 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6703 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5987 exited on signal 15 (SIGTERM) after 672.692836 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6704 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5988 exited on signal 15 (SIGTERM) after 672.692811 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6705 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5989 exited on signal 15 (SIGTERM) after 672.692809 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6706 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5990 exited on signal 15 (SIGTERM) after 672.692849 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6707 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5991 exited on signal 15 (SIGTERM) after 672.692889 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6708 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5992 exited on signal 15 (SIGTERM) after 672.692927 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6709 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5993 exited on signal 15 (SIGTERM) after 672.703991 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6710 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5994 exited on signal 15 (SIGTERM) after 672.704049 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6711 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5995 exited on signal 15 (SIGTERM) after 672.704152 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6713 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5997 exited on signal 15 (SIGTERM) after 672.706674 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6715 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5998 exited on signal 15 (SIGTERM) after 672.706725 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6716 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 5999 exited on signal 15 (SIGTERM) after 672.706905 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6717 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 6000 exited on signal 15 (SIGTERM) after 672.706947 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6718 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 6001 exited on signal 15 (SIGTERM) after 672.707086 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6719 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 6002 exited on signal 15 (SIGTERM) after 672.707264 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6720 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 6003 exited on signal 15 (SIGTERM) after 672.707440 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6721 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 6004 exited on signal 15 (SIGTERM) after 672.707619 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6722 started
-[30-Mar-2015 00:39:33] WARNING: [pool www] child 6005 exited on signal 15 (SIGTERM) after 672.711375 seconds from start
-[30-Mar-2015 00:39:33] NOTICE: [pool www] child 6723 started
-[30-Mar-2015 00:39:33] NOTICE: Terminating ...
-[30-Mar-2015 00:39:33] NOTICE: exiting, bye-bye!
-[30-Mar-2015 01:42:40] NOTICE: fpm is running, pid 1575
-[30-Mar-2015 01:42:40] NOTICE: ready to handle connections
-[30-Mar-2015 02:04:50] WARNING: [pool www] child 1576 exited on signal 15 (SIGTERM) after 1330.160514 seconds from start
-[30-Mar-2015 02:04:50] NOTICE: [pool www] child 2206 started
-[30-Mar-2015 02:04:50] WARNING: [pool www] child 1582 exited on signal 15 (SIGTERM) after 1330.159393 seconds from start
-[30-Mar-2015 02:04:50] NOTICE: [pool www] child 2207 started
-[30-Mar-2015 02:04:50] WARNING: [pool www] child 1590 exited on signal 15 (SIGTERM) after 1330.148152 seconds from start
-[30-Mar-2015 02:04:50] NOTICE: [pool www] child 2208 started
-[30-Mar-2015 02:04:50] WARNING: [pool www] child 1593 exited on signal 15 (SIGTERM) after 1330.147688 seconds from start
-[30-Mar-2015 02:04:50] NOTICE: [pool www] child 2209 started
-[30-Mar-2015 02:04:50] NOTICE: Terminating ...
-[30-Mar-2015 02:04:50] NOTICE: exiting, bye-bye!
-[30-Mar-2015 02:06:23] NOTICE: fpm is running, pid 1355
-[30-Mar-2015 02:06:23] NOTICE: ready to handle connections</code></p>
-<p> <code>chkconfig
-aegis                        on
-aliyun-rdate                 2345
-apparmor                     on
-atd                          off
-bind9                        on
-bootlogd                     off
-console-setup                off
-cron                         off
-dbus                         off
-dmesg                        off
-dns-clean                    on
-friendly-recovery            off
-grub-common                  on
-hostname                     off
-hwclock                      off
-hwclock-save                 off
-i2cs                         off
-i2node                       off
-irqbalance                   off
-killprocs                    on
-module-init-tools            off
-mysqld                       off
-network-interface            off
-network-interface-container  off
-network-interface-security   off
-networking                   0
-nginx                        off
-ntp                          on
-ondemand                     on
-passwd                       off
-php-fpm                      off</code></p>
-<h2 id="设置开机自启"><a href="#设置开机自启" class="headerlink" title="设置开机自启"></a>设置开机自启</h2><p><code>chkconfig php-fpm on
-/sbin/insserv: No such file or directory</code></p>
-<p><code>whereis insserv
-insserv: /etc/insserv /etc/insserv.conf /usr/lib/insserv /usr/share/insserv /usr/share/man/man8/insserv.8.gz</code></p>
-<p><code>ln -s /usr/lib/insserv/insserv /sbin/insserv</code></p>
-<p><code>chkconfig php-fpm on
-chkconfig nginx on
-chkconfig mysqld on</code><br>再次尝试重启机器，运行正常。</p>
-
+        <p>说是升级，实际是重装了，<br>先<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mv www /home/www</div><div class="line">mv rewrite /home/rewrite/</div><div class="line">mv vhosts /home/vhosts</div><div class="line">mv mysql/var /home/var</div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2015/03/30/e9-98-bf-e9-87-8c-e4-ba-91linux-e4-b8-80-e9-94-ae-e5-ae-89-e8-a3-85web-e7-8e-af-e5-a2-83-e5-8d-87-e7-ba-a7/#more">more >></a>
+        
       
 
       

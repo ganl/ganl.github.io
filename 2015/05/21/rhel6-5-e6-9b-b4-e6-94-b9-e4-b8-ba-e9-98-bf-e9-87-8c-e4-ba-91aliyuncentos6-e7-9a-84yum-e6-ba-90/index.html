@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>RHEL6.5更改为阿里云(aliyun)CentOS6的yum源 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="删除原有的yum包  45  rpm -qa | grep yum|xargs rpm -e –nodeps安装yum包   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm   47  rpm -ivh http://mirrors">
+  <meta name="description" content="删除原有的yum包 123456  45  rpm -qa | grep yum|xargs rpm -e --nodeps安装yum包   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm   47  rpm -ivh http:/">
 <meta name="keywords" content="aliyun,阿里云,mirrors">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RHEL6.5更改为阿里云(aliyun)CentOS6的yum源">
 <meta property="og:url" content="//ganl.io/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="删除原有的yum包  45  rpm -qa | grep yum|xargs rpm -e –nodeps安装yum包   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm   47  rpm -ivh http://mirrors">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:description" content="删除原有的yum包 123456  45  rpm -qa | grep yum|xargs rpm -e --nodeps安装yum包   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm   47  rpm -ivh http:/">
+<meta property="og:updated_time" content="2017-10-11T06:01:30.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RHEL6.5更改为阿里云(aliyun)CentOS6的yum源">
-<meta name="twitter:description" content="删除原有的yum包  45  rpm -qa | grep yum|xargs rpm -e –nodeps安装yum包   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm   47  rpm -ivh http://mirrors">
+<meta name="twitter:description" content="删除原有的yum包 123456  45  rpm -qa | grep yum|xargs rpm -e --nodeps安装yum包   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm   47  rpm -ivh http:/">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
   
@@ -180,10 +180,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>删除原有的yum包<br>  45  rpm -qa | grep yum|xargs rpm -e –nodeps<br>安装yum包<br>   46  rpm -ivh <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm</a><br>   47  rpm -ivh <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-metadata-parser-1.1.2-16.el6.x86_64.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-metadata-parser-1.1.2-16.el6.x86_64.rpm</a><br>  52  rpm -ivh <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-3.2.29-60.el6.centos.noarch.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-3.2.29-60.el6.centos.noarch.rpm</a> <a href="http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.30-30.el6.noarch.rpm" target="_blank" rel="external">http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.30-30.el6.noarch.rpm</a><br>注：52 后面的包两个包需要一起安装。</p>
-<p>添加源<br> 54  cd /etc/yum.repos.d/<br> 55  rm -rf *<br> 56  wget -O /etc/yum.repos.d/rhel-source.repo <a href="http://mirrors.aliyun.com/repo/Centos-6.repo" target="_blank" rel="external">http://mirrors.aliyun.com/repo/Centos-6.repo</a><br> 59  sed -i ‘s/\$releasever/6/g’ rhel-source.repo </p>
-<p> 清理yum缓存<br>   60  yum clean all<br>将服务器上的软件包信息缓存到本地，以提高速度<br>   61  yum makecache</p>
-<p>测试安装<br>   62  yum install open-ssl</p>
+        <p><strong>删除原有的yum包</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">  45  rpm -qa | grep yum|xargs rpm -e --nodeps</div><div class="line">安装yum包</div><div class="line">   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm</div><div class="line">   47  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-metadata-parser-1.1.2-16.el6.x86_64.rpm</div><div class="line">  52  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-3.2.29-60.el6.centos.noarch.rpm http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.30-30.el6.noarch.rpm</div><div class="line">注：52 后面的包两个包需要一起安装。</div></pre></td></tr></table></figure>
+<p><strong>添加源</strong><br><a id="more"></a></p>
+<p> 54  cd /etc/yum.repos.d/<br> 55  rm -rf *<br> 56  wget -O /etc/yum.repos.d/rhel-source.repo <a href="http://mirrors.aliyun.com/repo/Centos-6.repo" target="_blank" rel="external">http://mirrors.aliyun.com/repo/Centos-6.repo</a><br> 59  sed -i ‘s/\$releasever/6/g’ rhel-source.repo </p>
+<p><strong>清理yum缓存</strong><br>   60  yum clean all<br>将服务器上的软件包信息缓存到本地，以提高速度<br>   61  yum makecache</p>
+<p><strong>测试安装</strong><br>   62  yum install open-ssl</p>
 
       
 

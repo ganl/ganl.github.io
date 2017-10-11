@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>Js的条件判断的bug, false 居然通过了 if ?真是这样？ | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的： 他想实现就是限制：北京，上海，重庆 跳转； 很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。    &amp;lt;script&amp;nbsp;type=“text/javascript”&amp;nbsp;src=“http://int.dpool.sina.com.cn/iplookup/iplookup.php?format">
+  <meta name="description" content="在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的： 他想实现就是限制：北京，上海，重庆 跳转； 很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。">
 <meta name="keywords" content="JS,&amp;amp;&amp;amp;,||">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Js的条件判断的bug, false 居然通过了 if ?真是这样？">
 <meta property="og:url" content="//ganl.io/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的： 他想实现就是限制：北京，上海，重庆 跳转； 很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。    &amp;lt;script&amp;nbsp;type=“text/javascript”&amp;nbsp;src=“http://int.dpool.sina.com.cn/iplookup/iplookup.php?format">
+<meta property="og:description" content="在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的： 他想实现就是限制：北京，上海，重庆 跳转； 很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/jsconsole-300x113.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/js-300x224.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.498Z">
+<meta property="og:updated_time" content="2017-10-11T06:09:04.188Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Js的条件判断的bug, false 居然通过了 if ?真是这样？">
-<meta name="twitter:description" content="在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的： 他想实现就是限制：北京，上海，重庆 跳转； 很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。    &amp;lt;script&amp;nbsp;type=“text/javascript”&amp;nbsp;src=“http://int.dpool.sina.com.cn/iplookup/iplookup.php?format">
+<meta name="twitter:description" content="在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的： 他想实现就是限制：北京，上海，重庆 跳转； 很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/09/jsconsole-300x113.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -185,7 +185,7 @@
       
         <p>在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的：</p>
 <p>他想实现就是限制：北京，上海，重庆 跳转；</p>
-<p>很简单，逻辑运算符用错了；改为&amp;&amp;，理论上说应该正常工作了。</p>
+<p>很简单，逻辑运算符用错了；改为&amp;&amp;，理论上说应该正常工作了。<br><a id="more"></a></p>
 <div class="dp-highlighter nogutter"><div class="bar"></div>
 
 <ol>

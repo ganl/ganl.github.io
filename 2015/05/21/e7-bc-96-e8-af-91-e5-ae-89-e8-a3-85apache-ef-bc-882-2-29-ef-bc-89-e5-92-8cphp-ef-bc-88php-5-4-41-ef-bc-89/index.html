@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>编译安装Apache（2.2.29）和PHP（php-5.4.41） | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="下载Apache并解压： 6  wget http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz 28  tar zxvf httpd-2.2.29.tar.gz 29  cd httpd-2.2.29 配置： 83  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cac">
+  <meta name="description" content="下载Apache并解压： 6  wget http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz 28  tar zxvf httpd-2.2.29.tar.gz 29  cd httpd-2.2.29 配置：">
 <meta name="keywords" content="apache,php,编译">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编译安装Apache（2.2.29）和PHP（php-5.4.41）">
 <meta property="og:url" content="//ganl.io/2015/05/21/e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85apache-ef-bc-882-2-29-ef-bc-89-e5-92-8cphp-ef-bc-88php-5-4-41-ef-bc-89/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="下载Apache并解压： 6  wget http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz 28  tar zxvf httpd-2.2.29.tar.gz 29  cd httpd-2.2.29 配置： 83  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cac">
+<meta property="og:description" content="下载Apache并解压： 6  wget http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz 28  tar zxvf httpd-2.2.29.tar.gz 29  cd httpd-2.2.29 配置：">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/05/QQ截图20150521173556-300x155.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:updated_time" content="2017-10-11T06:16:30.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="编译安装Apache（2.2.29）和PHP（php-5.4.41）">
-<meta name="twitter:description" content="下载Apache并解压： 6  wget http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz 28  tar zxvf httpd-2.2.29.tar.gz 29  cd httpd-2.2.29 配置： 83  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cac">
+<meta name="twitter:description" content="下载Apache并解压： 6  wget http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz 28  tar zxvf httpd-2.2.29.tar.gz 29  cd httpd-2.2.29 配置：">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/05/QQ截图20150521173556-300x155.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -183,7 +183,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>下载Apache并解压：<br> 6  wget <a href="http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz" target="_blank" rel="external">http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz</a><br> 28  tar zxvf httpd-2.2.29.tar.gz<br> 29  cd httpd-2.2.29</p>
-<p>配置：<br> 83  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cache –enable-disk-cache –enable-mem-cache –enable-file-cache –enable-nonportable-atomics –enable-mods-shared=most –enable-so –enable-rewrite –enable-ssl<br>遇到错误：<br> configure: error: mod_ssl has been requested but can not be built due to prerequisite failures；<br>解决办法：<br> 84  yum install openssl-devel<br>再次配置：<br>   85  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cache –enable-disk-cache –enable-mem-cache –enable-file-cache –enable-nonportable-atomics –enable-mods-shared=most –enable-so –enable-rewrite –enable-ssl<br>编译并安装：<br>   86  make;make install<br>修改配置：<br>   87  cd /usr/local/apache2/conf<br>   90  vi httpd.conf<br>增加ServerName localhost:80<br>启动Apache：<br>  148  cd /usr/local/apache2/<br>  149  ls<br>  150  cd bin/<br>  151  ls<br>  152  ./apachectl start</p>
+<p>配置：</p>
+<a id="more"></a>
+<p> 83  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cache –enable-disk-cache –enable-mem-cache –enable-file-cache –enable-nonportable-atomics –enable-mods-shared=most –enable-so –enable-rewrite –enable-ssl<br>遇到错误：<br> configure: error: mod_ssl has been requested but can not be built due to prerequisite failures；<br>解决办法：<br> 84  yum install openssl-devel<br>再次配置：<br>   85  ./configure –prefix=/usr/local/apache2 –with-mpm=worker –enable-cache –enable-disk-cache –enable-mem-cache –enable-file-cache –enable-nonportable-atomics –enable-mods-shared=most –enable-so –enable-rewrite –enable-ssl<br>编译并安装：<br>   86  make;make install<br>修改配置：<br>   87  cd /usr/local/apache2/conf<br>   90  vi httpd.conf<br>增加ServerName localhost:80<br>启动Apache：<br>  148  cd /usr/local/apache2/<br>  149  ls<br>  150  cd bin/<br>  151  ls<br>  152  ./apachectl start</p>
 <p>访问测试192.168.80.205，发现无法访问，测试127.0.0.1,It works.</p>
 <p>根据之前的文章修改 Deny -&gt; ALlow ；发现还是不能访问。</p>
 <p>想了半天，service iptables stop</p>

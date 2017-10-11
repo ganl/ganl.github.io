@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104-300x110.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120514-300x234.jpg">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607120539-300x230.jpg">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:updated_time" content="2017-10-11T06:04:59.760Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql5.6 无故退出 InnoDB: mmap(137363456 bytes) failed; errno 12">
 <meta name="twitter:description" content="百度了一下，貌似阿里云很多用户都遇到过这个问题，主机内存2G的。在一堆日志中看了一句：InnoDB: mmap(137363456 bytes) failed; errno 12度娘说：修改my.cnf ，设置innodb_buffer_pool_size=8M Remove leading # and set to the amount of RAM for the most important">
@@ -188,7 +188,8 @@
         <p>百度了一下，貌似阿里云很多用户都遇到过这个问题，主机内存2G的。<br>在一堆日志中看了一句：<br>InnoDB: mmap(137363456 bytes) failed; errno 12<br>度娘说：修改my.cnf ，设置innodb_buffer_pool_size=8M</p>
 <h1 id="Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data"><a href="#Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data" class="headerlink" title="Remove leading # and set to the amount of RAM for the most important data"></a>Remove leading # and set to the amount of RAM for the most important data</h1><h1 id="cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10"><a href="#cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10" class="headerlink" title="cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%."></a>cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.</h1><h1 id="innodb-buffer-pool-size-128M"><a href="#innodb-buffer-pool-size-128M" class="headerlink" title="innodb_buffer_pool_size = 128M"></a>innodb_buffer_pool_size = 128M</h1><p>暂且改下吧。</p>
 <hr>
-<p>2G内存为什么这么容易耗光？？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138-300x35.jpg" alt="QQ截图20150607113138"></a><br>到底谁占的多？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104-300x110.jpg" alt="QQ截图20150607113104"></a></p>
+<p>2G内存为什么这么容易耗光？？<br><a id="more"></a></p>
+<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113138-300x35.jpg" alt="QQ截图20150607113138"></a><br>到底谁占的多？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/06/QQ截图20150607113104-300x110.jpg" alt="QQ截图20150607113104"></a></p>
 <p>修改php-fpm.conf<br>pm=dynamic –&gt;&gt; pm = ondemand<br>去掉：<br>pm.process_idle_timeout=10s的注释。</p>
 <p>no children are created at startup. Children will be forked when<br>;             new requests will connect. The following parameter are used:</p>
 <p>网上的一段话：<br>当运行一段时间后,发现内存不断增长,其中一部分是PageCache的增长，这个可以通过echo 3 &gt; /proc/sys/vm/drop_caches 命令来进行有效的释放</p>

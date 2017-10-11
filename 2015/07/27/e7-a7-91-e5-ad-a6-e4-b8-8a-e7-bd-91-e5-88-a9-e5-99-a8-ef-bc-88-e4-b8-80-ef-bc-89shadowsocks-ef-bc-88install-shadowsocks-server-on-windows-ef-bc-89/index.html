@@ -29,7 +29,7 @@
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/07/shadows20160107101829.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/07/warn20160107101811.png">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/07/phone20160107115128.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:updated_time" content="2017-10-11T06:16:47.890Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="科学上网利器（一）Shadowsocks （Install Shadowsocks Server on Windows&#x2F;Linux）附带windows和Android&#x2F;iOS客户端配置">
 <meta name="twitter:description" content="除了前文更改hosts方式来上google外，如果有国外的云主机，可以好好利用一下：Install Shadowsocks Server on Windows1.下载Python for Windows：https://www.python.org/downloads/release/需要选上PIP 2.安装OpenSSL for Windows，位数需要与Python对应：https://slp">
@@ -197,6 +197,7 @@
       
         <p>除了<a href="http://www.iganlei.cn/environment-configuration/650.html" target="_blank" rel="external">前文</a>更改hosts方式来上google外，如果有国外的云主机，可以好好利用一下：<br>Install Shadowsocks Server on Windows<br>1.下载Python for Windows：<a href="https://www.python.org/downloads/release/" target="_blank" rel="external">https://www.python.org/downloads/release/</a><br>需要选上PIP<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/07/python.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/07/python-300x256.png" alt="python"></a></p>
 <p>2.安装OpenSSL for Windows，位数需要与Python对应：<a href="https://slproweb.com/products/Win32OpenSSL.html" target="_blank" rel="external">https://slproweb.com/products/Win32OpenSSL.html</a></p>
+<a id="more"></a>
 <p>3.安装Shadowsocks：打开cmd，pip install shadowsocks<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/07/command.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/07/command-300x131.png" alt="command"></a></p>
 <p>4.如果使用salsa20或者chacha20加密，下载<a href="http://download.libsodium.org/libsodium/releases/" target="_blank" rel="external">libsodium</a>放到C:\Windows\System32 或 C:\Windows\SysWOW64目录下</p>
 <p>5.运行：ssserver -p 443 -k password -m aes-256-cfb<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/07/ssserver1.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/07/ssserver1-300x194.png" alt="ssserver1"></a><br>后台运行：（只在linux下支持）<br>ssserver -p 443 -k password -m aes-256-cfb –user nobody -d start</p>

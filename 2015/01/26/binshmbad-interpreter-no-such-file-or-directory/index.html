@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>/bin/sh^M:bad interpreter: No such file or directory | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。解决：1）在windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中">
+  <meta name="description" content="在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。解决：1）在windows下转换：">
 <meta name="keywords" content="genapp,ios">
 <meta property="og:type" content="article">
 <meta property="og:title" content="&#x2F;bin&#x2F;sh^M:bad interpreter: No such file or directory">
 <meta property="og:url" content="//ganl.io/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。解决：1）在windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中">
+<meta property="og:description" content="在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。解决：1）在windows下转换：">
 <meta property="og:image" content="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758-300x87.png">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:updated_time" content="2017-10-11T06:22:23.645Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="&#x2F;bin&#x2F;sh^M:bad interpreter: No such file or directory">
-<meta name="twitter:description" content="在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。解决：1）在windows下转换：利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中">
+<meta name="twitter:description" content="在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。解决：1）在windows下转换：">
 <meta name="twitter:image" content="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758-300x87.png">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
@@ -182,7 +182,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758-300x87.png" alt="genapp.sh"></a><br>分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。<br>解决：1）在windows下转换：<br>利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。<br>2）也可在Linux中转换：<br>首先要确保文件有可执行权限 </p>
+        <p>在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758-300x87.png" alt="genapp.sh"></a><br>分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。<br>解决：1）在windows下转换：<br><a id="more"></a></p>
+<p>利用一些编辑器如UltraEdit或EditPlus等工具先将脚本编码转换，再放到Linux中执行。转换方式如下（UltraEdit）：File–&gt;Conversions–&gt;DOS-&gt;UNIX即可。<br>2）也可在Linux中转换：<br>首先要确保文件有可执行权限 </p>
 <p>#sh&gt;chmod a+x filename<br>然后修改文件格式 </p>
 <p>#sh&gt;vi filename<br>利用如下命令查看文件格式<br>:set ff 或 :set fileformat<br>可以看到如下信息<br>fileformat=dos 或 fileformat=unix<br>利用如下命令修改文件格式<br>:set ff=unix 或 :set fileformat=unix<br>:wq (存盘退出)<br>最后再执行文件 </p>
 <p>#sh&gt;./filename</p>

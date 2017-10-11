@@ -178,12 +178,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <div><script type="text/javascript"><br>function urlencode(){<br>    $(“textarea_decode”).value = encodeURIComponent($(“textarea_encode”).value);<br>}<br>function urldecode(){<br>    try {<br>        var val = decodeURIComponent($(“textarea_decode”).value);<br>    } catch(e) {<br>    }<br>    $(“textarea_encode”).value = val;<br>}<br>function $(n) {<br>    return document.getElementById(n);<br>}<br></script><br><div><strong>地址参数的编码和解码：</strong><span>即 encodeURIComponent 和 decodeURIComponent</span></div>
-
-<div><textarea style="width:95%;height:200px;" id="textarea_encode" onfocus="this.select();"></textarea></div><br><div><input onclick="urlencode();" type="button" value="编码 -&gt;"><input onclick="urldecode();" type="button" value="&lt;- 解码"><br><div><br><textarea style="width:95%;height:200px;" id="textarea_decode" onfocus="this.select();"></textarea><br></div>
-
-<p></p></div><p></p>
-</div>
+        <div><script type="text/javascript"><br>function urlencode(){<br>    $(“textarea_decode”).value = encodeURIComponent($(“textarea_encode”).value);<br>}<br>function urldecode(){<br>    try {<br>        var val = decodeURIComponent($(“textarea_decode”).value);<br>    } catch(e) {<br>    }<br>    $(“textarea_encode”).value = val;<br>}<br>function $(n) {<br>    return document.getElementById(n);<br>}<br></script><br><div><strong>地址参数的编码和解码：</strong><span>即 encodeURIComponent 和 decodeURIComponent</span></div><br>
+        
+          <a class="article-more-a" href="/2013/04/30/e5-9c-b0-e5-9d-80-e5-8f-82-e6-95-b0-e7-9a-84-e7-bc-96-e7-a0-81-e5-92-8c-e8-a7-a3-e7-a0-81/#more">more >></a>
+        
       
 
       
@@ -257,7 +255,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>接上文，增加一个IP查询功能<br>调用新浪接口查IP，</p>
-<div><br>&gt; function city_ip($ip) {<br>&gt; $url = ‘<a href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&amp;ip=" target="_blank" rel="external">http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&amp;ip=</a>‘ . $ip;<br>&gt; $f = new SaeFetchurl();<br>&gt; $str = $f-&gt;fetch($url);<br>&gt; preg_match(‘|var remote_ip_info =(.*)\;|’,$str,$ar);<br>&gt; $obj = json_decode($ar[1]);<br>&gt; $city =$obj-&gt;city;<br>&gt; return $city;<br>&gt; }<br></div><br>在responseMsg()函数中增加处理<br><div><br>&gt; if(!empty( $keyword ))<br>&gt; {<br>&gt; $msgType = “text”;<br>&gt; $wel = “百度查正在为你服务，暂时只支持单词翻译及IP查询，手机号查询，支持日语，韩语译成中文。(以后会增加身份证等查询。)”;<br>&gt; $format = “查ip 请用英文 ,+ip ;”.”\n”.”翻译单词请直接发送单词。”.”\n”.”查手机号归属地请用英文 .+手机号”.”\n”.”（例如： ,58.243.79.221 방귀 .15850781443 ）”;<br>&gt; $contentStr = $wel.”\n\n”.$format;<br>&gt; if($keyword == “h” || $keyword == “Hello2BizUser”)<br>&gt; {<br>&gt; $contentStr = $format;<br>&gt; }<br>&gt; else<br>&gt; {<br>&gt; $key1 = substr($keyword,0,1);<br>&gt; $key2 = substr($keyword,1);<br>&gt; if($key1 == “,” || $key1 == “，”)<br>&gt; {<br>&gt; $city_name = city_ip($key2);//用户发来的IP<br>&gt; if($city_name !== “”)<br>&gt; $contentStr = $city_name;<br>&gt; else<br>&gt; $contentStr = “未查到有关信息或输入有误！”;<br>&gt; }<br>&gt; else if($key1 == “.” || $key1 == “。”)<br>&gt;<br>&gt; $contentStr = taobao_m($key2);<br>&gt;<br>&gt; else if($key1 != “,” &amp;&amp; $key1 != “.”)<br>&gt;<br>&gt; $contentStr = youdao($keyword);//用户发来的词汇<br>&gt; else<br>&gt; $contentStr = $wel.”\n\n”.$format;<br>&gt; }<br>&gt; $contentStr .= “\n发送h,查看使用帮助”;<br>&gt; $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);<br>&gt; echo $resultStr;<br>&gt; }else{<br></div>
+<div><br>&gt; function city_ip($ip) {<br>&gt; $url = ‘<a href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&amp;ip=" target="_blank" rel="external">http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&amp;ip=</a>‘ . $ip;<br>&gt; $f = new SaeFetchurl();<br>&gt; $str = $f-&gt;fetch($url);<br>&gt; preg_match(‘|var remote_ip_info =(.*)\;|’,$str,$ar);<br>&gt; $obj = json_decode($ar[1]);<br>&gt; $city =$obj-&gt;city;<br>&gt; return $city;<br>&gt; }<br></div><br>
+        
+          <a class="article-more-a" href="/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-e4-b9-8b-e5-9b-9b-ef-bc-88ip-e6-9f-a5-e8-af-a2-ef-bc-89/#more">more >></a>
+        
       
 
       
@@ -350,39 +351,10 @@
 <li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="string">“请重新输入电话号码！”</span><span>;&nbsp;&nbsp;</span></span></li>
 <li><span>}&nbsp;&nbsp;</span></li></ol></div>
 
-<p>在 responseMsg()函数中对发过来的信息加以处理   部分代码如下：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span class="keyword">if</span><span>(!</span><span class="func">empty</span><span class="keyword">empty</span><span>(&nbsp;</span><span class="vars">$keyword</span><span>&nbsp;))&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$msgType</span><span>&nbsp;=&nbsp;</span><span class="string">“text”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$wel</span><span>&nbsp;=&nbsp;</span><span class="string">“百度查正在为你服务，暂时只支持单词翻译，支持日语，韩语译成中文。(增加手机号归属地。)”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$format</span><span>&nbsp;=&nbsp;</span><span class="string">“翻译单词请直接发送单词。”</span><span>.</span><span class="string">“\n”</span><span>.</span><span class="string">“查手机号归属地请用英文&nbsp;.+手机号”</span><span>.</span><span class="string">“\n”</span><span>.</span><span class="string">“（例如：&nbsp;방귀&nbsp;&nbsp;.15850781443&nbsp;）”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$contentStr</span><span>&nbsp;=&nbsp;</span><span class="vars">$wel</span><span>.</span><span class="string">“\n\n”</span><span>.</span><span class="vars">$format</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(</span><span class="vars">$keyword</span><span>&nbsp;==&nbsp;</span><span class="string">“h”</span><span>&nbsp;||&nbsp;</span><span class="vars">$keyword</span><span>&nbsp;==&nbsp;</span><span class="string">“Hello2BizUser”</span><span>)&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$contentStr</span><span>&nbsp;=&nbsp;</span><span class="vars">$format</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">else</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$key1</span><span>&nbsp;=&nbsp;</span><span class="func">substr</span><span>(</span><span class="vars">$keyword</span><span>,0,1);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$key2</span><span>&nbsp;=&nbsp;</span><span class="func">substr</span><span>(</span><span class="vars">$keyword</span><span>,1);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">if</span><span>(</span><span class="vars">$key1</span><span>&nbsp;==&nbsp;</span><span class="string">“.”</span><span>&nbsp;||&nbsp;</span><span class="vars">$key1</span><span>&nbsp;==&nbsp;</span><span class="string">“。”</span><span>)&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$contentStr</span><span>&nbsp;=&nbsp;taobao_m(</span><span class="vars">$key2</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><span>&nbsp;</span><span class="keyword">if</span><span>(</span><span class="vars">$key1</span><span>&nbsp;!=&nbsp;</span><span class="string">“,”</span><span>&nbsp;&amp;&amp;&nbsp;</span><span class="vars">$key1</span><span>&nbsp;!=&nbsp;</span><span class="string">“.”</span><span>)&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$contentStr</span><span>&nbsp;=&nbsp;youdao(</span><span class="vars">$keyword</span><span>);</span><span class="comment">//用户发来的词汇</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$contentStr</span><span>&nbsp;=&nbsp;</span><span class="vars">$wel</span><span>.</span><span class="string">“\n\n”</span><span>.</span><span class="vars">$format</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$contentStr</span><span>&nbsp;.=&nbsp;</span><span class="string">“\n发送h,查看使用帮助”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vars">$resultStr</span><span>&nbsp;=&nbsp;sprintf(</span><span class="vars">$textTpl</span><span>,&nbsp;</span><span class="vars">$fromUsername</span><span>,&nbsp;</span><span class="vars">$toUsername</span><span>,&nbsp;</span><span class="vars">$time</span><span>,&nbsp;</span><span class="vars">$msgType</span><span>,&nbsp;</span><span class="vars">$contentStr</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">echo</span><span>&nbsp;</span><span class="vars">$resultStr</span><span>;&nbsp;&nbsp;</span></span></li></ol></div>
-
-<p>更新至SAE<br>下面是运行截图（截图中还有个查询身份证的功能，后边帖子中介绍）<br><a href="http://www.iganlei.cn/wp-content/uploads/2013/04/161740mritgrrretnr89ir.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/04/161740mritgrrretnr89ir-300x233.jpg" alt="mp weixin"></a></p>
-
+<p>在 responseMsg()函数中对发过来的信息加以处理   部分代码如下：<br>
+        
+          <a class="article-more-a" href="/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-e4-b9-8b-e4-b8-89-ef-bc-88-e6-89-8b-e6-9c-ba-e5-8f-b7-e5-bd-92-e5-b1-9e-ef-bc-89/#more">more >></a>
+        
       
 
       
@@ -458,53 +430,9 @@
         <p>谢谢关注公众账号：baiducha<br>首先去官网注册，填写相关信息，并设置为开发者模式以及下载开发示例。</p>
 <p>将文档上传至自己的空间，我用的是新浪的SAE。通过验证后，注释掉 示例代码中德$wechatObj-&gt;valid();并加上$wechatObj-&gt;responseMsg();</p>
 <p>//$wechatObj-&gt;valid();<br>$wechatObj-&gt;responseMsg();<br>找到if(!empty( $keyword )){} 在这里处理用户发来的信息。。。</p>
-<p>先来实现一个简单的单词翻译功能。</p>
-<p>$contentStr = youdao($keyword);//用户发来的词汇<br>$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);<br>echo $resultStr;<br>调用了有道接口；；可以自己去申请一个。。。下面是接口函数：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span class="keyword">function</span><span>&nbsp;youdao(</span><span class="vars">$word</span><span>){&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$encode</span><span>&nbsp;=&nbsp;mb_detect_encoding(</span><span class="vars">$word</span><span>,&nbsp;</span><span class="keyword">array</span><span>(</span><span class="string">“ASCII”</span><span>,</span><span class="string">“GB2312”</span><span>,</span><span class="string">“GBK”</span><span>,</span><span class="string">“UTF-8”</span><span>));&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">if</span><span>&nbsp;(</span><span class="vars">$encode</span><span>&nbsp;!=&nbsp;</span><span class="string">“UTF-8”</span><span>){&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$word</span><span>&nbsp;=&nbsp;iconv(</span><span class="vars">$encode</span><span>,</span><span class="string">“UTF-8”</span><span>,</span><span class="vars">$word</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="vars">$ydapi</span><span>&nbsp;=&nbsp;</span><span class="string">“<a href="http://fanyi.youdao.com/openapi.do?keyfrom=（*此处为申请的key）&amp;key=（*此处为申请的key值）&amp;type=data&amp;doctype=json&amp;version=1.1&amp;q=" target="_blank" rel="external">http://fanyi.youdao.com/openapi.do?keyfrom=（*此处为申请的key）&amp;key=（*此处为申请的key值）&amp;type=data&amp;doctype=json&amp;version=1.1&amp;q=</a>“</span><span>.</span><span class="vars">$word</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$fetch</span><span>&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;SaeFetchurl();&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$content</span><span>&nbsp;=&nbsp;</span><span class="vars">$fetch</span><span>-&gt;fetch(</span><span class="vars">$ydapi</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$de_con</span><span>&nbsp;=&nbsp;json_decode(</span><span class="vars">$content</span><span>,true);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$ercode</span><span>&nbsp;=&nbsp;</span><span class="vars">$de_con</span><span>[‘errorCode’];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$phonetic</span><span>&nbsp;=&nbsp;</span><span class="vars">$de_con</span><span>[‘basic’][‘phonetic’];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$explain0</span><span>&nbsp;=&nbsp;</span><span class="vars">$de_con</span><span>[‘basic’][‘explains’][0];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$explain1</span><span>&nbsp;=&nbsp;</span><span class="vars">$de_con</span><span>[‘basic’][‘explains’][1];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$explain2</span><span>&nbsp;=&nbsp;</span><span class="vars">$de_con</span><span>[‘basic’][‘explains’][2];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$result</span><span>&nbsp;=</span><span class="string">“”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">if</span><span>(isset(</span><span class="vars">$ercode</span><span>)){&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">switch</span><span>(</span><span class="vars">$ercode</span><span>){&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">case</span><span>&nbsp;0:&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$result</span><span>&nbsp;=&nbsp;</span><span class="vars">$de_con</span><span>[‘translation’][‘0’];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">break</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">case</span><span>&nbsp;20:&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$result</span><span>&nbsp;=&nbsp;</span><span class="string">“要翻译的文本过长”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">break</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">case</span><span>&nbsp;30:&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$result</span><span>&nbsp;=&nbsp;</span><span class="string">“无法进行有效翻译”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">break</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">case</span><span>&nbsp;40:&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$result</span><span>&nbsp;=&nbsp;</span><span class="string">“不支持的翻译类型”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">break</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">case</span><span>&nbsp;50:&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$result</span><span>&nbsp;=&nbsp;</span><span class="string">“功能被禁用”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">break</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">default</span><span>:&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$result</span><span>&nbsp;=</span><span class="string">“未知错误”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">break</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">return</span><span>&nbsp;</span><span class="vars">$result</span><span>.</span><span class="string">“\n”</span><span>.</span><span class="vars">$phonetic</span><span>.</span><span class="string">“\n”</span><span>.</span><span class="vars">$explain0</span><span>.</span><span class="string">“\n”</span><span>.</span><span class="vars">$explain1</span><span>.</span><span class="string">“\n”</span><span>.</span><span class="vars">$explain2</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li></ol></div>
-
-<p>到这里已经可以翻译英文单词了</p>
-
+        
+          <a class="article-more-a" href="/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-ef-bc-88-e4-ba-8c-ef-bc-89-ef-bc-88-e5-8d-95-e8-af-8d-e7-bf-bb-e8-af-91-ef-bc-89/#more">more >></a>
+        
       
 
       
@@ -581,97 +509,10 @@
 <p>注册了两个号：baidu（baiducha）bianlididai（ <a href="http://www.austgl.com/b" title="编力地带" target="_blank" rel="external">编力地带</a>）</p>
 <p>官方提供了两种高级功能： 编辑模式 开发模式</p>
 <p>小吊丝 选择了开发模式，下了份官方文档。</p>
-<p>内容如下：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;?php&nbsp;&nbsp;</span></span></li>
-<li><span><span class="comment">/**</span>&nbsp;</span></li>
-<li><span><span class="comment">*&nbsp;wechat&nbsp;php&nbsp;test</span>&nbsp;</span></li>
-<li><span><span class="comment">*/</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="comment">//define&nbsp;your&nbsp;token</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>define(<span class="string">“TOKEN”</span><span>,&nbsp;</span><span class="string">“weixin”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$wechatObj</span><span>&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;wechatCallbackapiTest();&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$wechatObj</span><span>-&gt;valid();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">class</span><span>&nbsp;wechatCallbackapiTest&nbsp;&nbsp;</span></span></li>
-<li><span>{&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;valid()&nbsp;&nbsp;</span></span></li>
-<li><span>{&nbsp;&nbsp;</span></li>
-<li><span><span class="vars">$echoStr</span><span>&nbsp;=&nbsp;</span><span class="vars">$_GET</span><span>[</span><span class="string">“echostr”</span><span>];&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="comment">//valid&nbsp;signature&nbsp;,&nbsp;option</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">if</span><span>(</span><span class="vars">$this</span><span>-&gt;checkSignature()){&nbsp;&nbsp;</span></span></li>
-<li><span><span class="func">echo</span><span>&nbsp;</span><span class="vars">$echoStr</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="func">exit</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">public</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;responseMsg()&nbsp;&nbsp;</span></span></li>
-<li><span>{&nbsp;&nbsp;</span></li>
-<li><span><span class="comment">//get&nbsp;post&nbsp;data,&nbsp;May&nbsp;be&nbsp;due&nbsp;to&nbsp;the&nbsp;different&nbsp;environments</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$postStr</span><span>&nbsp;=&nbsp;</span><span class="vars">$GLOBALS</span><span>[</span><span class="string">“HTTP_RAW_POST_DATA”</span><span>];&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="comment">//extract&nbsp;post&nbsp;data</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">if</span><span>&nbsp;(!</span><span class="func">empty</span><span class="keyword">empty</span><span>(</span><span class="vars">$postStr</span><span>)){&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="vars">$postObj</span><span>&nbsp;=&nbsp;simplexml_load_string(</span><span class="vars">$postStr</span><span>,&nbsp;’SimpleXMLElement’,&nbsp;LIBXML_NOCDATA);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$fromUsername</span><span>&nbsp;=&nbsp;</span><span class="vars">$postObj</span><span>-&gt;FromUserName;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$toUsername</span><span>&nbsp;=&nbsp;</span><span class="vars">$postObj</span><span>-&gt;ToUserName;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$keyword</span><span>&nbsp;=&nbsp;trim(</span><span class="vars">$postObj</span><span>-&gt;Content);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$time</span><span>&nbsp;=&nbsp;time();&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$textTpl</span><span>&nbsp;=&nbsp;</span><span class="string">“&lt;xml&gt;</span>&nbsp;</span></li>
-<li><span><span class="string">&lt;ToUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/ToUserName&gt;</span>&nbsp;</span></li>
-<li><span><span class="string">&lt;FromUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/FromUserName&gt;</span>&nbsp;</span></li>
-<li><span><span class="string">&lt;CreateTime&gt;%s&lt;/CreateTime&gt;</span>&nbsp;</span></li>
-<li><span><span class="string">&lt;MsgType&gt;&lt;![CDATA[%s]]&gt;&lt;/MsgType&gt;</span>&nbsp;</span></li>
-<li><span><span class="string">&lt;Content&gt;&lt;![CDATA[%s]]&gt;&lt;/Content&gt;</span>&nbsp;</span></li>
-<li><span><span class="string">&lt;FuncFlag&gt;0&lt;/FuncFlag&gt;</span>&nbsp;</span></li>
-<li><span><span class="string">&lt;/xml&gt;”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">if</span><span>(!</span><span class="func">empty</span><span class="keyword">empty</span><span>(&nbsp;</span><span class="vars">$keyword</span><span>&nbsp;))&nbsp;&nbsp;</span></span></li>
-<li><span>{&nbsp;&nbsp;</span></li>
-<li><span><span class="vars">$msgType</span><span>&nbsp;=&nbsp;</span><span class="string">“text”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$contentStr</span><span>&nbsp;=&nbsp;</span><span class="string">“Welcome&nbsp;to&nbsp;wechat&nbsp;world!”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$resultStr</span><span>&nbsp;=&nbsp;sprintf(</span><span class="vars">$textTpl</span><span>,&nbsp;</span><span class="vars">$fromUsername</span><span>,&nbsp;</span><span class="vars">$toUsername</span><span>,&nbsp;</span><span class="vars">$time</span><span>,&nbsp;</span><span class="vars">$msgType</span><span>,&nbsp;</span><span class="vars">$contentStr</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="func">echo</span><span>&nbsp;</span><span class="vars">$resultStr</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}<span class="keyword">else</span><span>{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="func">echo</span><span>&nbsp;</span><span class="string">“Input&nbsp;something…”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>}<span class="keyword">else</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="func">echo</span><span>&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="func">exit</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">private</span><span>&nbsp;</span><span class="keyword">function</span><span>&nbsp;checkSignature()&nbsp;&nbsp;</span></span></li>
-<li><span>{&nbsp;&nbsp;</span></li>
-<li><span><span class="vars">$signature</span><span>&nbsp;=&nbsp;</span><span class="vars">$_GET</span><span>[</span><span class="string">“signature”</span><span>];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$timestamp</span><span>&nbsp;=&nbsp;</span><span class="vars">$_GET</span><span>[</span><span class="string">“timestamp”</span><span>];&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$nonce</span><span>&nbsp;=&nbsp;</span><span class="vars">$_GET</span><span>[</span><span class="string">“nonce”</span><span>];&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="vars">$token</span><span>&nbsp;=&nbsp;TOKEN;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$tmpArr</span><span>&nbsp;=&nbsp;</span><span class="keyword">array</span><span>(</span><span class="vars">$token</span><span>,&nbsp;</span><span class="vars">$timestamp</span><span>,&nbsp;</span><span class="vars">$nonce</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>sort(<span class="vars">$tmpArr</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$tmpStr</span><span>&nbsp;=&nbsp;implode(&nbsp;</span><span class="vars">$tmpArr</span><span>&nbsp;);&nbsp;&nbsp;</span></span></li>
-<li><span><span class="vars">$tmpStr</span><span>&nbsp;=&nbsp;sha1(&nbsp;</span><span class="vars">$tmpStr</span><span>&nbsp;);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">if</span><span>(&nbsp;</span><span class="vars">$tmpStr</span><span>&nbsp;==&nbsp;</span><span class="vars">$signature</span><span>&nbsp;){&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">return</span><span>&nbsp;true;&nbsp;&nbsp;</span></span></li>
-<li><span>}<span class="keyword">else</span><span>{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">return</span><span>&nbsp;false;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>?&gt;&nbsp;&nbsp;</span></li></ol></div>
-
-<p>在百度里建了个应用，把文件修改了token后上传到百度托管。验证通过后就可以了，用私人账户关注后，发信息测试</p>
-<p>，回复Welcome to wechat world!说明正常。</p>
-<p>下篇介绍翻译功能实现。</p>
-<p><a href="http://www.iganlei.cn/web/php/40.html" title="http://www.iganlei.cn/web/php/40.html" target="_blank" rel="external"> http://www.iganlei.cn/web/php/40.html</a></p>
-
+<p>内容如下：<br>
+        
+          <a class="article-more-a" href="/2013/04/24/e5-be-ae-e4-bf-a1-e5-85-ac-e4-bc-97-e5-b9-b3-e5-8f-b0-e4-bd-93-e9-aa-8c-ef-bc-88-e4-b8-80-ef-bc-89/#more">more >></a>
+        
       
 
       

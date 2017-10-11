@@ -257,12 +257,9 @@
       
         <p>最近两天发现github Contributions Calendar不记录：</p>
 <p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918223813.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918223813.jpg" alt="blog20150918223813"></a></p>
-<p>但确实有Commit的呀，仔细一看用户名都不样，</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918224333.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918224333.jpg" alt="blog20150918224333"></a></p>
-<p>&nbsp;</p>
-<p>改一下本地的邮箱就好了</p>
-<p><code>git config --global user.email &quot;769323213@qq.com&quot;</code></p>
-
+        
+          <a class="article-more-a" href="/2015/09/18/github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84/#more">more >></a>
+        
       
 
       
@@ -361,45 +358,10 @@
 <h4 id="Username-password-access"><a href="#Username-password-access" class="headerlink" title="Username/password access"></a>Username/password access</h4><ul>
 <li>客户端模式 （client credentials）</li>
 </ul>
-<h4 id="Application-access"><a href="#Application-access" class="headerlink" title="Application access"></a>Application access</h4><p>&nbsp;</p>
-</blockquote>
-<ul>
-<li>授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与”服务提供商”的认证服务器进行互动。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/bg2014051204.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/bg2014051204.png" alt="bg2014051204"></a></li>
-</ul>
-<p>（A）用户访问客户端，后者将前者导向认证服务器。</p>
-<p>（B）用户选择是否给予客户端授权。</p>
-<p>（C）假设用户给予授权，认证服务器将用户导向客户端事先指定的”重定向URI”（redirection URI），同时附上一个授权码。</p>
-<p>（D）客户端收到授权码，附上早先的”重定向URI”，向认证服务器申请令牌。这一步是在客户端的后台的服务器上完成的，对用户不可见。</p>
-<p>（E）认证服务器核对了授权码和重定向URI，确认无误后，向客户端发送访问令牌（access token）和更新令牌（refresh token）。</p>
-<p>新浪微博开放平台就是这种类型，QQ登录 等一些第三方登录应该也都是采用的这种：</p>
-<p><a href="http://wiki.connect.qq.com/%E4%BD%BF%E7%94%A8authorization_code%E8%8E%B7%E5%8F%96access_token" target="_blank" rel="external">http://wiki.connect.qq.com/%E4%BD%BF%E7%94%A8authorization_code%E8%8E%B7%E5%8F%96access_token</a></p>
-<p>&nbsp;</p>
-<ul>
-<li>简化模式（implicit grant type）不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了”授权码”这个步骤，因此得名。所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918152219.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918152219.png" alt="blog20150918152219"></a></li>
-</ul>
-<p>&nbsp;</p>
-<p>（A）客户端含客户端标识和重定向URI等信息发送到认证服务器。</p>
-<p>（B）用户决定是否给于客户端授权。</p>
-<p>（C）假设用户给予授权，认证服务器将用户导向客户端指定的”重定向URI”，并在URI的Hash部分包含了访问令牌。</p>
-<p>（D）浏览器向资源服务器发出请求，其中不包括上一步收到的Hash值（The user-agent retains the<br>fragment information locally）。</p>
-<p>（E）资源服务器返回一个网页，其中包含的代码可以获取Hash值中的令牌。</p>
-<p>（F）浏览器执行上一步获得的脚本，提取出令牌。</p>
-<p>（G）浏览器将令牌发给客户端。</p>
-<p>&nbsp;</p>
-<ul>
-<li>密码模式（Resource Owner Password Credentials Grant）中，用户向客户端提供自己的用户名和密码。客户端使用这些信息，向”服务商提供商”索要授权。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918154628.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918154628.png" alt="blog20150918154628"></a></li>
-</ul>
-<p>&nbsp;</p>
-<p>(A) The resource owner provides the client with its username and password.</p>
-<p>(B) The client requests an access token from the authorization server’s token endpoint by including the credentials received from the resource owner. When making the request, the client authenticates with the authorization server.</p>
-<p>(C) The authorization server authenticates the client and validates the resource owner credentials, and if valid, issues an access token.</p>
-<ul>
-<li>客户端模式（Client Credentials Grant）指客户端以自己的名义，而不是以用户的名义，向”服务提供商”进行认证。严格地说，客户端模式并不属于OAuth框架所要解决的问题。在这种模式中，用户直接向客户端注册，客户端以自己的名义要求”服务提供商”提供服务，其实不存在授权问题。<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918154953.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918154953.png" alt="blog20150918154953"></a></li>
-</ul>
-<p>(A) The client authenticates with the authorization server and requests an access token from the token endpoint.</p>
-<p>(B) The authorization server authenticates the client, and if valid, issues an access token.</p>
-<p>rfc：<a href="http://tools.ietf.org/html/rfc6749#page-23" target="_blank" rel="external">http://tools.ietf.org/html/rfc6749#page-23</a></p>
-
+<h4 id="Application-access"><a href="#Application-access" class="headerlink" title="Application access"></a>Application access</h4></blockquote>
+        
+          <a class="article-more-a" href="/2015/09/18/oauth2-0-e6-8e-88-e6-9d-83-e7-b1-bb-e5-9e-8b/#more">more >></a>
+        
       
 
       
@@ -474,40 +436,10 @@
       
         <p>虽然接触过些OAuth和RESTful，但是一直有比较模糊，很多平台都提供RESTful API,多数都有获取access_token这一步：<a href="http://mp.weixin.qq.com/wiki/11/0e4b294685f817b95cbed85ba5e82b8f.html" target="_blank" rel="external">http://mp.weixin.qq.com/wiki/11/0e4b294685f817b95cbed85ba5e82b8f.html</a></p>
 <p>阿里的也是类似的：<a href="https://docs.aliyun.com/?spm=5176.100054.3.1.xA5vdO#/pub/ecs/open-api/requestmethod&amp;signature" target="_blank" rel="external">https://docs.aliyun.com/?spm=5176.100054.3.1.xA5vdO#/pub/ecs/open-api/requestmethod&amp;signature</a></p>
-<p>假如我想实现一个REST API，去百度应该如何去搜索？对OAuth和REST不是很理解。</p>
-<p>REST 本来是利用的http这种无状态的协议；我获取到signature或者是access_token了，这样还算无状态吗？</p>
-<p><span style="text-decoration: underline;">OAuth是授权/鉴权方式  </span>    <span style="text-decoration: underline;"> REST是一种HTTP资源URI</span></p>
-<p>OAuth2.0（开放授权）是一个开放标准，用户授权后，第三方应用无需获取用户的用户名和密码就可以访问该用户在某一网站上存储的私密的资源。</p>
-<p><a href="http://tools.ietf.org/html/rfc6749" target="_blank" rel="external">http://tools.ietf.org/html/rfc6749</a></p>
-<h1 id="The-OAuth-2-0-Authorization-Framework"><a href="#The-OAuth-2-0-Authorization-Framework" class="headerlink" title="The OAuth 2.0 Authorization Framework"></a>The OAuth 2.0 Authorization Framework</h1><pre>
-
-<p>Abstract</p>
-<p>   The OAuth 2.0 authorization framework enables a third-party<br>   application to obtain limited access to an HTTP service, either on<br>   behalf of a resource owner by orchestrating an approval interaction<br>   between the resource owner and the HTTP service, or by allowing the<br>   third-party application to obtain access on its own behalf.  This<br>   specification replaces and obsoletes the OAuth 1.0 protocol described<br>   in <a href="http://tools.ietf.org/html/rfc5849" target="_blank" rel="external">RFC 5849</a>.</p></pre><br><a href="http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E" target="_blank" rel="external">http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E</a><p></p>
-<p>OAuth2.0较1.0相比，整个授权验证流程更简单更安全，也是未来最主要的用户身份验证和授权方式。</p>
-<p>关于OAuth2.0协议的授权流程可以参考下面的流程图，其中Client指第三方应用，Resource Owner指用户，Authorization Server是我们的授权服务器，Resource Server是API服务器。</p>
-<p>（1） <strong>Third-party application</strong>：第三方应用程序，又称”客户端”（client）。</p>
-<p>（2）<strong>HTTP service</strong>：HTTP服务提供商，简称”服务提供商”。</p>
-<p>（3）<strong>Resource Owner</strong>：资源所有者，又称”用户”（user）。</p>
-<p>（4）<strong>User Agent</strong>：用户代理，就是指浏览器。</p>
-<p>（5）<strong>Authorization server</strong>：认证服务器，即服务提供商专门用来处理认证的服务器。</p>
-<p>（6）<strong>Resource server</strong>：资源服务器，即服务提供商存放用户生成的资源的服务器。它与认证服务器，可以是同一台服务器，也可以是不同的服务器。</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/oAuth2_01.gif" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/oAuth2_01.gif" alt="oAuth2_01"></a></p>
-<p>&nbsp;</p>
-<ol>
-<li>第三方应用要求新浪微博用户给予授权。</li>
-<li>登录新浪微博给予授权Token。</li>
-<li>第三方应用用获取的授权，向认证服务器申请Access Token。</li>
-<li>Authorization Server 对应用程序（客户端）进行认证后，返回授权Token。</li>
-<li>应用程序使用令牌（Token），向服务器申请获取受保护的资源。</li>
-<li>资源服务器确认Token正确，向应用开放资源。<br><strong>接口文档</strong><br><div><br><table class="wiki_table" border="0" cellspacing="0" cellpadding="0"><br><tbody><br><tr><br><th class="wiki_table_thfirst">接口</th><br><th>说明</th><br></tr><br><tr><br><td class="wiki_table_tdfirst"><a href="http://open.weibo.com/wiki/Oauth2/authorize" title="Oauth2/authorize" target="_blank" rel="external">OAuth2/authorize</a></td><br><td>请求用户授权Token</td><br></tr><br><tr><br><td class="wiki_table_tdfirst"><a href="http://open.weibo.com/wiki/index.php?title=Oauth2/access_token&amp;action=edit&amp;redlink=1" title="Oauth2/access token（尚未撰写）" target="_blank" rel="external">OAuth2/access_token</a></td><br><td>获取授权过的Access Token</td><br></tr><br><tr><br><td class="wiki_table_tdfirst"><a href="http://open.weibo.com/wiki/Oauth2/get_token_info" title="Oauth2/get token info" target="_blank" rel="external">OAuth2/get_token_info</a></td><br><td>授权信息查询接口</td><br></tr><br><tr><br><td class="wiki_table_tdfirst"><a href="http://open.weibo.com/wiki/Oauth2/revokeoauth2" title="Oauth2/revokeoauth2" target="_blank" rel="external">OAuth2/revokeoauth2</a></td><br><td>授权回收接口</td><br></tr><br><tr><br><td class="wiki_table_tdfirst"><a href="http://open.weibo.com/wiki/index.php?title=Oauth2/get_oauth2_token&amp;action=edit&amp;redlink=1" title="Oauth2/get oauth2 token（尚未撰写）" target="_blank" rel="external">OAuth2/get_oauth2_token</a></td><br><td>OAuth1.0的Access Token更换至OAuth2.0的Access Token</td><br></tr><br></tbody><br></table><br></div><br>&nbsp;</li>
-</ol>
-<p>看新浪微的api，可以理解OAuth可以基于REST来实现，主要用于让第三方网站或者应用实现访问自身网站的某些需要身份验证以后才能访问的资源（资源在rest里体现为uri）；还是说这些只是HTTP API，符合REST特性而已。</p>
-<p>&nbsp;</p>
-<p>其他开放平台：</p>
-<p><a href="http://developer.baidu.com/wiki/index.php?title=docs/oauth" target="_blank" rel="external">http://developer.baidu.com/wiki/index.php?title=docs/oauth</a></p>
-<p><a href="http://wiki.open.qq.com/wiki/mobile/OAuth2.0%E7%AE%80%E4%BB%8B" target="_blank" rel="external">http://wiki.open.qq.com/wiki/mobile/OAuth2.0%E7%AE%80%E4%BB%8B</a></p>
-<p>&nbsp;</p>
-
+<p>假如我想实现一个REST API，去百度应该如何去搜索？对OAuth和REST不是很理解。<br>
+        
+          <a class="article-more-a" href="/2015/09/18/oauth-2-0-ef-bc-88-e5-bc-80-e6-94-be-e6-8e-88-e6-9d-83-ef-bc-89-e4-b8-8e-rest-api/#more">more >></a>
+        
       
 
       
@@ -674,208 +606,10 @@ error_reporting(E_ALL);</code><br>
       
         <p>在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的：</p>
 <p>他想实现就是限制：北京，上海，重庆 跳转；</p>
-<p>很简单，逻辑运算符用错了；改为&amp;&amp;，理论上说应该正常工作了。</p>
-<div class="dp-highlighter nogutter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;script&nbsp;type=</span><span class="string">“text/javascript”</span><span>&nbsp;src=</span><span class="string">“<a href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" target="_blank" rel="external">http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js</a>“</span><span>&gt;&lt;/script&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&lt;script&nbsp;language=<span class="string">“javascript”</span><span>&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">function</span><span>&nbsp;checkMobile()&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;pda_user_agent_list&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;Array(</span><span class="string">“2.0&nbsp;MMP”</span><span>,&nbsp;</span><span class="string">“240320”</span><span>,&nbsp;</span><span class="string">“AvantGo”</span><span>,&nbsp;</span><span class="string">“BlackBerry”</span><span>,&nbsp;</span><span class="string">“Blazer”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Cellphone”</span><span>,&nbsp;</span><span class="string">“Danger”</span><span>,&nbsp;</span><span class="string">“DoCoMo”</span><span>,&nbsp;</span><span class="string">“Elaine/3.0”</span><span>,&nbsp;</span><span class="string">“EudoraWeb”</span><span>,&nbsp;</span><span class="string">“hiptop”</span><span>,&nbsp;</span><span class="string">“IEMobile”</span><span>,&nbsp;</span><span class="string">“KYOCERA/WX310K”</span><span>,&nbsp;</span><span class="string">“LG/U990”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“MIDP-2.0”</span><span>,&nbsp;</span><span class="string">“MMEF20”</span><span>,&nbsp;</span><span class="string">“MOT-V”</span><span>,&nbsp;</span><span class="string">“NetFront”</span><span>,&nbsp;</span><span class="string">“Newt”</span><span>,&nbsp;</span><span class="string">“Nintendo&nbsp;Wii”</span><span>,&nbsp;</span><span class="string">“Nitro”</span><span>,&nbsp;</span><span class="string">“Nokia”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Opera&nbsp;Mini”</span><span>,&nbsp;</span><span class="string">“Opera&nbsp;Mobi”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Palm”</span><span>,&nbsp;</span><span class="string">“Playstation&nbsp;Portable”</span><span>,&nbsp;</span><span class="string">“portalmmm”</span><span>,&nbsp;</span><span class="string">“Proxinet”</span><span>,&nbsp;</span><span class="string">“ProxiNet”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“SHARP-TQ-GX10”</span><span>,&nbsp;</span><span class="string">“Small”</span><span>,&nbsp;</span><span class="string">“SonyEricsson”</span><span>,&nbsp;</span><span class="string">“Symbian&nbsp;OS”</span><span>,&nbsp;</span><span class="string">“SymbianOS”</span><span>,&nbsp;</span><span class="string">“TS21i-10”</span><span>,&nbsp;</span><span class="string">“UP.Browser”</span><span>,&nbsp;</span><span class="string">“UP.Link”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Windows&nbsp;CE”</span><span>,&nbsp;</span><span class="string">“WinWAP”</span><span>,&nbsp;</span><span class="string">“Androi”</span><span>,&nbsp;</span><span class="string">“iPhone”</span><span>,&nbsp;</span><span class="string">“iPod”</span><span>,&nbsp;</span><span class="string">“iPad”</span><span>,&nbsp;</span><span class="string">“Windows&nbsp;Phone”</span><span>,&nbsp;</span><span class="string">“HTC”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;pda_app_name_list&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;Array(</span><span class="string">“Microsoft&nbsp;Pocket&nbsp;Internet&nbsp;Explorer”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;user_agent&nbsp;=&nbsp;navigator.userAgent.toString();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;pda_user_agent_list.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(user_agent.indexOf(pda_user_agent_list[i])&nbsp;&gt;=&nbsp;0)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">true</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;appName&nbsp;=&nbsp;navigator.appName.toString();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;pda_app_name_list.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(user_agent.indexOf(pda_app_name_list[i])&nbsp;&gt;=&nbsp;0)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">true</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">false</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(checkMobile())&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;t&nbsp;=&nbsp;remote_ip_info;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;((&nbsp;t.province&nbsp;!=&nbsp;’北京’&nbsp;)&nbsp;||&nbsp;(&nbsp;t.province&nbsp;!=&nbsp;’重庆’)&nbsp;||&nbsp;(t.province&nbsp;!=&nbsp;’上海’))&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.location.href&nbsp;=&nbsp;(<span class="string">“<a href="http://sp.ffxxff.com" target="_blank" rel="external">http://sp.ffxxff.com</a>“</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&lt;/script&gt;&nbsp;&nbsp;</span></li></ol></div>
-
-<p>实际表现却不是这样，居然进了if；在console里执行条件语句，结果确实是false；靠，什么情况难道是bug？<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/jsconsole.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/jsconsole-300x113.jpg" alt="jsconsole"></a></p>
-<p>增加了一些调试信息：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/09/js.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/09/js-300x224.png" alt="debugjs"></a><br>发现条件句的返回的结果是true，就更不解了；怎么会是true，最后一项分明是false。</p>
-<p>折腾了好久，发现是编码问题：<br>加上：`<div class="dp-highlighter nogutter"><div class="bar"></div></div></p>
-<ol>
-<li><span><span>&lt;meta&nbsp;http-equiv=</span><span class="string">“Content-Type”</span><span>&nbsp;</span><span class="keyword">content</span><span>=</span><span class="string">“text/html;&nbsp;charset=utf-8”</span><span>&nbsp;/&gt;&nbsp;&nbsp;</span></span>`，浏览器编码再改为自动识别就ok了。</li>
-</ol>
-<div class="dp-highlighter nogutter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;head&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&lt;meta&nbsp;http-equiv=<span class="string">“Content-Type”</span><span>&nbsp;content=</span><span class="string">“text/html;&nbsp;charset=utf-8”</span><span>&nbsp;/&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&lt;/head&gt;&nbsp;&nbsp;</span></li>
-<li><span>&lt;script&nbsp;type=<span class="string">“text/javascript”</span><span>&nbsp;src=</span><span class="string">“<a href="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" target="_blank" rel="external">http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js</a>“</span><span>&gt;&lt;/script&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&lt;script&nbsp;language=<span class="string">“javascript”</span><span>&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">function</span><span>&nbsp;checkMobile()&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;pda_user_agent_list&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;Array(</span><span class="string">“2.0&nbsp;MMP”</span><span>,&nbsp;</span><span class="string">“240320”</span><span>,&nbsp;</span><span class="string">“AvantGo”</span><span>,&nbsp;</span><span class="string">“BlackBerry”</span><span>,&nbsp;</span><span class="string">“Blazer”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Cellphone”</span><span>,&nbsp;</span><span class="string">“Danger”</span><span>,&nbsp;</span><span class="string">“DoCoMo”</span><span>,&nbsp;</span><span class="string">“Elaine/3.0”</span><span>,&nbsp;</span><span class="string">“EudoraWeb”</span><span>,&nbsp;</span><span class="string">“hiptop”</span><span>,&nbsp;</span><span class="string">“IEMobile”</span><span>,&nbsp;</span><span class="string">“KYOCERA/WX310K”</span><span>,&nbsp;</span><span class="string">“LG/U990”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“MIDP-2.0”</span><span>,&nbsp;</span><span class="string">“MMEF20”</span><span>,&nbsp;</span><span class="string">“MOT-V”</span><span>,&nbsp;</span><span class="string">“NetFront”</span><span>,&nbsp;</span><span class="string">“Newt”</span><span>,&nbsp;</span><span class="string">“Nintendo&nbsp;Wii”</span><span>,&nbsp;</span><span class="string">“Nitro”</span><span>,&nbsp;</span><span class="string">“Nokia”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Opera&nbsp;Mini”</span><span>,&nbsp;</span><span class="string">“Opera&nbsp;Mobi”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Palm”</span><span>,&nbsp;</span><span class="string">“Playstation&nbsp;Portable”</span><span>,&nbsp;</span><span class="string">“portalmmm”</span><span>,&nbsp;</span><span class="string">“Proxinet”</span><span>,&nbsp;</span><span class="string">“ProxiNet”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“SHARP-TQ-GX10”</span><span>,&nbsp;</span><span class="string">“Small”</span><span>,&nbsp;</span><span class="string">“SonyEricsson”</span><span>,&nbsp;</span><span class="string">“Symbian&nbsp;OS”</span><span>,&nbsp;</span><span class="string">“SymbianOS”</span><span>,&nbsp;</span><span class="string">“TS21i-10”</span><span>,&nbsp;</span><span class="string">“UP.Browser”</span><span>,&nbsp;</span><span class="string">“UP.Link”</span><span>,&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">“Windows&nbsp;CE”</span><span>,&nbsp;</span><span class="string">“WinWAP”</span><span>,&nbsp;</span><span class="string">“Androi”</span><span>,&nbsp;</span><span class="string">“iPhone”</span><span>,&nbsp;</span><span class="string">“iPod”</span><span>,&nbsp;</span><span class="string">“iPad”</span><span>,&nbsp;</span><span class="string">“Windows&nbsp;Phone”</span><span>,&nbsp;</span><span class="string">“HTC”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;pda_app_name_list&nbsp;=&nbsp;</span><span class="keyword">new</span><span>&nbsp;Array(</span><span class="string">“Microsoft&nbsp;Pocket&nbsp;Internet&nbsp;Explorer”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;user_agent&nbsp;=&nbsp;navigator.userAgent.toString();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;pda_user_agent_list.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(user_agent.indexOf(pda_user_agent_list[i])&nbsp;&gt;=&nbsp;0)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">true</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;appName&nbsp;=&nbsp;navigator.appName.toString();&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;pda_app_name_list.length;&nbsp;i++)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;(user_agent.indexOf(pda_app_name_list[i])&nbsp;&gt;=&nbsp;0)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">true</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="keyword">false</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//if&nbsp;(checkMobile())&nbsp;{</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;t&nbsp;=&nbsp;remote_ip_info;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(t.province);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(t.province);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert((t.province&nbsp;!=&nbsp;’北京’)&nbsp;&amp;&amp;&nbsp;(t.province&nbsp;!=&nbsp;’重庆’)&nbsp;&amp;&amp;&nbsp;(t.province&nbsp;!=&nbsp;’上海’));&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(((t.province&nbsp;!=&nbsp;’北京’)&nbsp;&amp;&amp;&nbsp;(t.province&nbsp;!=&nbsp;’重庆’)&nbsp;&amp;&amp;&nbsp;(t.province&nbsp;!=&nbsp;’上海’)))&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">“a”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log((t.province&nbsp;!=&nbsp;’北京’));&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">“b”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log((t.province&nbsp;!=&nbsp;’重庆’));&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">“c”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(t.province);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(EncodeUtf8(<span class="string">“上海”</span><span>));&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log((EncodeUtf8(t.province)&nbsp;!=&nbsp;EncodeUtf8(<span class="string">“上海”</span><span>)));&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">“d”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log((t.province&nbsp;!=&nbsp;’北京’)&nbsp;&amp;&amp;&nbsp;(t.province&nbsp;!=&nbsp;’重庆’));&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">“e”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log((t.province&nbsp;!=&nbsp;’北京’)&nbsp;&amp;&amp;&nbsp;(t.province&nbsp;!=&nbsp;’重庆’)&nbsp;&amp;&amp;&nbsp;(t.province&nbsp;!=&nbsp;’上海’));&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span class="string">“f”</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(t.province&nbsp;!=&nbsp;’北京’&nbsp;&nbsp;&amp;&amp;&nbsp;t.province&nbsp;!=&nbsp;’重庆’&nbsp;&amp;&amp;&nbsp;t.province&nbsp;!=&nbsp;’上海’);&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(<span class="keyword">typeof</span><span>(t.province&nbsp;!=&nbsp;’北京’&nbsp;&nbsp;&amp;&amp;&nbsp;t.province&nbsp;!=&nbsp;’重庆’&nbsp;&amp;&amp;&nbsp;t.province&nbsp;!=&nbsp;’上海’));&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert((t.province&nbsp;!=&nbsp;’北京’&nbsp;&nbsp;&amp;&amp;&nbsp;t.province&nbsp;!=&nbsp;’重庆’&nbsp;&amp;&amp;&nbsp;t.province&nbsp;!=&nbsp;’上海’).toString());&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;&nbsp;window.location.href&nbsp;=&nbsp;(“<a href="http://sp.ffxxff.com" target="_blank" rel="external">http://sp.ffxxff.com</a>“);</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//}</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">function</span><span>&nbsp;EncodeUtf8(s1)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;s&nbsp;=&nbsp;escape(s1);&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;sa&nbsp;=&nbsp;s.split(</span><span class="string">“%”</span><span>);&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;retV&nbsp;=</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(sa[0]&nbsp;!=&nbsp;</span><span class="string">“”</span><span>)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retV&nbsp;=&nbsp;sa[0];&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;&nbsp;sa.length;&nbsp;i&nbsp;++)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(sa[i].substring(0,1)&nbsp;==&nbsp;</span><span class="string">“u”</span><span>)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retV&nbsp;+=&nbsp;Hex2Utf8(Str2Hex(sa[i].substring(1,5)));&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><span>&nbsp;retV&nbsp;+=&nbsp;</span><span class="string">“%”</span><span>&nbsp;+&nbsp;sa[i];&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;retV;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;<span class="keyword">function</span><span>&nbsp;Str2Hex(s)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;c&nbsp;=&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;n;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;ss&nbsp;=&nbsp;</span><span class="string">“0123456789ABCDEF”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;digS&nbsp;=&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;s.length;&nbsp;i&nbsp;++)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;s.charAt(i);&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;=&nbsp;ss.indexOf(c);&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;digS&nbsp;+=&nbsp;Dec2Dig(eval(n));&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//return&nbsp;value;&nbsp;</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;digS;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;<span class="keyword">function</span><span>&nbsp;Dec2Dig(n1)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;s&nbsp;=&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;n2&nbsp;=&nbsp;0;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;4;&nbsp;i++)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n2&nbsp;=&nbsp;Math.pow(2,3&nbsp;-&nbsp;i);&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(n1&nbsp;&gt;=&nbsp;n2)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;+=&nbsp;’1’;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n1&nbsp;=&nbsp;n1&nbsp;-&nbsp;n2;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><span>&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;+=&nbsp;’0’;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;s;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;<span class="keyword">function</span><span>&nbsp;Dig2Dec(s)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;retV&nbsp;=&nbsp;0;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(s.length&nbsp;==&nbsp;4)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;4;&nbsp;i&nbsp;++)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retV&nbsp;+=&nbsp;eval(s.charAt(i))&nbsp;*&nbsp;Math.pow(2,&nbsp;3&nbsp;-&nbsp;i);&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;retV;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;-1;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;<span class="keyword">function</span><span>&nbsp;Hex2Utf8(s)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;retS&nbsp;=&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;tempS&nbsp;=&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;ss&nbsp;=&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>(s.length&nbsp;==&nbsp;16)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempS&nbsp;=&nbsp;<span class="string">“1110”</span><span>&nbsp;+&nbsp;s.substring(0,&nbsp;4);&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempS&nbsp;+=&nbsp;<span class="string">“10”</span><span>&nbsp;+&nbsp;&nbsp;s.substring(4,&nbsp;10);&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempS&nbsp;+=&nbsp;<span class="string">“10”</span><span>&nbsp;+&nbsp;s.substring(10,16);&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">var</span><span>&nbsp;sss&nbsp;=&nbsp;</span><span class="string">“0123456789ABCDEF”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>(</span><span class="keyword">var</span><span>&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;3;&nbsp;i&nbsp;++)&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retS&nbsp;+=&nbsp;<span class="string">“%”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ss&nbsp;=&nbsp;tempS.substring(i&nbsp;<em>&nbsp;8,&nbsp;(eval(i)+1)</em>8);&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retS&nbsp;+=&nbsp;sss.charAt(Dig2Dec(ss.substring(0,4)));&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retS&nbsp;+=&nbsp;sss.charAt(Dig2Dec(ss.substring(4,8)));&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;retS;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;</span><span class="string">“”</span><span>;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&lt;/script&gt;&nbsp;&nbsp;</span></li></ol></div>
-
-
+<p>很简单，逻辑运算符用错了；改为&amp;&amp;，理论上说应该正常工作了。<br>
+        
+          <a class="article-more-a" href="/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/#more">more >></a>
+        
       
 
       
@@ -1059,12 +793,10 @@ error_reporting(E_ALL);</code><br>
     <div class="article-entry" itemprop="articleBody">
       
         <p>JAVA_HOME、<br> JAVA_HOME 指向的是JDK的安装路径：<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/java_home.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/java_home-300x85.png" alt="java_home"></a></p>
-<p>CLASSPATH、</p>
-<blockquote>
-<p>.;<br>告诉JDK，搜索CLASS时先查找当前目录的CLASS文件<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/CLASSPATH.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/CLASSPATH-300x85.png" alt="CLASSPATH"></a></p>
-</blockquote>
-<p>PATH、<br>在控制台下面编译、执行程序时就不需要再键入一大串路径了<br><a href="http://www.iganlei.cn/wp-content/uploads/2015/08/path.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2015/08/path-300x85.png" alt="path"></a></p>
-
+<p>CLASSPATH、<br>
+        
+          <a class="article-more-a" href="/2015/08/13/java-e8-a6-81-e8-ae-be-e7-bd-ae-e7-9a-84-e7-8e-af-e5-a2-83-e5-8f-98-e9-87-8f-ef-bc-88-e8-ae-b0-e5-bd-95-ef-bc-89java-home-e3-80-81classpath-e3-80-81path/#more">more >></a>
+        
       
 
       

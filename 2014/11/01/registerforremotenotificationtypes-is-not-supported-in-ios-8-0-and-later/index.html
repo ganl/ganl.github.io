@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ganl.io/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="升级了xcode到6后，xcode5（ios7）中的工程在build后，调试output提示：registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later iOS 8 has changed notification registration in a non-backwards compatible way.">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:updated_time" content="2017-10-11T06:01:52.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later">
 <meta name="twitter:description" content="升级了xcode到6后，xcode5（ios7）中的工程在build后，调试output提示：registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later iOS 8 has changed notification registration in a non-backwards compatible way.">
@@ -183,7 +183,7 @@
         <p>升级了xcode到6后，xcode5（ios7）中的工程在build后，调试output提示：registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later</p>
 <p>iOS 8 has changed notification registration in a non-backwards compatible way. While you need to support iOS 7 and 8 (and while apps built with the 8 SDK aren’t accepted), you can check for the selectors you need and conditionally call them correctly for the running version.</p>
 <p>Here’s a category on UIApplication that will hide this logic behind a clean interface for you that will work in both Xcode 5 and Xcode 6.</p>
-<p>注册方式:</p>
+<p>注册方式:<br><a id="more"></a></p>
 <div class="dp-highlighter"><div class="bar"></div>
 
 <ol>

@@ -180,17 +180,9 @@
       
         <p>早上起来看到阿里云的邮件说http.responsetime报警，，<br>登录到服务器上看了半天没找到原因，nginx reload过没用，静态页面是可以访问的。<br>百度了下<br>有篇文章里提到了磁盘满了，，df一看，擦100%，想想最近没做什么，只能使日志文件太占空间了。<br>du -sh ./<em> | sort -n &gt;a.txt<br>打开a.txt一看 log目录两三个G，，，清理了下，，，o了。<br>决定看下子目录情况，好做写相应处理。。。。。。。。。。<br>du -a ./</em> | sort -n &gt;a.txt</p>
 <p>出现502 其他可能原因<br>第二种原因：</p>
-<p>在php.ini里，eaccelerator配置项一定要放在Zend Optimizer配置之前，否则也可能引起502 Bad Gateway</p>
-<p>第三种原因：<br>在安装好使用过程中出现502问题，一般是因为默认php-cgi进程是5个，可能因为phpcgi进程不够用而造成502，需要修改/usr/local/php/etc/php-fpm.conf 将其中的max_children值适当增加。<br>也有可能是max_requests值不够用。</p>
-<p>第四种原因：<br>php执行超时，修改/usr/local/php/etc/php.ini 将max_execution_time 改为300</p>
-<p>第五种原因：<br>磁盘空间不足，如mysql日志占用大量空间清理一下磁盘上的文件，有部分剩余空间，重启即可恢复。</p>
-<p>第六种原因：<br>查看php-cgi进程是否在运行</p>
-<p>第七种原因：<br>将nginx.conf里的<br>fastcgi_connect_timeout<br>fastcgi_send_timeout<br>fastcgi_read_timeout都调大一点。</p>
-<p>第八种可能原因：</p>
-<p>九、也可以尝试将unix套接字改成tcp/ip的，修改/usr/local/php/etc/php-fpm.cnf 里设置<value name="“listen_address”">/tmp/nginx.socket</value> 改成<value name="“listen_address”">127.0.0.1:9000</value> ，同时/usr/local/nginx/conf/nginx.conf 及其/usr/local/nginx/conf/vhost/ 下面的虚拟主机配置里的fastcgi_pass  unix:/tmp/php-cgi.sock; 替换为fastcgi_pass  127.0.0.1:9000;  之后重启试试。</p>
-<p>十、如果虚拟主机的日志文件过大也可能会造成502问题。<br>建议定期清空一下虚拟主机的日志文件。</p>
-<p>十一、有些程序或者程序的主题有死循环或其他非常占用资源的代码也可能会引起502，可以尝试暂时注释掉可能的主机的配置文件，重启看看是否还会502。</p>
-
+        
+          <a class="article-more-a" href="/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/#more">more >></a>
+        
       
 
       
@@ -285,58 +277,10 @@
         <p>升级了xcode到6后，xcode5（ios7）中的工程在build后，调试output提示：registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later</p>
 <p>iOS 8 has changed notification registration in a non-backwards compatible way. While you need to support iOS 7 and 8 (and while apps built with the 8 SDK aren’t accepted), you can check for the selectors you need and conditionally call them correctly for the running version.</p>
 <p>Here’s a category on UIApplication that will hide this logic behind a clean interface for you that will work in both Xcode 5 and Xcode 6.</p>
-<p>注册方式:</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span class="keyword">if</span><span>&nbsp;([[[UIDevice&nbsp;currentDevice]&nbsp;systemVersion]&nbsp;floatValue]&nbsp;&gt;=&nbsp;8.0)&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[UIApplication&nbsp;sharedApplication]&nbsp;registerUserNotificationSettings:[UIUserNotificationSettings&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;settingsForTypes:(UIUserNotificationTypeSound&nbsp;|&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UIUserNotificationTypeAlert&nbsp;|&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UIUserNotificationTypeBadge)&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;categories:nil]];&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[UIApplication&nbsp;sharedApplication]&nbsp;registerForRemoteNotifications];&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">else</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="comment">//这里还是原来的代码</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[[UIApplication&nbsp;sharedApplication]registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert|&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UIRemoteNotificationTypeBadge|&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UIRemoteNotificationTypeSound];&nbsp;&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li></ol></div>
-
-<p>原本在IOS7当中 判断PUSH是否打开的方法是：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>UIRemoteNotificationType&nbsp;</span><span class="commonlibs">types</span><span>&nbsp;=&nbsp;[[UIApplication&nbsp;sharedApplication]&nbsp;enabledRemoteNotificationTypes];&nbsp;&nbsp;</span></span></li>
-<li><p><span><span class="keyword">return</span><span>&nbsp;(</span><span class="commonlibs">types</span><span>&nbsp;&amp;&nbsp;UIRemoteNotificationTypeAlert);&nbsp;&nbsp;</span></span></p></li></ol></div><br>如果将这段代码使用在 IOS当中，不会出现crash的现象，但是基本没什么作用。<br>在IOS8中，使用如下的新代码来取代以上的代码<p></p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<li><p><span><span>UIRemoteNotificationType&nbsp;</span><span class="commonlibs">types</span><span>;&nbsp;&nbsp;</span></span></p>
-</li>
-<li><span><span class="keyword">if</span><span>&nbsp;([[[UIDevice&nbsp;currentDevice]&nbsp;systemVersion]&nbsp;floatValue]&nbsp;&gt;=&nbsp;8.0)&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;<span class="commonlibs">types</span><span>&nbsp;=&nbsp;[[UIApplication&nbsp;sharedApplication]&nbsp;currentUserNotificationSettings].</span><span class="commonlibs">types</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">else</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span>&nbsp;<span class="commonlibs">types</span><span>&nbsp;=&nbsp;[[UIApplication&nbsp;sharedApplication]&nbsp;enabledRemoteNotificationTypes];&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">return</span><span>&nbsp;(</span><span class="commonlibs">types</span><span>&nbsp;&amp;&nbsp;UIRemoteNotificationTypeAlert);&nbsp;&nbsp;</span></span></li></div>
-
-
+<p>注册方式:<br>
+        
+          <a class="article-more-a" href="/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/#more">more >></a>
+        
       
 
       
@@ -525,11 +469,9 @@
 <p>chrome下的解决方法，代理插件选择“使用系统代理设置”选项，fiddler又重新能看到chrome的请求了。<br>或者不使用插件，不用卸载，chrome很方便禁用一个插件。然后使用浏览器默认的代理设置方式就ok了。</p>
 <p>使用代理插件是为了方便切换代理，但是可能会导致fiddler等工具无法使用。真是鱼和熊掌不可兼得</p>
 </blockquote>
-<p>百度了一下，如上内容，测试如下：<br>[caption id=”attachment_452” align=”aligncenter” width=”632”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/09/error.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/09/error.jpg" alt=" fiddler抓不到"></a> fiddler抓不到[/caption]</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2014/09/代理.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/09/代理.jpg" alt="代理">
-</a><br>[caption id=”attachment_454” align=”aligncenter” width=”214”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/09/代理2.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/09/代理2.jpg" alt="使用系统代理设置"></a> 使用系统代理设置[/caption]</p>
-<p>[caption id=”attachment_455” align=”aligncenter” width=”300”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/09/normal.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/09/normal-300x180.jpg" alt="正常了"></a> 正常了[/caption]</p>
-
+        
+          <a class="article-more-a" href="/2014/09/04/fiddler-chrome/#more">more >></a>
+        
       
 
       
@@ -708,18 +650,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>《福布斯》杂志报道称，当前微软正在研发一款智能手表，其可与苹果iPhone、Android和Windows Phone设备配合使用，主要用于测量用户的心率。
-</code></pre><p> [caption id=”attachment_429” align=”aligncenter” width=”500”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/06/4.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/06/4.jpg" alt="智能手表"></a> 智能手表[/caption]<br>    报道表示，微软正计划为这款智能<a href="http://www.wtoip.com/shangbiao/list-20-0-0-0-0a0-0--1o0.html" target="_blank" rel="external">手表</a>配备大量传感器。除了介绍其可以用于监控心率外，《福布斯》没有对这款产品所具备的其他功能进行阐述。微软旗下Kinect部门工程师将负责该智能手表的心率监控器的开发工作，并24小时对用户心率进行追踪测量。</p>
-<pre><code>和三星最新发布的Gear Fit智能手表不同，微软的这款产品能够持续性地测量心率而不需要用户触发某些特定功能。当前，微软正在为这款可穿戴智能设备开发一个软件平台，重点将是显示由传感器等[电子元件专利](http://www.wtoip.com/jishu/list-189-0a0-0-0-0--1o0.html)部件收集的健康信息。
-
-这款设备将配备全彩触摸屏等[电脑配件](http://www.wtoip.com/jishu/list-191-0a0-0-0-0--1o0.html)，其大小大概与口香糖差不多。显示屏所处的位置是佩戴者手腕的内侧，目的是确保通知信息的私密性，这和Razer在2014年CES所宣布推出的Nabu健身追踪器的第二显示屏有着很高的相似度。
-
-微软决定，这款智能手表将同时兼容iOS和Android系统，这也与该公司新任CEOSatya Nadella向其他平台扩展业务的企业战略相吻合。今年4月，Satya Nadella发布了一种新版微软Office办公套件，其主要是在iPad上使用。
-
-由《福布斯》的这篇报道可获知，微软的计划将是开发一种可穿戴设备，解决迄今为止智能手表最严重的问题：大部分智能手表的功能都不多，并且有很多是和智能手机重叠的，这使得很多消费者都不愿意花费200-300美元去购买这类产品。不过通过加倍重视健康功能的方式，未来微软的智能手表或将让消费者眼前一亮。
-
-当前还不知晓微软会在什么时候发布这款智能手表，若《福布斯》的报道准确性够高，那么，其发布时间大概是今夏。
-</code></pre>
+        <p>《福布斯》杂志报道称，当前微软正在研发一款智能手表，其可与苹果iPhone、Android和Windows Phone设备配合使用，主要用于测量用户的心率。<br> <img src="http://www.iganlei.cn/wp-content/uploads/2014/06/4.jpg" alt="智能手表"></p>
+        
+          <a class="article-more-a" href="/2014/06/11/e5-be-ae-e8-bd-af-e6-88-96-e5-b0-86-e5-8f-91-e5-b8-83-e5-8f-af-e6-97-a0-e9-97-b4-e6-96-ad-e7-9b-91-e6-8e-a7-e5-bf-83-e7-8e-87-e7-9a-84-e6-99-ba-e8-83-bd-e6-89-8b-e8-a1-a8/#more">more >></a>
+        
       
 
       
@@ -803,10 +737,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>现在的互联网市场似乎已经处于饱和的状态，所以谷歌开始新的一轮计划。谷歌计划投资逾10亿美元，利用多颗卫星将互联网服务扩大到全球无网络覆盖的地区，并希望克服阻碍此前类似努力的资金和[专利技术](http://www.wtoip.com/jishu/)难题。具体细节尚未确定，该项目一开始将部署180颗小型高性能卫星，随后再扩大部署规模。这些卫星的轨道高度要低于传统卫星，如果上升到卫星的角度我们似乎不是那么了解，但是这一定会有助于现在的互联网的运行速度。
-</code></pre><p> [caption id=”attachment_426” align=”aligncenter” width=”345”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/06/3.gif" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/06/3.gif" alt="借卫星扩大互联网接入服务"></a> 借卫星扩大互联网接入服务[/caption]<br>    谷歌这项几乎似乎已经酝酿了很久，现在资金和技术问题都已经解决，谷歌开始和卫星公司展开合作，开展最新的卫星<a href="http://www.wtoip.com/jishu/list-187-0a0-0-0-0--1o0.html" target="_blank" rel="external">通信设施专利</a>和<a href="http://www.wtoip.com/jishu/list-188-0a0-0-0-0--1o0.html" target="_blank" rel="external">通讯系统专利</a>布局。谷歌卫星项目将由卫星通讯创业公司O3b Networks创始人格雷格•沃勒(Greg Wyler)负责。沃勒和O3b前首席技术官近期一同加盟谷歌。谷歌还在面向卫星公司Space Systems/Loral LLC招募工程师。沃勒目前在谷歌领导着一支10人至20人的团队，向克雷格•巴拉特(Craig Barratt)报告，后者向谷歌CEO拉里•佩奇(Larry Page)报告，现在优质的团队已经有了，资金和技术问题也解决啦，接下来就是来实现这一伟大目标的时候啦!</p>
-<pre><code>但是此次谷歌的投资也是很分巨大的，谷歌这个投资项目预计投入10亿美元至30亿美元以上，具体的数字还要看实际的运行和该项目网络的最终设计以及后期将把卫星数量扩大一倍的计划。根据以往的卫星项目经验，成本可能还会上升。谷歌这一努力是硅谷公司从空中扩大互联网覆盖面，帮助既有业务的最新举措。谷歌和Facebook寄希望于利用服务尚未开发地区的新互联网用户提升其营收，最终拉高净利润，这项提高利润的项目风险和投资都很高，当然希望回报也是丰厚的，那么对于谷歌的这项计划我们拭目以待。
-</code></pre>
+        <p>现在的互联网市场似乎已经处于饱和的状态，所以谷歌开始新的一轮计划。谷歌计划投资逾10亿美元，利用多颗卫星将互联网服务扩大到全球无网络覆盖的地区，并希望克服阻碍此前类似努力的资金和<a href="http://www.wtoip.com/jishu/" target="_blank" rel="external">专利技术</a>难题。具体细节尚未确定，该项目一开始将部署180颗小型高性能卫星，随后再扩大部署规模。这些卫星的轨道高度要低于传统卫星，如果上升到卫星的角度我们似乎不是那么了解，但是这一定会有助于现在的互联网的运行速度。</p>
+        
+          <a class="article-more-a" href="/2014/06/11/e8-b0-b7-e6-ad-8c-e6-88-96-e5-80-9f-e5-8d-ab-e6-98-9f-e6-89-a9-e5-a4-a7-e4-ba-92-e8-81-94-e7-bd-91-e6-8e-a5-e5-85-a5-e6-9c-8d-e5-8a-a1/#more">more >></a>
+        
       
 
       
@@ -890,11 +824,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>微视是以一种瞬间的速度进入了人们的视线，让人们爱上这一种可以视频的社交网络。随着4G网络环境的改善，以及人们对视频影像的分享需求，越来越多的社交、视频、图像等移动应用都新添加了短视频功能或插件，短视频逐渐成为未来网络社交的新趋势。尤其是已经聚集众多明星、机构、达人和普通用户的微视，因其历次更新所带来的创新功能，以及逐渐显现出的平台影响力备受业内关注，业内人士对这款软件的更新速度十分的震惊，但是用户却认为每次更新都可以带来新的体验让人们目不暇接。
-</code></pre><p>[caption id=”attachment_423” align=”aligncenter” width=”500”]<a href="http://www.iganlei.cn/wp-content/uploads/2014/06/2.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2014/06/2.jpg" alt="微视"></a> 微视[/caption]</p>
-<p>   汇桔网<a href="http://www.wtoip.com/" target="_blank" rel="external">知识产权</a>研究院专家分析，最近微视的再次更新似乎应征了刚才的观点，对于现在的微视-酷炫版用户对其新功能是爱不释手，其主打的动态影集、视频美颜等特效也成为短视频的最新利器。广大用户可以通过安卓的各大应用市场下载，而iPhone版也将在近日同步更新上线。在微视上线之初，便已在广大用户中掀起了一股短视频拍摄、分享潮流，创意、搞笑、宠物、才艺、绝技、资讯等多样内容的聚合，以及支持本地视频上传，主题、水印、配乐和滤镜等新颖丰富的视效编辑功能的相继推出，更是不断激发了用户在拍摄、编辑和创意等视频表达方面的热情，好玩的东西有创意的东西是现在社交网络的主流发展方向，微视就是最好的体现。</p>
-<pre><code>此次的更新是在原有的视频基础上有加强了视频特效[专利技术](http://www.wtoip.com/jishu/)，让大众自己拍摄的视频更加的震撼和专业。像新增的朋克、老电影、蓝韵、南城旧事、烟雨朦胧等多种大片特效，可以让短视频随意变换为激情的摇滚范、民国的复古范或典雅的女神范;而美颜特效则能够让自拍达人的肌肤瞬间变得完美无瑕，甚至让不爱自拍的人也会因此爱不释手。值得注意的是，微视酷炫版的新功能中，还在业内首创了动态影集特效，用户可以通过点击拍摄界面下方的“图片”按钮，将选中的图片上传生成视频进行分享，并且还提供了回忆墙、旋转时光、特写、魔方四种主题，给人带来全新的视觉体验。而从此次更新的版本重点看，微视在特效等视频表现力方面更加多样，也更加丰富，8秒的精彩在不断展现的同时，也让微视成为业界最看好的拍摄视频软件，也代表着业界的未来和发展方向。
-</code></pre>
+        <p>微视是以一种瞬间的速度进入了人们的视线，让人们爱上这一种可以视频的社交网络。随着4G网络环境的改善，以及人们对视频影像的分享需求，越来越多的社交、视频、图像等移动应用都新添加了短视频功能或插件，短视频逐渐成为未来网络社交的新趋势。尤其是已经聚集众多明星、机构、达人和普通用户的微视，因其历次更新所带来的创新功能，以及逐渐显现出的平台影响力备受业内关注，业内人士对这款软件的更新速度十分的震惊，但是用户却认为每次更新都可以带来新的体验让人们目不暇接。</p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2014/06/2.jpg" alt="微视"></p>
+        
+          <a class="article-more-a" href="/2014/06/11/e5-be-ae-e8-a7-86-e9-85-b7-e7-82-ab-e7-89-88-e6-9b-b4-e6-96-b0-e5-bc-95-e7-88-868-e7-a7-92-e9-9c-87-e6-92-bc-e8-a7-86-e6-95-88/#more">more >></a>
+        
       
 
       

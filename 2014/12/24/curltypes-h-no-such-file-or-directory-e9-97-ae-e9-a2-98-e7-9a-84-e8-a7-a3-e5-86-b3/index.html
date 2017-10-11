@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ganl.io/2014/12/24/curltypes-h-no-such-file-or-directory-e9-97-ae-e9-a2-98-e7-9a-84-e8-a7-a3-e5-86-b3/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="编译xmlRPC报错，xmlrpc-c用到了libcurl：lib/curl_transport/curlmulti.c:22:24: fatal error: curl/types.h:No such file or directory    gcc&amp;nbsp;-Wall&amp;nbsp;-Iinclude&amp;nbsp;-I.&amp;nbsp;-Ilib/util/include/&amp;nbsp;-I/usr/l">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:updated_time" content="2017-10-11T06:21:32.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="curl&#x2F;types.h: No such file or directory问题的解决">
 <meta name="twitter:description" content="编译xmlRPC报错，xmlrpc-c用到了libcurl：lib/curl_transport/curlmulti.c:22:24: fatal error: curl/types.h:No such file or directory    gcc&amp;nbsp;-Wall&amp;nbsp;-Iinclude&amp;nbsp;-I.&amp;nbsp;-Ilib/util/include/&amp;nbsp;-I/usr/l">
@@ -189,6 +189,7 @@
 <li><span>compilation&nbsp;terminated.&nbsp;&nbsp;</span></li>
 <li><span>make[1]:&nbsp;<em>*</em>&nbsp;[lib/curl_transport/curlmulti.o]&nbsp;Error&nbsp;1&nbsp;&nbsp;</span></li></ol></div>
 
+<a id="more"></a>
 <p>查找到<br>This is a problem on archlinux which just got curl 7.21.7.<br>curl devs removed curl/types.h and put its content in curl/curl.h.</p>
 <p>意思是在新版中把curl/types.h合并到了curl/curl.h中<br>解决方法：</p>
 <div class="dp-highlighter"><div class="bar"></div>

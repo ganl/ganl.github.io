@@ -272,40 +272,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>一直使用notepad++的，但是他没有文件类似EditPlus的资源管理器，可以装一个light explorer（或者是 explorer） 方便多了……<br><a href="http://www.iganlei.cn/wp-content/uploads/2013/11/noteexp.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/11/noteexp-300x205.png" alt="explorer"></a></p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2013/11/noteexplorer.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/11/noteexplorer-300x195.png" alt="light explorer"></a><br>1.<br>最近看的书上推荐了eclipse 反正机子上有就弄了下<br>已经有eclipse了就使用插件的方式，<a href="http://sourceforge.net/project/showfiles.php?group_id=57621" target="_blank" rel="external">http://sourceforge.net/project/showfiles.php?group_id=57621</a></p>
-<p>官网有专门的版本的，没装的建议还是直接下整合好的：<br><a href="http://www.eclipse.org/downloads/packages/eclipse-php-developers/heliosr" target="_blank" rel="external">http://www.eclipse.org/downloads/packages/eclipse-php-developers/heliosr</a><br><a href="http://archive.eclipse.org/technology/epp/downloads/release/helios/R/eclipse-php-helios-win32-x86_64.zip" target="_blank" rel="external">http://archive.eclipse.org/technology/epp/downloads/release/helios/R/eclipse-php-helios-win32-x86_64.zip</a><br>或者使用zend的工具<br>Zend Eclipse PDT  Zend Studio<br>百度了一下 众多update site都无法访问了</p>
-<p><a href="http://phpeclipse.sourceforge.net/update/cvs" target="_blank" rel="external">http://phpeclipse.sourceforge.net/update/cvs</a><br><a href="http://phpeclipse.sourceforge.net/update/releases" target="_blank" rel="external">http://phpeclipse.sourceforge.net/update/releases</a><br>phpeclipse.net</p>
-<p>百度的官网半天打不开</p>
-<p><a href="http://www.phpeclipse.com/" target="_blank" rel="external">http://www.phpeclipse.com/</a></p>
-<p>网盘下载 <a href="http://pan.baidu.com/s/1tdaF4" target="_blank" rel="external">http://pan.baidu.com/s/1tdaF4</a>  这是别人传到网盘的<br><a href="http://download.eclipse.org/tools/pdt/updates/3.2/release/" target="_blank" rel="external">http://download.eclipse.org/tools/pdt/updates/3.2/release/</a><br><a href="http://www.iganlei.cn/wp-content/uploads/2013/11/softupdate.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/11/softupdate-300x282.png" alt="softupdate"></a></p>
-<p>2.安装xdebug<br>下载地址<br><a href="http://xdebug.org/" target="_blank" rel="external">http://xdebug.org/</a></p>
-<p>下面是官方文档里的 重点 php5.3以后使用zend_extension来配置<br>Configure PHP to Use Xdebug</p>
-<p>add the following line to php.ini: zend_extension=”/wherever/you/put/it/xdebug.so” (for non-threaded use of PHP, for example the CLI, CGI or Apache 1.3 module) or: zend_extension_ts=”/wherever/you/put/it/xdebug.so” (for threaded usage of PHP, for example the Apache 2 work MPM or the the ISAPI module). Note: In case you compiled PHP yourself and used –enable-debug you would have to use zend_extension_debug=. From PHP 5.3 onwards, you always need to use the zend_extension PHP.ini setting name, and not zend_extension_ts, nor zend_extension_debug. However, your compile options (ZTS/normal build; debug/non-debug) still need to match with what PHP is using.</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2013/11/xdebug.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/11/xdebug-300x66.png" alt="xdebug"></a><br>[caption width=”703” align=”alignnone”]<img src="http://www.iganlei.cn/wp-content/uploads/2013/11/debug.png" alt="Xdebug"> Xdebug[/caption]</p>
-<p>php.ini中配置如下：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>[xdebug]&nbsp;&nbsp;</span></span></li>
-<li><span>zend_extension=<span class="string">“D:\web\ext\php_xdebug-2.2.3-5.5-vc11-nts-x86_64.dll”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span>;开启自动跟踪&nbsp;&nbsp;</span></li>
-<li><span>xdebug.auto_trace&nbsp;=&nbsp;On&nbsp;&nbsp;</span></li>
-<li><span>;开启异常跟踪&nbsp;&nbsp;</span></li>
-<li><span>xdebug.show_exception_trace&nbsp;=&nbsp;On&nbsp;&nbsp;</span></li>
-<li><span>;开启远程调试自动启动&nbsp;&nbsp;</span></li>
-<li><span>xdebug.remote_autostart&nbsp;=&nbsp;On&nbsp;&nbsp;</span></li>
-<li><span>;开启远程调试&nbsp;&nbsp;</span></li>
-<li><span>xdebug.remote_enable&nbsp;=&nbsp;On&nbsp;&nbsp;</span></li>
-<li><span>;收集变量&nbsp;&nbsp;</span></li>
-<li><span>xdebug.collect_vars&nbsp;=&nbsp;On&nbsp;&nbsp;</span></li>
-<li><span>;收集返回值&nbsp;&nbsp;</span></li>
-<li><span>xdebug.collect_return&nbsp;=&nbsp;On&nbsp;&nbsp;</span></li>
-<li><span>;收集参数&nbsp;&nbsp;</span></li>
-<li><span>xdebug.collect_params&nbsp;=&nbsp;On&nbsp;&nbsp;</span></li></ol></div>
-
-<p>[caption width=”525” align=”alignnone”]<img src="http://www.iganlei.cn/wp-content/uploads/2013/11/phpe.png" alt=""> 给跪了，还是用notepad++方便点[/caption]</p>
-<p>建议还是直接去下zend studio，百度也有个专门为BAE开发的eclipse。</p>
-
+<p><a href="http://www.iganlei.cn/wp-content/uploads/2013/11/noteexplorer.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/11/noteexplorer-300x195.png" alt="light explorer"></a></p>
+        
+          <a class="article-more-a" href="/2013/11/21/eclipsephpxdebug-e6-90-ad-e5-bb-baphp-e5-bc-80-e5-8f-91-e8-b0-83-e8-af-95-e7-8e-af-e5-a2-83-notepad-with-light-explorer/#more">more >></a>
+        
       
 
       
@@ -413,20 +383,10 @@
 <p>大后天：2013-11-23 多云 西南风 12/17℃</p>
 <p>外天（不知道怎么叫的）：2013-11-24 小雨 西北风 5/10℃</p>
 <hr>
-<p>淮南天气</p>
-<p>实时温度（这个不科学呀 差距也太大了吧）：32度</p>
-<p>今天：</p>
-<p>2013-11-20 多云<br>最高温度:17度 最低温度:12度</p>
-<p>明天：</p>
-<p>2013-11-21 多云<br>最高温度:17度 最低温度:12度</p>
-<p>后天：</p>
-<p>2013-11-22 晴<br>最高温度:18度 最低温度:13度</p>
-<p>大后天：</p>
-<p>2013-11-23 多云<br>最高温度:17度 最低温度:12度</p>
-<p>外天（不知道怎么叫的）：</p>
-<p>2013-11-24 小雨<br>最高温度:10度 最低温度:5度</p>
-<p>[caption width=”728” align=”aligncenter”]<img src="http://www.iganlei.cn/wp-content/uploads/2013/11/weather.png" alt="获取天气信息"> json数据中获取天气信息[/caption]</p>
-
+<p>淮南天气<br>
+        
+          <a class="article-more-a" href="/2013/11/20/qq-e5-af-bc-e8-88-aa-e4-b8-8a-e7-9a-84-e5-a4-a9-e6-b0-94-e6-8e-a5-e5-8f-a3hao-qq-com-get-weather-php/#more">more >></a>
+        
       
 
       
@@ -531,10 +491,9 @@
 <li><span>&lt;source&nbsp;src=<span class="string">“<a href="http://girls.iganlei.cn/baidupan/1125435669/4178294675.mp3" target="_blank" rel="external">http://girls.iganlei.cn/baidupan/1125435669/4178294675.mp3</a>“</span><span>&gt;&nbsp;&nbsp;&nbsp;</span></span></li>
 <li><span>&lt;/audio&gt;&nbsp;&nbsp;</span></li>
 <li><span>&lt;input&nbsp;id=<span class="string">“btn”</span><span>&nbsp;type=</span><span class="string">“button”</span><span>&nbsp;onclick=</span><span class="string">“musicPaused()”</span><span>&nbsp;value=</span><span class="string">“停止”</span><span>&nbsp;/&gt;&nbsp;&nbsp;&nbsp;</span></span></li></ol></div>
-
-<p>需要用css美化下</p>
-<p>示例页面<br><a href="http://www.iganlei.cn/tool/bgaudio.html" target="_blank" rel="external">http://www.iganlei.cn/tool/bgaudio.html</a></p>
-
+        
+          <a class="article-more-a" href="/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/#more">more >></a>
+        
       
 
       
@@ -607,55 +566,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>TQ2416 出厂给的zImage 已经移植好了web服务器，，</strong><br>如何自己移植，百度加google。记录一下过程吧。<br><strong>cgi 测试页面如下：</strong><br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE11.png" alt=""><br><strong>机器相关信息</strong></p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>[root@austgl&nbsp;gl]#&nbsp;cat&nbsp;/proc/version&nbsp;&nbsp;</span></span></li>
-<li><span>Linux&nbsp;version&nbsp;3.11.4-101.fc18.x86_64&nbsp;(mockbuild@bkernel02)&nbsp;(gcc&nbsp;version&nbsp;4.7.2&nbsp;20121109&nbsp;(Red&nbsp;Hat&nbsp;4.7.2-8)&nbsp;(GCC)&nbsp;)&nbsp;#1&nbsp;SMP&nbsp;Thu&nbsp;Oct&nbsp;10&nbsp;14:05:32&nbsp;UTC&nbsp;2013&nbsp;&nbsp;</span></li>
-<li><span>[root@austgl&nbsp;gl]#&nbsp;cat&nbsp;/etc/issue&nbsp;&nbsp;</span></li>
-<li><span>Fedora&nbsp;release&nbsp;18&nbsp;(Spherical&nbsp;Cow)&nbsp;&nbsp;</span></li>
-<li><span>Kernel&nbsp;\r&nbsp;on&nbsp;an&nbsp;\m&nbsp;(\l)&nbsp;&nbsp;</span></li>
-<li><span>[root@austgl&nbsp;gl]#&nbsp;arm-linux-gcc&nbsp;-v&nbsp;&nbsp;</span></li>
-<li><span>Using&nbsp;built-in&nbsp;specs.&nbsp;&nbsp;</span></li>
-<li><span>Target:&nbsp;arm-none-linux-gnueabi&nbsp;&nbsp;</span></li>
-<li><span>Configured&nbsp;with:&nbsp;/opt/FriendlyARM/mini2440/build-toolschain/working/src/gcc-4.4.3/configure&nbsp;<span class="attribute">–build</span><span>=</span><span class="attribute-value">i386</span><span>-build_redhat-linux-gnu&nbsp;</span><span class="attribute">–host</span><span>=</span><span class="attribute-value">i386</span><span>-build_redhat-linux-gnu&nbsp;</span><span class="attribute">–target</span><span>=</span><span class="attribute-value">arm</span><span>-none-linux-gnueabi&nbsp;</span><span class="attribute">–prefix</span><span>=/opt/FriendlyARM/toolschain/4.4.3&nbsp;</span><span class="attribute">–with-sysroot</span><span>=/opt/FriendlyARM/toolschain/4.4.3/arm-none-linux-gnueabi//sys-root&nbsp;</span><span class="attribute">–enable-languages</span><span>=</span><span class="attribute-value">c</span><span>,c++&nbsp;–disable-multilib&nbsp;</span><span class="attribute">–with-arch</span><span>=</span><span class="attribute-value">armv4t</span><span>&nbsp;</span><span class="attribute">–with-cpu</span><span>=</span><span class="attribute-value">arm920t</span><span>&nbsp;</span><span class="attribute">–with-tune</span><span>=</span><span class="attribute-value">arm920t</span><span>&nbsp;</span><span class="attribute">–with-float</span><span>=</span><span class="attribute-value">soft</span><span>&nbsp;</span><span class="attribute">–with-pkgversion</span><span>=</span><span class="attribute-value">ctng</span><span>-1.6.1&nbsp;–disable-sjlj-exceptions&nbsp;–enable-__cxa_atexit&nbsp;</span><span class="attribute">–with-gmp</span><span>=/opt/FriendlyARM/toolschain/4.4.3&nbsp;</span><span class="attribute">–with-mpfr</span><span>=/opt/FriendlyARM/toolschain/4.4.3&nbsp;</span><span class="attribute">–with-ppl</span><span>=/opt/FriendlyARM/toolschain/4.4.3&nbsp;</span><span class="attribute">–with-cloog</span><span>=/opt/FriendlyARM/toolschain/4.4.3&nbsp;</span><span class="attribute">–with-mpc</span><span>=/opt/FriendlyARM/toolschain/4.4.3&nbsp;</span><span class="attribute">–with-local-prefix</span><span>=/opt/FriendlyARM/toolschain/4.4.3/arm-none-linux-gnueabi//sys-root&nbsp;–disable-nls&nbsp;</span><span class="attribute">–enable-threads</span><span>=</span><span class="attribute-value">posix</span><span>&nbsp;</span><span class="attribute">–enable-symvers</span><span>=</span><span class="attribute-value">gnu</span><span>&nbsp;–enable-c99&nbsp;–enable-long-long&nbsp;–enable-target-optspace&nbsp;&nbsp;</span></span></li>
-<li><span>Thread&nbsp;model:&nbsp;posix&nbsp;&nbsp;</span></li>
-<li><span>gcc&nbsp;version&nbsp;4.4.3&nbsp;(ctng-1.6.1)&nbsp;&nbsp;</span></li></ol></div>
-
-<p><strong>1. 编译、生成arm版</strong><br>1.1. 先到lighttpd官网下载对应版本的软件包：<br><a href="http://www.lighttpd.net/" target="_blank" rel="external">http://www.lighttpd.net/</a><br>最新的是 lighttpd-1.4.33.tar.gz<br>1.2. 将压缩包解压到任意目录（/home/gl/e）得到文件夹 lighttpd-1.4.33<br>1.3. 在终端中进入解压后的目录后：vi configure-arm.sh<br>1.4. 输入如下代码：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>#!&nbsp;/bin/sh&nbsp;&nbsp;</span></span></li>
-<li><span><span class="attribute">CC</span><span>=</span><span class="attribute-value">arm</span><span>-linux-gcc-4.4.3&nbsp;</span><span class="attribute">AR</span><span>=</span><span class="attribute-value">arm</span><span>-linux-ar&nbsp;</span><span class="attribute">LD</span><span>=</span><span class="attribute-value">arm</span><span>-linux-ld&nbsp;</span><span class="attribute">RANLIB</span><span>=</span><span class="attribute-value">arm</span><span>-linux-ranlib&nbsp;</span><span class="attribute">STRIP</span><span>=</span><span class="attribute-value">arm</span><span>-linux-strip&nbsp;./configure&nbsp;</span><span class="attribute">–prefix</span><span>=/home/gl/e/lighttpd-arm&nbsp;</span><span class="attribute">–host</span><span>=</span><span class="attribute-value">arm</span><span>-linux&nbsp;</span><span class="attribute">–build</span><span>=</span><span class="attribute-value">i686</span><span>-pc-linux&nbsp;–disable-FEATURE&nbsp;–enable-shared&nbsp;–disable-static&nbsp;–disable-lfs&nbsp;&nbsp;–without-PACKAGE&nbsp;–without-valgrind&nbsp;–without-openssl&nbsp;–without-kerberos5&nbsp;–without-pcre&nbsp;–without-zlib&nbsp;–without-bzip2&nbsp;–without-lua&nbsp;&nbsp;</span></span></li></ol></div>
-
-<p><strong>–prefix=/home/gl/e/lighttpd-arm</strong>换成自己需要生成的位置</p>
-<p>1.5. 更改 configure-arm.sh 文件的权限，执行命令：<br>chmod 777 configure-arm.sh<br>1.6. 配置lighttpd，执行命令：<br>./configure-arm.sh<br>1.7. 编译lighttpd，执行命令：<br>make<br>1.8. 安装lighttpd，执行命令：<br>make install<br>1.9. 安装完成后，会在指定的安装目录 /home/gl/e/lighttpd-arm/ 中生成 lib、sbin和share三个文件夹，<br><strong>2. 配置</strong><br>2.1. 在安装目录 /opt/web/lighttpd-1.4.30-arm 中手动创建如下文件夹：cache、cgi-bin、config、log、sockets、upload、vhosts、www。如下图所示：<br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE10.png" alt=""><br>2.2. 将源码包中doc/config目录下的config.d、lighttpd.conf和modules.conf复制到安装目录中config文件夹里面<br>2.3. 修改复制过来的lighttpd.conf文件<br>1）“/opt/web/”开发板的服务器安装位置，这个需要将上面的lighttpd-arm目录拷贝至对应目录下。</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span class="attribute">var.log_root</span><span>&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</span><span class="attribute-value">“/opt/web/lighttpd-arm/log”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="attribute">var.server_root</span><span>&nbsp;=&nbsp;</span><span class="attribute-value">“/opt/web/lighttpd-arm”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="attribute">var.state_dir</span><span>&nbsp;&nbsp;&nbsp;=&nbsp;</span><span class="attribute-value">“/opt/web/lighttpd-arm”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="attribute">var.home_dir</span><span>&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</span><span class="attribute-value">“/opt/web/lighttpd-arm”</span><span>&nbsp;&nbsp;</span></span></li>
-<li><span><span class="attribute">var.conf_dir</span><span>&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</span><span class="attribute-value">“/opt/web/lighttpd-arm/config”</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br>2）禁止ipv6<br>var.cache_dir   = server_root + “/cache”<br>server.use-ipv6 = “disable”<br>3）将下面两行注释掉，如下所示：<br>#server.username  = “lighttpd”<br>#server.groupname = “lighttpd”<br>4）修改网页文档目录：<br>server.document-root = server_root + “/www”<br>5）将下面的注释掉，如下所示：<br>#server.pid-file = state_dir + “/lighttpd.pid”<br>6）如果不需要查看错误日志文件，可以注释掉，如下：<br>#server.errorlog             = log_root + “/error.log”<br>7）以下行注释掉，如下所示：<br>#include “conf.d/access_log.conf”<br>#include “conf.d/debug.conf”<br>#server.network-backend = “linux-sendfile”<br>8）根据系统资源设置数值，如下：<br>server.max-fds = 256<br>server.max-connections = 128<br>9）注释掉以下行，如下所示：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#$HTTP[&quot;url&quot;] =~ &quot;\.pdf$&quot; &#123;</div><div class="line">#  server.range-requests = &quot;disable&quot;</div><div class="line">#&#125;</div></pre></td></tr></table></figure>
-
-
-<p>10）修改上传目录：<br>server.upload-dirs = ( “/opt/web/lighttpd-arm/upload” )</p>
-<p>2.4. 修改刚复制过来的modules.conf文件<br>1）找到43行，将前面的注释去掉：<br>“mod_alias”,<br>2）使能CGI模块，将注释符去掉，如下所示：<br>include “conf.d/cgi.conf”</p>
-<p>2.5. 修改刚复制过来的conf.d文件夹里面的cgi.conf文件<br>1）将15至19行这一段配置修改如下：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span class="attribute">cgi.assign</span><span>&nbsp;=&nbsp;(“.cgi”&nbsp;=</span><span class="tag">&gt;</span><span>&nbsp;””)&nbsp;&nbsp;</span></span></li>
-<li><span>#<span class="attribute">cgi.assign</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;(&nbsp;”.pl”&nbsp;&nbsp;=</span><span class="tag">&gt;</span><span>&nbsp;”/usr/bin/perl”,&nbsp;&nbsp;</span></span></li>
-<li><span>#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;”.cgi”&nbsp;=<span class="tag">&gt;</span><span>&nbsp;”/usr/bin/perl”,&nbsp;&nbsp;</span></span></li>
-<li><span>#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;”.rb”&nbsp;&nbsp;=<span class="tag">&gt;</span><span>&nbsp;”/usr/bin/ruby”,&nbsp;&nbsp;</span></span></li>
-<li><span>#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;”.erb”&nbsp;=<span class="tag">&gt;</span><span>&nbsp;”/usr/bin/eruby”,&nbsp;&nbsp;</span></span></li>
-<li><span>#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;”.py”&nbsp;&nbsp;=<span class="tag">&gt;</span><span>&nbsp;”/usr/bin/python”&nbsp;)&nbsp;&nbsp;</span></span></li></ol></div><br>2）将28行左右的注释符去掉，如下所示：<br>alias.url += ( “/cgi-bin” =&gt; server_root + “/cgi-bin” )<br><strong>3.运行测试</strong><br>3.1. 在终端进入www目录，新建一个index.html<br>3.2. 用minicom连接开发板，并能ping通，如下图：<br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE4.png" alt=""><br>3.2. 将安装目录 /home/gl/e/lighttpd-arm 从主机复制到开发板中/opt/web。<br>3.4. cd进入到lighttpd可执行文件的安装目录：cd /opt/web/lighttpd-arm/sbin/<br>3.5. 启动lighttpd服务器 ./lighttpd -f ../config/lighttpd.conf，发现报错，开始并不知道板子已经移植过web服务器了，提示端口被占用，修改端口：<br>server.port = 8080<br>3.6. 再次启动lighttpd 并在pc浏览器中输入开发板的Ip并加上端口8080，即可浏览到刚才创建的主页了，如下图所示：<br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE9.png" alt=""><br>3.7. 下图是厂家移植的web服务器 测试页面<br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE7.png" alt=""><br>结束了。。。
-
-
+        <p><strong>TQ2416 出厂给的zImage 已经移植好了web服务器，，</strong><br>如何自己移植，百度加google。记录一下过程吧。<br><strong>cgi 测试页面如下：</strong><br><img src="http://bcs.duapp.com/ganlei/iganlei%2F%E6%8A%93%E5%9B%BE11.png" alt=""><br><strong>机器相关信息</strong><br>
+        
+          <a class="article-more-a" href="/2013/11/02/e5-b5-8c-e5-85-a5-e5-bc-8fweb-e6-9c-8d-e5-8a-a1-e5-99-a8lighttpd-e7-9a-84-e7-a7-bb-e6-a4-8d-e5-8f-8a-e9-85-8d-e7-bd-ae-ef-bc-88for-arm-linux-tq2416-ef-bc-89/#more">more >></a>
+        
       
 
       
@@ -729,143 +643,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>最终效果如下图：</p>
-<p><a href="http://www.iganlei.cn/wp-content/uploads/2013/10/baidufx.png" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/10/baidufx-179x300.png" alt="baidufx"></a></p>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2013/10/baidufx-179x300.png" alt="baidufx"></p>
 <p>将下面的html和css代码添加至需要的页面 ，如果是所有页面都要添加，可以放到footer里。</p>
 <p>html代码如下：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;div&nbsp;class=</span><span class="string">“grid-690&nbsp;left”</span><span>&nbsp;id=</span><span class="string">“main-block”</span><span>&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&lt;div&nbsp;id=<span class="string">“bdshare”</span><span>&nbsp;class=</span><span class="string">“bdshare_t&nbsp;bds_tools&nbsp;get-codes-bdshare&nbsp;float-share”</span><span>&nbsp;style=</span><span class="string">“position:&nbsp;fixed;&nbsp;bottom:&nbsp;38px;&nbsp;left:&nbsp;0px;&nbsp;display:&nbsp;block;”</span><span>&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&lt;span&nbsp;class=<span class="string">“share-top”</span><span>&gt;&lt;/span&gt;&nbsp;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&lt;span&nbsp;class=<span class="string">“bds-tsina”</span><span>&gt;&lt;a&nbsp;class=</span><span class="string">“bds_tsina”</span><span>&nbsp;log=</span><span class="string">“type:3002,menu:1”</span><span>&nbsp;href=</span><span class="string">“#”</span><span>&gt;&lt;/a&gt;&lt;/span&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&lt;span&nbsp;class=<span class="string">“bds-qzone”</span><span>&gt;&lt;a&nbsp;class=</span><span class="string">“bds_qzone”</span><span>&nbsp;log=</span><span class="string">“type:3002,menu:2”</span><span>&nbsp;href=</span><span class="string">“#”</span><span>&gt;&lt;/a&gt;&lt;/span&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&lt;span&nbsp;class=<span class="string">“bds-tqq”</span><span>&gt;&lt;a&nbsp;class=</span><span class="string">“bds_tqq”</span><span>&nbsp;log=</span><span class="string">“type:3002,menu:3”</span><span>&nbsp;href=</span><span class="string">“#”</span><span>&gt;&lt;/a&gt;&lt;/span&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&lt;span&nbsp;class=<span class="string">“bds-renren”</span><span>&gt;&lt;a&nbsp;class=</span><span class="string">“bds_renren”</span><span>&nbsp;log=</span><span class="string">“type:3002,menu:4”</span><span>&nbsp;href=</span><span class="string">“#”</span><span>&gt;&lt;/a&gt;&lt;/span&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&lt;span&nbsp;class=<span class="string">“bds-mshare”</span><span>&gt;&lt;a&nbsp;class=</span><span class="string">“bds_mshare”</span><span>&nbsp;log=</span><span class="string">“type:3002,menu:5”</span><span>&nbsp;href=</span><span class="string">“#”</span><span>&gt;&lt;/a&gt;&lt;/span&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&nbsp;&nbsp;&lt;span&nbsp;class=<span class="string">“share-bottom”</span><span>&gt;&lt;/span&gt;&nbsp;&lt;/div&gt;&nbsp;&nbsp;</span></span></li>
-<li><span>&lt;/div&gt;&nbsp;&nbsp;</span></li>
-<li><span>&lt;script&nbsp;type=<span class="string">“text/javascript”</span><span>&nbsp;id=</span><span class="string">“bdshare_js”</span><span>&nbsp;data=</span><span class="string">“type=tools&amp;amp;mini=1&amp;amp;uid=6535084”</span><span>&nbsp;</span><span class="keyword">src</span><span>=</span><span class="string">“<a href="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=383965" target="_blank" rel="external">http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=383965</a>“</span><span>&gt;&lt;/script&gt;&nbsp;&nbsp;</span></span></li></ol></div>
-
-<p>css 代码如下：</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;style&nbsp;type=</span><span class="string">“text/css”</span><span>&gt;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="colors">#bdshar</span><span>e&nbsp;a:hover,&nbsp;</span><span class="colors">#bdshar</span><span>e_s&nbsp;a:hover,&nbsp;</span><span class="colors">#bdshar</span><span>e_pop&nbsp;a:hover&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">color</span><span>:&nbsp;</span><span class="colors">#333</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>opacity:&nbsp;.8;&nbsp;&nbsp;</span></li>
-<li><span>filter:&nbsp;alpha(opacity=80);&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#bdshar</span><span>e&nbsp;a,&nbsp;</span><span class="colors">#bdshar</span><span>e_s&nbsp;a,&nbsp;</span><span class="colors">#bdshar</span><span>e_pop&nbsp;a&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">text-decoration</span><span>:&nbsp;</span><span class="string">none</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">cursor</span><span>:&nbsp;</span><span class="string">pointer</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>.bds_tools&nbsp;a&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">background</span><span>:&nbsp;</span><span class="string">url</span><span>(<a href="http://bdimg.share.baidu.com/" target="_blank" rel="external">http://bdimg.share.baidu.com/</a></span><span class="string">static</span><span>/images/is.png?cdnversion=20130712)&nbsp;</span><span class="string">no-repeat</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>span.bds_more,&nbsp;.bds_tools&nbsp;a&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">display</span><span>:&nbsp;</span><span class="string">block</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">font-family</span><span>:&nbsp;’宋体’,</span><span class="string">Arial</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">height</span><span>:&nbsp;</span><span class="string">16px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">float</span><span>:&nbsp;</span><span class="string">left</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">cursor</span><span>:&nbsp;</span><span class="string">pointer</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">padding-top</span><span>:&nbsp;</span><span class="string">6px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">padding-bottom</span><span>:&nbsp;</span><span class="string">3px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">padding-left</span><span>:&nbsp;</span><span class="string">22px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>.clearfix&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span>zoom:&nbsp;1;&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">width</span><span>:&nbsp;</span><span class="string">50px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">height</span><span>:&nbsp;</span><span class="string">188px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">position</span><span>:&nbsp;</span><span class="string">absolute</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">display</span><span>:&nbsp;</span><span class="string">none</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;span&nbsp;a&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">display</span><span>:&nbsp;</span><span class="string">block</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">width</span><span>:&nbsp;</span><span class="string">100px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">height</span><span>:&nbsp;</span><span class="string">230px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">background</span><span>:&nbsp;</span><span class="string">url</span><span>(<a href="http://img.baidu.com/img/iknow/exp/new-share.png);&nbsp;&amp;nbsp" target="_blank" rel="external">http://img.baidu.com/img/iknow/exp/new-share.png);&nbsp;&amp;nbsp</a>;</span></span></li>
-<li><span><span class="keyword">background-repeat</span><span>:&nbsp;&nbsp;</span><span class="string">no-repeat</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>_filter:&nbsp;progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=noscale,<span class="keyword">src</span><span>=</span><span class="string">“<a href="http://img.baidu.com/img/iknow/exp/new-share.png?v=130916" target="_blank" rel="external">http://img.baidu.com/img/iknow/exp/new-share.png?v=130916</a>“</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>_background:&nbsp;<span class="string">transparent</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">position</span><span>:&nbsp;</span><span class="string">relative</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">cursor</span><span>:&nbsp;</span><span class="string">pointer</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">background-position</span><span>:&nbsp;0&nbsp;0!important;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;span&nbsp;a:hover&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="string">left</span><span>:&nbsp;-</span><span class="string">50px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>opacity:&nbsp;1;&nbsp;&nbsp;</span></li>
-<li><span>filter:&nbsp;<span class="string">none</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>_filter:&nbsp;progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=noscale,<span class="keyword">src</span><span>=</span><span class="string">“<a href="http://img.baidu.com/img/iknow/exp/new-share.png?v=130916" target="_blank" rel="external">http://img.baidu.com/img/iknow/exp/new-share.png?v=130916</a>“</span><span>);&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#bdshar</span><span>e&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span>_overflow-x:&nbsp;<span class="string">hidden</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">z-index</span><span>:&nbsp;999999;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">padding-bottom</span><span>:&nbsp;</span><span class="string">2px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">padding-left</span><span>:&nbsp;</span><span class="string">2px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">font-size</span><span>:&nbsp;</span><span class="string">12px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">float</span><span>:&nbsp;</span><span class="string">left</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">text-align</span><span>:&nbsp;</span><span class="string">left</span><span>!important;&nbsp;&nbsp;</span></span></li>
-<li><span>zoom:&nbsp;1;&nbsp;&nbsp;</span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;span&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">display</span><span>:&nbsp;</span><span class="string">block</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">overflow</span><span>:&nbsp;</span><span class="string">hidden</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">width</span><span>:&nbsp;</span><span class="string">50px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">height</span><span>:&nbsp;</span><span class="string">42px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">background</span><span>:&nbsp;0;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">padding</span><span>:&nbsp;0;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;.share-</span><span class="string">top</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">display</span><span>:&nbsp;</span><span class="string">block</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">height</span><span>:&nbsp;</span><span class="string">10px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">overflow</span><span>:&nbsp;</span><span class="string">hidden</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">background</span><span>:&nbsp;</span><span class="string">url</span><span>(<a href="http://img.baidu.com/img/iknow/exp/new-share.png)&amp;nbsp" target="_blank" rel="external">http://img.baidu.com/img/iknow/exp/new-share.png)&amp;nbsp</a>;</span><span class="string">no-repeat</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;.bds_tsina&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="string">top</span><span>:&nbsp;-</span><span class="string">10px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;.bds_qzone&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="string">top</span><span>:&nbsp;-</span><span class="string">52px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;.bds_tqq&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="string">top</span><span>:&nbsp;-</span><span class="string">94px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;.bds_renren&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="string">top</span><span>:&nbsp;-</span><span class="string">136px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;.bds_mshare&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="string">top</span><span>:&nbsp;-</span><span class="string">178px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span><span class="colors">#main</span><span>-</span><span class="string">block</span><span>&nbsp;.</span><span class="keyword">float</span><span>-share&nbsp;.share-</span><span class="string">bottom</span><span class="keyword">bottom</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">display</span><span>:&nbsp;</span><span class="string">block</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">height</span><span>:&nbsp;</span><span class="string">10px</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">overflow</span><span>:&nbsp;</span><span class="string">hidden</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">background</span><span>:&nbsp;</span><span class="string">url</span><span>(<a href="http://img.baidu.com/img/iknow/exp/new-share.png)&amp;nbsp" target="_blank" rel="external">http://img.baidu.com/img/iknow/exp/new-share.png)&amp;nbsp</a>;</span><span class="string">no-repeat</span><span>&nbsp;0&nbsp;-</span><span class="string">178px</span><span>;;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>.grid-690&nbsp;{&nbsp;&nbsp;</span></li>
-<li><span><span class="keyword">background-repeat</span><span>:&nbsp;&nbsp;</span><span class="string">no-repeat</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">margin</span><span>:&nbsp;0&nbsp;</span><span class="string">auto</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">padding</span><span>:&nbsp;0;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>.<span class="string">left</span><span>&nbsp;{&nbsp;&nbsp;</span></span></li>
-<li><span><span class="keyword">float</span><span>:&nbsp;</span><span class="string">left</span><span>;&nbsp;&nbsp;</span></span></li>
-<li><span>}&nbsp;&nbsp;</span></li>
-<li><span>&lt;/style&gt;&nbsp;&nbsp;</span></li></ol></div>
-
-<p>或者在你所用主题目录新建一个名称为：share.php的文件，将以上的代码复制到进去并保存传至服务器,<br>然后再将调用代码：</p>
-<div class="dp-highlighter"><br><br>1.  <span><span>&lt;?php&nbsp;wp_footer();&nbsp;?&gt;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></div>
-
-<p>添加到主题页脚模板footer.php下面这句</p>
-<div class="dp-highlighter"><div class="bar"></div>
-
-<ol>
-<li><span><span>&lt;?php&nbsp;</span><span class="keyword">include</span><span>(‘share.php’);&nbsp;?&gt;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li></ol></div><br>的上面。
-
-
+        
+          <a class="article-more-a" href="/2013/10/21/e7-99-be-e5-ba-a6-e5-88-86-e4-ba-ab/#more">more >></a>
+        
       
 
       
@@ -950,8 +733,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>接上文 除掉错误了 但是有个警告<br>Build path specifies execution environment J2SE-1.5. There are no JREs installed in the workspace that are strictly compatible with this environment.</p>
-<p>solution：<br> project<br>-&gt; properties<br>-&gt; java build path : Libraries<br>Remove the “JRE System Library[J2SE 1.5]”<br>-&gt; click “Add Library” button -&gt; JRE System Library<br>-&gt; select the new “Executin Environment” or Workspace default JRE</p>
-
+<p>solution：<br>
+        
+          <a class="article-more-a" href="/2013/09/24/java-warning-build-path-specifies-execution-environment-j2se-1-5/#more">more >></a>
+        
       
 
       
@@ -1028,22 +813,9 @@
 <p>Description Resource Path Location Type<br>Description Resource Path Location Type Target runtime MyEclipse Tomcat v7.0  Unknown    Faceted Project Problem<br><a href="http://www.iganlei.cn/wp-content/uploads/2013/09/QQ截图20130924134513.jpg" target="_blank" rel="external"><img src="http://www.iganlei.cn/wp-content/uploads/2013/09/QQ截图20130924134513-300x105.jpg" alt="QQ截图20130924134513"></a></p>
 <p>2.solution</p>
 <p>找到工程目录下的.settings下的org.eclipse.wst.common.project.facet.core.xml</p>
-<p>即 /.settings/org.eclipse.wst.common.project.facet.core.xml</p>
-<p><code>&lt; ?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt; ?faceted -project&gt;
-  &lt; ?runtime name=&quot;MyEclipse Tomcat v7.0&quot;&gt;
-  &lt; ?fixed facet=&quot;wst.jsdt.web&quot;&gt;
-  &lt; ?fixed facet=&quot;java&quot;&gt;
-  &lt; ?fixed facet=&quot;jst.web&quot;&gt;
-  &lt; ?installed facet=&quot;java&quot; version=&quot;1.5&quot;&gt;
-  &lt; ?installed facet=&quot;jst.web&quot; version=&quot;2.5&quot;&gt;
-  &lt; ?installed facet=&quot;jst.web.jstl&quot; version=&quot;1.2&quot;&gt;
-  &lt; ?installed facet=&quot;web.struts2&quot; version=&quot;2.1&quot;&gt;
-  &lt; ?installed facet=&quot;wst.jsdt.web&quot; version=&quot;1.0&quot;&gt;
-&lt; \/faceted&gt;
-&lt; \/code&gt;
-将 \``&lt; ?runtime name=&quot;MyEclipse Tomcat v7.0&quot;&gt;</code>删除，refresh即可</p>
-
+        
+          <a class="article-more-a" href="/2013/09/24/description-resource-path-location-type-target-runtime-myeclipse-tomcat-v7-0-unknownfaceted-project-problem/#more">more >></a>
+        
       
 
       

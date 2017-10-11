@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>Linux LVM 扩容 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装软件提示存储不足：[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm  Preparing...                ########################################### [100%]         installing package in**-6478.el5.i386 needs 49MB">
+  <meta name="description" content="安装软件提示存储不足：1234[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm Preparing...                ########################################### [100%]        installing package in**-6478.el5.i386 needs 49M">
 <meta name="keywords" content="linux,lvm,pv,vg">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux LVM 扩容">
 <meta property="og:url" content="//ganl.io/2015/04/08/linux-lvm-e6-89-a9-e5-ae-b9/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="安装软件提示存储不足：[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm  Preparing...                ########################################### [100%]         installing package in**-6478.el5.i386 needs 49MB">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:description" content="安装软件提示存储不足：1234[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm Preparing...                ########################################### [100%]        installing package in**-6478.el5.i386 needs 49M">
+<meta property="og:updated_time" content="2017-10-11T06:07:39.918Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux LVM 扩容">
-<meta name="twitter:description" content="安装软件提示存储不足：[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm  Preparing...                ########################################### [100%]         installing package in**-6478.el5.i386 needs 49MB">
+<meta name="twitter:description" content="安装软件提示存储不足：1234[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm Preparing...                ########################################### [100%]        installing package in**-6478.el5.i386 needs 49M">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
   
@@ -180,40 +180,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>安装软件提示存储不足：<br><code>[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm 
-Preparing...                ########################################### [100%]
-        installing package in**-6478.el5.i386 needs 49MB on the / filesystem
-[root@localhost ~]#</code><br>[root@localhost ~]# df<br>文件系统               1K-块        已用     可用 已用% 挂载点<br><code>/dev/mapper/VolGroup00-LogVol00
-                      18156292  17826096         0 100% /
-/dev/sda1               101086     38687     57180  41% /boot
-tmpfs                  1037460         0   1037460   0% /dev/shm
-.host:/              157287392 134538736  22748656  86% /mnt/hgfs</code></p>
-<p>`[root@localhost ~]# fdisk -l</p>
-<p>Disk /dev/sda: 21.4 GB, 21474836480 bytes<br>255 heads, 63 sectors/track, 2610 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
-<p>   Device Boot      Start         End      Blocks   Id  System<br>/dev/sda1   *           1          13      104391   83  Linux<br>/dev/sda2              14        2610    20860402+  8e  Linux LVM`</p>
-<p>在虚拟机设置里添加一块硬盘，</p>
-<p>`<br>[root@localhost ~]# fdisk /dev/sdb </p>
-<p>The number of cylinders for this disk is set to 2610.<br>There is nothing wrong with that, but this is larger than 1024,<br>and could in certain setups cause problems with:<br>1) software that runs at boot time (e.g., old versions of LILO)<br>2) booting and partitioning software from other OSs<br>   (e.g., DOS FDISK, OS/2 FDISK)</p>
-<p>Command (m for help): n<br>Command action<br>   e   extended<br>   p   primary partition (1-4)<br>p<br>Partition number (1-4): q<br>Partition number (1-4): 1<br>First cylinder (1-2610, default 1):<br>Using default value 1<br>Last cylinder or +size or +sizeM or +sizeK (1-2610, default 2610):<br>Using default value 2610</p>
-<p>Command (m for help): w<br>The partition table has been altered!</p>
-<p>Calling ioctl() to re-read partition table.<br>Syncing disks.</p>
-<p><code>再fdisk：</code>[root@localhost ~]# fdisk -l</p>
-<p>Disk /dev/sda: 21.4 GB, 21474836480 bytes<br>255 heads, 63 sectors/track, 2610 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
-<p>   Device Boot      Start         End      Blocks   Id  System<br>/dev/sda1   *           1          13      104391   83  Linux<br>/dev/sda2              14        2610    20860402+  8e  Linux LVM</p>
-<p>Disk /dev/sdb: 21.4 GB, 21474836480 bytes<br>255 heads, 63 sectors/track, 2610 cylinders<br>Units = cylinders of 16065 * 512 = 8225280 bytes</p>
-<p>   Device Boot      Start         End      Blocks   Id  System<br>/dev/sdb1               1        2610    20964793+   5  Extended<br>`</p>
-<p>创建PV：<br><code>[root@localhost ~]# pvcreate /dev/sdb1 
-  Writing physical volume data to disk &quot;/dev/sdb1&quot;
-  Physical volume &quot;/dev/sdb1&quot; successfully created
-[root@localhost ~]#</code><br>扩展VolGroup00 ：<br><code>[root@localhost ~]# vgextend VolGroup00 /dev/sdb1 
-  Volume group &quot;VolGroup00&quot; successfully extended
-[root@localhost ~]#</code></p>
-<p>扩展LV：<br><code>[root@localhost ~]# lvextend -L 20G /dev/VolGroup00/LogVol00
-  Extending logical volume LogVol00 to 20.00 GB
-  Logical volume LogVol00 successfully resized
-[root@localhost ~]#</code></p>
-<p>执行重设大小：<br>`[root@localhost ~]# resize2fs /dev/VolGroup00/LogVol00<br>resize2fs 1.39 (29-May-2006)<br>Filesystem at /dev/VolGroup00/LogVol00 is mounted on /; on-line resizing required<br>Performing an on-line resize of /dev/VolGroup00/LogVol00 to 5242880 (4k) blocks.<br>The filesystem on /dev/VolGroup00/LogVol00 is now 5242880 blocks long.</p>
-<p>[root@localhost ~]# `</p>
+        <p>安装软件提示存储不足：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm </div><div class="line">Preparing...                ########################################### [100%]</div><div class="line">        installing package in**-6478.el5.i386 needs 49MB on the / filesystem</div><div class="line">[root@localhost ~]#</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# df</div><div class="line">文件系统               1K-块        已用     可用 已用% 挂载点</div><div class="line">/dev/mapper/VolGroup00-LogVol00</div><div class="line">                      18156292  17826096         0 100% /</div><div class="line">/dev/sda1               101086     38687     57180  41% /boot</div><div class="line">tmpfs                  1037460         0   1037460   0% /dev/shm</div><div class="line">.host:/              157287392 134538736  22748656  86% /mnt/hgfs</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# fdisk -l</div><div class="line"></div><div class="line">Disk /dev/sda: 21.4 GB, 21474836480 bytes</div><div class="line">255 heads, 63 sectors/track, 2610 cylinders</div><div class="line">Units = cylinders of 16065 * 512 = 8225280 bytes</div><div class="line"></div><div class="line">   Device Boot      Start         End      Blocks   Id  System</div><div class="line">/dev/sda1   *           1          13      104391   83  Linux</div><div class="line">/dev/sda2              14        2610    20860402+  8e  Linux LVM</div></pre></td></tr></table></figure>
+<p>在虚拟机设置里添加一块硬盘，<br><a id="more"></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# fdisk /dev/sdb </div><div class="line"></div><div class="line">The number of cylinders for this disk is set to 2610.</div><div class="line">There is nothing wrong with that, but this is larger than 1024,</div><div class="line">and could in certain setups cause problems with:</div><div class="line">1) software that runs at boot time (e.g., old versions of LILO)</div><div class="line">2) booting and partitioning software from other OSs</div><div class="line">   (e.g., DOS FDISK, OS/2 FDISK)</div><div class="line"></div><div class="line">Command (m for help): n</div><div class="line">Command action</div><div class="line">   e   extended</div><div class="line">   p   primary partition (1-4)</div><div class="line">p</div><div class="line">Partition number (1-4): q</div><div class="line">Partition number (1-4): 1</div><div class="line">First cylinder (1-2610, default 1): </div><div class="line">Using default value 1</div><div class="line">Last cylinder or +size or +sizeM or +sizeK (1-2610, default 2610): </div><div class="line">Using default value 2610</div><div class="line"></div><div class="line">Command (m for help): w</div><div class="line">The partition table has been altered!</div><div class="line"></div><div class="line">Calling ioctl() to re-read partition table.</div><div class="line">Syncing disks.</div></pre></td></tr></table></figure>
+<p>再fdisk：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# fdisk -l</div><div class="line"></div><div class="line">Disk /dev/sda: 21.4 GB, 21474836480 bytes</div><div class="line">255 heads, 63 sectors/track, 2610 cylinders</div><div class="line">Units = cylinders of 16065 * 512 = 8225280 bytes</div><div class="line"></div><div class="line">   Device Boot      Start         End      Blocks   Id  System</div><div class="line">/dev/sda1   *           1          13      104391   83  Linux</div><div class="line">/dev/sda2              14        2610    20860402+  8e  Linux LVM</div><div class="line"></div><div class="line">Disk /dev/sdb: 21.4 GB, 21474836480 bytes</div><div class="line">255 heads, 63 sectors/track, 2610 cylinders</div><div class="line">Units = cylinders of 16065 * 512 = 8225280 bytes</div><div class="line"></div><div class="line">   Device Boot      Start         End      Blocks   Id  System</div><div class="line">/dev/sdb1               1        2610    20964793+   5  Extended</div></pre></td></tr></table></figure></p>
+<p>创建PV：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# pvcreate /dev/sdb1 </div><div class="line">  Writing physical volume data to disk &quot;/dev/sdb1&quot;</div><div class="line">  Physical volume &quot;/dev/sdb1&quot; successfully created</div><div class="line">[root@localhost ~]#</div></pre></td></tr></table></figure></p>
+<p>扩展VolGroup00 ：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# vgextend VolGroup00 /dev/sdb1 </div><div class="line">  Volume group &quot;VolGroup00&quot; successfully extended</div><div class="line">[root@localhost ~]#</div></pre></td></tr></table></figure></p>
+<p>扩展LV：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# lvextend -L 20G /dev/VolGroup00/LogVol00</div><div class="line">  Extending logical volume LogVol00 to 20.00 GB</div><div class="line">  Logical volume LogVol00 successfully resized</div><div class="line">[root@localhost ~]#</div></pre></td></tr></table></figure></p>
+<p>执行重设大小：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[root@localhost ~]# resize2fs /dev/VolGroup00/LogVol00</div><div class="line">resize2fs 1.39 (29-May-2006)</div><div class="line">Filesystem at /dev/VolGroup00/LogVol00 is mounted on /; on-line resizing required</div><div class="line">Performing an on-line resize of /dev/VolGroup00/LogVol00 to 5242880 (4k) blocks.</div><div class="line">The filesystem on /dev/VolGroup00/LogVol00 is now 5242880 blocks long.</div><div class="line"></div><div class="line">[root@localhost ~]#</div></pre></td></tr></table></figure></p>
 
       
 

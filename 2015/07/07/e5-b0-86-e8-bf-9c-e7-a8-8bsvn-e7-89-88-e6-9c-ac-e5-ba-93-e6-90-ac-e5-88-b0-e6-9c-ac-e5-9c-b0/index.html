@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>将远程SVN版本库搬到本地 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行 1）在本地建立一个新的版本库：    svnadmin create D:\ane-lab2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）    文件中只需要一行内容即可“exit 0”。3）初始化同步操作：    s">
+  <meta name="description" content="将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行 1）在本地建立一个新的版本库：    svnadmin create D:\ane-lab2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）    文件中只需要一行内容即可“exit 0”。">
 <meta name="keywords" content="Web&#x2F;PHP,Java,C&#x2F;C++,ios,linux,视频,直链,解析,播放器,chplayer,ckplayer,CMP4,前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="将远程SVN版本库搬到本地">
 <meta property="og:url" content="//ganl.io/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行 1）在本地建立一个新的版本库：    svnadmin create D:\ane-lab2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）    文件中只需要一行内容即可“exit 0”。3）初始化同步操作：    s">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:description" content="将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行 1）在本地建立一个新的版本库：    svnadmin create D:\ane-lab2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）    文件中只需要一行内容即可“exit 0”。">
+<meta property="og:updated_time" content="2017-10-11T06:19:25.237Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将远程SVN版本库搬到本地">
-<meta name="twitter:description" content="将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行 1）在本地建立一个新的版本库：    svnadmin create D:\ane-lab2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）    文件中只需要一行内容即可“exit 0”。3）初始化同步操作：    s">
+<meta name="twitter:description" content="将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行 1）在本地建立一个新的版本库：    svnadmin create D:\ane-lab2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）    文件中只需要一行内容即可“exit 0”。">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
   
@@ -181,7 +181,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行</p>
-<p>1）在本地建立一个新的版本库：<br>    svnadmin create D:\ane-lab<br>2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）<br>    文件中只需要一行内容即可“exit 0”。<br>3）初始化同步操作：<br>    svnsync init file:///D:/ane-lab <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a><br>    （如果需要用户名/密码，则按提示输入。成功后命令行将输出信息：复制版本 0 的属性）<br>C:\ane-lab&gt;svnsync init file:///D:/ane-lab <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a><br>Copied properties for revision 0.<br>注意：执行命令时可能需要管理员权限，否则可能提示错误：<br>svnsync: E165006: Repository has not been enabled to accept revision propchanges;<br>ask the administrator to create a pre-revprop-change hook<br>4）执行同步操作：<br>    svnsync sync file:///D:/ane-lab<br>   （如果需要用户名/密码，则按提示输入。如果远程SVN库数据较多，需要慢慢等待）<br>5）如果远程SVN库有了新的更新，只需重复执行步骤4即可。</p>
+<p>1）在本地建立一个新的版本库：<br>    svnadmin create D:\ane-lab<br>2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）<br>    文件中只需要一行内容即可“exit 0”。</p>
+<a id="more"></a>
+<p>3）初始化同步操作：<br>    svnsync init file:///D:/ane-lab <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a><br>    （如果需要用户名/密码，则按提示输入。成功后命令行将输出信息：复制版本 0 的属性）<br>C:\ane-lab&gt;svnsync init file:///D:/ane-lab <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a><br>Copied properties for revision 0.<br>注意：执行命令时可能需要管理员权限，否则可能提示错误：<br>svnsync: E165006: Repository has not been enabled to accept revision propchanges;<br>ask the administrator to create a pre-revprop-change hook<br>4）执行同步操作：<br>    svnsync sync file:///D:/ane-lab<br>   （如果需要用户名/密码，则按提示输入。如果远程SVN库数据较多，需要慢慢等待）<br>5）如果远程SVN库有了新的更新，只需重复执行步骤4即可。</p>
 
       
 

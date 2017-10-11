@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ganl.io">
   <title>将 SVN 仓库转换为 Git 仓库 | ganlei的个人博客-搭上末班车</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1) 将远程SVN仓库搬到本地（见：将远程SVN仓库搬到本地）假设最终要转换的SVN仓库为file:///D:/ane-lab 2) 使用git svn clone命令开始转换git svn clone file:///D:/ane-lab -T trunk -b branches -t tags 如果遇到： open repository ‘file:///D:/ane-lab’: Expect">
+  <meta name="description" content="1) 将远程SVN仓库搬到本地（见：将远程SVN仓库搬到本地）假设最终要转换的SVN仓库为file:///D:/ane-lab 2) 使用git svn clone命令开始转换git svn clone file:///D:/ane-lab -T trunk -b branches -t tags 如果遇到：">
 <meta name="keywords" content="Web&#x2F;PHP,Java,C&#x2F;C++,ios,linux,视频,直链,解析,播放器,chplayer,ckplayer,CMP4,前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="将 SVN 仓库转换为 Git 仓库">
 <meta property="og:url" content="//ganl.io/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
-<meta property="og:description" content="1) 将远程SVN仓库搬到本地（见：将远程SVN仓库搬到本地）假设最终要转换的SVN仓库为file:///D:/ane-lab 2) 使用git svn clone命令开始转换git svn clone file:///D:/ane-lab -T trunk -b branches -t tags 如果遇到： open repository ‘file:///D:/ane-lab’: Expect">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.497Z">
+<meta property="og:description" content="1) 将远程SVN仓库搬到本地（见：将远程SVN仓库搬到本地）假设最终要转换的SVN仓库为file:///D:/ane-lab 2) 使用git svn clone命令开始转换git svn clone file:///D:/ane-lab -T trunk -b branches -t tags 如果遇到：">
+<meta property="og:updated_time" content="2017-10-11T06:19:13.769Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="将 SVN 仓库转换为 Git 仓库">
-<meta name="twitter:description" content="1) 将远程SVN仓库搬到本地（见：将远程SVN仓库搬到本地）假设最终要转换的SVN仓库为file:///D:/ane-lab 2) 使用git svn clone命令开始转换git svn clone file:///D:/ane-lab -T trunk -b branches -t tags 如果遇到： open repository ‘file:///D:/ane-lab’: Expect">
+<meta name="twitter:description" content="1) 将远程SVN仓库搬到本地（见：将远程SVN仓库搬到本地）假设最终要转换的SVN仓库为file:///D:/ane-lab 2) 使用git svn clone命令开始转换git svn clone file:///D:/ane-lab -T trunk -b branches -t tags 如果遇到：">
   
     <link rel="alternative" href="/atom.xml" title="ganlei的个人博客-搭上末班车" type="application/atom+xml">
   
@@ -182,7 +182,8 @@
       
         <p>1) 将远程SVN仓库搬到本地（见：<a href="http://www.iganlei.cn/environment-configuration/628.html" target="_blank" rel="external">将远程SVN仓库搬到本地</a>）<br>假设最终要转换的SVN仓库为file:///D:/ane-lab</p>
 <p>2) 使用git svn clone命令开始转换<br>git svn clone file:///D:/ane-lab -T trunk -b branches -t tags</p>
-<p>如果遇到：<br> open repository ‘file:///D:/ane-lab’: Expected FS format ‘2’; found format ‘6’<br>at /usr/lib/perl5/site_perl/Git/SVN.pm line 310<br>第一步里的 服务程序是1.4.x版本的svnserve或mod_dav_svn，版本库通过1.8.x版本的svnadmin或TortoiseSVN创建的，会产生这个问题</p>
+<p>如果遇到：<br><a id="more"></a></p>
+<p> open repository ‘file:///D:/ane-lab’: Expected FS format ‘2’; found format ‘6’<br>at /usr/lib/perl5/site_perl/Git/SVN.pm line 310<br>第一步里的 服务程序是1.4.x版本的svnserve或mod_dav_svn，版本库通过1.8.x版本的svnadmin或TortoiseSVN创建的，会产生这个问题</p>
 <p>If you access your Subversion repository using a network protocol (such as svn://) instead of local file access, then things should work properly for you. It appears as though you’re asking git-svn to access the repository directly, causing the problem you’ve shown. The Subversion network protocols are more resilient to older clients connecting.</p>
 <p>不方便更换版本<br>可以直接用network协议的地址，例如：ssh://,svn://</p>
 <p>实在不行不用本地库：<br>git svn clone <a href="http://ane-lab.googlecode.com/svn/" target="_blank" rel="external">http://ane-lab.googlecode.com/svn/</a> -T trunk -b branches -t tags</p>

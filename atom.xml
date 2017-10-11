@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-10-10T15:30:24.747Z</updated>
+  <updated>2017-10-11T06:23:31.197Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="//ganl.io/2017/10/10/Wordpress%E6%90%AC%E8%BF%81%E5%88%B0github-coding-hexo/"/>
     <id>//ganl.io/2017/10/10/Wordpress搬迁到github-coding-hexo/</id>
     <published>2017-10-10T12:29:31.000Z</published>
-    <updated>2017-10-10T15:30:24.747Z</updated>
+    <updated>2017-10-11T06:23:31.197Z</updated>
     
     <summary type="html">
     
@@ -31,7 +31,7 @@
 &lt;li&gt;&lt;p&gt;安装hexo并初始化&lt;br&gt;安装hexo-cli，需要先安装node和npm，执行&lt;code&gt;npm install -g hexo-cli&lt;/code&gt;&lt;br&gt;初始化目录：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd ~/Code/&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo init hexo_blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd hexo_blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;cd ~/Code/&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo init hexo_blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd hexo_blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -234,17 +234,12 @@
     <link href="//ganl.io/2016/06/25/coding-net-e5-88-b6-e4-bd-9ccocoapods-e5-9b-bd-e5-86-85-e9-95-9c-e5-83-8f-e6-ba-90/"/>
     <id>//ganl.io/2016/06/25/coding-net-e5-88-b6-e4-bd-9ccocoapods-e5-9b-bd-e5-86-85-e9-95-9c-e5-83-8f-e6-ba-90/</id>
     <published>2016-06-24T17:50:01.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:21:54.727Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;github CocoaPods速度太慢，不搭梯子的情况下，使用起来非常不爽。&lt;br&gt;网上搜索到的一个国内源：&lt;a href=&quot;https://gitcafe.com/lloydsheng/Specs.git&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;github CocoaPods速度太慢，不搭梯子的情况下，使用起来非常不爽。&lt;br&gt;网上搜索到的一个国内源：&lt;a href=&quot;https://gitcafe.com/lloydsheng/Specs.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://gitcafe.com/lloydsheng/Specs.git&lt;/a&gt;&lt;br&gt;点开后跳转到了&lt;a href=&quot;https://coding.net/gitcafe.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://coding.net/gitcafe.html&lt;/a&gt; 是 GitCafe 项目迁移至 Coding.net 公告&lt;/p&gt;
+&lt;p&gt;还是自己弄下吧，&lt;a href=&quot;https://help.github.com/articles/duplicating-a-repository/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://help.github.com/articles/duplicating-a-repository/&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
@@ -321,17 +316,13 @@
     <link href="//ganl.io/2016/02/16/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-89-ef-bc-89softether-vpn-e9-98-bf-e9-87-8c-e4-ba-91-ef-bc-8caliyun-ecs-centos6-5-e6-90-ad-e5-bb-bavpn/"/>
     <id>//ganl.io/2016/02/16/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-89-ef-bc-89softether-vpn-e9-98-bf-e9-87-8c-e4-ba-91-ef-bc-8caliyun-ecs-centos6-5-e6-90-ad-e5-bb-bavpn/</id>
     <published>2016-02-16T13:11:26.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:16:42.216Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;先参考安装一下SS：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/657.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;科学上网利器（一）Shadowsocks
-        
-      
+      &lt;p&gt;先参考安装一下SS：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/657.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;科学上网利器（一）Shadowsocks （Install Shadowsocks Server on Windows/Linux）附带windows和Android/iOS客户端配置&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;不然&lt;a href=&quot;http://www.softether-download.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.softether-download.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.softether.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.softether.org&lt;/a&gt; 访问不了&lt;/p&gt;
     
     </summary>
     
@@ -355,17 +346,11 @@
     <link href="//ganl.io/2016/02/14/chrome-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-e9-bb-98-e8-ae-a4-e7-99-be-e5-ba-a6-e6-90-9c-e7-b4-a2-e6-97-b6-ef-bc-8c-e4-bc-9a-e8-b7-b3-e8-bd-ac-e5-88-b0tntn90855269-hao-pg/"/>
     <id>//ganl.io/2016/02/14/chrome-e8-b0-b7-e6-ad-8c-e6-b5-8f-e8-a7-88-e5-99-a8-e9-bb-98-e8-ae-a4-e7-99-be-e5-ba-a6-e6-90-9c-e7-b4-a2-e6-97-b6-ef-bc-8c-e4-bc-9a-e8-b7-b3-e8-bd-ac-e5-88-b0tntn90855269-hao-pg/</id>
     <published>2016-02-14T12:40:15.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:22:18.537Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;在家几天发现，用chrome地址栏直接搜索东西会跳转一次，很烦&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2016/02/tn.gif&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
-        
-      
+      &lt;p&gt;在家几天发现，用chrome地址栏直接搜索东西会跳转一次，很烦&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2016/02/tn.gif&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2016/02/tn.gif&quot; alt=&quot;tn&quot;&gt;&lt;/a&gt;&lt;br&gt;回家之前用的还是正常的难道是运营商劫持了？&lt;br&gt;在找到一篇分析的文章：&lt;br&gt;
     
     </summary>
     
@@ -379,20 +364,18 @@
     <link href="//ganl.io/2016/02/04/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-ba-8c-ef-bc-89centos-e5-ae-89-e8-a3-85pptp-vpn-e3-80-81ipsecl2tp-vpn/"/>
     <id>//ganl.io/2016/02/04/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-ba-8c-ef-bc-89centos-e5-ae-89-e8-a3-85pptp-vpn-e3-80-81ipsecl2tp-vpn/</id>
     <published>2016-02-04T10:51:49.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:16:35.727Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;一、安装PPTP&lt;br&gt;1.测试是否支持,返回“ok”说明测试通过&lt;/p&gt;
+      &lt;p&gt;一、安装PPTP&lt;br&gt;1.测试是否支持,返回“ok”说明测试通过&lt;/p&gt;
 &lt;pre&gt;modprobe ppp-compress-18 &amp;amp;&amp;amp; echo ok
 cat /dev/ppp&lt;/pre&gt;
-如果提示&lt;span
-        
-      
+如果提示&lt;span class=&quot;hljs-title&quot;&gt;Permission&lt;/span&gt; denied，应该是不支持了。
+
+[![modprobe20160204152807](http://www.iganlei.cn/wp-content/uploads/2016/02/modprobe20160204152807.jpg)](http://www.iganlei.cn/wp-content/uploads/2016/02/modprobe20160204152807.jpg)
+
+2.安装ppp 和 iptables
     
     </summary>
     
@@ -455,17 +438,13 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/12/17/pycharm-valueerror-unable-to-configure-filter-require-debug-false-dictconfigurator-object-has-no-attribute-startswith/"/>
     <id>//ganl.io/2015/12/17/pycharm-valueerror-unable-to-configure-filter-require-debug-false-dictconfigurator-object-has-no-attribute-startswith/</id>
     <published>2015-12-17T15:56:32.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:03:09.369Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;File “/usr/lib/python2.7/logging/config.py”, line 562, in configure&lt;br&gt;‘filter %r: %s’ % (name, e))&lt;br&gt;ValueError: Unable to configure
-        
-      
+      &lt;p&gt;File “/usr/lib/python2.7/logging/config.py”, line 562, in configure&lt;br&gt;‘filter %r: %s’ % (name, e))&lt;br&gt;ValueError: Unable to configure filter ‘require_debug_false’: ‘DictConfigurator’ object has no attribute ‘startswith’&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/12/console.png&quot; alt=&quot;console&quot;&gt;&lt;/p&gt;
+&lt;p&gt;解决方法见：&lt;br&gt;
     
     </summary>
     
@@ -487,20 +466,13 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/12/13/grub-rescue-e7-bb-88-e7-ab-af-e6-a8-a1-e5-bc-8f-e4-bf-ae-e5-a4-8d-e6-96-b9-e6-b3-95/"/>
     <id>//ganl.io/2015/12/13/grub-rescue-e7-bb-88-e7-ab-af-e6-a8-a1-e5-bc-8f-e4-bf-ae-e5-a4-8d-e6-96-b9-e6-b3-95/</id>
     <published>2015-12-13T08:06:55.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:12:17.484Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;导入virtualbox vdi文件，启动后出现error：file not found&lt;/p&gt;
+      &lt;p&gt;导入virtualbox vdi文件，启动后出现error：file not found&lt;/p&gt;
 &lt;p&gt;grub rescue &amp;gt;&lt;/p&gt;
-&lt;p&gt;找到系统所在分区：&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
+&lt;p&gt;找到系统所在分区：&lt;br&gt;
     
     </summary>
     
@@ -546,19 +518,14 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/11/05/php-e5-af-bc-e5-87-baexcel-ef-bc-8c-e4-b8-ad-e6-96-87-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/"/>
     <id>//ganl.io/2015/11/05/php-e5-af-bc-e5-87-baexcel-ef-bc-8c-e4-b8-ad-e6-96-87-e4-b9-b1-e7-a0-81-e9-97-ae-e9-a2-98/</id>
     <published>2015-11-04T16:15:57.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:03:53.337Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;有时候会遇到把日志或者其他信息导出来，最开始用的csv到没发现存在乱码的问题；&lt;/p&gt;
+      &lt;p&gt;有时候会遇到把日志或者其他信息导出来，最开始用的csv到没发现存在乱码的问题；&lt;/p&gt;
 &lt;p&gt;今天导license换成excel，发现里面的中文都乱码了，&lt;/p&gt;
-&lt;p&gt;&lt;a
-        
-      
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/11/unicode.jpg&quot; alt=&quot;unicode&quot;&gt;&lt;/p&gt;
+&lt;p&gt;把excel后缀 .xls 改成 .txt,用notepad++打开，能正常显示看了下编码，utf8；&lt;br&gt;
     
     </summary>
     
@@ -641,17 +608,12 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/09/22/e4-bd-bf-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-88toolbox-e5-9c-a8windows-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-89/"/>
     <id>//ganl.io/2015/09/22/e4-bd-bf-e7-94-a8boot2docker-e6-9d-a5-e4-bd-bf-e7-94-a8docker-ef-bc-88toolbox-e5-9c-a8windows-e4-b8-8b-e5-ae-89-e8-a3-85docker-ef-bc-89/</id>
     <published>2015-09-21T18:06:06.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:20:43.648Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;安装之前先了解下关键概念：&quot;&gt;&lt;a href=&quot;#安装之前先了解下关键概念：&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h3 id=&quot;安装之前先了解下关键概念：&quot;&gt;&lt;a href=&quot;#安装之前先了解下关键概念：&quot; class=&quot;headerlink&quot; title=&quot;安装之前先了解下关键概念：&quot;&gt;&lt;/a&gt;安装之前先了解下关键概念：&lt;/h3&gt;&lt;p&gt;在linux上安装Docker，你的机器即使localhost也是docker主机；在网络中，localhost是指您的计算机。docker主机是容器中在该机器上运行。说白了就是直接安装在linux上，英文翻译真蛋疼。&lt;/p&gt;
+&lt;p&gt;在Windows安装，Docker守护进程运行Linux虚拟机内。您可以使用Windows的客户端与虚拟机中的Docker主机通信。这台主机中运行你的Docker容器。&lt;/p&gt;
     
     </summary>
     
@@ -694,18 +656,12 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/09/18/github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84/"/>
     <id>//ganl.io/2015/09/18/github-contributions-calendar-e4-b8-8d-e8-ae-b0-e5-bd-95-e7-9a-84/</id>
     <published>2015-09-18T14:47:23.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:12:47.499Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;最近两天发现github Contributions Calendar不记录：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918223813.jpg&quot;
-        
-      
+      &lt;p&gt;最近两天发现github Contributions Calendar不记录：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918223813.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/09/blog20150918223813.jpg&quot; alt=&quot;blog20150918223813&quot;&gt;&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -721,17 +677,26 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/09/18/oauth2-0-e6-8e-88-e6-9d-83-e7-b1-bb-e5-9e-8b/"/>
     <id>//ganl.io/2015/09/18/oauth2-0-e6-8e-88-e6-9d-83-e7-b1-bb-e5-9e-8b/</id>
     <published>2015-09-18T10:13:33.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:04:07.558Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;上一篇说了下自己的困惑：&lt;a href=&quot;http://www.iganlei.cn/web/778.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OAuth 2.0（开放授权）与 REST
-        
-      
+      &lt;p&gt;上一篇说了下自己的困惑：&lt;a href=&quot;http://www.iganlei.cn/web/778.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OAuth 2.0（开放授权）与 REST API&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0定义了四种授权方式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;授权码模式 （Authorization code）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Web-server、apps&quot;&gt;&lt;a href=&quot;#Web-server、apps&quot; class=&quot;headerlink&quot; title=&quot;Web-server、apps&quot;&gt;&lt;/a&gt;Web-server、apps&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;简化模式 （implicit）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Browser-based-apps，Mobile-apps&quot;&gt;&lt;a href=&quot;#Browser-based-apps，Mobile-apps&quot; class=&quot;headerlink&quot; title=&quot;Browser-based apps，Mobile apps&quot;&gt;&lt;/a&gt;Browser-based apps，Mobile apps&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;密码模式 （resource owner password credentials）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Username-password-access&quot;&gt;&lt;a href=&quot;#Username-password-access&quot; class=&quot;headerlink&quot; title=&quot;Username/password access&quot;&gt;&lt;/a&gt;Username/password access&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;客户端模式 （client credentials）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Application-access&quot;&gt;&lt;a href=&quot;#Application-access&quot; class=&quot;headerlink&quot; title=&quot;Application access&quot;&gt;&lt;/a&gt;Application access&lt;/h4&gt;&lt;/blockquote&gt;
     
     </summary>
     
@@ -745,17 +710,13 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
     <link href="//ganl.io/2015/09/18/oauth-2-0-ef-bc-88-e5-bc-80-e6-94-be-e6-8e-88-e6-9d-83-ef-bc-89-e4-b8-8e-rest-api/"/>
     <id>//ganl.io/2015/09/18/oauth-2-0-ef-bc-88-e5-bc-80-e6-94-be-e6-8e-88-e6-9d-83-ef-bc-89-e4-b8-8e-rest-api/</id>
     <published>2015-09-18T06:55:01.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:04:16.923Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;虽然接触过些OAuth和RESTful，但是一直有比较模糊，很多平台都提供RESTful API,多数都有获取access_token这一步：&lt;a
-        
-      
+      &lt;p&gt;虽然接触过些OAuth和RESTful，但是一直有比较模糊，很多平台都提供RESTful API,多数都有获取access_token这一步：&lt;a href=&quot;http://mp.weixin.qq.com/wiki/11/0e4b294685f817b95cbed85ba5e82b8f.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mp.weixin.qq.com/wiki/11/0e4b294685f817b95cbed85ba5e82b8f.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;阿里的也是类似的：&lt;a href=&quot;https://docs.aliyun.com/?spm=5176.100054.3.1.xA5vdO#/pub/ecs/open-api/requestmethod&amp;amp;signature&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://docs.aliyun.com/?spm=5176.100054.3.1.xA5vdO#/pub/ecs/open-api/requestmethod&amp;amp;signature&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;假如我想实现一个REST API，去百度应该如何去搜索？对OAuth和REST不是很理解。&lt;br&gt;
     
     </summary>
     
@@ -792,20 +753,13 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/"/>
     <id>//ganl.io/2015/09/13/js-e7-9a-84-e6-9d-a1-e4-bb-b6-e5-88-a4-e6-96-ad-e7-9a-84bug-false-e5-b1-85-e7-84-b6-e9-80-9a-e8-bf-87-e4-ba-86-if-e7-9c-9f-e6-98-af-e8-bf-99-e6-a0-b7-ef-bc-9f/</id>
     <published>2015-09-13T12:12:19.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:09:04.188Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的：&lt;/p&gt;
+      &lt;p&gt;在群里遇到个人说跳转存在问题，求解决；给我的代码是这样的：&lt;/p&gt;
 &lt;p&gt;他想实现就是限制：北京，上海，重庆 跳转；&lt;/p&gt;
-&lt;p&gt;很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。&lt;/p&gt;
-&lt;div class=&quot;dp-highlighter
-        
-      
+&lt;p&gt;很简单，逻辑运算符用错了；改为&amp;amp;&amp;amp;，理论上说应该正常工作了。&lt;br&gt;
     
     </summary>
     
@@ -847,17 +801,12 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/08/13/java-e8-a6-81-e8-ae-be-e7-bd-ae-e7-9a-84-e7-8e-af-e5-a2-83-e5-8f-98-e9-87-8f-ef-bc-88-e8-ae-b0-e5-bd-95-ef-bc-89java-home-e3-80-81classpath-e3-80-81path/"/>
     <id>//ganl.io/2015/08/13/java-e8-a6-81-e8-ae-be-e7-bd-ae-e7-9a-84-e7-8e-af-e5-a2-83-e5-8f-98-e9-87-8f-ef-bc-88-e8-ae-b0-e5-bd-95-ef-bc-89java-home-e3-80-81classpath-e3-80-81path/</id>
     <published>2015-08-13T02:52:54.000Z</published>
-    <updated>2017-10-07T01:34:31.498Z</updated>
+    <updated>2017-10-11T06:11:01.994Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;JAVA_HOME、&lt;br&gt; JAVA_HOME 指向的是JDK的安装路径：&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/08/java_home.png&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;JAVA_HOME、&lt;br&gt; JAVA_HOME 指向的是JDK的安装路径：&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/08/java_home.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/08/java_home-300x85.png&quot; alt=&quot;java_home&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CLASSPATH、&lt;br&gt;
     
     </summary>
     
@@ -881,17 +830,11 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/"/>
     <id>//ganl.io/2015/08/07/esxivsphere-5-5-e5-bc-80-e5-8f-91-ef-bc-88-e4-b8-80-ef-bc-89vsphere-5-5-e7-8e-af-e5-a2-83-e6-90-ad-e5-bb-ba/</id>
     <published>2015-08-07T13:14:02.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:14:02.121Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;1.到官方网站下载ESXi5.5，然后刻成光盘（用UltraISO烧到U盘应该也是可以的）。&lt;br&gt;找一台干净机器，开机后从光驱启动，进行引导安装，直接选择第一项“标准安装”回车继续，&lt;br&gt;引导程序会加载VMkernel以及相关模块到内存中，同时ESXi
-        
-      
+      &lt;p&gt;1.到官方网站下载ESXi5.5，然后刻成光盘（用UltraISO烧到U盘应该也是可以的）。&lt;br&gt;找一台干净机器，开机后从光驱启动，进行引导安装，直接选择第一项“标准安装”回车继续，&lt;br&gt;引导程序会加载VMkernel以及相关模块到内存中，同时ESXi 5.5安装程序也会读取服务器的规格型号及CPU、内存信息。&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/08/IMG_20150804_105725-300x222.jpg&quot; alt=&quot;IMG_20150804_105725&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -927,7 +870,7 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/30/linux-e4-b8-8bmysql-e6-b2-a1-e6-9c-89-e5-bc-80-e6-9c-ba-e8-87-aa-e5-90-af-e5-8a-a8/"/>
     <id>//ganl.io/2015/07/30/linux-e4-b8-8bmysql-e6-b2-a1-e6-9c-89-e5-bc-80-e6-9c-ba-e8-87-aa-e5-90-af-e5-8a-a8/</id>
     <published>2015-07-30T07:56:31.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:08:01.682Z</updated>
     
     <summary type="html">
     
@@ -936,9 +879,9 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
         
         
           &lt;p&gt;有点怪，/etc/init.d/mysqld 这样不应该会自启动吗？&lt;/p&gt;
-&lt;p&gt;chkconfig |grep mysql&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;chkconfig |grep mysql&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;chkconfig mysqld on&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a
+&lt;p&gt;&lt;img
         
       
     
@@ -954,17 +897,12 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/27/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-80-ef-bc-89shadowsocks-ef-bc-88install-shadowsocks-server-on-windows-ef-bc-89/"/>
     <id>//ganl.io/2015/07/27/e7-a7-91-e5-ad-a6-e4-b8-8a-e7-bd-91-e5-88-a9-e5-99-a8-ef-bc-88-e4-b8-80-ef-bc-89shadowsocks-ef-bc-88install-shadowsocks-server-on-windows-ef-bc-89/</id>
     <published>2015-07-27T10:19:28.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:16:47.890Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;除了&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/650.html&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;除了&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/650.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;前文&lt;/a&gt;更改hosts方式来上google外，如果有国外的云主机，可以好好利用一下：&lt;br&gt;Install Shadowsocks Server on Windows&lt;br&gt;1.下载Python for Windows：&lt;a href=&quot;https://www.python.org/downloads/release/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.python.org/downloads/release/&lt;/a&gt;&lt;br&gt;需要选上PIP&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/python.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/python-300x256.png&quot; alt=&quot;python&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2.安装OpenSSL for Windows，位数需要与Python对应：&lt;a href=&quot;https://slproweb.com/products/Win32OpenSSL.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://slproweb.com/products/Win32OpenSSL.html&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -988,17 +926,15 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/17/2015-7-17-e4-bf-ae-e6-94-b9host-e6-96-87-e4-bb-b6-ef-bc-8c-e8-ae-a9-e4-bd-a0-e7-9a-84google-e8-b7-91-e8-b5-b7-e6-9d-a5-2015-google-hosts/"/>
     <id>//ganl.io/2015/07/17/2015-7-17-e4-bf-ae-e6-94-b9host-e6-96-87-e4-bb-b6-ef-bc-8c-e8-ae-a9-e4-bd-a0-e7-9a-84google-e8-b7-91-e8-b5-b7-e6-9d-a5-2015-google-hosts/</id>
     <published>2015-07-17T06:10:05.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:23:03.021Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;效果：&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/google28.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img
-        
-      
+      &lt;p&gt;效果：&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/google28.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/google28-300x228.png&quot; alt=&quot;google28&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Windows用户：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/7.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/7-300x180.png&quot; alt=&quot;7&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Android用户：首先必须root手机，然后安装root explorer管理器，打开进入/system/etc目录,长按host文件，弹出菜单拉到下面会看到“文本编辑器方式打开”。编辑输入即可&lt;/p&gt;
+&lt;p&gt;Mac OS用户： host位置为：/private/etc/hosts&lt;br&gt;
     
     </summary>
     
@@ -1020,7 +956,7 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/11/nginx-e5-87-ba-e7-8e-b0413-request-entity-too-large-e9-94-99-e8-af-af-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
     <id>//ganl.io/2015/07/11/nginx-e5-87-ba-e7-8e-b0413-request-entity-too-large-e9-94-99-e8-af-af-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
     <published>2015-07-11T09:31:28.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:04:46.393Z</updated>
     
     <summary type="html">
     
@@ -1028,7 +964,7 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
       
         
         
-          &lt;p&gt;在PhpMyAdmin里上传一个30M左右的sql.zip就提示 413&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/100004173.png&quot; target=&quot;_blank&quot;
+          &lt;p&gt;在PhpMyAdmin里上传一个30M左右的sql.zip就提示 413&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/07/100004173-300x81.png&quot;
         
       
     
@@ -1093,17 +1029,13 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/"/>
     <id>//ganl.io/2015/07/07/e5-b0-86-svn-e4-bb-93-e5-ba-93-e8-bd-ac-e6-8d-a2-e4-b8-ba-git-e4-bb-93-e5-ba-93/</id>
     <published>2015-07-07T09:10:57.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:19:13.769Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;1) 将远程SVN仓库搬到本地（见：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/628.html&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;1) 将远程SVN仓库搬到本地（见：&lt;a href=&quot;http://www.iganlei.cn/environment-configuration/628.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;将远程SVN仓库搬到本地&lt;/a&gt;）&lt;br&gt;假设最终要转换的SVN仓库为file:///D:/ane-lab&lt;/p&gt;
+&lt;p&gt;2) 使用git svn clone命令开始转换&lt;br&gt;git svn clone file:///D:/ane-lab -T trunk -b branches -t tags&lt;/p&gt;
+&lt;p&gt;如果遇到：&lt;br&gt;
     
     </summary>
     
@@ -1117,18 +1049,12 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/"/>
     <id>//ganl.io/2015/07/07/e5-b0-86-e8-bf-9c-e7-a8-8bsvn-e7-89-88-e6-9c-ac-e5-ba-93-e6-90-ac-e5-88-b0-e6-9c-ac-e5-9c-b0/</id>
     <published>2015-07-07T05:26:59.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:19:25.237Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行&lt;/p&gt;
-&lt;p&gt;1）在本地建立一个新的版本库：&lt;br&gt;    svnadmin create
-        
-      
+      &lt;p&gt;将远程版本库整个同步到本地，然后所有操作都在本地的版本库上进行&lt;/p&gt;
+&lt;p&gt;1）在本地建立一个新的版本库：&lt;br&gt;    svnadmin create D:\ane-lab&lt;br&gt;2）创建钩子文件pre-revprop-change.bat：（windows环境里是D:\ane-lab\hooks\pre-revprop-change.bat）&lt;br&gt;    文件中只需要一行内容即可“exit 0”。&lt;/p&gt;
     
     </summary>
     
@@ -1142,7 +1068,7 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/07/e9-98-bf-e9-87-8c-e4-ba-91dns/"/>
     <id>//ganl.io/2015/07/07/e9-98-bf-e9-87-8c-e4-ba-91dns/</id>
     <published>2015-07-07T02:16:23.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:15:17.913Z</updated>
     
     <summary type="html">
     
@@ -1150,7 +1076,10 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
       
         
         
-          &lt;p&gt;233.5.5.5&lt;br&gt;233.6.6.6&lt;/p&gt;
+          &lt;blockquote&gt;
+&lt;p&gt;233.5.5.5&lt;/p&gt;
+&lt;p&gt;233.6.6.6&lt;/p&gt;
+&lt;/blockquote&gt;
 
         
       
@@ -1169,17 +1098,11 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/06/ios8-e6-a1-88-e4-be-8b-e5-a4-a7-e5-85-a8-e7-9b-ae-e5-bd-95/"/>
     <id>//ganl.io/2015/07/06/ios8-e6-a1-88-e4-be-8b-e5-a4-a7-e5-85-a8-e7-9b-ae-e5-bd-95/</id>
     <published>2015-07-06T15:45:36.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:11:16.535Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;第1章 搭建开发环境实战    1&lt;br&gt;实例001 下载并安装Xcode    1&lt;br&gt;实例002 改变Xcode工程的公司名称    4&lt;br&gt;实例003 通过搜索框缩小文件范围并格式化代码    5&lt;br&gt;实例004 代码缩进和提示处理    6&lt;br&gt;实例005
-        
-      
+      &lt;p&gt;第1章 搭建开发环境实战    1&lt;br&gt;实例001 下载并安装Xcode    1&lt;br&gt;实例002 改变Xcode工程的公司名称    4&lt;br&gt;实例003 通过搜索框缩小文件范围并格式化代码    5&lt;br&gt;实例004 代码缩进和提示处理    6&lt;br&gt;实例005 设置项目快照以及恢复到快照    7&lt;br&gt;实例006 实现复杂的查找和替代工作    8&lt;br&gt;实例007 使用书签    10&lt;br&gt;实例008 实现断点调试    11&lt;br&gt;实例009 启动模拟器    12&lt;br&gt;
     
     </summary>
     
@@ -1201,17 +1124,15 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/03/e7-bd-91-e7-ab-99-e5-8e-8b-e5-8a-9b-e6-b5-8b-e8-af-95-e5-b7-a5-e5-85-b7-webbench/"/>
     <id>//ganl.io/2015/07/03/e7-bd-91-e7-ab-99-e5-8e-8b-e5-8a-9b-e6-b5-8b-e8-af-95-e5-b7-a5-e5-85-b7-webbench/</id>
     <published>2015-07-03T06:22:04.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:16:21.220Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;webbench编译安装包备份链接: &lt;a href=&quot;http://pan.baidu.com/s/1mg26wT6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mg26wT6&lt;/a&gt; 密码:
-        
-      
+      &lt;p&gt;webbench编译安装包备份链接: &lt;a href=&quot;http://pan.baidu.com/s/1mg26wT6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mg26wT6&lt;/a&gt; 密码: 7sax&lt;br&gt;步骤：&lt;br&gt;wget &lt;a href=&quot;http://home.tiscali.cz/~cz210552/distfiles/webbench-1.5.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://home.tiscali.cz/~cz210552/distfiles/webbench-1.5.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;tar -zxvf webbench-1.5.tar.gz &lt;/p&gt;
+&lt;p&gt;cd webbench-1.5&lt;/p&gt;
+&lt;p&gt;make&lt;/p&gt;
+&lt;p&gt;出现错误：&lt;br&gt;[root@localhost webbench-1.5]# make &amp;amp;&amp;amp; make install&lt;br&gt;cc -Wall -ggdb -W -O   -c -o webbench.o webbench.c&lt;br&gt;webbench.c: In function ‘alarm_handler’:&lt;br&gt;webbench.c:77: 警告：未使用的参数 ‘signal’&lt;br&gt;cc -Wall -ggdb -W -O  -o webbench webbench.o&lt;br&gt;ctags *.c&lt;br&gt;/bin/sh: ctags: command not found&lt;br&gt;make: [tags] 错误 127 (忽略)&lt;/p&gt;
     
     </summary>
     
@@ -1227,17 +1148,13 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/07/03/e7-94-a8webtatic-com-e6-8f-90-e4-be-9b-e7-9a-84-e6-ba-90-e5-8d-87-e7-ba-a7php5-4-42/"/>
     <id>//ganl.io/2015/07/03/e7-94-a8webtatic-com-e6-8f-90-e4-be-9b-e7-9a-84-e6-ba-90-e5-8d-87-e7-ba-a7php5-4-42/</id>
     <published>2015-07-03T03:28:21.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:17:09.172Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;To install, first you must add the Webtatic EL yum repository information corresponding to your CentOS/RHEL version to
-        
-      
+      &lt;p&gt;To install, first you must add the Webtatic EL yum repository information corresponding to your CentOS/RHEL version to yum:&lt;/p&gt;
+&lt;p&gt;CentOS/RHEL 7.x:&lt;/p&gt;
+&lt;p&gt;rpm -Uvh &lt;a href=&quot;https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm&lt;/a&gt;&lt;br&gt;rpm -Uvh &lt;a href=&quot;https://mirror.webtatic.com/yum/el7/webtatic-release.rpm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://mirror.webtatic.com/yum/el7/webtatic-release.rpm&lt;/a&gt;&lt;br&gt;CentOS/RHEL 6.x:&lt;/p&gt;
     
     </summary>
     
@@ -1297,17 +1214,14 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/"/>
     <id>//ganl.io/2015/06/07/mysql5-6-e6-97-a0-e6-95-85-e9-80-80-e5-87-ba-innodb-mmap137363456-bytes-failed-errno-12/</id>
     <published>2015-06-07T01:42:00.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:04:59.760Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;百度了一下，貌似阿里云很多用户都遇到过这个问题，主机内存2G的。&lt;br&gt;在一堆日志中看了一句：&lt;br&gt;InnoDB: mmap(137363456 bytes) failed; errno 12&lt;br&gt;度娘说：修改my.cnf
-        
-      
+      &lt;p&gt;百度了一下，貌似阿里云很多用户都遇到过这个问题，主机内存2G的。&lt;br&gt;在一堆日志中看了一句：&lt;br&gt;InnoDB: mmap(137363456 bytes) failed; errno 12&lt;br&gt;度娘说：修改my.cnf ，设置innodb_buffer_pool_size=8M&lt;/p&gt;
+&lt;h1 id=&quot;Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data&quot;&gt;&lt;a href=&quot;#Remove-leading-and-set-to-the-amount-of-RAM-for-the-most-important-data&quot; class=&quot;headerlink&quot; title=&quot;Remove leading # and set to the amount of RAM for the most important data&quot;&gt;&lt;/a&gt;Remove leading # and set to the amount of RAM for the most important data&lt;/h1&gt;&lt;h1 id=&quot;cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10&quot;&gt;&lt;a href=&quot;#cache-in-MySQL-Start-at-70-of-total-RAM-for-dedicated-server-else-10&quot; class=&quot;headerlink&quot; title=&quot;cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.&quot;&gt;&lt;/a&gt;cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.&lt;/h1&gt;&lt;h1 id=&quot;innodb-buffer-pool-size-128M&quot;&gt;&lt;a href=&quot;#innodb-buffer-pool-size-128M&quot; class=&quot;headerlink&quot; title=&quot;innodb_buffer_pool_size = 128M&quot;&gt;&lt;/a&gt;innodb_buffer_pool_size = 128M&lt;/h1&gt;&lt;p&gt;暂且改下吧。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;2G内存为什么这么容易耗光？？&lt;br&gt;
     
     </summary>
     
@@ -1365,17 +1279,12 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/05/21/e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85apache-ef-bc-882-2-29-ef-bc-89-e5-92-8cphp-ef-bc-88php-5-4-41-ef-bc-89/"/>
     <id>//ganl.io/2015/05/21/e7-bc-96-e8-af-91-e5-ae-89-e8-a3-85apache-ef-bc-882-2-29-ef-bc-89-e5-92-8cphp-ef-bc-88php-5-4-41-ef-bc-89/</id>
     <published>2015-05-21T09:37:37.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:16:30.564Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;下载Apache并解压：&lt;br&gt; 6  wget &lt;a href=&quot;http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;下载Apache并解压：&lt;br&gt; 6  wget &lt;a href=&quot;http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://apache.fayea.com//httpd/httpd-2.2.29.tar.gz&lt;/a&gt;&lt;br&gt; 28  tar zxvf httpd-2.2.29.tar.gz&lt;br&gt; 29  cd httpd-2.2.29&lt;/p&gt;
+&lt;p&gt;配置：&lt;/p&gt;
     
     </summary>
     
@@ -1395,17 +1304,13 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/"/>
     <id>//ganl.io/2015/05/21/rhel6-5-e6-9b-b4-e6-94-b9-e4-b8-ba-e9-98-bf-e9-87-8c-e4-ba-91aliyuncentos6-e7-9a-84yum-e6-ba-90/</id>
     <published>2015-05-21T06:17:47.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:01:30.389Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;删除原有的yum包&lt;br&gt;  45  rpm -qa | grep yum|xargs rpm -e –nodeps&lt;br&gt;安装yum包&lt;br&gt;   46  rpm -ivh &lt;a
-        
-      
+      &lt;p&gt;&lt;strong&gt;删除原有的yum包&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;  45  rpm -qa | grep yum|xargs rpm -e --nodeps&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;安装yum包&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   46  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/python-iniparse-0.3.1-2.1.el6.noarch.rpm&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   47  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-metadata-parser-1.1.2-16.el6.x86_64.rpm&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  52  rpm -ivh http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-3.2.29-60.el6.centos.noarch.rpm http://mirrors.aliyun.com/centos/6/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.30-30.el6.noarch.rpm&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;注：52 后面的包两个包需要一起安装。&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;添加源&lt;/strong&gt;&lt;br&gt;
     
     </summary>
     
@@ -1482,17 +1387,11 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/04/24/e7-94-a8s3fs-e6-8c-82-e8-bd-bd-e5-a4-a9-e7-bf-bcoos-e5-88-b0-e6-9c-8d-e5-8a-a1-e5-99-a8/"/>
     <id>//ganl.io/2015/04/24/e7-94-a8s3fs-e6-8c-82-e8-bd-bd-e5-a4-a9-e7-bf-bcoos-e5-88-b0-e6-9c-8d-e5-8a-a1-e5-99-a8/</id>
     <published>2015-04-24T10:44:35.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:17:18.411Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;s3fs是把Amazon S3存储服务挂载到本地硬盘或者服务器上的程序，天翼云存储OOS和S3兼容，只需要修改s3fs一行代码，它就能挂载天翼OSS到服务器上。&lt;br&gt;github地址：&lt;a
-        
-      
+      &lt;p&gt;s3fs是把Amazon S3存储服务挂载到本地硬盘或者服务器上的程序，天翼云存储OOS和S3兼容，只需要修改s3fs一行代码，它就能挂载天翼OSS到服务器上。&lt;br&gt;github地址：&lt;a href=&quot;https://github.com/s3fs-fuse/s3fs-fuse&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/s3fs-fuse/s3fs-fuse&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -1514,17 +1413,16 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/"/>
     <id>//ganl.io/2015/04/24/linux-e4-b8-8blibevent-e5-ae-89-e8-a3-85/</id>
     <published>2015-04-24T06:54:18.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:08:15.181Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;&lt;code&gt;[root@localhost ~]# wget
-        
-      
+      &lt;p&gt;&lt;code&gt;[root@localhost ~]# wget https://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz
+--2015-04-24 11:30:56--  https://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz
+正在解析主机 sourceforge.net... 216.34.181.60
+Connecting to sourceforge.net|216.34.181.60|:443... 已连接。
+ERROR: certificate common name&lt;/code&gt;*.sourceforge.net’ doesn’t match requested host name &lt;code&gt;sourceforge.net&amp;#39;.
+To connect to sourceforge.net insecurely, use&lt;/code&gt;–no-check-certificate’.&lt;br&gt;无法建立 SSL 连接。&lt;br&gt;[root@localhost ~]# wget &lt;a href=&quot;http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz&lt;/a&gt;&lt;br&gt;–2015-04-24 11:31:07–  &lt;a href=&quot;http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/libevent-2.0.22-stable.tar.gz&lt;/a&gt;&lt;br&gt;`&lt;/p&gt;
     
     </summary>
     
@@ -1591,18 +1489,14 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
     <link href="//ganl.io/2015/04/08/linux-lvm-e6-89-a9-e5-ae-b9/"/>
     <id>//ganl.io/2015/04/08/linux-lvm-e6-89-a9-e5-ae-b9/</id>
     <published>2015-04-08T05:27:51.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:07:39.918Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;安装软件提示存储不足：&lt;br&gt;&lt;code&gt;[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm 
-Preparing...               
-        
-      
+      &lt;p&gt;安装软件提示存储不足：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;[root@localhost ~]# rpm -ivh in**-6478.el5.i386.rpm &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Preparing...                ########################################### [100%]&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        installing package in**-6478.el5.i386 needs 49MB on the / filesystem&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;[root@localhost ~]#&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;[root@localhost ~]# df&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;文件系统               1K-块        已用     可用 已用% 挂载点&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;/dev/mapper/VolGroup00-LogVol00&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                      18156292  17826096         0 100% /&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;/dev/sda1               101086     38687     57180  41% /boot&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;tmpfs                  1037460         0   1037460   0% /dev/shm&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;.host:/              157287392 134538736  22748656  86% /mnt/hgfs&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;[root@localhost ~]# fdisk -l&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Disk /dev/sda: 21.4 GB, 21474836480 bytes&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;255 heads, 63 sectors/track, 2610 cylinders&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Units = cylinders of 16065 * 512 = 8225280 bytes&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   Device Boot      Start         End      Blocks   Id  System&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;/dev/sda1   *           1          13      104391   83  Linux&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;/dev/sda2              14        2610    20860402+  8e  Linux LVM&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在虚拟机设置里添加一块硬盘，&lt;br&gt;
     
     </summary>
     
@@ -1624,17 +1518,11 @@ Preparing...
     <link href="//ganl.io/2015/04/02/js-e5-ae-9e-e7-8e-b0-e8-a1-a8-e6-a0-bc-e6-a0-b9-e6-8d-ae-e5-ad-97-e6-ae-b5-e6-8e-92-e5-ba-8f/"/>
     <id>//ganl.io/2015/04/02/js-e5-ae-9e-e7-8e-b0-e8-a1-a8-e6-a0-bc-e6-a0-b9-e6-8d-ae-e5-ad-97-e6-ae-b5-e6-8e-92-e5-ba-8f/</id>
     <published>2015-04-02T13:14:26.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:09:13.221Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;定义和用法&lt;br&gt;sort() 方法用于对数组的元素进行排序。&lt;br&gt;语法&lt;br&gt;arrayObject.sort(sortby)&lt;br&gt;参数    描述&lt;br&gt;sortby   
-        
-      
+      &lt;p&gt;定义和用法&lt;br&gt;sort() 方法用于对数组的元素进行排序。&lt;br&gt;语法&lt;br&gt;arrayObject.sort(sortby)&lt;br&gt;参数    描述&lt;br&gt;sortby    可选。规定排序顺序。必须是函数。&lt;br&gt;返回值&lt;br&gt;对数组的引用。请注意，数组在原数组上进行排序，不生成副本。&lt;br&gt;说明&lt;br&gt;如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序，说得更精确点，是按照字符编码的顺序进行排序。要实现这一点，首先应把数组的元素都转换成字符串（如有必要），以便进行比较。&lt;br&gt;如果想按照其他标准进行排序，就需要提供比较函数，该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：&lt;br&gt;若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。&lt;br&gt;若 a 等于 b，则返回 0。&lt;br&gt;若 a 大于 b，则返回一个大于 0 的值。&lt;br&gt;例子：&lt;br&gt;
     
     </summary>
     
@@ -1656,20 +1544,11 @@ Preparing...
     <link href="//ganl.io/2015/03/30/e9-98-bf-e9-87-8c-e4-ba-91linux-e4-b8-80-e9-94-ae-e5-ae-89-e8-a3-85web-e7-8e-af-e5-a2-83-e5-8d-87-e7-ba-a7/"/>
     <id>//ganl.io/2015/03/30/e9-98-bf-e9-87-8c-e4-ba-91linux-e4-b8-80-e9-94-ae-e5-ae-89-e8-a3-85web-e7-8e-af-e5-a2-83-e5-8d-87-e7-ba-a7/</id>
     <published>2015-03-29T18:03:47.000Z</published>
-    <updated>2017-10-07T01:34:31.497Z</updated>
+    <updated>2017-10-11T06:14:47.834Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;说是升级，实际是重装了，&lt;br&gt;先&lt;br&gt;&lt;code&gt;mv www /home/www
-  mv rewrite /home/rewrite/
-  mv vhosts /home/vhosts
-  mv mysql/var
-        
-      
+      &lt;p&gt;说是升级，实际是重装了，&lt;br&gt;先&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;mv www /home/www&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;mv rewrite /home/rewrite/&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;mv vhosts /home/vhosts&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;mv mysql/var /home/var&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
@@ -1739,18 +1618,37 @@ Preparing...
     <link href="//ganl.io/2015/03/19/jquery-e9-87-87-e7-94-a8append-e6-b7-bb-e5-8a-a0-e7-9a-84-e5-85-83-e7-b4-a0-e4-ba-8b-e4-bb-b6-e6-97-a0-e6-95-88/"/>
     <id>//ganl.io/2015/03/19/jquery-e9-87-87-e7-94-a8append-e6-b7-bb-e5-8a-a0-e7-9a-84-e5-85-83-e7-b4-a0-e4-ba-8b-e4-bb-b6-e6-97-a0-e6-95-88/</id>
     <published>2015-03-19T10:03:38.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:09:41.932Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;使用jQuery动态加载html元素，但是元素上面又绑定了Click等事件，针对新添加的元素这些事件是无效的&lt;br&gt;部分代码如下：&lt;/p&gt;
-&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
-        
-      
+      &lt;p&gt;使用jQuery动态加载html元素，但是元素上面又绑定了Click等事件，针对新添加的元素这些事件是无效的&lt;br&gt;部分代码如下：&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span&gt;&lt;span&gt;………………&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;history=&lt;span class=&quot;string&quot;&gt;“&amp;lt;ul&amp;gt;&amp;lt;li&amp;nbsp;class=’t’&amp;gt;”&lt;/span&gt;&lt;span&gt;&amp;nbsp;+&amp;nbsp;scanType&amp;nbsp;+&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“&amp;lt;/li&amp;gt;”&lt;/span&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;history+=&lt;span class=&quot;string&quot;&gt;“&amp;lt;li&amp;nbsp;class=’p’&amp;gt;”&lt;/span&gt;&lt;span&gt;&amp;nbsp;+&amp;nbsp;’发现了’&amp;nbsp;+&amp;nbsp;scanFileNumber&amp;nbsp;&amp;nbsp;+&amp;nbsp;’个威胁’+&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“&amp;lt;/li&amp;gt;”&lt;/span&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;history+=&lt;span class=&quot;string&quot;&gt;“&amp;lt;li&amp;nbsp;class=’m’&amp;gt;”&lt;/span&gt;&lt;span&gt;&amp;nbsp;+&amp;nbsp;scanTime&amp;nbsp;+&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“&amp;lt;/li&amp;gt;”&lt;/span&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;history+=&lt;span class=&quot;string&quot;&gt;“&amp;lt;/ul&amp;gt;&amp;lt;li&amp;nbsp;class=’s’&amp;gt;&amp;lt;span&amp;nbsp;data-dsp=buf&amp;gt;报告&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;”&lt;/span&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$(&lt;span class=&quot;string&quot;&gt;“.h_scan&amp;nbsp;.dsp”&lt;/span&gt;&lt;span&gt;).append(history);&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$().h_add();&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$(&lt;span class=&quot;string&quot;&gt;“.dsp&amp;nbsp;.s&amp;nbsp;span”&lt;/span&gt;&lt;span&gt;).click(function(){&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;&lt;span class=&quot;variable&quot;&gt;$this&lt;/span&gt;&lt;span&gt;=$(this).attr(&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“data-dsp”&lt;/span&gt;&lt;span&gt;);&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;alert(&lt;span class=&quot;variable&quot;&gt;$this&lt;/span&gt;&lt;span&gt;);&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
+
+&lt;p&gt;发现点击后没任何反应也不报错，&lt;br&gt;
     
     </summary>
     
@@ -1770,18 +1668,29 @@ Preparing...
     <link href="//ganl.io/2015/03/18/apache-e9-81-87-e5-88-b0-e7-9a-84-e4-b8-a4-e4-b8-aa-e9-97-ae-e9-a2-98-disabled-use-of-acceptex-winsock2-api-e9-94-99-e8-af-af-warn-os-64-e6-8c-87-e5-ae-9a-e7-9a-84-e7-bd-91-e7-bb-9c-e5-90-8d/"/>
     <id>//ganl.io/2015/03/18/apache-e9-81-87-e5-88-b0-e7-9a-84-e4-b8-a4-e4-b8-aa-e9-97-ae-e9-a2-98-disabled-use-of-acceptex-winsock2-api-e9-94-99-e8-af-af-warn-os-64-e6-8c-87-e5-ae-9a-e7-9a-84-e7-bd-91-e7-bb-9c-e5-90-8d/</id>
     <published>2015-03-18T09:39:38.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:22:39.699Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;突然网站就不动了，看了下日志：&lt;/p&gt;
-&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
-        
-      
+      &lt;p&gt;突然网站就不动了，看了下日志：&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:52&amp;nbsp;2015]&amp;nbsp;[warn]&amp;nbsp;Init:&amp;nbsp;Session&amp;nbsp;Cache&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;is&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;op&quot;&gt;not&lt;/span&gt;&lt;span&gt;&amp;nbsp;configured&amp;nbsp;[hint:&amp;nbsp;SSLSessionCache]&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:53&amp;nbsp;2015]&amp;nbsp;[notice]&amp;nbsp;Child&amp;nbsp;6100:&amp;nbsp;Child&amp;nbsp;process&amp;nbsp;&lt;span class=&quot;keyword&quot;&gt;is&lt;/span&gt;&lt;span&gt;&amp;nbsp;running&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:53&amp;nbsp;2015]&amp;nbsp;[notice]&amp;nbsp;Child&amp;nbsp;6100:&amp;nbsp;Acquired&amp;nbsp;the&amp;nbsp;start&amp;nbsp;mutex.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:53&amp;nbsp;2015]&amp;nbsp;[notice]&amp;nbsp;Child&amp;nbsp;6100:&amp;nbsp;Starting&amp;nbsp;64&amp;nbsp;worker&amp;nbsp;threads.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:53&amp;nbsp;2015]&amp;nbsp;[notice]&amp;nbsp;Child&amp;nbsp;6100:&amp;nbsp;Starting&amp;nbsp;thread&amp;nbsp;&lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt;&lt;span&gt;&amp;nbsp;listen&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;on&lt;/span&gt;&lt;span&gt;&amp;nbsp;port&amp;nbsp;55443.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:53&amp;nbsp;2015]&amp;nbsp;[notice]&amp;nbsp;Child&amp;nbsp;6100:&amp;nbsp;Starting&amp;nbsp;thread&amp;nbsp;&lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt;&lt;span&gt;&amp;nbsp;listen&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;on&lt;/span&gt;&lt;span&gt;&amp;nbsp;port&amp;nbsp;55443.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:53&amp;nbsp;2015]&amp;nbsp;[notice]&amp;nbsp;Child&amp;nbsp;6100:&amp;nbsp;Starting&amp;nbsp;thread&amp;nbsp;&lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt;&lt;span&gt;&amp;nbsp;listen&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;on&lt;/span&gt;&lt;span&gt;&amp;nbsp;port&amp;nbsp;58080.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:35:53&amp;nbsp;2015]&amp;nbsp;[notice]&amp;nbsp;Child&amp;nbsp;6100:&amp;nbsp;Starting&amp;nbsp;thread&amp;nbsp;&lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt;&lt;span&gt;&amp;nbsp;listen&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;on&lt;/span&gt;&lt;span&gt;&amp;nbsp;port&amp;nbsp;58080.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:39:30&amp;nbsp;2015]&amp;nbsp;[warn]&amp;nbsp;Server&amp;nbsp;ran&amp;nbsp;&lt;span class=&quot;keyword&quot;&gt;out&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;of&lt;/span&gt;&lt;span&gt;&amp;nbsp;threads&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt;&lt;span&gt;&amp;nbsp;serve&amp;nbsp;requests.&amp;nbsp;Consider&amp;nbsp;raising&amp;nbsp;the&amp;nbsp;ThreadsPerChild&amp;nbsp;setting&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:40:53&amp;nbsp;2015]&amp;nbsp;[warn]&amp;nbsp;(OS&amp;nbsp;64)指定的网络名不再可用。&amp;nbsp;&amp;nbsp;:&amp;nbsp;winnt_accept:&amp;nbsp;Asynchronous&amp;nbsp;AcceptEx&amp;nbsp;failed.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:46:24&amp;nbsp;2015]&amp;nbsp;[warn]&amp;nbsp;(OS&amp;nbsp;64)指定的网络名不再可用。&amp;nbsp;&amp;nbsp;:&amp;nbsp;winnt_accept:&amp;nbsp;Asynchronous&amp;nbsp;AcceptEx&amp;nbsp;failed.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:54:31&amp;nbsp;2015]&amp;nbsp;[warn]&amp;nbsp;(OS&amp;nbsp;64)指定的网络名不再可用。&amp;nbsp;&amp;nbsp;:&amp;nbsp;winnt_accept:&amp;nbsp;Asynchronous&amp;nbsp;AcceptEx&amp;nbsp;failed.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;[Wed&amp;nbsp;Mar&amp;nbsp;18&amp;nbsp;16:54:33&amp;nbsp;2015]&amp;nbsp;[warn]&amp;nbsp;(OS&amp;nbsp;64)指定的网络名不再可用。&amp;nbsp;&amp;nbsp;:&amp;nbsp;winnt_accept:&amp;nbsp;Asynchronous&amp;nbsp;AcceptEx&amp;nbsp;failed.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
+
+&lt;p&gt;apache遇到的两个问题 ：&lt;br&gt;
     
     </summary>
     
@@ -1797,18 +1706,15 @@ Preparing...
     <link href="//ganl.io/2015/03/16/php-e5-b0-86-e7-a7-92-e8-bd-ac-e6-88-90-e8-b7-9d-e7-a6-bb-e5-bd-93-e5-89-8d-e5-a4-9a-e5-b0-91-e5-a4-a9-e6-97-a5-e5-88-86-e7-a7-92-e7-a7-92-e6-a0-bc-e5-bc-8f-e4-b8-ba-e5-a4-a9-e5-b0-8f-e6-97-b6/"/>
     <id>//ganl.io/2015/03/16/php-e5-b0-86-e7-a7-92-e8-bd-ac-e6-88-90-e8-b7-9d-e7-a6-bb-e5-bd-93-e5-89-8d-e5-a4-9a-e5-b0-91-e5-a4-a9-e6-97-a5-e5-88-86-e7-a7-92-e7-a7-92-e6-a0-bc-e5-bc-8f-e4-b8-ba-e5-a4-a9-e5-b0-8f-e6-97-b6/</id>
     <published>2015-03-16T06:27:53.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:03:26.869Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;有时需要统计服务器的uptime，得到一般是秒或这毫秒的数据，需要转化成天&lt;br&gt;方法一：&lt;/p&gt;
-&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
-        
-      
+      &lt;p&gt;有时需要统计服务器的uptime，得到一般是秒或这毫秒的数据，需要转化成天&lt;br&gt;方法一：&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span&gt;&lt;span&gt;&amp;lt;?php&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;func&quot;&gt;echo&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;func&quot;&gt;intval&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span class=&quot;vars&quot;&gt;$sys_info&lt;/span&gt;&lt;span&gt;[‘sysinfo’][‘runtime’]/3600/24).’天’.&lt;/span&gt;&lt;span class=&quot;func&quot;&gt;date&lt;/span&gt;&lt;span&gt;(‘H小时i分s秒’,&lt;/span&gt;&lt;span class=&quot;vars&quot;&gt;$sys_info&lt;/span&gt;&lt;span&gt;[‘sysinfo’][‘runtime’]);?&amp;gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
     
     </summary>
     
@@ -1893,17 +1799,11 @@ Preparing...
     <link href="//ganl.io/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/"/>
     <id>//ganl.io/2015/01/26/binshmbad-interpreter-no-such-file-or-directory/</id>
     <published>2015-01-26T03:10:42.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:22:23.645Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;在mac中执行.sh脚本，异常/bin/sh^M: bad interpreter: No such file or directory。&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2015/01/QQ图片20150126110758-300x87.png&quot; alt=&quot;genapp.sh&quot;&gt;&lt;/a&gt;&lt;br&gt;分析：这是不同系统编码格式引起的：在windows系统中编辑的.sh文件可能有不可见字符，所以在Linux系统下执行会报以上异常信息。&lt;br&gt;解决：1）在windows下转换：&lt;br&gt;
     
     </summary>
     
@@ -2006,17 +1906,11 @@ Preparing...
     <link href="//ganl.io/2014/12/30/e3-80-90mark-e3-80-91linux-top-e5-91-bd-e4-bb-a4virtresshrdata-e7-9a-84-e5-90-ab-e4-b9-89/"/>
     <id>//ganl.io/2014/12/30/e3-80-90mark-e3-80-91linux-top-e5-91-bd-e4-bb-a4virtresshrdata-e7-9a-84-e5-90-ab-e4-b9-89/</id>
     <published>2014-12-30T04:39:10.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:21:09.378Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;VIRT：virtual memory usage 虚拟内存&lt;br&gt;1、进程“需要的”虚拟内存大小，包括进程使用的库、代码、数据等&lt;br&gt;2、假如进程申请100m的内存，但实际只使用了10m，那么它会增长100m，而不是实际的使用量&lt;br&gt;RES：resident
-        
-      
+      &lt;p&gt;VIRT：virtual memory usage 虚拟内存&lt;br&gt;1、进程“需要的”虚拟内存大小，包括进程使用的库、代码、数据等&lt;br&gt;2、假如进程申请100m的内存，但实际只使用了10m，那么它会增长100m，而不是实际的使用量&lt;br&gt;RES：resident memory usage 常驻内存&lt;br&gt;1、进程当前使用的内存大小，但不包括swap out&lt;br&gt;2、包含其他进程的共享&lt;br&gt;3、如果申请100m的内存，实际使用10m，它只增长10m，与VIRT相反&lt;br&gt;4、关于库占用内存的情况，它只统计加载的库文件所占内存大小&lt;br&gt;SHR：shared memory 共享内存&lt;br&gt;1、除了自身进程的共享内存，也包括其他进程的共享内存&lt;br&gt;2、虽然进程只使用了几个共享库的函数，但它包含了整个共享库的大小&lt;br&gt;3、计算某个进程所占的物理内存大小公式：RES – SHR&lt;br&gt;4、swap out后，它将会降下来&lt;/p&gt;
     
     </summary>
     
@@ -2081,18 +1975,18 @@ Preparing...
     <link href="//ganl.io/2014/12/24/curltypes-h-no-such-file-or-directory-e9-97-ae-e9-a2-98-e7-9a-84-e8-a7-a3-e5-86-b3/"/>
     <id>//ganl.io/2014/12/24/curltypes-h-no-such-file-or-directory-e9-97-ae-e9-a2-98-e7-9a-84-e8-a7-a3-e5-86-b3/</id>
     <published>2014-12-24T05:06:48.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:21:32.486Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;编译xmlRPC报错，xmlrpc-c用到了libcurl：&lt;br&gt;lib/curl_transport/curlmulti.c:22:24: fatal error: curl/types.h:No such file or directory&lt;/p&gt;
-&lt;div
-        
-      
+      &lt;p&gt;编译xmlRPC报错，xmlrpc-c用到了libcurl：&lt;br&gt;lib/curl_transport/curlmulti.c:22:24: fatal error: curl/types.h:No such file or directory&lt;/p&gt;
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span&gt;&lt;span&gt;gcc&amp;nbsp;-Wall&amp;nbsp;-Iinclude&amp;nbsp;-I.&amp;nbsp;-Ilib/util/include/&amp;nbsp;-I/usr/local/include&amp;nbsp;-I/usr/include/libxml2&amp;nbsp;-c&amp;nbsp;-o&amp;nbsp;lib/curl_transport/curlmulti.o&amp;nbsp;lib/curl_transport/curlmulti.c&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;lib/curl_transport/curlmulti.c:22:24:&amp;nbsp;fatal&amp;nbsp;error:&amp;nbsp;curl/types.h:&amp;nbsp;No&amp;nbsp;such&amp;nbsp;file&amp;nbsp;&lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt;&lt;span&gt;&amp;nbsp;directory&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;compilation&amp;nbsp;terminated.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;make[1]:&amp;nbsp;&lt;em&gt;*&lt;/em&gt;&amp;nbsp;[lib/curl_transport/curlmulti.o]&amp;nbsp;Error&amp;nbsp;1&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
     
     </summary>
     
@@ -2126,17 +2020,12 @@ Preparing...
     <link href="//ganl.io/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/"/>
     <id>//ganl.io/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/</id>
     <published>2014-11-19T13:28:31.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:23:09.464Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;早上起来看到阿里云的邮件说http.responsetime报警，，&lt;br&gt;登录到服务器上看了半天没找到原因，nginx
-        
-      
+      &lt;p&gt;早上起来看到阿里云的邮件说http.responsetime报警，，&lt;br&gt;登录到服务器上看了半天没找到原因，nginx reload过没用，静态页面是可以访问的。&lt;br&gt;百度了下&lt;br&gt;有篇文章里提到了磁盘满了，，df一看，擦100%，想想最近没做什么，只能使日志文件太占空间了。&lt;br&gt;du -sh ./&lt;em&gt; | sort -n &amp;gt;a.txt&lt;br&gt;打开a.txt一看 log目录两三个G，，，清理了下，，，o了。&lt;br&gt;决定看下子目录情况，好做写相应处理。。。。。。。。。。&lt;br&gt;du -a ./&lt;/em&gt; | sort -n &amp;gt;a.txt&lt;/p&gt;
+&lt;p&gt;出现502 其他可能原因&lt;br&gt;第二种原因：&lt;/p&gt;
     
     </summary>
     
@@ -2156,18 +2045,14 @@ Preparing...
     <link href="//ganl.io/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/"/>
     <id>//ganl.io/2014/11/01/registerforremotenotificationtypes-is-not-supported-in-ios-8-0-and-later/</id>
     <published>2014-11-01T07:27:26.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:01:52.029Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;升级了xcode到6后，xcode5（ios7）中的工程在build后，调试output提示：registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later&lt;/p&gt;
-&lt;p&gt;iOS 8
-        
-      
+      &lt;p&gt;升级了xcode到6后，xcode5（ios7）中的工程在build后，调试output提示：registerForRemoteNotificationTypes: is not supported in iOS 8.0 and later&lt;/p&gt;
+&lt;p&gt;iOS 8 has changed notification registration in a non-backwards compatible way. While you need to support iOS 7 and 8 (and while apps built with the 8 SDK aren’t accepted), you can check for the selectors you need and conditionally call them correctly for the running version.&lt;/p&gt;
+&lt;p&gt;Here’s a category on UIApplication that will hide this logic behind a clean interface for you that will work in both Xcode 5 and Xcode 6.&lt;/p&gt;
+&lt;p&gt;注册方式:&lt;br&gt;
     
     </summary>
     
@@ -2213,20 +2098,18 @@ Preparing...
     <link href="//ganl.io/2014/09/04/fiddler-chrome/"/>
     <id>//ganl.io/2014/09/04/fiddler-chrome/</id>
     <published>2014-09-04T13:14:21.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:13:02.555Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;前端开发中，不可避免的要和服务器端进行联调，少了fiddler这个利器可不行。&lt;/p&gt;
 &lt;p&gt;由于无线开发需要配置UA，我使用chrome进行访问，但是今儿一早过来，发现fiddler无法抓取chrome的请求了。&lt;/p&gt;
-&lt;p&gt;想想昨天对chro
-        
-      
+&lt;p&gt;想想昨天对chrome进行的操作，我觉得问题应该出在代理的身上。&lt;/p&gt;
+&lt;p&gt;实际上fiddler是可以抓chrome的请求的。&lt;br&gt;由于我的chrome安装了代理管理的插件SwitchySharp，无论选择直接连接还是选择使用代理连接，插件都会屏蔽fiddler的设置。&lt;br&gt;fiddler会自动给浏览器设置一个代理127.0.0.1 端口8888，并且记忆浏览器的代理设置，所有的请求先走fiddler代理，再走浏览器代理。&lt;br&gt;如果使用插件，可能会直接屏蔽了fiddler的代理，因此无法监听到请求了。&lt;/p&gt;
+&lt;p&gt;chrome下的解决方法，代理插件选择“使用系统代理设置”选项，fiddler又重新能看到chrome的请求了。&lt;br&gt;或者不使用插件，不用卸载，chrome很方便禁用一个插件。然后使用浏览器默认的代理设置方式就ok了。&lt;/p&gt;
+&lt;p&gt;使用代理插件是为了方便切换代理，但是可能会导致fiddler等工具无法使用。真是鱼和熊掌不可兼得&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -2266,18 +2149,11 @@ Preparing...
     <link href="//ganl.io/2014/06/11/e5-be-ae-e8-bd-af-e6-88-96-e5-b0-86-e5-8f-91-e5-b8-83-e5-8f-af-e6-97-a0-e9-97-b4-e6-96-ad-e7-9b-91-e6-8e-a7-e5-bf-83-e7-8e-87-e7-9a-84-e6-99-ba-e8-83-bd-e6-89-8b-e8-a1-a8/"/>
     <id>//ganl.io/2014/06/11/e5-be-ae-e8-bd-af-e6-88-96-e5-b0-86-e5-8f-91-e5-b8-83-e5-8f-af-e6-97-a0-e9-97-b4-e6-96-ad-e7-9b-91-e6-8e-a7-e5-bf-83-e7-8e-87-e7-9a-84-e6-99-ba-e8-83-bd-e6-89-8b-e8-a1-a8/</id>
     <published>2014-06-10T18:08:09.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-11T06:17:50.280Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;《福布斯》杂志报道称，当前微软正在研发一款智能手表，其可与苹果iPhone、Android和Windows Phone设备配合使用，主要用于测量用户的心率。
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; [caption id=”attachment_429”
-        
-      
+      &lt;p&gt;《福布斯》杂志报道称，当前微软正在研发一款智能手表，其可与苹果iPhone、Android和Windows Phone设备配合使用，主要用于测量用户的心率。&lt;br&gt; &lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2014/06/4.jpg&quot; alt=&quot;智能手表&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -2293,17 +2169,11 @@ Preparing...
     <link href="//ganl.io/2014/06/11/e8-b0-b7-e6-ad-8c-e6-88-96-e5-80-9f-e5-8d-ab-e6-98-9f-e6-89-a9-e5-a4-a7-e4-ba-92-e8-81-94-e7-bd-91-e6-8e-a5-e5-85-a5-e6-9c-8d-e5-8a-a1/"/>
     <id>//ganl.io/2014/06/11/e8-b0-b7-e6-ad-8c-e6-88-96-e5-80-9f-e5-8d-ab-e6-98-9f-e6-89-a9-e5-a4-a7-e4-ba-92-e8-81-94-e7-bd-91-e6-8e-a5-e5-85-a5-e6-9c-8d-e5-8a-a1/</id>
     <published>2014-06-10T18:03:17.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:15:41.762Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;现在的互联网市场似乎已经处于饱和的状态，所以谷歌开始新的一轮计划。谷歌计划投资逾10亿美元，利用多颗卫星将互联网服务扩大到全球无网络覆盖的地区，并希望克服阻碍此前类似努力的资金和[专利技术](http://www.wtoip.com/jishu/)难题。具体
-        
-      
+      &lt;p&gt;现在的互联网市场似乎已经处于饱和的状态，所以谷歌开始新的一轮计划。谷歌计划投资逾10亿美元，利用多颗卫星将互联网服务扩大到全球无网络覆盖的地区，并希望克服阻碍此前类似努力的资金和&lt;a href=&quot;http://www.wtoip.com/jishu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;专利技术&lt;/a&gt;难题。具体细节尚未确定，该项目一开始将部署180颗小型高性能卫星，随后再扩大部署规模。这些卫星的轨道高度要低于传统卫星，如果上升到卫星的角度我们似乎不是那么了解，但是这一定会有助于现在的互联网的运行速度。&lt;/p&gt;
     
     </summary>
     
@@ -2319,17 +2189,12 @@ Preparing...
     <link href="//ganl.io/2014/06/11/e5-be-ae-e8-a7-86-e9-85-b7-e7-82-ab-e7-89-88-e6-9b-b4-e6-96-b0-e5-bc-95-e7-88-868-e7-a7-92-e9-9c-87-e6-92-bc-e8-a7-86-e6-95-88/"/>
     <id>//ganl.io/2014/06/11/e5-be-ae-e8-a7-86-e9-85-b7-e7-82-ab-e7-89-88-e6-9b-b4-e6-96-b0-e5-bc-95-e7-88-868-e7-a7-92-e9-9c-87-e6-92-bc-e8-a7-86-e6-95-88/</id>
     <published>2014-06-10T17:58:00.000Z</published>
-    <updated>2017-10-07T01:34:31.496Z</updated>
+    <updated>2017-10-11T06:18:19.242Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;微视是以一种瞬间的速度进入了人们的视线，让人们爱上这一种可以视频的社交网络。随着4G网络环境的改善，以及人们对视频影像的分享需求，越来越多的社交、视频、图像等移动应用都新添加了短视频功能或插件，短视频逐渐成为未来网络社交的新趋势。尤其是已经聚集众多明星、机构
-        
-      
+      &lt;p&gt;微视是以一种瞬间的速度进入了人们的视线，让人们爱上这一种可以视频的社交网络。随着4G网络环境的改善，以及人们对视频影像的分享需求，越来越多的社交、视频、图像等移动应用都新添加了短视频功能或插件，短视频逐渐成为未来网络社交的新趋势。尤其是已经聚集众多明星、机构、达人和普通用户的微视，因其历次更新所带来的创新功能，以及逐渐显现出的平台影响力备受业内关注，业内人士对这款软件的更新速度十分的震惊，但是用户却认为每次更新都可以带来新的体验让人们目不暇接。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2014/06/2.jpg&quot; alt=&quot;微视&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -2345,17 +2210,12 @@ Preparing...
     <link href="//ganl.io/2014/06/11/e4-bc-a0-e8-b0-b7-e6-ad-8c6-e6-9c-88-e6-8e-a8-e5-87-ba-e5-8f-af-e6-a8-a1-e6-8b-9f-e4-ba-ba-e7-9c-bc-e8-a7-86-e8-a7-89-e7-9a-847-e5-af-b8-e6-96-b0-e5-b9-b3-e6-9d-bf/"/>
     <id>//ganl.io/2014/06/11/e4-bc-a0-e8-b0-b7-e6-ad-8c6-e6-9c-88-e6-8e-a8-e5-87-ba-e5-8f-af-e6-a8-a1-e6-8b-9f-e4-ba-ba-e7-9c-bc-e8-a7-86-e8-a7-89-e7-9a-847-e5-af-b8-e6-96-b0-e5-b9-b3-e6-9d-bf/</id>
     <published>2014-06-10T17:51:12.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-11T06:20:58.306Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;5月26日消息，援引华尔街日报最新报道，谷歌预计将于Google I/O 2014发布应用Project
-        
-      
+      &lt;pre&gt;&lt;code&gt;5月26日消息，援引华尔街日报最新报道，谷歌预计将于Google I/O 2014发布应用Project Tango计算机视觉技术的7英寸平板。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;消息称，谷歌内部正秘密研发具备“先进视觉能力”的全新平板，最早将于下个月之前小型量产4000台左右。&lt;br&gt;
     
     </summary>
     
@@ -2371,17 +2231,11 @@ Preparing...
     <link href="//ganl.io/2014/06/11/e8-8b-b9-e6-9e-9c-e5-8f-af-e8-83-bd-e5-9c-a8-e5-bc-80-e5-8f-91-e8-80-85-e4-bc-9a-e4-b8-8a-e5-85-ac-e5-b8-83-e6-9b-b4-e5-a4-9aibeacons-e7-bb-86-e8-8a-82/"/>
     <id>//ganl.io/2014/06/11/e8-8b-b9-e6-9e-9c-e5-8f-af-e8-83-bd-e5-9c-a8-e5-bc-80-e5-8f-91-e8-80-85-e4-bc-9a-e4-b8-8a-e5-85-ac-e5-b8-83-e6-9b-b4-e5-a4-9aibeacons-e7-bb-86-e8-8a-82/</id>
     <published>2014-06-10T17:45:22.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-11T06:16:09.673Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;苹果公司近期获得了关于无线传输系统的专利，这款命名为iBeacons的[无线通信系统专利](http://www.wtoip.com/jishu/list-188-0a0-0-0-0--1o0.html
-        
-      
+      &lt;p&gt;苹果公司近期获得了关于无线传输系统的专利，这款命名为iBeacons的&lt;a href=&quot;http://www.wtoip.com/jishu/list-188-0a0-0-0-0--1o0.html&quot; title=&quot;无线通信系统专利&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;无线通信系统专利&lt;/a&gt;，据消息称，可能会在WWDC 2014发布会上发布更多的细节。苹果公司将在本届开发者大会(WWDC 2014)会场，美国旧金山的莫斯康会展中心(Moscone Center)布满了iBeacons传输点，同时还将在本次大会上公布有关iBeacons无线传输系统的更多规划，通过这种实际体验的方式让记者身临其境的感受这款iBeacons。&lt;/p&gt;
     
     </summary>
     
@@ -2397,19 +2251,14 @@ Preparing...
     <link href="//ganl.io/2014/04/19/class-phpmailer-php-e4-bd-bf-e7-94-a8phpmailer-e5-8f-91-e9-80-81-e9-82-ae-e4-bb-b6-e9-99-84-e4-bb-b6-e5-9b-be-e7-89-87-html/"/>
     <id>//ganl.io/2014/04/19/class-phpmailer-php-e4-bd-bf-e7-94-a8phpmailer-e5-8f-91-e9-80-81-e9-82-ae-e4-bb-b6-e9-99-84-e4-bb-b6-e5-9b-be-e7-89-87-html/</id>
     <published>2014-04-18T17:04:51.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-11T06:22:06.358Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;A开头： &lt;/p&gt;
-&lt;p&gt;$AltBody–属性&lt;br&gt;出自：PHPMailer::$AltBody&lt;br&gt;文件：class.phpmailer.php&lt;br&gt;说明：该属性的设置是在邮件正文不支持HTML的备用显示
-        
-      
+&lt;p&gt;$AltBody–属性&lt;br&gt;出自：PHPMailer::$AltBody&lt;br&gt;文件：class.phpmailer.php&lt;br&gt;说明：该属性的设置是在邮件正文不支持HTML的备用显示 &lt;/p&gt;
+&lt;p&gt;AddAddress–方法&lt;br&gt;出自：PHPMailer::AddAddress()，文件：class.phpmailer.php&lt;br&gt;说明：增加收件人。参数1为收件人邮箱，参数2为收件人称呼。例 AddAddress(“xiaoxiaoxiaoyu@xiaoxiaoyu.cn”,”xiaoxiaoyu”)，但参数2可选，AddAddress(xiaoxiaoxiaoyu@xiaoxiaoyu.cn)也是可以的。&lt;br&gt;函数原型：public function AddAddress($address, $name = ‘’) {}&lt;br&gt;
     
     </summary>
     
@@ -2461,18 +2310,11 @@ Preparing...
     <link href="//ganl.io/2014/03/02/nginx-e6-97-a5-e5-bf-97-e6-96-87-e4-bb-b6-e7-9a-84-e5-88-87-e5-89-b2-binbashm-bad-interpreter-no-such-file-or-directory/"/>
     <id>//ganl.io/2014/03/02/nginx-e6-97-a5-e5-bf-97-e6-96-87-e4-bb-b6-e7-9a-84-e5-88-87-e5-89-b2-binbashm-bad-interpreter-no-such-file-or-directory/</id>
     <published>2014-03-02T07:00:24.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-11T06:04:31.530Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;时常收到阿里的提示，登录上服务器看看日志吧，发现文件好大，读取都要半天。。。。&lt;br&gt;百度了一下怎么按日期存储。。。。&lt;br&gt;记录下过程：&lt;br&gt;编写移动log文件shell&lt;/p&gt;
-&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
-        
-      
+      &lt;p&gt;时常收到阿里的提示，登录上服务器看看日志吧，发现文件好大，读取都要半天。。。。&lt;br&gt;百度了一下怎么按日期存储。。。。&lt;br&gt;记录下过程：&lt;br&gt;编写移动log文件shell&lt;br&gt;
     
     </summary>
     
@@ -2510,17 +2352,12 @@ Preparing...
     <link href="//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/"/>
     <id>//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/</id>
     <published>2013-12-03T01:50:12.000Z</published>
-    <updated>2017-10-07T01:34:31.490Z</updated>
+    <updated>2017-10-11T06:19:08.411Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;继&lt;a href=&quot;http://www.iganlei.cn/embed/304.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iganlei.cn/embed/304.htm&lt;/a&gt;&lt;br&gt;嵌入式CGI c语言
-        
-      
+      &lt;p&gt;继&lt;a href=&quot;http://www.iganlei.cn/embed/304.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iganlei.cn/embed/304.htm&lt;/a&gt;&lt;br&gt;嵌入式CGI c语言 获取form表单的数据，，修改可以用作登录验证，注册也是一样。&lt;br&gt;百度了一些cgi知识：&lt;br&gt;&lt;a href=&quot;http://wenku.baidu.com/view/18c1b7a40029bd64783e2c1c.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenku.baidu.com/view/18c1b7a40029bd64783e2c1c.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wenku.baidu.com/view/9930e67302768e9951e73838.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenku.baidu.com/view/9930e67302768e9951e73838.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wenku.baidu.com/view/b36af14533687e21af45a922.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenku.baidu.com/view/b36af14533687e21af45a922.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;贴出代码：&lt;br&gt;
     
     </summary>
     
@@ -2536,18 +2373,12 @@ Preparing...
     <link href="//ganl.io/2013/11/29/e5-9c-a8wordpress-e4-b8-ad-ef-bc-88-e6-95-b4-e5-90-88-ef-bc-89-e6-8f-92-e5-85-a5-e8-87-aa-e5-ae-9a-e4-b9-89-e8-a7-86-e9-a2-91-e6-92-ad-e6-94-be-e5-99-a8/"/>
     <id>//ganl.io/2013/11/29/e5-9c-a8wordpress-e4-b8-ad-ef-bc-88-e6-95-b4-e5-90-88-ef-bc-89-e6-8f-92-e5-85-a5-e8-87-aa-e5-ae-9a-e4-b9-89-e8-a7-86-e9-a2-91-e6-92-ad-e6-94-be-e5-99-a8/</id>
     <published>2013-11-29T15:58:12.000Z</published>
-    <updated>2017-10-07T01:34:31.495Z</updated>
+    <updated>2017-10-11T06:20:17.221Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;2016年08月13日更新ckplayer，兼容手机播放;之前的调用仅支持pc播放。&lt;/p&gt;
-&lt;p&gt;[cplayer]&lt;a
-        
-      
+      &lt;p&gt;2016年08月13日更新ckplayer，兼容手机播放;之前的调用仅支持pc播放。&lt;/p&gt;
+&lt;p&gt;[cplayer]&lt;a href=&quot;http://oss-cn-qingdao.aliyuncs.com/hzuoss%2Fdz2015%2F09%2F10%2Ffid2%2Ftid1284%2Ftest1.mp4[/cplayer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://oss-cn-qingdao.aliyuncs.com/hzuoss%2Fdz2015%2F09%2F10%2Ffid2%2Ftid1284%2Ftest1.mp4[/cplayer&lt;/a&gt;]&lt;/p&gt;
     
     </summary>
     
@@ -2593,17 +2424,12 @@ Preparing...
     <link href="//ganl.io/2013/11/21/eclipsephpxdebug-e6-90-ad-e5-bb-baphp-e5-bc-80-e5-8f-91-e8-b0-83-e8-af-95-e7-8e-af-e5-a2-83-notepad-with-light-explorer/"/>
     <id>//ganl.io/2013/11/21/eclipsephpxdebug-e6-90-ad-e5-bb-baphp-e5-bc-80-e5-8f-91-e8-b0-83-e8-af-95-e7-8e-af-e5-a2-83-notepad-with-light-explorer/</id>
     <published>2013-11-20T17:01:28.000Z</published>
-    <updated>2017-10-07T01:34:31.490Z</updated>
+    <updated>2017-10-11T06:14:18.612Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;一直使用notepad++的，但是他没有文件类似EditPlus的资源管理器，可以装一个light explorer（或者是 explorer） 方便多了……&lt;br&gt;&lt;a
-        
-      
+      &lt;p&gt;一直使用notepad++的，但是他没有文件类似EditPlus的资源管理器，可以装一个light explorer（或者是 explorer） 方便多了……&lt;br&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2013/11/noteexp.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2013/11/noteexp-300x205.png&quot; alt=&quot;explorer&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.iganlei.cn/wp-content/uploads/2013/11/noteexplorer.png&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2013/11/noteexplorer-300x195.png&quot; alt=&quot;light explorer&quot;&gt;&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -2627,17 +2453,19 @@ Preparing...
     <link href="//ganl.io/2013/11/20/qq-e5-af-bc-e8-88-aa-e4-b8-8a-e7-9a-84-e5-a4-a9-e6-b0-94-e6-8e-a5-e5-8f-a3hao-qq-com-get-weather-php/"/>
     <id>//ganl.io/2013/11/20/qq-e5-af-bc-e8-88-aa-e4-b8-8a-e7-9a-84-e5-a4-a9-e6-b0-94-e6-8e-a5-e5-8f-a3hao-qq-com-get-weather-php/</id>
     <published>2013-11-19T16:29:20.000Z</published>
-    <updated>2017-10-07T01:34:31.490Z</updated>
+    <updated>2017-10-11T06:02:20.084Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;实时温度 有问题呀 开始没用循环 程序代码有点……&lt;br&gt; &lt;a href=&quot;http://sou.qq.com/online/get_weather.php&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;p&gt;实时温度 有问题呀 开始没用循环 程序代码有点……&lt;br&gt; &lt;a href=&quot;http://sou.qq.com/online/get_weather.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sou.qq.com/online/get_weather.php&lt;/a&gt; 这个根据访问IP返回的天气信息&lt;br&gt; &lt;a href=&quot;http://sou.qq.com/online/get_weather.php?callback=weather&amp;amp;city=huainan&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sou.qq.com/online/get_weather.php?callback=weather&amp;amp;city=huainan&lt;/a&gt;  后面是城市拼音 id为75  返回json也不一样的（程序也就得……）&lt;/p&gt;
+&lt;p&gt;测试结果如下：&lt;/p&gt;
+&lt;p&gt;今天：2013-11-20 多云 东北风 12/17℃&lt;/p&gt;
+&lt;p&gt;明天：2013-11-21 多云 西南风 12/17℃&lt;/p&gt;
+&lt;p&gt;后天：2013-11-22 晴 南风 13/18℃&lt;/p&gt;
+&lt;p&gt;大后天：2013-11-23 多云 西南风 12/17℃&lt;/p&gt;
+&lt;p&gt;外天（不知道怎么叫的）：2013-11-24 小雨 西北风 5/10℃&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;淮南天气&lt;br&gt;
     
     </summary>
     
@@ -2653,20 +2481,31 @@ Preparing...
     <link href="//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/"/>
     <id>//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/</id>
     <published>2013-11-13T14:52:25.000Z</published>
-    <updated>2017-10-07T01:34:31.489Z</updated>
+    <updated>2017-10-11T06:12:05.486Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;html5 audio 给博客 网页加背景音乐  可以加上个按钮或者链接 让其可停止或暂停&lt;/p&gt;
+      &lt;p&gt;html5 audio 给博客 网页加背景音乐  可以加上个按钮或者链接 让其可停止或暂停&lt;/p&gt;
 &lt;p&gt;下面代码只是暂停 可以弄成暂停 播放两种状态切换。。&lt;/p&gt;
 &lt;p&gt;可以考虑换成a标签&lt;/p&gt;
-&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div
-        
-      
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span&gt;&lt;span&gt;&amp;lt;a&amp;nbsp;href=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“#”&lt;/span&gt;&lt;span&gt;&amp;nbsp;onClick=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“musicPaused()”&lt;/span&gt;&lt;span&gt;&amp;gt;停止&amp;lt;/a&amp;gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
+
+&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span&gt;&lt;span&gt;&amp;lt;script&amp;nbsp;type=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“text/javascript”&lt;/span&gt;&lt;span&gt;&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;&lt;span&gt;&amp;nbsp;musicPaused()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt;&lt;span&gt;&amp;nbsp;music&amp;nbsp;=&amp;nbsp;document.getElementById(&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“clickSound”&lt;/span&gt;&lt;span&gt;);&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;music.pause();&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;}&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;lt;/script&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;lt;audio&amp;nbsp;id=&lt;span class=&quot;string&quot;&gt;“clickSound”&lt;/span&gt;&lt;span&gt;&amp;nbsp;autoplay=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“autoplay”&lt;/span&gt;&lt;span&gt;&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;lt;source&amp;nbsp;src=&lt;span class=&quot;string&quot;&gt;“&lt;a href=&quot;http://girls.iganlei.cn/baidupan/1125435669/4178294675.mp3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://girls.iganlei.cn/baidupan/1125435669/4178294675.mp3&lt;/a&gt;“&lt;/span&gt;&lt;span&gt;&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;lt;/audio&amp;gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;&amp;lt;input&amp;nbsp;id=&lt;span class=&quot;string&quot;&gt;“btn”&lt;/span&gt;&lt;span&gt;&amp;nbsp;type=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“button”&lt;/span&gt;&lt;span&gt;&amp;nbsp;onclick=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“musicPaused()”&lt;/span&gt;&lt;span&gt;&amp;nbsp;value=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“停止”&lt;/span&gt;&lt;span&gt;&amp;nbsp;/&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
     
     </summary>
     

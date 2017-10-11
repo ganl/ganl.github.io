@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ganl.io/2014/11/19/502-bad-gateway-e9-94-99-e8-af-af-e5-8f-af-e8-83-bd-e5-8e-9f-e5-9b-a0-e5-8f-8a-e8-a7-a3-e5-86-b3-e6-96-b9-e6-b3-95/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="早上起来看到阿里云的邮件说http.responsetime报警，，登录到服务器上看了半天没找到原因，nginx reload过没用，静态页面是可以访问的。百度了下有篇文章里提到了磁盘满了，，df一看，擦100%，想想最近没做什么，只能使日志文件太占空间了。du -sh ./ | sort -n &amp;gt;a.txt打开a.txt一看 log目录两三个G，，，清理了下，，，o了。决定看下子目录情况，">
-<meta property="og:updated_time" content="2017-10-07T01:34:31.496Z">
+<meta property="og:updated_time" content="2017-10-11T06:23:09.464Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="502 Bad Gateway错误可能原因及解决方法">
 <meta name="twitter:description" content="早上起来看到阿里云的邮件说http.responsetime报警，，登录到服务器上看了半天没找到原因，nginx reload过没用，静态页面是可以访问的。百度了下有篇文章里提到了磁盘满了，，df一看，擦100%，想想最近没做什么，只能使日志文件太占空间了。du -sh ./ | sort -n &amp;gt;a.txt打开a.txt一看 log目录两三个G，，，清理了下，，，o了。决定看下子目录情况，">
@@ -182,6 +182,7 @@
       
         <p>早上起来看到阿里云的邮件说http.responsetime报警，，<br>登录到服务器上看了半天没找到原因，nginx reload过没用，静态页面是可以访问的。<br>百度了下<br>有篇文章里提到了磁盘满了，，df一看，擦100%，想想最近没做什么，只能使日志文件太占空间了。<br>du -sh ./<em> | sort -n &gt;a.txt<br>打开a.txt一看 log目录两三个G，，，清理了下，，，o了。<br>决定看下子目录情况，好做写相应处理。。。。。。。。。。<br>du -a ./</em> | sort -n &gt;a.txt</p>
 <p>出现502 其他可能原因<br>第二种原因：</p>
+<a id="more"></a>
 <p>在php.ini里，eaccelerator配置项一定要放在Zend Optimizer配置之前，否则也可能引起502 Bad Gateway</p>
 <p>第三种原因：<br>在安装好使用过程中出现502问题，一般是因为默认php-cgi进程是5个，可能因为phpcgi进程不够用而造成502，需要修改/usr/local/php/etc/php-fpm.conf 将其中的max_children值适当增加。<br>也有可能是max_requests值不够用。</p>
 <p>第四种原因：<br>php执行超时，修改/usr/local/php/etc/php.ini 将max_execution_time 改为300</p>
