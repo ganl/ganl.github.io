@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-10-11T06:23:31.197Z</updated>
+  <updated>2017-10-12T16:55:21.354Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue + ElementUI 项目中使用第三方图标库：阿里iconfont,封装字体图标组件</title>
+    <link href="//ganl.io/2017/10/12/Vue-ElementUI-%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9%E5%9B%BE%E6%A0%87%E5%BA%93%EF%BC%9A%E9%98%BF%E9%87%8Ciconfont/"/>
+    <id>//ganl.io/2017/10/12/Vue-ElementUI-项目中使用第三方图标库：阿里iconfont/</id>
+    <published>2017-10-12T15:46:34.000Z</published>
+    <updated>2017-10-12T16:55:21.354Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;比较流行的字体图标库有Font Awesome：The iconic font and CSS
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Wordpress搬迁到github &amp; coding + hexo</title>
@@ -1949,7 +1971,7 @@ To connect to sourceforge.net insecurely, use&lt;/code&gt;–no-check-certificat
     <link href="//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/"/>
     <id>//ganl.io/2014/12/28/visual-studio-2013-e7-bc-96-e8-af-91-multi-byte-character-set-mfc-e7-a8-8b-e5-ba-8f-e5-87-ba-e7-8e-b0-msb8031-e9-94-99-e8-af-af-e7-9a-84-e8-a7-a3-e5-86-b3-e5-8a-9e-e6-b3-95/</id>
     <published>2014-12-28T11:12:35.000Z</published>
-    <updated>2017-10-10T16:18:20.125Z</updated>
+    <updated>2017-10-10T16:19:43.192Z</updated>
     
     <summary type="html">
     
@@ -2473,44 +2495,6 @@ To connect to sourceforge.net insecurely, use&lt;/code&gt;–no-check-certificat
     
     
       <category term="接口" scheme="//ganl.io/tags/%E6%8E%A5%E5%8F%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html5 audio 给博客 网页加背景音乐 自动播放</title>
-    <link href="//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/"/>
-    <id>//ganl.io/2013/11/13/html5-audio-e7-bb-99-e5-8d-9a-e5-ae-a2-e7-bd-91-e9-a1-b5-e5-8a-a0-e8-83-8c-e6-99-af-e9-9f-b3-e4-b9-90-e8-87-aa-e5-8a-a8-e6-92-ad-e6-94-be/</id>
-    <published>2013-11-13T14:52:25.000Z</published>
-    <updated>2017-10-11T06:12:05.486Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;html5 audio 给博客 网页加背景音乐  可以加上个按钮或者链接 让其可停止或暂停&lt;/p&gt;
-&lt;p&gt;下面代码只是暂停 可以弄成暂停 播放两种状态切换。。&lt;/p&gt;
-&lt;p&gt;可以考虑换成a标签&lt;/p&gt;
-&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span&gt;&lt;span&gt;&amp;lt;a&amp;nbsp;href=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“#”&lt;/span&gt;&lt;span&gt;&amp;nbsp;onClick=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“musicPaused()”&lt;/span&gt;&lt;span&gt;&amp;gt;停止&amp;lt;/a&amp;gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
-
-&lt;div class=&quot;dp-highlighter&quot;&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span&gt;&lt;span&gt;&amp;lt;script&amp;nbsp;type=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“text/javascript”&lt;/span&gt;&lt;span&gt;&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;&lt;span&gt;&amp;nbsp;musicPaused()&amp;nbsp;{&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt;&lt;span&gt;&amp;nbsp;music&amp;nbsp;=&amp;nbsp;document.getElementById(&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“clickSound”&lt;/span&gt;&lt;span&gt;);&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;music.pause();&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;}&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;&amp;lt;/script&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;&amp;lt;audio&amp;nbsp;id=&lt;span class=&quot;string&quot;&gt;“clickSound”&lt;/span&gt;&lt;span&gt;&amp;nbsp;autoplay=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“autoplay”&lt;/span&gt;&lt;span&gt;&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;&amp;lt;source&amp;nbsp;src=&lt;span class=&quot;string&quot;&gt;“&lt;a href=&quot;http://girls.iganlei.cn/baidupan/1125435669/4178294675.mp3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://girls.iganlei.cn/baidupan/1125435669/4178294675.mp3&lt;/a&gt;“&lt;/span&gt;&lt;span&gt;&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;&amp;lt;/audio&amp;gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span&gt;&amp;lt;input&amp;nbsp;id=&lt;span class=&quot;string&quot;&gt;“btn”&lt;/span&gt;&lt;span&gt;&amp;nbsp;type=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“button”&lt;/span&gt;&lt;span&gt;&amp;nbsp;onclick=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“musicPaused()”&lt;/span&gt;&lt;span&gt;&amp;nbsp;value=&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;“停止”&lt;/span&gt;&lt;span&gt;&amp;nbsp;/&amp;gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="//ganl.io/categories/JavaScript/"/>
-    
     
   </entry>
   
