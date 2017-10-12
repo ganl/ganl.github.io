@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-10-12T16:55:21.354Z</updated>
+  <updated>2017-10-12T17:16:33.670Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -21,17 +21,13 @@
     <link href="//ganl.io/2017/10/12/Vue-ElementUI-%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9%E5%9B%BE%E6%A0%87%E5%BA%93%EF%BC%9A%E9%98%BF%E9%87%8Ciconfont/"/>
     <id>//ganl.io/2017/10/12/Vue-ElementUI-项目中使用第三方图标库：阿里iconfont/</id>
     <published>2017-10-12T15:46:34.000Z</published>
-    <updated>2017-10-12T16:55:21.354Z</updated>
+    <updated>2017-10-12T17:16:33.670Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;比较流行的字体图标库有Font Awesome：The iconic font and CSS
-        
-      
+      &lt;p&gt;比较流行的字体图标库有Font Awesome：The iconic font and CSS toolkit，还有Bootstrap默认带的Glyphicons字体图标（不过数量有限）；Iconfont，阿里退出的矢量图标管理平台，可以自己上传图标到Iconfont平台，用户可以自定义下载多种格式的icon，平台也可将图标转换为字体，便于调整与调用。&lt;/p&gt;
+&lt;p&gt;产品的管理控制台上很多图标Font Awesome中都没有，多为UI设计的图标，选择了iconfont, 使用图标的地方较多，封装了一个简单的icon组件：&lt;br&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/ganl/vue-icon-font&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;vue-icon-font&lt;/a&gt;&lt;/strong&gt;:     a &lt;a href=&quot;http://iconfont.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;iconfont&lt;/a&gt; plugin for Vuejs &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/ganl/vue-icon-font&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://travis-ci.org/ganl/vue-icon-font.svg?branch=master&quot; alt=&quot;Build Status&quot;&gt;&lt;/a&gt; &lt;a href=&quot;https://cn.vuejs.org/v2/guide/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/vue-2.x-green.svg&quot; alt=&quot;Vue 2.x&quot; title=&quot;Vue 2 Compatible&quot;&gt;&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
