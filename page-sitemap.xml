@@ -7,13 +7,6 @@
     </url>
     
     <url>
-        <loc>//ganl.io/friendship-connection/</loc>
-        <lastmod>2017-10-07T01:34:31.499Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
         <loc>//ganl.io/leave-a-message/</loc>
         <lastmod>2017-10-07T01:34:31.499Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -21,7 +14,7 @@
     </url>
     
     <url>
-        <loc>//ganl.io/tools/</loc>
+        <loc>//ganl.io/friendship-connection/</loc>
         <lastmod>2017-10-07T01:34:31.499Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -29,6 +22,13 @@
     
     <url>
         <loc>//ganl.io/music-e5-9c-a8-e7-ba-bf-e9-9f-b3-e4-b9-90-e7-9b-92/</loc>
+        <lastmod>2017-10-07T01:34:31.499Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>//ganl.io/tools/</loc>
         <lastmod>2017-10-07T01:34:31.499Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
