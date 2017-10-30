@@ -158,6 +158,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Xcode-Archive-上传出现ERROR-ITMS-90206-和-WARNING-ITMS-90704" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/30/Xcode-Archive-上传出现ERROR-ITMS-90206-和-WARNING-ITMS-90704/">Xcode Archive 上传出现ERROR ITMS-90206 和 WARNING ITMS-90704</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/30/Xcode-Archive-上传出现ERROR-ITMS-90206-和-WARNING-ITMS-90704/" class="archive-article-date">
+  	<time datetime="2017-10-30T14:56:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用Xcode打包上传时出现ERROR ITMS-90206，解决方法：<br>Build Phases -&gt; 添加 -&gt; New Run Script Phase, 加入下面的脚本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd &quot;$&#123;CONFIGURATION_BUILD_DIR&#125;/$&#123;UNLOCALIZED_RESOURCES_FOLDER_PATH&#125;/&quot;</div><div class="line">if [[ -d &quot;Frameworks&quot; ]]; then </div><div class="line">   rm -fr Frameworks</div><div class="line">fi</div></pre></td></tr></table></figure>
+<p><img src="http://www.iganlei.cn/wp-content/uploads/2017/10/itms2017-10-30-23.38.24.png" alt=""></p>
+        
+          <a class="article-more-a" href="/2017/10/30/Xcode-Archive-上传出现ERROR-ITMS-90206-和-WARNING-ITMS-90704/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/30/Xcode-Archive-上传出现ERROR-ITMS-90206-和-WARNING-ITMS-90704/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Vue-cli-prod-部署到server上，Vue-router-HTML5-History-模式下Apache报500错误" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -679,85 +746,9 @@
 
 
   
-    <article id="post-python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/">Python2.6升级到2.7</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/" class="archive-article-date">
-  	<time datetime="2017-03-29T04:27:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">[root@iZu18qlblzrZ shadowsocks-2.9.1]#</div><div class="line">[root@iZu18qlblzrZ shadowsocks-2.9.1]# python -V</div><div class="line">Python 2.6.6</div><div class="line">[root@iZu18qlblzrZ shadowsocks-2.9.1]# wget -c https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz</div><div class="line"></div><div class="line">[root@iZu18qlblzrZ shadowsocks-2.9.1]# tar zxvf Python-2.7.13.tgz</div><div class="line"></div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# cd Python-2.7.13</div><div class="line"></div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# ./configure</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# make all</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# make install</div><div class="line"></div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# /usr/local/bin/python2.7 -V</div><div class="line">Python 2.7.13</div><div class="line"></div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# ln -s /usr/local/bin/python2.7 /usr/bin/python</div><div class="line">ln: creating symbolic link `/usr/bin/python&apos;: File exists</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# mv /usr/bin/python /usr/bin/python2</div><div class="line">python2 python2.6</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# mv /usr/bin/python /usr/bin/python2</div><div class="line">python2 python2.6</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# mv /usr/bin/python /usr/bin/python2.6.6</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# ln -s /usr/local/bin/python2.7 /usr/bin/python</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]# python -V</div><div class="line">Python 2.7.13</div><div class="line">[root@iZu18qlblzrZ Python-2.7.13]#</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/环境配置//" class="article-tag-list-link color5">环境配置</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/29/python2-6-e5-8d-87-e7-ba-a7-e5-88-b02-7/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -865,6 +856,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">url</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">disk</a>
               </li>
              
@@ -874,10 +869,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">url</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -909,6 +900,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">gradient</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ie11</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">mail</a>
               </li>
              
@@ -918,14 +917,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">附件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">gradient</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ie11</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -981,11 +972,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
+                <a href="javascript:void(0)" class="js-tag color3">微视</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">微视</a>
+                <a href="javascript:void(0)" class="js-tag color5">智能手表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1081,6 +1072,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">eclipse</a>
               </li>
              
@@ -1090,10 +1085,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">xdebug</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">抓包</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1117,6 +1108,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">oc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">CLASSPATH</a>
               </li>
              
@@ -1134,18 +1137,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">环境变量</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ios8</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">oc</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">swift</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1177,19 +1168,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Homestead</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">laravel</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">&amp;&amp;</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">||</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Homestead</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">laravel</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1205,10 +1196,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">InnoDB</a>
               </li>
              
@@ -1217,11 +1204,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">OAuth 2.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">REST API</a>
+                <a href="javascript:void(0)" class="js-tag color4">libevent</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1241,7 +1224,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">秒格式为天/小时/分钟/秒</a>
+                <a href="javascript:void(0)" class="js-tag color5">OAuth 2.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">REST API</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1254,6 +1241,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">relativedelta</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">秒格式为天/小时/分钟/秒</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1281,6 +1272,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -1290,14 +1289,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">逗号</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">500 internal privoxy error</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">privoxy</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1345,11 +1336,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">_CRT_SECURE_NO_WARNINGS</a>
+                <a href="javascript:void(0)" class="js-tag color4">Mac</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Mac</a>
+                <a href="javascript:void(0)" class="js-tag color4">_CRT_SECURE_NO_WARNINGS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1405,6 +1396,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">VC runtime library</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">MFC</a>
               </li>
              
@@ -1421,11 +1416,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">VC runtime library</a>
+                <a href="javascript:void(0)" class="js-tag color4">VMware Workstation</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">VMware Workstation</a>
+                <a href="javascript:void(0)" class="js-tag color1">msyql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">wamp</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1438,14 +1437,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Windows AD域用户配置</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">msyql</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">wamp</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1465,14 +1456,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ROM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">video</a>
               </li>
              
@@ -1486,6 +1469,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">视频</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ROM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">V967s</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-10-15T14:34:21.318Z</updated>
+  <updated>2017-10-30T15:44:34.618Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Xcode Archive 上传出现ERROR ITMS-90206 和 WARNING ITMS-90704</title>
+    <link href="//ganl.io/2017/10/30/Xcode-Archive-%E4%B8%8A%E4%BC%A0%E5%87%BA%E7%8E%B0ERROR-ITMS-90206-%E5%92%8C-WARNING-ITMS-90704/"/>
+    <id>//ganl.io/2017/10/30/Xcode-Archive-上传出现ERROR-ITMS-90206-和-WARNING-ITMS-90704/</id>
+    <published>2017-10-30T14:56:16.000Z</published>
+    <updated>2017-10-30T15:44:34.618Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用Xcode打包上传时出现ERROR ITMS-90206，解决方法：&lt;br&gt;Build Phases -&amp;gt; 添加 -&amp;gt; New Run Script Phase, 加入下面的脚本：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;cd &amp;quot;$&amp;#123;CONFIGURATION_BUILD_DIR&amp;#125;/$&amp;#123;UNLOCALIZED_RESOURCES_FOLDER_PATH&amp;#125;/&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;if [[ -d &amp;quot;Frameworks&amp;quot; ]]; then &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   rm -fr Frameworks&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;fi&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2017/10/itms2017-10-30-23.38.24.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Vue-cli prod 部署到server上，Vue-router HTML5 History 模式下Apache报500错误</title>
@@ -2450,30 +2468,6 @@ To connect to sourceforge.net insecurely, use&lt;/code&gt;–no-check-certificat
       <category term="cmp" scheme="//ganl.io/tags/cmp/"/>
     
       <category term="播放器" scheme="//ganl.io/tags/%E6%92%AD%E6%94%BE%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ZTE V967s 精简ROM包</title>
-    <link href="//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/"/>
-    <id>//ganl.io/2013/11/27/zte-v967s-e7-b2-be-e7-ae-80rom-e5-8c-85/</id>
-    <published>2013-11-26T16:55:35.000Z</published>
-    <updated>2017-10-10T15:49:06.163Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;V967s 精简ROM包&lt;br&gt;下载地址：&lt;a href=&quot;http://pan.baidu.com/s/1d47qk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1d47qk&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;按照 下面的列表来精简的&lt;br&gt;从官网下的包有365M（374771KB）  精简后248M（254575KB）&lt;/p&gt;
-&lt;p&gt;下载官方ROM 解压后 对system\vendor\operator\app 下的自带应用（还多广告性质应用）进行删除和替换更新&lt;br&gt;对system\app 下的 应用选择删除&lt;br&gt;
-    
-    </summary>
-    
-      <category term="手机应用" scheme="//ganl.io/categories/%E6%89%8B%E6%9C%BA%E5%BA%94%E7%94%A8/"/>
-    
-    
-      <category term="ROM" scheme="//ganl.io/tags/ROM/"/>
-    
-      <category term="V967s" scheme="//ganl.io/tags/V967s/"/>
     
   </entry>
   
