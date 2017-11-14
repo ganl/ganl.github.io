@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ganl.io/2017/10/15/Vue-cli-prod-部署到server上，Vue-router-HTML5-History-模式下Apache报500错误/index.html">
 <meta property="og:site_name" content="ganlei的个人博客-搭上末班车">
 <meta property="og:description" content="将vue项目部署到线上后（后端server是Apache），http code 500 123Internal Server ErrorThe server encountered an internal error or misconfiguration and was unable to complete your request. 解决方法：">
-<meta property="og:updated_time" content="2017-10-15T14:34:21.318Z">
+<meta property="og:updated_time" content="2017-11-14T16:02:18.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue-cli prod 部署到server上，Vue-router HTML5 History 模式下Apache报500错误">
 <meta name="twitter:description" content="将vue项目部署到线上后（后端server是Apache），http code 500 123Internal Server ErrorThe server encountered an internal error or misconfiguration and was unable to complete your request. 解决方法：">
@@ -186,6 +186,7 @@
 <p><code>vi /var/www/html/public/.htaccess</code></p>
 <p>内容如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_rewrite.c&gt;</div><div class="line">  RewriteEngine On</div><div class="line">  RewriteBase /</div><div class="line">  RewriteRule ^index\.html$ - [L]</div><div class="line">  RewriteCond %&#123;REQUEST_FILENAME&#125; !-f</div><div class="line">  RewriteCond %&#123;REQUEST_FILENAME&#125; !-d</div><div class="line">  RewriteRule . /index.html [L]</div><div class="line">&lt;/IfModule&gt;</div></pre></td></tr></table></figure>
+<p>如果是采用nginx，使用try_files：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">location / &#123;</div><div class="line">  try_files $uri $uri/ /index.html;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>参考官方手册：<a href="https://router.vuejs.org/zh-cn/essentials/history-mode.html" target="_blank" rel="external"></a></p>
 
       
