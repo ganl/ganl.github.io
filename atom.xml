@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-11-05T18:29:58.050Z</updated>
+  <updated>2017-11-15T14:58:56.237Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>代码静态扫描工具PC-Lint</title>
+    <link href="//ganl.io/2017/11/15/%E4%BB%A3%E7%A0%81%E9%9D%99%E6%80%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7PC-Lint/"/>
+    <id>//ganl.io/2017/11/15/代码静态扫描工具PC-Lint/</id>
+    <published>2017-11-15T14:21:33.000Z</published>
+    <updated>2017-11-15T14:58:56.237Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;安装PC-Lint&quot;&gt;&lt;a href=&quot;#安装PC-Lint&quot; class=&quot;headerlink&quot; title=&quot;安装PC-Lint&quot;&gt;&lt;/a&gt;安装PC-Lint&lt;/h1&gt;&lt;p&gt;目前最新的版本是PC-lint Plus 1.0.
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Nodejs &amp; FFmpeg 直播推流到斗鱼实现影视剧轮播</title>
@@ -549,13 +571,13 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
       <category term="Python" scheme="//ganl.io/categories/Python/"/>
     
     
-      <category term="python" scheme="//ganl.io/tags/python/"/>
-    
       <category term="debugger" scheme="//ganl.io/tags/debugger/"/>
     
       <category term="pycharm" scheme="//ganl.io/tags/pycharm/"/>
     
       <category term="pydev" scheme="//ganl.io/tags/pydev/"/>
+    
+      <category term="python" scheme="//ganl.io/tags/python/"/>
     
   </entry>
   
@@ -1446,9 +1468,9 @@ error_reporting(E_ALL);&lt;/code&gt;&lt;br&gt;
       <category term="Python" scheme="//ganl.io/categories/Python/"/>
     
     
-      <category term="dateutil" scheme="//ganl.io/tags/dateutil/"/>
-    
       <category term="python" scheme="//ganl.io/tags/python/"/>
+    
+      <category term="dateutil" scheme="//ganl.io/tags/dateutil/"/>
     
       <category term="relativedelta" scheme="//ganl.io/tags/relativedelta/"/>
     
@@ -2442,27 +2464,6 @@ To connect to sourceforge.net insecurely, use&lt;/code&gt;–no-check-certificat
     
     
       <category term="sqlite" scheme="//ganl.io/tags/sqlite/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>嵌入式CGI c语言 获取form表单的数据（注册登录程序）</title>
-    <link href="//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/"/>
-    <id>//ganl.io/2013/12/03/e5-b5-8c-e5-85-a5-e5-bc-8fcgi-c-e8-af-ad-e8-a8-80-e8-8e-b7-e5-8f-96form-e8-a1-a8-e5-8d-95-e7-9a-84-e6-95-b0-e6-8d-ae-ef-bc-88-e7-99-bb-e5-bd-95-e7-a8-8b-e5-ba-8f-ef-bc-89/</id>
-    <published>2013-12-03T01:50:12.000Z</published>
-    <updated>2017-10-11T06:19:08.411Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;继&lt;a href=&quot;http://www.iganlei.cn/embed/304.htm&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.iganlei.cn/embed/304.htm&lt;/a&gt;&lt;br&gt;嵌入式CGI c语言 获取form表单的数据，，修改可以用作登录验证，注册也是一样。&lt;br&gt;百度了一些cgi知识：&lt;br&gt;&lt;a href=&quot;http://wenku.baidu.com/view/18c1b7a40029bd64783e2c1c.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenku.baidu.com/view/18c1b7a40029bd64783e2c1c.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wenku.baidu.com/view/9930e67302768e9951e73838.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenku.baidu.com/view/9930e67302768e9951e73838.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://wenku.baidu.com/view/b36af14533687e21af45a922.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wenku.baidu.com/view/b36af14533687e21af45a922.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;贴出代码：&lt;br&gt;
-    
-    </summary>
-    
-      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
-    
-    
-      <category term="CGI" scheme="//ganl.io/tags/CGI/"/>
     
   </entry>
   
