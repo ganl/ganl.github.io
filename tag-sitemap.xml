@@ -198,13 +198,6 @@
     </url>
 
     <url>
-        <loc>//ganl.io/tags/github/</loc>
-        <lastmod>2017-10-10T16:21:33.947Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>//ganl.io/tags/12-04/</loc>
         <lastmod>2017-10-10T16:21:33.947Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -213,6 +206,13 @@
 
     <url>
         <loc>//ganl.io/tags/14-04/</loc>
+        <lastmod>2017-10-10T16:21:33.947Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>//ganl.io/tags/github/</loc>
         <lastmod>2017-10-10T16:21:33.947Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

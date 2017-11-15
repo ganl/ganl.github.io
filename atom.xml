@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//ganl.io/"/>
-  <updated>2017-11-15T15:16:11.807Z</updated>
+  <updated>2017-11-15T16:17:52.148Z</updated>
   <id>//ganl.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>nginx安装成Windows服务</title>
+    <link href="//ganl.io/2017/11/16/nginx%E5%AE%89%E8%A3%85%E6%88%90Windows%E6%9C%8D%E5%8A%A1/"/>
+    <id>//ganl.io/2017/11/16/nginx安装成Windows服务/</id>
+    <published>2017-11-15T16:05:53.000Z</published>
+    <updated>2017-11-15T16:17:52.148Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用到一个开源项目：winsw，可将自定义进程打包并注册为Windows服务进行管理。&lt;/p&gt;
+&lt;p&gt;nginx下载地址：&lt;a href=&quot;http://nginx.org/en/download.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://nginx.org/en/download.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载winsw，下载地址：&lt;a href=&quot;https://github.com/kohsuke/winsw/releases&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/kohsuke/winsw/releases&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;# 有两个选择：&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;WinSW.NET2.exe&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;WinSW.NET4.exe&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;选择WinSW.NET4.exe进行下载, 所以得先装.Net Framework4 (dotNetFx40)&lt;/p&gt;
+&lt;p&gt;安装指引：&lt;/p&gt;
+&lt;p&gt;重命名WinSW.NET4.exe为Nginx-i2.exe&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>代码静态扫描工具PC-Lint</title>
     <link href="//ganl.io/2017/11/15/%E4%BB%A3%E7%A0%81%E9%9D%99%E6%80%81%E6%89%AB%E6%8F%8F%E5%B7%A5%E5%85%B7PC-Lint/"/>
     <id>//ganl.io/2017/11/15/代码静态扫描工具PC-Lint/</id>
     <published>2017-11-15T14:21:33.000Z</published>
-    <updated>2017-11-15T15:16:11.807Z</updated>
+    <updated>2017-11-15T16:17:47.826Z</updated>
     
     <summary type="html">
     
@@ -30,7 +52,8 @@
 &lt;p&gt;网盘链接: &lt;a href=&quot;https://pan.baidu.com/s/1hseUZv2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pan.baidu.com/s/1hseUZv2&lt;/a&gt; 密码: 59vn&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;下载解压后，先运行PC-lint9.0目录下的pclint9setup.exe，根据直接Next到最后，选择不执行配置程序。&lt;/li&gt;
-&lt;li&gt;将update目录下的文件复制到C:\lint（安装目录），执行update.bat,查看升级后的版本：&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2017/11/lin.png&quot; alt=&quot;&quot;&gt;
+&lt;li&gt;将update目录下的文件复制到C:\lint（安装目录），执行update.bat,查看升级后的版本：&lt;br&gt;&lt;img src=&quot;http://www.iganlei.cn/wp-content/uploads/2017/11/lin.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -140,7 +163,7 @@
     <link href="//ganl.io/2017/10/10/Wordpress%E6%90%AC%E8%BF%81%E5%88%B0github-coding-hexo/"/>
     <id>//ganl.io/2017/10/10/Wordpress搬迁到github-coding-hexo/</id>
     <published>2017-10-10T12:29:31.000Z</published>
-    <updated>2017-10-11T06:23:31.197Z</updated>
+    <updated>2017-11-15T16:17:56.510Z</updated>
     
     <summary type="html">
     
@@ -681,13 +704,13 @@ define(&amp;#39;FORCE_SSL_ADMIN&amp;#39;, false);&lt;/code&gt;&lt;br&gt;访问�
       <category term="环境配置" scheme="//ganl.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
     
-      <category term="github" scheme="//ganl.io/tags/github/"/>
-    
       <category term="gitlab" scheme="//ganl.io/tags/gitlab/"/>
     
       <category term="12.04" scheme="//ganl.io/tags/12-04/"/>
     
       <category term="14.04" scheme="//ganl.io/tags/14-04/"/>
+    
+      <category term="github" scheme="//ganl.io/tags/github/"/>
     
       <category term="离线下载" scheme="//ganl.io/tags/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/"/>
     
@@ -2439,30 +2462,6 @@ To connect to sourceforge.net insecurely, use&lt;/code&gt;–no-check-certificat
     
       <category term="Web开发" scheme="//ganl.io/categories/Web%E5%BC%80%E5%8F%91/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Sqlite3.8.1移植到TQ2416(在ARM-Linux平台上移植SQLite)</title>
-    <link href="//ganl.io/2013/12/04/sqlite3-8-1-e7-a7-bb-e6-a4-8d-e5-88-b0tq2416-e5-9c-a8arm-linux-e5-b9-b3-e5-8f-b0-e4-b8-8a-e7-a7-bb-e6-a4-8dsqlite/"/>
-    <id>//ganl.io/2013/12/04/sqlite3-8-1-e7-a7-bb-e6-a4-8d-e5-88-b0tq2416-e5-9c-a8arm-linux-e5-b9-b3-e5-8f-b0-e4-b8-8a-e7-a7-bb-e6-a4-8dsqlite/</id>
-    <published>2013-12-03T17:23:20.000Z</published>
-    <updated>2017-10-10T16:59:34.509Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在ARM-Linux平台上移植SQLite,Port SQLite to ARM-Linux Platform.&lt;br&gt;一，交叉编译器：&lt;br&gt;arm-linux-gcc-4.4.1  &lt;/p&gt;
-&lt;p&gt;二、移植步骤&lt;br&gt;下载源码&lt;br&gt;&lt;a href=&quot;http://www.sqlite.org/2013/sqlite-autoconf-3080100.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sqlite.org/2013/sqlite-autoconf-3080100.tar.gz&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;1.解压压缩包并改名进入解压后的目录，如下：  &lt;/p&gt;
-&lt;p&gt;cd sqlite3.8.1&lt;/p&gt;
-&lt;p&gt;2.创建一个目录_install并进入该目录，用于在这个目录中进行交叉编译，如下：&lt;br&gt;mkdir _install&lt;br&gt;cd _install&lt;br&gt;
-    
-    </summary>
-    
-      <category term="嵌入式Linux" scheme="//ganl.io/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
-    
-    
-      <category term="sqlite" scheme="//ganl.io/tags/sqlite/"/>
     
   </entry>
   
